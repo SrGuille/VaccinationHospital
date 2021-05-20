@@ -14,20 +14,24 @@ import java.util.concurrent.CountDownLatch;
 public class Receptionist extends AuxiliaryWorker{
     
     private Reception reception;
+    private int remainingToRest;
+    Thread t=Thread.currentThread();
     
     public Receptionist(int wID, CountDownLatch allPatientsAttended, Reception room){
         super(wID, allPatientsAttended);
         reception=room;
+        remainingToRest=10;
     }
     
     @Override
     public void run(){
-       /* while (allPatientsAttended.getCount()>0){
+        while (t.isInterrupted()==false){ //If no one interrupts us, we keep working
+            reception.callFirstInQueue();
             
         }
-        Patient patient = reception.attend();
-        patient.validate();
+        //Patient patient = reception.attend();
+        //patient.validate();
         
-        */
+        
     }
 }

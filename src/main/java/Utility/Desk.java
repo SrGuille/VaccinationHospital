@@ -86,7 +86,7 @@ public class Desk {
      
     public synchronized boolean isAvailableForPatient(){
         boolean isAvailable=false;
-        if (patient==null){
+        if (patient==null && healthcareWorker!=null){ //Only can go in if it has no patient and it has a doctor
            isAvailable=true;
         }
         return isAvailable;

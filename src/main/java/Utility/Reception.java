@@ -5,8 +5,13 @@
  */
 package Utility;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,25 +21,83 @@ import java.util.logging.Logger;
  */
 public class Reception {
     
-    private BlockingQueue queue;
+    private Lock entranceLock;
+    private Condition queue;
+    private Condition stopAtFrontDesk;
+    private Patient patientAtFrontDesk;
+    private LinkedList patients = new LinkedList();
+    private VaccinationRoom vRoom;
     
-    public Reception(BlockingQueue q){
-        queue=q;
+    public Reception(VaccinationRoom v){
+        entranceLock=new ReentrantLock();
+        queue=entranceLock.newCondition();
+        stopAtFrontDesk=entranceLock.newCondition(); 
+        vRoom=v;
+    }
+   
+    
+    /*
+    *   Calling this, a patient waits in the queue.
+    */
+    public void arriveToHospital(Patient p){
+        entranceLock.lock();
+        try{
+            queue.await(); //Patient execution waiting at the queue
+            patients.offer(p); //Patient information stored to later display
+            
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Reception.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally{
+            entranceLock.unlock();
+        }
     }
     
-    public Patient attend(){
-        Random random = new Random();
-        Patient attendedPatient=null;
+    /*
+    *   Calling this, a receptionist signals to the first in the queue.
+    */
+    public void callFirstInQueue(){
+         entranceLock.lock();
         try {
-            attendedPatient = (Patient) queue.take();
+            patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
+            
+            queue.signal(); //signal first patient thread  
+        } finally {
+            entranceLock.unlock();
+        }
+    }
+    
+    /*
+    *   Calling this, awaken patieng goes to front desk and waits there.
+    */
+    public void moveToFrontDesk(Patient p){
+        try {
+            stopAtFrontDesk.await();
+            
         } catch (InterruptedException ex) {
             Logger.getLogger(Reception.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+    }
+    /*
+    *   Calling this will get the first patient in the queue to be able to go on with his execution.
+    */
+    public void attendFrontDesk(){
+        
+        Random random = new Random();  
+        
         if (random.nextInt(100)==0){ //Give a 1% chance of not listed
-            attendedPatient=null;
+            patientAtFrontDesk.notAppointment(); //Makes it to leave the hospital
+            stopAtFrontDesk.signal();
         }
         
-        return attendedPatient;
+        else if (vRoom.tryGoInside(patientAtFrontDesk)){ //If it has managed to go in, let it go
+            stopAtFrontDesk.signal();
+        }     
+       
     }
+    
+    
+   
 }
+
