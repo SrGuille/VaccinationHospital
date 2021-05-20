@@ -21,24 +21,31 @@ public class main {
     public static void main(String[] args) throws InterruptedException {
         
         CountDownLatch allPatientsAttended = new CountDownLatch(2000);
-        HealthcareWorker[] workers = null;
+        HealthcareWorker[] workers = new HealthcareWorker[10];
         for (int i=0;i<10;i++){
             workers[i]=new HealthcareWorker(i+1, allPatientsAttended);
 
         }
         
        
-        BlockingQueue queue = new LinkedBlockingQueue();
-        Reception reception = new Reception(queue);
-        VaccinationRoom vRoom = new VaccinationRoom(workers);
         ObservationRoom oRoom = new ObservationRoom();
+        VaccinationRoom vRoom = new VaccinationRoom(oRoom);
+        Reception reception = new Reception(vRoom);
+        
+        
+        Object[] hospitalRooms ={reception, vRoom, oRoom};
+       
+        
         AuxiliaryWorker aux1 = new Receptionist(1, allPatientsAttended, reception);
         AuxiliaryWorker aux2 = new VaccinePreparer(2, allPatientsAttended, vRoom);
         
+        Patient patients[]= new Patient[2000];
+        
         for (int j=0;j<2000;j++){
-            Patient patient = new Patient(j+1, allPatientsAttended);
-            Thread.sleep(1000 + (int)(Math.random()*2000));
-            queue.put(patient);
+            patients[j] = new Patient(j+1, allPatientsAttended, hospitalRooms);
+        }
+        for (int k=0;k<2000;k++){
+            patients[k].join();
         }
     }
     

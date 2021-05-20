@@ -17,11 +17,22 @@ public class Patient extends Thread{
     private final String patientID;
     private CountDownLatch allPatientsAttended;
     private String currentDesk;
-    private boolean isValidated=false;
+    private boolean hasAnAppointment=true;
+    private Reception reception;
+    private VaccinationRoom vRoom;
+    private ObservationRoom oRoom;
     
-    public Patient(int pID, CountDownLatch allPatientsAttended){
+    public Patient(int pID, CountDownLatch allPatientsAttended, Object[] hospitalRooms){
         patientID=assignID(pID);
         this.allPatientsAttended=allPatientsAttended;
+        this.reception=(Reception)hospitalRooms[0];
+        this.vRoom=(VaccinationRoom)hospitalRooms[1];
+        this.oRoom=(ObservationRoom)hospitalRooms[2];
+        start();
+    }
+    
+    public void run(){
+        reception.arriveToHospital(this);
     }
     
     private String assignID(int pID){
@@ -57,7 +68,12 @@ public class Patient extends Thread{
         currentDesk=desk;
     }
     
-    public void validate(){
-        isValidated=true;
+    public void notAppointment(){
+        hasAnAppointment=false;
+    }
+    
+    public void arriveHospital(){
+        
+        
     }
 }

@@ -15,18 +15,31 @@ import java.util.logging.Logger;
  */
 public class VaccinationRoom {
     private Desk[] desks;
-    Semaphore fullPatients;
-    Semaphore fullWorkers;
+    public Semaphore mutex;
+    private Semaphore fullPatients;
+    private Semaphore fullWorkers;
+    private ObservationRoom oRoom;
     
-    public VaccinationRoom(HealthcareWorker[] workers){
+    public VaccinationRoom(ObservationRoom o){
+        mutex = new Semaphore(1);
         fullPatients= new Semaphore(10);
         fullWorkers= new Semaphore(10);
-        
-        for (int i=0;i<10;i++){
-            desks[i]=new Desk(i+1,workers[i]);
-        }
-        
+        oRoom=o;
+   
     }
+    
+     public void setObservationRoom(ObservationRoom o){
+        oRoom=o;
+    }
+     
+    private int numPatients(){
+        return 10-fullPatients.availablePermits(); //Returns how many places are available checking semaphore
+    }
+    
+    private int numWorkers(){
+        return 10-fullWorkers.availablePermits(); //Returns how many places are available checking semaphore
+    }
+    
     
     public void goInside(HealthcareWorker h){
         try {
@@ -46,22 +59,66 @@ public class VaccinationRoom {
         
     }
     
-    public void goInside(Patient p){
+    /*
+    *  You can only go on in the case where there is an available doctor alone in his desk 
+    *  and if the number of patients in vaccination room added to number of patients in observation room is lower or equal than 20.
+    *  This second condition is mandatory because we need to be sure that the patient will be able to go to an observation room just after recieving the vaccine.
+    */
+    private boolean patientCanGoIn(){
+        
+        boolean isAuthorised=false;
+        int numPatientsAtVRoom = numPatients();
+        int numWorkersAtVRoom = numWorkers();
+        int numPatientsAtORoom = oRoom.numPatients();  
+        
+        if (numWorkersAtVRoom>numPatientsAtVRoom && (numPatientsAtVRoom+numPatientsAtORoom)<=20){ 
+            isAuthorised=true;
+        }
+        
+        return isAuthorised;
+    }
+    
+    /*
+    *  Finds the correct desk and goes in
+    */
+    private void findDesk(Patient p){
+        
+        for (int i=0;i<10;i++){
+                
+                if (desks[i].isAvailableForPatient()){
+                    try {
+                        desks[i].goInside(p);
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+            }
+    }
+    
+    public boolean tryGoInside(Patient p){
+        
         try {
-            fullPatients.acquire(); //Blocked if full
+            mutex.acquire();
         } catch (InterruptedException ex) {
             Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
         }
-        for (int i=0;i<10;i++){
-            if (desks[i].isAvailableForPatient()){
-                try {
-                    desks[i].goInside(p);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
-                }
+        
+        boolean success=false;
+        
+        if (patientCanGoIn()){
+            
+            success=true;
+            
+            try {
+                fullPatients.acquire(); 
+            } catch (InterruptedException ex) {
+                Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
+            findDesk(p);
         }
         
+        return success; 
     }
     
    public void goOut(HealthcareWorker h) throws InterruptedException{
