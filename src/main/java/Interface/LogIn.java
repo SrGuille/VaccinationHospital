@@ -5,8 +5,12 @@
  */
 package Interface;
 
+import java.awt.Color;
+import java.awt.geom.RoundRectangle2D;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.border.EmptyBorder;
 
 /**
  *
@@ -25,7 +29,7 @@ public class LogIn extends javax.swing.JFrame {
 
     /**
      * Creates new form LogIn
-     * 
+     *
      * @param v: previous frame
      */
     public LogIn(JFrame v) {
@@ -46,7 +50,9 @@ public class LogIn extends javax.swing.JFrame {
     private void initComponents() {
 
         BackgroundPanel = new javax.swing.JPanel();
-        Logo = new javax.swing.JLabel();
+        logo = new javax.swing.JLabel();
+        startButton = new javax.swing.JButton();
+        title = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LogIn");
@@ -67,28 +73,74 @@ public class LogIn extends javax.swing.JFrame {
         BackgroundPanel.setMinimumSize(new java.awt.Dimension(1000, 630));
         BackgroundPanel.setPreferredSize(new java.awt.Dimension(1000, 630));
 
-        Logo.setBackground(new java.awt.Color(255, 255, 255));
-        Logo.setIcon(new javax.swing.ImageIcon(".\\src\\main\\java\\IconImages\\hospital.png")
+        logo.setBackground(new java.awt.Color(255, 255, 255));
+        logo.setIcon(new javax.swing.ImageIcon(".\\src\\main\\java\\IconImages\\hospital.png")
         );
-        Logo.setFocusable(false);
-        Logo.setMaximumSize(new java.awt.Dimension(512, 480));
-        Logo.setMinimumSize(new java.awt.Dimension(512, 480));
+        logo.setFocusable(false);
+        logo.setMaximumSize(new java.awt.Dimension(512, 480));
+        logo.setMinimumSize(new java.awt.Dimension(512, 480));
+
+        startButton.setBackground(new java.awt.Color(128, 29, 24));
+        startButton.setFont(new java.awt.Font("Ubuntu Condensed", 0, 24)); // NOI18N
+        startButton.setForeground(new java.awt.Color(255, 255, 255));
+        startButton.setText("S T A R T");
+        startButton.setBorder(null);
+        startButton.setBorderPainted(false);
+        startButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        startButton.setFocusPainted(false);
+        startButton.setMargin(new java.awt.Insets(2, 1, 2, 1));
+        startButton.setMaximumSize(new java.awt.Dimension(120, 35));
+        startButton.setMinimumSize(new java.awt.Dimension(120, 35));
+        startButton.setPreferredSize(new java.awt.Dimension(120, 35));
+        startButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                startButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                startButtonMouseExited(evt);
+            }
+        });
+        startButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                startButtonActionPerformed(evt);
+            }
+        });
+
+        title.setBackground(new java.awt.Color(255, 255, 255));
+        title.setFont(new java.awt.Font("Linux Biolinum G", 0, 48)); // NOI18N
+        title.setText("THREVAX HOSPITAL");
+        title.setFocusable(false);
+        title.setMaximumSize(new java.awt.Dimension(434, 40));
+        title.setMinimumSize(new java.awt.Dimension(434, 40));
+        title.setPreferredSize(new java.awt.Dimension(434, 40));
 
         javax.swing.GroupLayout BackgroundPanelLayout = new javax.swing.GroupLayout(BackgroundPanel);
         BackgroundPanel.setLayout(BackgroundPanelLayout);
         BackgroundPanelLayout.setHorizontalGroup(
             BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundPanelLayout.createSequentialGroup()
-                .addGap(244, 244, 244)
-                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(BackgroundPanelLayout.createSequentialGroup()
+                .addGroup(BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BackgroundPanelLayout.createSequentialGroup()
+                        .addGap(244, 244, 244)
+                        .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(BackgroundPanelLayout.createSequentialGroup()
+                        .addGap(440, 440, 440)
+                        .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(BackgroundPanelLayout.createSequentialGroup()
+                        .addGap(283, 283, 283)
+                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(244, 244, 244))
         );
         BackgroundPanelLayout.setVerticalGroup(
             BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BackgroundPanelLayout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
+                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -114,6 +166,20 @@ public class LogIn extends javax.swing.JFrame {
         ImageIcon icon = new ImageIcon("src/main/java/IconImages/virus.png");
         setIconImage(icon.getImage());
     }//GEN-LAST:event_formWindowActivated
+
+    private void startButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startButtonMouseEntered
+        startButton.setBackground(new Color(165, 63, 82));
+        startButton.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_startButtonMouseEntered
+
+    private void startButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startButtonMouseExited
+        startButton.setBackground(new Color(128, 29, 24));
+        startButton.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_startButtonMouseExited
+
+    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
+        Hospital hospital = new Hospital(this);
+    }//GEN-LAST:event_startButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,6 +218,8 @@ public class LogIn extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BackgroundPanel;
-    private javax.swing.JLabel Logo;
+    private javax.swing.JLabel logo;
+    private javax.swing.JButton startButton;
+    private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
 }

@@ -22,12 +22,12 @@ public class Receptionist extends AuxiliaryWorker{
     
     @Override
     public void run(){
-        while (allPatientsAttended.getCount()>0){
+       /* while (allPatientsAttended.getCount()>0){
             
         }
         Patient patient = reception.attend();
         patient.validate();
         
-        
+        */
     }
 }
