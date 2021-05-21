@@ -256,8 +256,9 @@ public class Hospital extends javax.swing.JFrame {
         patientImageVaccination9 = new javax.swing.JLabel();
         patientImageVaccination10 = new javax.swing.JLabel();
         vaccinesContainer = new javax.swing.JLabel();
-        vaccinesContainer1 = new javax.swing.JLabel();
+        vaccinesCounter = new javax.swing.JLabel();
         vaccinationCounter = new javax.swing.JLabel();
+        buttonDesk1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hospital");
@@ -1051,9 +1052,10 @@ public class Hospital extends javax.swing.JFrame {
 
         observationRoom.setBackground(new java.awt.Color(224, 227, 231));
         observationRoom.setFocusable(false);
-        observationRoom.setMaximumSize(new java.awt.Dimension(474, 372));
-        observationRoom.setMinimumSize(new java.awt.Dimension(474, 372));
-        observationRoom.setPreferredSize(new java.awt.Dimension(474, 372));
+        observationRoom.setMaximumSize(new java.awt.Dimension(452, 372));
+        observationRoom.setMinimumSize(new java.awt.Dimension(452, 372));
+        observationRoom.setPreferredSize(new java.awt.Dimension(452, 372));
+        observationRoom.setRequestFocusEnabled(false);
 
         patientObservation1.setBackground(new java.awt.Color(250, 234, 221));
         patientObservation1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
@@ -1540,17 +1542,17 @@ public class Hospital extends javax.swing.JFrame {
         observationIntWall.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         observationIntWall.setText("O B S E R V A T I O N      R O O M");
         observationIntWall.setFocusable(false);
-        observationIntWall.setMaximumSize(new java.awt.Dimension(474, 20));
-        observationIntWall.setMinimumSize(new java.awt.Dimension(474, 20));
+        observationIntWall.setMaximumSize(new java.awt.Dimension(452, 20));
+        observationIntWall.setMinimumSize(new java.awt.Dimension(452, 20));
         observationIntWall.setOpaque(true);
-        observationIntWall.setPreferredSize(new java.awt.Dimension(474, 20));
+        observationIntWall.setPreferredSize(new java.awt.Dimension(452, 20));
 
         observationExtWall.setBackground(new java.awt.Color(153, 153, 153));
         observationExtWall.setFocusable(false);
-        observationExtWall.setMaximumSize(new java.awt.Dimension(474, 20));
-        observationExtWall.setMinimumSize(new java.awt.Dimension(474, 20));
+        observationExtWall.setMaximumSize(new java.awt.Dimension(452, 20));
+        observationExtWall.setMinimumSize(new java.awt.Dimension(452, 20));
         observationExtWall.setOpaque(true);
-        observationExtWall.setPreferredSize(new java.awt.Dimension(474, 20));
+        observationExtWall.setPreferredSize(new java.awt.Dimension(452, 20));
 
         patientImageObservation1.setBackground(new java.awt.Color(250, 234, 221));
         patientImageObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -2000,7 +2002,7 @@ public class Hospital extends javax.swing.JFrame {
                 .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(observationIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(observationRoomLayout.createSequentialGroup()
-                        .addGap(36, 36, 36)
+                        .addGap(25, 25, 25)
                         .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(observationRoomLayout.createSequentialGroup()
                                 .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -2721,9 +2723,9 @@ public class Hospital extends javax.swing.JFrame {
 
         vaccinationRoom.setBackground(new java.awt.Color(224, 227, 231));
         vaccinationRoom.setFocusable(false);
-        vaccinationRoom.setMaximumSize(new java.awt.Dimension(284, 372));
-        vaccinationRoom.setMinimumSize(new java.awt.Dimension(284, 372));
-        vaccinationRoom.setPreferredSize(new java.awt.Dimension(284, 372));
+        vaccinationRoom.setMaximumSize(new java.awt.Dimension(306, 372));
+        vaccinationRoom.setMinimumSize(new java.awt.Dimension(306, 372));
+        vaccinationRoom.setPreferredSize(new java.awt.Dimension(306, 372));
 
         patientVaccination1.setBackground(new java.awt.Color(250, 234, 221));
         patientVaccination1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
@@ -2970,17 +2972,17 @@ public class Hospital extends javax.swing.JFrame {
         vaccinationIntWall.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         vaccinationIntWall.setText("V A C C I N A T I O N      R O O M");
         vaccinationIntWall.setFocusable(false);
-        vaccinationIntWall.setMaximumSize(new java.awt.Dimension(284, 20));
-        vaccinationIntWall.setMinimumSize(new java.awt.Dimension(284, 20));
+        vaccinationIntWall.setMaximumSize(new java.awt.Dimension(306, 20));
+        vaccinationIntWall.setMinimumSize(new java.awt.Dimension(306, 20));
         vaccinationIntWall.setOpaque(true);
-        vaccinationIntWall.setPreferredSize(new java.awt.Dimension(284, 20));
+        vaccinationIntWall.setPreferredSize(new java.awt.Dimension(306, 20));
 
         vaccinationExtWall.setBackground(new java.awt.Color(153, 153, 153));
         vaccinationExtWall.setFocusable(false);
-        vaccinationExtWall.setMaximumSize(new java.awt.Dimension(284, 20));
-        vaccinationExtWall.setMinimumSize(new java.awt.Dimension(284, 20));
+        vaccinationExtWall.setMaximumSize(new java.awt.Dimension(306, 20));
+        vaccinationExtWall.setMinimumSize(new java.awt.Dimension(306, 20));
         vaccinationExtWall.setOpaque(true);
-        vaccinationExtWall.setPreferredSize(new java.awt.Dimension(284, 20));
+        vaccinationExtWall.setPreferredSize(new java.awt.Dimension(306, 20));
 
         healthcareImageVaccination1.setBackground(new java.awt.Color(239, 214, 218));
         healthcareImageVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3212,28 +3214,46 @@ public class Hospital extends javax.swing.JFrame {
         vaccinesContainer.setPreferredSize(new java.awt.Dimension(60, 50));
         vaccinesContainer.setRequestFocusEnabled(false);
 
-        vaccinesContainer1.setBackground(new java.awt.Color(0, 0, 0));
-        vaccinesContainer1.setFont(new java.awt.Font("Consolas", 1, 10)); // NOI18N
-        vaccinesContainer1.setForeground(new java.awt.Color(255, 0, 51));
-        vaccinesContainer1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        vaccinesContainer1.setText("<html><center>VAX LEFT<br>100</center></html>");
-        vaccinesContainer1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 5, true));
-        vaccinesContainer1.setFocusable(false);
-        vaccinesContainer1.setMaximumSize(new java.awt.Dimension(60, 50));
-        vaccinesContainer1.setMinimumSize(new java.awt.Dimension(60, 50));
-        vaccinesContainer1.setOpaque(true);
-        vaccinesContainer1.setPreferredSize(new java.awt.Dimension(60, 50));
-        vaccinesContainer1.setRequestFocusEnabled(false);
+        vaccinesCounter.setBackground(new java.awt.Color(0, 0, 0));
+        vaccinesCounter.setFont(new java.awt.Font("Consolas", 1, 10)); // NOI18N
+        vaccinesCounter.setForeground(new java.awt.Color(255, 0, 51));
+        vaccinesCounter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        vaccinesCounter.setText("<html><center>VAX LEFT<br>100</center></html>");
+        vaccinesCounter.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 5, true));
+        vaccinesCounter.setFocusable(false);
+        vaccinesCounter.setMaximumSize(new java.awt.Dimension(60, 50));
+        vaccinesCounter.setMinimumSize(new java.awt.Dimension(60, 50));
+        vaccinesCounter.setOpaque(true);
+        vaccinesCounter.setPreferredSize(new java.awt.Dimension(60, 50));
+        vaccinesCounter.setRequestFocusEnabled(false);
 
         vaccinationCounter.setBackground(new java.awt.Color(153, 153, 255));
-        vaccinationCounter.setIcon(generateImage(".\\src\\main\\java\\IconImages\\vaccinationboothopen.png", 60, 100)
+        vaccinationCounter.setIcon(generateImage(".\\src\\main\\java\\IconImages\\vaccinationboothopen.png", 60, 95)
         );
         vaccinationCounter.setFocusable(false);
-        vaccinationCounter.setMaximumSize(new java.awt.Dimension(60, 100));
-        vaccinationCounter.setMinimumSize(new java.awt.Dimension(60, 100));
+        vaccinationCounter.setMaximumSize(new java.awt.Dimension(60, 95));
+        vaccinationCounter.setMinimumSize(new java.awt.Dimension(60, 95));
         vaccinationCounter.setOpaque(true);
-        vaccinationCounter.setPreferredSize(new java.awt.Dimension(60, 100));
+        vaccinationCounter.setPreferredSize(new java.awt.Dimension(60, 95));
         vaccinationCounter.setRequestFocusEnabled(false);
+
+        buttonDesk1.setBackground(new java.awt.Color(224, 227, 231));
+        buttonDesk1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\closedesk.png", 35, 35)
+        );
+        buttonDesk1.setBorder(null);
+        buttonDesk1.setBorderPainted(false);
+        buttonDesk1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonDesk1.setFocusPainted(false);
+        buttonDesk1.setFocusable(false);
+        buttonDesk1.setMaximumSize(new java.awt.Dimension(35, 35));
+        buttonDesk1.setMinimumSize(new java.awt.Dimension(35, 35));
+        buttonDesk1.setOpaque(false);
+        buttonDesk1.setPreferredSize(new java.awt.Dimension(35, 35));
+        buttonDesk1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonDesk1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout vaccinationRoomLayout = new javax.swing.GroupLayout(vaccinationRoom);
         vaccinationRoom.setLayout(vaccinationRoomLayout);
@@ -3257,24 +3277,34 @@ public class Hospital extends javax.swing.JFrame {
                                     .addComponent(healthcareImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(healthcareVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(healthcareImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(patientImageVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(patientVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(patientImageVaccination3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(patientImageVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                        .addGap(47, 47, 47)
+                                        .addComponent(vaccinationCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(patientVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientImageVaccination3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(vaccinationRoomLayout.createSequentialGroup()
                                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(healthcareImageVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(healthcareVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(buttonDesk1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
                                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(patientVaccination1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(patientImageVaccination1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(vaccinesContainer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(patientVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(vaccinationRoomLayout.createSequentialGroup()
                                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(vaccinationRoomLayout.createSequentialGroup()
@@ -3284,23 +3314,23 @@ public class Hospital extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(healthcareImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(healthcareVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addComponent(healthcareVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(vaccinationRoomLayout.createSequentialGroup()
                                         .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(patientVaccination9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(patientImageVaccination9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                                .addComponent(patientVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                            .addComponent(patientImageVaccination9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(healthcareVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(healthcareImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(healthcareVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(35, 35, 35)))
-                                .addComponent(vaccinesContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(36, 36, 36)
+                                            .addComponent(healthcareVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addComponent(vaccinesCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
+                                .addComponent(vaccinesContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(47, 47, 47)))
                         .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(patientVaccination4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(patientImageVaccination5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3309,33 +3339,23 @@ public class Hospital extends javax.swing.JFrame {
                             .addComponent(patientVaccination3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(healthcareVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareImageVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(healthcareImageVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(healthcareImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(healthcareVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(healthcareVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(healthcareImageVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(healthcareImageVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(healthcareVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
             .addGroup(vaccinationRoomLayout.createSequentialGroup()
                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(vaccinationExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(vaccinationIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(vaccinationCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         vaccinationRoomLayout.setVerticalGroup(
             vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3350,68 +3370,8 @@ public class Hospital extends javax.swing.JFrame {
                             .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(healthcareImageVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(patientImageVaccination6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, 0)
                         .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(patientImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(healthcareImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, 0)
-                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(healthcareVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(patientVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(healthcareImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(patientImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, 0)
-                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(patientVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(healthcareVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(healthcareImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(patientImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, 0)
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(healthcareVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(patientVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(patientImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                                .addComponent(healthcareImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, 0)
-                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(healthcareVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(patientVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(healthcareVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(patientVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                                .addComponent(patientImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, 0)
-                                                .addComponent(patientVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                                    .addGap(30, 30, 30)
-                                                    .addComponent(healthcareVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(healthcareImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                                .addComponent(patientImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(20, 20, 20))
-                                            .addComponent(patientVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                                                .addComponent(healthcareImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, 0)
-                                                .addComponent(healthcareVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(vaccinationRoomLayout.createSequentialGroup()
                                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(patientVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3429,20 +3389,81 @@ public class Hospital extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(healthcareImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(patientImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(20, 20, 20)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                        .addComponent(vaccinesContainer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(vaccinesContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61)))
+                                    .addComponent(patientImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(healthcareVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(healthcareImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, 0)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(healthcareVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(patientVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                        .addComponent(patientImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(0, 0, 0)
+                                                        .addComponent(patientVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                            .addGap(30, 30, 30)
+                                                            .addComponent(healthcareVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(healthcareImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                        .addComponent(patientImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(20, 20, 20))
+                                                    .addComponent(patientVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                        .addComponent(healthcareImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(0, 0, 0)
+                                                        .addComponent(healthcareVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(patientVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(healthcareVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(healthcareImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(patientImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(0, 0, 0)
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(vaccinesContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(healthcareVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(patientVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(patientImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                                .addComponent(healthcareImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(0, 0, 0)
+                                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                                    .addComponent(healthcareVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                    .addComponent(patientVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
+                                        .addGap(5, 5, 5)
+                                        .addComponent(vaccinationCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(100, 100, 100))))))
+                    .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(buttonDesk1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(vaccinesCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(vaccinationExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(vaccinationRoomLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(vaccinationCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout backgroundPanelLayout = new javax.swing.GroupLayout(backgroundPanel);
@@ -3509,6 +3530,13 @@ public class Hospital extends javax.swing.JFrame {
         LogIn logIn = new LogIn(this);
     }//GEN-LAST:event_backButtonActionPerformed
 
+    private void buttonDesk1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk1ActionPerformed
+        // TODO add your handling code here:
+        
+        buttonDesk1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\opendesk.png", 35, 35));
+        
+    }//GEN-LAST:event_buttonDesk1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel auxiliarImageRest1;
@@ -3517,6 +3545,7 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JLabel auxiliarRest2;
     private javax.swing.JButton backButton;
     private javax.swing.JPanel backgroundPanel;
+    private javax.swing.JButton buttonDesk1;
     private javax.swing.JLabel healthcareImageObservation1;
     private javax.swing.JLabel healthcareImageObservation10;
     private javax.swing.JLabel healthcareImageObservation11;
@@ -3719,6 +3748,6 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JLabel vaccinationIntWall;
     private javax.swing.JPanel vaccinationRoom;
     private javax.swing.JLabel vaccinesContainer;
-    private javax.swing.JLabel vaccinesContainer1;
+    private javax.swing.JLabel vaccinesCounter;
     // End of variables declaration//GEN-END:variables
 }
