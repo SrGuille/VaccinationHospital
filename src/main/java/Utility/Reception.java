@@ -23,7 +23,7 @@ public class Reception {
     
     private Lock entranceLock;
     private Condition queue;
-    private Condition stopAtFrontDesk;
+    private Condition stopService;
     private Patient patientAtFrontDesk;
     private LinkedList patients = new LinkedList();
     private VaccinationRoom vRoom;
@@ -31,7 +31,7 @@ public class Reception {
     public Reception(VaccinationRoom v){
         entranceLock=new ReentrantLock();
         queue=entranceLock.newCondition();
-        stopAtFrontDesk=entranceLock.newCondition(); 
+        stopService=entranceLock.newCondition(); 
         vRoom=v;
     }
    
@@ -57,43 +57,38 @@ public class Reception {
     *   Calling this, a receptionist signals to the first in the queue.
     */
     public void callFirstInQueue(){
-         entranceLock.lock();
+        entranceLock.lock();
         try {
             patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
-            
-            queue.signal(); //signal first patient thread  
+             
         } finally {
             entranceLock.unlock();
         }
     }
-    
-    /*
-    *   Calling this, awaken patieng goes to front desk and waits there.
-    */
-    public void moveToFrontDesk(Patient p){
-        try {
-            stopAtFrontDesk.await();
-            
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Reception.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }
+
     /*
     *   Calling this will get the first patient in the queue to be able to go on with his execution.
     */
-    public void attendFrontDesk(){
+    public void forwardPatient(){
         
         Random random = new Random();  
         
         if (random.nextInt(100)==0){ //Give a 1% chance of not listed
             patientAtFrontDesk.notAppointment(); //Makes it to leave the hospital
-            stopAtFrontDesk.signal();
+            queue.signal();
         }
         
         else if (vRoom.tryGoInside(patientAtFrontDesk)){ //If it has managed to go in, let it go
-            stopAtFrontDesk.signal();
-        }     
+            queue.signal(); //signal first patient thread
+        }   
+        
+        else{ //No possibility of forwarding to the patient, stop service until interrupted
+            try {
+                stopService.await();
+            } catch (InterruptedException ex) { //When interrupted, there is a place in the room
+                vRoom.tryGoInside(patientAtFrontDesk);
+            }
+        }
        
     }
     

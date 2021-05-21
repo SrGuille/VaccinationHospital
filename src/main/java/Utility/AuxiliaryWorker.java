@@ -15,10 +15,11 @@ import java.util.concurrent.CountDownLatch;
 public abstract class AuxiliaryWorker implements Runnable{
     private final String auxWorkerID;
     private CountDownLatch allPatientsAttended;
+
     
     public AuxiliaryWorker(int wID, CountDownLatch allPatientsAttended){
         auxWorkerID=assignID(wID);
-        this.allPatientsAttended=allPatientsAttended;
+        this.allPatientsAttended=allPatientsAttended;       
     }
     
     private String assignID(int wID){

@@ -6,6 +6,8 @@
 package Utility;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -14,14 +16,52 @@ import java.util.concurrent.CountDownLatch;
 public class VaccinePreparer extends AuxiliaryWorker{
     
     private VaccinationRoom vaccinationRoom;
+    private RestRoom rRoom;
+    private Thread me=Thread.currentThread();
+    private int remainingToRest; 
     
-    public VaccinePreparer(int wID, CountDownLatch allPatientsAttended, VaccinationRoom room){
+    public VaccinePreparer(int wID, CountDownLatch allPatientsAttended, VaccinationRoom v, RestRoom r){
         super(wID, allPatientsAttended);
-        vaccinationRoom=room;
+        vaccinationRoom=v;
+        rRoom=r;
+        remainingToRest=20;
     }
     
     @Override
     public void run(){
+        while (!me.isInterrupted()){
+            if (remainingToRest==0){
+                goRest(1000,4000); //Sleep for 3 to 5 secs 
+            }
+            vaccinationRoom.produceVaccine();
+            waitVaccineIsReady(500,1000);
+            remainingToRest--;
+            
+        }
         
     }
+    
+    private void waitVaccineIsReady(int minTime, int maxTime){
+        try {
+                Thread.sleep(minTime+(int)(Math.random()*(maxTime-minTime)));
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    }
+    
+  
+    private void goRest(int minTime, int maxTime){
+        
+        rRoom.goIn(this);
+        
+        try {
+                Thread.sleep(minTime+(int)(Math.random()*(maxTime-minTime)));
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        
+        rRoom.goOut(this);
+        remainingToRest=20; //Restore the numPatients to attend before next rest
+    }
+    
 }

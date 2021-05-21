@@ -6,6 +6,7 @@
 package Utility;
 
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,18 +19,16 @@ public class VaccinationRoom {
     public Semaphore mutex;
     private Semaphore fullPatients;
     private Semaphore fullWorkers;
-    private ObservationRoom oRoom;
+    private final ObservationRoom oRoom;
+    private AtomicInteger numVaccines;
     
     public VaccinationRoom(ObservationRoom o){
         mutex = new Semaphore(1);
         fullPatients= new Semaphore(10);
         fullWorkers= new Semaphore(10);
         oRoom=o;
+        numVaccines =new AtomicInteger(0);
    
-    }
-    
-     public void setObservationRoom(ObservationRoom o){
-        oRoom=o;
     }
      
     private int numPatients(){
@@ -140,4 +139,12 @@ public class VaccinationRoom {
             }
         }
     }
+   
+   public void produceVaccine(){
+       numVaccines.incrementAndGet();
+   }
+   
+   public void getVaccine(){
+       numVaccines.decrementAndGet();
+   }
 }

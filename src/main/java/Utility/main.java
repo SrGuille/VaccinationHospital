@@ -22,17 +22,17 @@ public class main {
 
         }
         
-       
+        RestRoom rRoom = new RestRoom();
         ObservationRoom oRoom = new ObservationRoom();
         VaccinationRoom vRoom = new VaccinationRoom(oRoom);
         Reception reception = new Reception(vRoom);
         
         
-        Object[] hospitalRooms ={reception, vRoom, oRoom};
+        Object[] hospitalRooms ={reception, vRoom, oRoom, rRoom};
        
         
-        AuxiliaryWorker aux1 = new Receptionist(1, allPatientsAttended, reception);
-        AuxiliaryWorker aux2 = new VaccinePreparer(2, allPatientsAttended, vRoom);
+        AuxiliaryWorker aux1 = new Receptionist(1, allPatientsAttended, reception, rRoom);
+        AuxiliaryWorker aux2 = new VaccinePreparer(2, allPatientsAttended, vRoom, rRoom);
         
         Patient patients[]= new Patient[2000];
         
