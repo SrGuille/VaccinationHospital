@@ -30,14 +30,14 @@ public class Hospital extends javax.swing.JFrame {
         this.setVisible(true);
 
     }
-    
-    public ImageIcon generateBackImage() {
-        ImageIcon backImage = new javax.swing.ImageIcon(".\\src\\main\\java\\IconImages\\goback.png");
-        Image image = backImage.getImage(); // transform it 
-        Image newimg = image.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-        backImage = new ImageIcon(newimg);  // transform it back
-        
-        return backImage;
+
+    public ImageIcon generateImage(String path, int x, int y) {
+        ImageIcon img = new javax.swing.ImageIcon(path);
+        Image image = img.getImage(); // transform it 
+        Image newimg = image.getScaledInstance(x, y, java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+        img = new ImageIcon(newimg);  // transform it back
+
+        return img;
     }
 
     /**
@@ -49,16 +49,222 @@ public class Hospital extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BackgroundPanel = new javax.swing.JPanel();
+        backgroundPanel = new javax.swing.JPanel();
         title = new javax.swing.JLabel();
         backButton = new javax.swing.JButton();
+        receptionRoom = new javax.swing.JPanel();
+        patientReception1 = new javax.swing.JLabel();
+        patientReception2 = new javax.swing.JLabel();
+        patientReception3 = new javax.swing.JLabel();
+        patientReception4 = new javax.swing.JLabel();
+        patientReception5 = new javax.swing.JLabel();
+        patientReception6 = new javax.swing.JLabel();
+        patientReception7 = new javax.swing.JLabel();
+        patientReception8 = new javax.swing.JLabel();
+        patientReception9 = new javax.swing.JLabel();
+        patientReception10 = new javax.swing.JLabel();
+        patientReception11 = new javax.swing.JLabel();
+        patientReception12 = new javax.swing.JLabel();
+        patientReception13 = new javax.swing.JLabel();
+        patientReception14 = new javax.swing.JLabel();
+        patientReception15 = new javax.swing.JLabel();
+        patientReception16 = new javax.swing.JLabel();
+        patientReception17 = new javax.swing.JLabel();
+        patientReception18 = new javax.swing.JLabel();
+        patientReception19 = new javax.swing.JLabel();
+        patientReception20 = new javax.swing.JLabel();
+        patientReception21 = new javax.swing.JLabel();
+        patientReception22 = new javax.swing.JLabel();
+        receptionExtWall = new javax.swing.JLabel();
+        receptionIntWall = new javax.swing.JLabel();
+        patientImageReception1 = new javax.swing.JLabel();
+        patientImageReception2 = new javax.swing.JLabel();
+        patientImageReception3 = new javax.swing.JLabel();
+        patientImageReception4 = new javax.swing.JLabel();
+        patientImageReception5 = new javax.swing.JLabel();
+        patientImageReception6 = new javax.swing.JLabel();
+        patientImageReception7 = new javax.swing.JLabel();
+        patientImageReception8 = new javax.swing.JLabel();
+        patientImageReception9 = new javax.swing.JLabel();
+        patientImageReception10 = new javax.swing.JLabel();
+        patientImageReception11 = new javax.swing.JLabel();
+        patientImageReception12 = new javax.swing.JLabel();
+        patientImageReception13 = new javax.swing.JLabel();
+        patientImageReception14 = new javax.swing.JLabel();
+        patientImageReception15 = new javax.swing.JLabel();
+        receptionCounter = new javax.swing.JLabel();
+        patientChecked = new javax.swing.JLabel();
+        patientImageReception16 = new javax.swing.JLabel();
+        patientImageReception17 = new javax.swing.JLabel();
+        patientImageReception18 = new javax.swing.JLabel();
+        patientImageReception19 = new javax.swing.JLabel();
+        patientImageReception20 = new javax.swing.JLabel();
+        patientImageReception21 = new javax.swing.JLabel();
+        patientImageReception22 = new javax.swing.JLabel();
+        patientImageReception35 = new javax.swing.JLabel();
+        observationRoom = new javax.swing.JPanel();
+        patientObservation1 = new javax.swing.JLabel();
+        patientObservation2 = new javax.swing.JLabel();
+        patientObservation3 = new javax.swing.JLabel();
+        patientObservation4 = new javax.swing.JLabel();
+        patientObservation5 = new javax.swing.JLabel();
+        patientObservation6 = new javax.swing.JLabel();
+        patientObservation7 = new javax.swing.JLabel();
+        patientObservation8 = new javax.swing.JLabel();
+        patientObservation9 = new javax.swing.JLabel();
+        patientObservation10 = new javax.swing.JLabel();
+        healthcareObservation1 = new javax.swing.JLabel();
+        healthcareObservation2 = new javax.swing.JLabel();
+        healthcareObservation3 = new javax.swing.JLabel();
+        healthcareObservation4 = new javax.swing.JLabel();
+        healthcareObservation5 = new javax.swing.JLabel();
+        healthcareObservation6 = new javax.swing.JLabel();
+        healthcareObservation7 = new javax.swing.JLabel();
+        healthcareObservation8 = new javax.swing.JLabel();
+        healthcareObservation9 = new javax.swing.JLabel();
+        healthcareObservation10 = new javax.swing.JLabel();
+        healthcareObservation11 = new javax.swing.JLabel();
+        healthcareObservation12 = new javax.swing.JLabel();
+        healthcareObservation13 = new javax.swing.JLabel();
+        healthcareObservation14 = new javax.swing.JLabel();
+        healthcareObservation15 = new javax.swing.JLabel();
+        healthcareObservation16 = new javax.swing.JLabel();
+        healthcareObservation17 = new javax.swing.JLabel();
+        healthcareObservation18 = new javax.swing.JLabel();
+        healthcareObservation19 = new javax.swing.JLabel();
+        healthcareObservation20 = new javax.swing.JLabel();
+        patientObservation11 = new javax.swing.JLabel();
+        patientObservation12 = new javax.swing.JLabel();
+        patientObservation13 = new javax.swing.JLabel();
+        patientObservation14 = new javax.swing.JLabel();
+        patientObservation15 = new javax.swing.JLabel();
+        patientObservation16 = new javax.swing.JLabel();
+        patientObservation17 = new javax.swing.JLabel();
+        patientObservation18 = new javax.swing.JLabel();
+        patientObservation19 = new javax.swing.JLabel();
+        patientObservation20 = new javax.swing.JLabel();
+        observationIntWall = new javax.swing.JLabel();
+        observationExtWall = new javax.swing.JLabel();
+        patientImageObservation1 = new javax.swing.JLabel();
+        patientImageObservation2 = new javax.swing.JLabel();
+        healthcareImageObservation1 = new javax.swing.JLabel();
+        healthcareImageObservation2 = new javax.swing.JLabel();
+        healthcareImageObservation3 = new javax.swing.JLabel();
+        healthcareImageObservation4 = new javax.swing.JLabel();
+        healthcareImageObservation5 = new javax.swing.JLabel();
+        healthcareImageObservation6 = new javax.swing.JLabel();
+        healthcareImageObservation7 = new javax.swing.JLabel();
+        healthcareImageObservation8 = new javax.swing.JLabel();
+        healthcareImageObservation9 = new javax.swing.JLabel();
+        healthcareImageObservation10 = new javax.swing.JLabel();
+        healthcareImageObservation11 = new javax.swing.JLabel();
+        healthcareImageObservation12 = new javax.swing.JLabel();
+        healthcareImageObservation13 = new javax.swing.JLabel();
+        healthcareImageObservation14 = new javax.swing.JLabel();
+        healthcareImageObservation15 = new javax.swing.JLabel();
+        healthcareImageObservation16 = new javax.swing.JLabel();
+        healthcareImageObservation17 = new javax.swing.JLabel();
+        healthcareImageObservation18 = new javax.swing.JLabel();
+        healthcareImageObservation19 = new javax.swing.JLabel();
+        healthcareImageObservation20 = new javax.swing.JLabel();
+        patientImageObservation3 = new javax.swing.JLabel();
+        patientImageObservation4 = new javax.swing.JLabel();
+        patientImageObservation5 = new javax.swing.JLabel();
+        patientImageObservation6 = new javax.swing.JLabel();
+        patientImageObservation7 = new javax.swing.JLabel();
+        patientImageObservation8 = new javax.swing.JLabel();
+        patientImageObservation9 = new javax.swing.JLabel();
+        patientImageObservation10 = new javax.swing.JLabel();
+        patientImageObservation11 = new javax.swing.JLabel();
+        patientImageObservation12 = new javax.swing.JLabel();
+        patientImageObservation13 = new javax.swing.JLabel();
+        patientImageObservation14 = new javax.swing.JLabel();
+        patientImageObservation15 = new javax.swing.JLabel();
+        patientImageObservation16 = new javax.swing.JLabel();
+        patientImageObservation17 = new javax.swing.JLabel();
+        patientImageObservation18 = new javax.swing.JLabel();
+        patientImageObservation19 = new javax.swing.JLabel();
+        patientImageObservation20 = new javax.swing.JLabel();
+        restRoom = new javax.swing.JPanel();
+        healthcareRest1 = new javax.swing.JLabel();
+        healthcareRest2 = new javax.swing.JLabel();
+        healthcareRest3 = new javax.swing.JLabel();
+        healthcareRest4 = new javax.swing.JLabel();
+        healthcareRest5 = new javax.swing.JLabel();
+        healthcareRest6 = new javax.swing.JLabel();
+        healthcareRest7 = new javax.swing.JLabel();
+        healthcareRest8 = new javax.swing.JLabel();
+        healthcareRest9 = new javax.swing.JLabel();
+        healthcareRest10 = new javax.swing.JLabel();
+        restIntWall = new javax.swing.JLabel();
+        restExtWall = new javax.swing.JLabel();
+        auxiliarRest1 = new javax.swing.JLabel();
+        auxiliarRest2 = new javax.swing.JLabel();
+        healthcareImageRest1 = new javax.swing.JLabel();
+        healthcareImageRest2 = new javax.swing.JLabel();
+        healthcareImageRest3 = new javax.swing.JLabel();
+        healthcareImageRest4 = new javax.swing.JLabel();
+        healthcareImageRest5 = new javax.swing.JLabel();
+        healthcareImageRest6 = new javax.swing.JLabel();
+        healthcareImageRest7 = new javax.swing.JLabel();
+        healthcareImageRest8 = new javax.swing.JLabel();
+        healthcareImageRest9 = new javax.swing.JLabel();
+        healthcareImageRest10 = new javax.swing.JLabel();
+        auxiliarImageRest1 = new javax.swing.JLabel();
+        auxiliarImageRest2 = new javax.swing.JLabel();
+        vaccinationRoom = new javax.swing.JPanel();
+        patientVaccination1 = new javax.swing.JLabel();
+        patientVaccination2 = new javax.swing.JLabel();
+        patientVaccination3 = new javax.swing.JLabel();
+        patientVaccination4 = new javax.swing.JLabel();
+        patientVaccination5 = new javax.swing.JLabel();
+        patientVaccination6 = new javax.swing.JLabel();
+        patientVaccination7 = new javax.swing.JLabel();
+        patientVaccination8 = new javax.swing.JLabel();
+        patientVaccination9 = new javax.swing.JLabel();
+        patientVaccination10 = new javax.swing.JLabel();
+        healthcareVaccination1 = new javax.swing.JLabel();
+        healthcareVaccination2 = new javax.swing.JLabel();
+        healthcareVaccination3 = new javax.swing.JLabel();
+        healthcareVaccination4 = new javax.swing.JLabel();
+        healthcareVaccination5 = new javax.swing.JLabel();
+        healthcareVaccination6 = new javax.swing.JLabel();
+        healthcareVaccination7 = new javax.swing.JLabel();
+        healthcareVaccination8 = new javax.swing.JLabel();
+        healthcareVaccination9 = new javax.swing.JLabel();
+        healthcareVaccination10 = new javax.swing.JLabel();
+        vaccinationIntWall = new javax.swing.JLabel();
+        vaccinationExtWall = new javax.swing.JLabel();
+        healthcareImageVaccination1 = new javax.swing.JLabel();
+        healthcareImageVaccination2 = new javax.swing.JLabel();
+        healthcareImageVaccination3 = new javax.swing.JLabel();
+        healthcareImageVaccination4 = new javax.swing.JLabel();
+        healthcareImageVaccination5 = new javax.swing.JLabel();
+        healthcareImageVaccination6 = new javax.swing.JLabel();
+        healthcareImageVaccination7 = new javax.swing.JLabel();
+        healthcareImageVaccination8 = new javax.swing.JLabel();
+        healthcareImageVaccination9 = new javax.swing.JLabel();
+        healthcareImageVaccination10 = new javax.swing.JLabel();
+        patientImageVaccination1 = new javax.swing.JLabel();
+        patientImageVaccination2 = new javax.swing.JLabel();
+        patientImageVaccination3 = new javax.swing.JLabel();
+        patientImageVaccination4 = new javax.swing.JLabel();
+        patientImageVaccination5 = new javax.swing.JLabel();
+        patientImageVaccination6 = new javax.swing.JLabel();
+        patientImageVaccination7 = new javax.swing.JLabel();
+        patientImageVaccination8 = new javax.swing.JLabel();
+        patientImageVaccination9 = new javax.swing.JLabel();
+        patientImageVaccination10 = new javax.swing.JLabel();
+        vaccinesContainer = new javax.swing.JLabel();
+        vaccinesContainer1 = new javax.swing.JLabel();
+        vaccinationCounter = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hospital");
         setBackground(new java.awt.Color(255, 255, 255));
+        setFocusable(false);
         setMaximumSize(new java.awt.Dimension(1000, 630));
         setMinimumSize(new java.awt.Dimension(1000, 630));
-        setPreferredSize(new java.awt.Dimension(1000, 630));
         setResizable(false);
         setSize(new java.awt.Dimension(1000, 630));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -67,9 +273,10 @@ public class Hospital extends javax.swing.JFrame {
             }
         });
 
-        BackgroundPanel.setBackground(new java.awt.Color(255, 255, 255));
-        BackgroundPanel.setMaximumSize(new java.awt.Dimension(1000, 630));
-        BackgroundPanel.setMinimumSize(new java.awt.Dimension(1000, 630));
+        backgroundPanel.setBackground(new java.awt.Color(255, 255, 255));
+        backgroundPanel.setMaximumSize(new java.awt.Dimension(1000, 630));
+        backgroundPanel.setMinimumSize(new java.awt.Dimension(1000, 630));
+        backgroundPanel.setPreferredSize(new java.awt.Dimension(1000, 630));
 
         title.setBackground(new java.awt.Color(255, 255, 255));
         title.setFont(new java.awt.Font("Linux Biolinum G", 0, 48)); // NOI18N
@@ -81,7 +288,7 @@ public class Hospital extends javax.swing.JFrame {
 
         backButton.setBackground(new java.awt.Color(25, 36, 51));
         backButton.setFont(new java.awt.Font("Ubuntu Condensed", 0, 24)); // NOI18N
-        backButton.setIcon(generateBackImage()
+        backButton.setIcon(generateImage(".\\src\\main\\java\\IconImages\\goback.png", 30, 30)
         );
         backButton.setBorder(null);
         backButton.setBorderPainted(false);
@@ -97,25 +304,3182 @@ public class Hospital extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout BackgroundPanelLayout = new javax.swing.GroupLayout(BackgroundPanel);
-        BackgroundPanel.setLayout(BackgroundPanelLayout);
-        BackgroundPanelLayout.setHorizontalGroup(
-            BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BackgroundPanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
-                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(283, 283, 283))
+        receptionRoom.setBackground(new java.awt.Color(224, 227, 231));
+        receptionRoom.setFocusable(false);
+        receptionRoom.setMaximumSize(new java.awt.Dimension(920, 132));
+        receptionRoom.setMinimumSize(new java.awt.Dimension(920, 132));
+
+        patientReception1.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception1.setText("0000");
+        patientReception1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception1.setFocusable(false);
+        patientReception1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception1.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception1.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception1.setOpaque(true);
+        patientReception1.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception2.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception2.setText("0000");
+        patientReception2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception2.setFocusable(false);
+        patientReception2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception2.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception2.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception2.setOpaque(true);
+        patientReception2.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception3.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception3.setText("0000");
+        patientReception3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception3.setFocusable(false);
+        patientReception3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception3.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception3.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception3.setOpaque(true);
+        patientReception3.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception4.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception4.setText("0000");
+        patientReception4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception4.setFocusable(false);
+        patientReception4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception4.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception4.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception4.setOpaque(true);
+        patientReception4.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception5.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception5.setText("0000");
+        patientReception5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception5.setFocusable(false);
+        patientReception5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception5.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception5.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception5.setOpaque(true);
+        patientReception5.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception6.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception6.setText("0000");
+        patientReception6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception6.setFocusable(false);
+        patientReception6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception6.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception6.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception6.setOpaque(true);
+        patientReception6.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception7.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception7.setText("0000");
+        patientReception7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception7.setFocusable(false);
+        patientReception7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception7.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception7.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception7.setOpaque(true);
+        patientReception7.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception8.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception8.setText("0000");
+        patientReception8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception8.setFocusable(false);
+        patientReception8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception8.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception8.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception8.setOpaque(true);
+        patientReception8.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception9.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception9.setText("0000");
+        patientReception9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception9.setFocusable(false);
+        patientReception9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception9.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception9.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception9.setOpaque(true);
+        patientReception9.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception10.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception10.setText("0000");
+        patientReception10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception10.setFocusable(false);
+        patientReception10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception10.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception10.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception10.setOpaque(true);
+        patientReception10.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception11.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception11.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception11.setText("0000");
+        patientReception11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception11.setFocusable(false);
+        patientReception11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception11.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception11.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception11.setOpaque(true);
+        patientReception11.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception12.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception12.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception12.setText("0000");
+        patientReception12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception12.setFocusable(false);
+        patientReception12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception12.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception12.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception12.setOpaque(true);
+        patientReception12.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception13.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception13.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception13.setText("0000");
+        patientReception13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception13.setFocusable(false);
+        patientReception13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception13.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception13.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception13.setOpaque(true);
+        patientReception13.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception14.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception14.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception14.setText("0000");
+        patientReception14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception14.setFocusable(false);
+        patientReception14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception14.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception14.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception14.setOpaque(true);
+        patientReception14.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception15.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception15.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception15.setText("0000");
+        patientReception15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception15.setFocusable(false);
+        patientReception15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception15.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception15.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception15.setOpaque(true);
+        patientReception15.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception16.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception16.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception16.setText("0000");
+        patientReception16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception16.setFocusable(false);
+        patientReception16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception16.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception16.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception16.setOpaque(true);
+        patientReception16.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception17.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception17.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception17.setText("0000");
+        patientReception17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception17.setFocusable(false);
+        patientReception17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception17.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception17.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception17.setOpaque(true);
+        patientReception17.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception18.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception18.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception18.setText("0000");
+        patientReception18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception18.setFocusable(false);
+        patientReception18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception18.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception18.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception18.setOpaque(true);
+        patientReception18.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception19.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception19.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception19.setText("0000");
+        patientReception19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception19.setFocusable(false);
+        patientReception19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception19.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception19.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception19.setOpaque(true);
+        patientReception19.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception20.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception20.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception20.setText("0000");
+        patientReception20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception20.setFocusable(false);
+        patientReception20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception20.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception20.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception20.setOpaque(true);
+        patientReception20.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception21.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception21.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception21.setText("0000");
+        patientReception21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception21.setFocusable(false);
+        patientReception21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception21.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception21.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception21.setOpaque(true);
+        patientReception21.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientReception22.setBackground(new java.awt.Color(250, 234, 221));
+        patientReception22.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientReception22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientReception22.setText("....");
+        patientReception22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientReception22.setFocusable(false);
+        patientReception22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientReception22.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientReception22.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientReception22.setOpaque(true);
+        patientReception22.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        receptionExtWall.setBackground(new java.awt.Color(153, 153, 153));
+        receptionExtWall.setFocusable(false);
+        receptionExtWall.setMaximumSize(new java.awt.Dimension(920, 20));
+        receptionExtWall.setMinimumSize(new java.awt.Dimension(920, 20));
+        receptionExtWall.setOpaque(true);
+        receptionExtWall.setPreferredSize(new java.awt.Dimension(920, 20));
+
+        receptionIntWall.setBackground(new java.awt.Color(202, 209, 219));
+        receptionIntWall.setFont(new java.awt.Font("Linux Biolinum G", 0, 10)); // NOI18N
+        receptionIntWall.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        receptionIntWall.setText("R E C E P T I O N");
+        receptionIntWall.setFocusable(false);
+        receptionIntWall.setMaximumSize(new java.awt.Dimension(920, 20));
+        receptionIntWall.setMinimumSize(new java.awt.Dimension(920, 20));
+        receptionIntWall.setOpaque(true);
+        receptionIntWall.setPreferredSize(new java.awt.Dimension(920, 20));
+
+        patientImageReception1.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
         );
-        BackgroundPanelLayout.setVerticalGroup(
-            BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BackgroundPanelLayout.createSequentialGroup()
+        patientImageReception1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception1.setFocusable(false);
+        patientImageReception1.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception1.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception1.setOpaque(true);
+        patientImageReception1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception2.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception2.setFocusable(false);
+        patientImageReception2.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception2.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception2.setOpaque(true);
+        patientImageReception2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception3.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception3.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception3.setFocusable(false);
+        patientImageReception3.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception3.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception3.setOpaque(true);
+        patientImageReception3.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception4.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception4.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception4.setFocusable(false);
+        patientImageReception4.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception4.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception4.setOpaque(true);
+        patientImageReception4.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception5.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception5.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception5.setFocusable(false);
+        patientImageReception5.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception5.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception5.setOpaque(true);
+        patientImageReception5.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception6.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception6.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception6.setFocusable(false);
+        patientImageReception6.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception6.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception6.setOpaque(true);
+        patientImageReception6.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception7.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception7.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception7.setFocusable(false);
+        patientImageReception7.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception7.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception7.setOpaque(true);
+        patientImageReception7.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception8.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception8.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception8.setFocusable(false);
+        patientImageReception8.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception8.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception8.setOpaque(true);
+        patientImageReception8.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception9.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception9.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception9.setFocusable(false);
+        patientImageReception9.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception9.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception9.setOpaque(true);
+        patientImageReception9.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception10.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception10.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception10.setFocusable(false);
+        patientImageReception10.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception10.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception10.setOpaque(true);
+        patientImageReception10.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception11.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception11.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception11.setFocusable(false);
+        patientImageReception11.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception11.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception11.setOpaque(true);
+        patientImageReception11.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception12.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception12.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception12.setFocusable(false);
+        patientImageReception12.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception12.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception12.setOpaque(true);
+        patientImageReception12.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception13.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception13.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception13.setFocusable(false);
+        patientImageReception13.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception13.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception13.setOpaque(true);
+        patientImageReception13.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception14.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception14.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception14.setFocusable(false);
+        patientImageReception14.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception14.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception14.setOpaque(true);
+        patientImageReception14.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception15.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception15.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception15.setFocusable(false);
+        patientImageReception15.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception15.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception15.setOpaque(true);
+        patientImageReception15.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        receptionCounter.setBackground(new java.awt.Color(153, 153, 255));
+        receptionCounter.setIcon(generateImage(".\\src\\main\\java\\IconImages\\receptionboothopen.png", 40, 80)
+        );
+        receptionCounter.setFocusable(false);
+        receptionCounter.setMaximumSize(new java.awt.Dimension(40, 80));
+        receptionCounter.setMinimumSize(new java.awt.Dimension(40, 80));
+        receptionCounter.setOpaque(true);
+        receptionCounter.setPreferredSize(new java.awt.Dimension(40, 80));
+        receptionCounter.setRequestFocusEnabled(false);
+
+        patientChecked.setBackground(new java.awt.Color(250, 234, 221));
+        patientChecked.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientChecked.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientChecked.setText("0000");
+        patientChecked.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientChecked.setFocusable(false);
+        patientChecked.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientChecked.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientChecked.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientChecked.setOpaque(true);
+        patientChecked.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientImageReception16.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception16.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception16.setFocusable(false);
+        patientImageReception16.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception16.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception16.setOpaque(true);
+        patientImageReception16.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception17.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception17.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception17.setFocusable(false);
+        patientImageReception17.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception17.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception17.setOpaque(true);
+        patientImageReception17.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception18.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception18.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception18.setFocusable(false);
+        patientImageReception18.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception18.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception18.setOpaque(true);
+        patientImageReception18.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception19.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception19.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception19.setFocusable(false);
+        patientImageReception19.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception19.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception19.setOpaque(true);
+        patientImageReception19.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception20.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception20.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception20.setFocusable(false);
+        patientImageReception20.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception20.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception20.setOpaque(true);
+        patientImageReception20.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception21.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception21.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception21.setFocusable(false);
+        patientImageReception21.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception21.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception21.setOpaque(true);
+        patientImageReception21.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception22.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception22.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception22.setFocusable(false);
+        patientImageReception22.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception22.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception22.setOpaque(true);
+        patientImageReception22.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageReception35.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageReception35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageReception35.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageReception35.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageReception35.setFocusable(false);
+        patientImageReception35.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageReception35.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageReception35.setOpaque(true);
+        patientImageReception35.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        javax.swing.GroupLayout receptionRoomLayout = new javax.swing.GroupLayout(receptionRoom);
+        receptionRoom.setLayout(receptionRoomLayout);
+        receptionRoomLayout.setHorizontalGroup(
+            receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(receptionRoomLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(patientImageReception4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientReception4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(patientReception3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientImageReception3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(patientReception2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientImageReception2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(patientReception1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientImageReception1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(patientImageReception35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientChecked, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(receptionCounter, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(receptionIntWall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(receptionExtWall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        receptionRoomLayout.setVerticalGroup(
+            receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(receptionRoomLayout.createSequentialGroup()
+                .addComponent(receptionIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(receptionCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(receptionRoomLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                        .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(receptionRoomLayout.createSequentialGroup()
+                                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageReception2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, 0)
+                                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(patientReception3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(patientImageReception3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(receptionRoomLayout.createSequentialGroup()
+                                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageReception4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, 0)
+                                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(patientReception4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(receptionRoomLayout.createSequentialGroup()
+                                .addComponent(patientImageReception35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
+                                .addComponent(patientChecked, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(receptionRoomLayout.createSequentialGroup()
+                                .addComponent(patientImageReception14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
+                                .addComponent(patientReception14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(receptionRoomLayout.createSequentialGroup()
+                                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageReception15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageReception13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, 0)
+                                .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(patientReception11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientReception15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(receptionRoomLayout.createSequentialGroup()
+                                    .addComponent(patientImageReception16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(patientReception16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(receptionRoomLayout.createSequentialGroup()
+                                    .addComponent(patientImageReception17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(0, 0, 0)
+                                    .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(patientReception17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientReception18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientReception19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientReception20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientReception21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientReception22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(patientImageReception18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageReception19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageReception20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageReception21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageReception22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(21, 21, 21)))
+                .addComponent(receptionExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        observationRoom.setBackground(new java.awt.Color(224, 227, 231));
+        observationRoom.setFocusable(false);
+        observationRoom.setMaximumSize(new java.awt.Dimension(474, 372));
+        observationRoom.setMinimumSize(new java.awt.Dimension(474, 372));
+        observationRoom.setPreferredSize(new java.awt.Dimension(474, 372));
+
+        patientObservation1.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation1.setText("0000");
+        patientObservation1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation1.setFocusable(false);
+        patientObservation1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation1.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation1.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation1.setOpaque(true);
+        patientObservation1.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation2.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation2.setText("0000");
+        patientObservation2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation2.setFocusable(false);
+        patientObservation2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation2.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation2.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation2.setOpaque(true);
+        patientObservation2.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation3.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation3.setText("0000");
+        patientObservation3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation3.setFocusable(false);
+        patientObservation3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation3.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation3.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation3.setOpaque(true);
+        patientObservation3.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation4.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation4.setText("0000");
+        patientObservation4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation4.setFocusable(false);
+        patientObservation4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation4.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation4.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation4.setOpaque(true);
+        patientObservation4.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation5.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation5.setText("0000");
+        patientObservation5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation5.setFocusable(false);
+        patientObservation5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation5.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation5.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation5.setOpaque(true);
+        patientObservation5.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation6.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation6.setText("0000");
+        patientObservation6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation6.setFocusable(false);
+        patientObservation6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation6.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation6.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation6.setOpaque(true);
+        patientObservation6.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation7.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation7.setText("0000");
+        patientObservation7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation7.setFocusable(false);
+        patientObservation7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation7.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation7.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation7.setOpaque(true);
+        patientObservation7.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation8.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation8.setText("0000");
+        patientObservation8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation8.setFocusable(false);
+        patientObservation8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation8.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation8.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation8.setOpaque(true);
+        patientObservation8.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation9.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation9.setText("0000");
+        patientObservation9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation9.setFocusable(false);
+        patientObservation9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation9.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation9.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation9.setOpaque(true);
+        patientObservation9.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation10.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation10.setText("0000");
+        patientObservation10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation10.setFocusable(false);
+        patientObservation10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation10.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation10.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation10.setOpaque(true);
+        patientObservation10.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation1.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation1.setText("00");
+        healthcareObservation1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation1.setFocusable(false);
+        healthcareObservation1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation1.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation1.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation1.setOpaque(true);
+        healthcareObservation1.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation2.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation2.setText("00");
+        healthcareObservation2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation2.setFocusable(false);
+        healthcareObservation2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation2.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation2.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation2.setOpaque(true);
+        healthcareObservation2.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation3.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation3.setText("00");
+        healthcareObservation3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation3.setFocusable(false);
+        healthcareObservation3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation3.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation3.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation3.setOpaque(true);
+        healthcareObservation3.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation4.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation4.setText("00");
+        healthcareObservation4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation4.setFocusable(false);
+        healthcareObservation4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation4.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation4.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation4.setOpaque(true);
+        healthcareObservation4.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation5.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation5.setText("00");
+        healthcareObservation5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation5.setFocusable(false);
+        healthcareObservation5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation5.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation5.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation5.setOpaque(true);
+        healthcareObservation5.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation6.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation6.setText("00");
+        healthcareObservation6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation6.setFocusable(false);
+        healthcareObservation6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation6.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation6.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation6.setOpaque(true);
+        healthcareObservation6.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation7.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation7.setText("00");
+        healthcareObservation7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation7.setFocusable(false);
+        healthcareObservation7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation7.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation7.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation7.setOpaque(true);
+        healthcareObservation7.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation8.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation8.setText("00");
+        healthcareObservation8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation8.setFocusable(false);
+        healthcareObservation8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation8.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation8.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation8.setOpaque(true);
+        healthcareObservation8.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation9.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation9.setText("00");
+        healthcareObservation9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation9.setFocusable(false);
+        healthcareObservation9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation9.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation9.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation9.setOpaque(true);
+        healthcareObservation9.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation10.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation10.setText("00");
+        healthcareObservation10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation10.setFocusable(false);
+        healthcareObservation10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation10.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation10.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation10.setOpaque(true);
+        healthcareObservation10.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation11.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation11.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation11.setText("00");
+        healthcareObservation11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation11.setFocusable(false);
+        healthcareObservation11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation11.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation11.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation11.setOpaque(true);
+        healthcareObservation11.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation12.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation12.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation12.setText("00");
+        healthcareObservation12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation12.setFocusable(false);
+        healthcareObservation12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation12.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation12.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation12.setOpaque(true);
+        healthcareObservation12.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation13.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation13.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation13.setText("00");
+        healthcareObservation13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation13.setFocusable(false);
+        healthcareObservation13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation13.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation13.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation13.setOpaque(true);
+        healthcareObservation13.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation14.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation14.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation14.setText("00");
+        healthcareObservation14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation14.setFocusable(false);
+        healthcareObservation14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation14.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation14.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation14.setOpaque(true);
+        healthcareObservation14.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation15.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation15.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation15.setText("00");
+        healthcareObservation15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation15.setFocusable(false);
+        healthcareObservation15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation15.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation15.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation15.setOpaque(true);
+        healthcareObservation15.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation16.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation16.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation16.setText("00");
+        healthcareObservation16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation16.setFocusable(false);
+        healthcareObservation16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation16.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation16.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation16.setOpaque(true);
+        healthcareObservation16.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation17.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation17.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation17.setText("00");
+        healthcareObservation17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation17.setFocusable(false);
+        healthcareObservation17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation17.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation17.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation17.setOpaque(true);
+        healthcareObservation17.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation18.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation18.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation18.setText("00");
+        healthcareObservation18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation18.setFocusable(false);
+        healthcareObservation18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation18.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation18.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation18.setOpaque(true);
+        healthcareObservation18.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation19.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation19.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation19.setText("00");
+        healthcareObservation19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation19.setFocusable(false);
+        healthcareObservation19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation19.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation19.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation19.setOpaque(true);
+        healthcareObservation19.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareObservation20.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareObservation20.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareObservation20.setText("00");
+        healthcareObservation20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareObservation20.setFocusable(false);
+        healthcareObservation20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareObservation20.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation20.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareObservation20.setOpaque(true);
+        healthcareObservation20.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation11.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation11.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation11.setText("0000");
+        patientObservation11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation11.setFocusable(false);
+        patientObservation11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation11.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation11.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation11.setOpaque(true);
+        patientObservation11.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation12.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation12.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation12.setText("0000");
+        patientObservation12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation12.setFocusable(false);
+        patientObservation12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation12.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation12.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation12.setOpaque(true);
+        patientObservation12.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation13.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation13.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation13.setText("0000");
+        patientObservation13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation13.setFocusable(false);
+        patientObservation13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation13.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation13.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation13.setOpaque(true);
+        patientObservation13.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation14.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation14.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation14.setText("0000");
+        patientObservation14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation14.setFocusable(false);
+        patientObservation14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation14.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation14.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation14.setOpaque(true);
+        patientObservation14.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation15.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation15.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation15.setText("0000");
+        patientObservation15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation15.setFocusable(false);
+        patientObservation15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation15.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation15.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation15.setOpaque(true);
+        patientObservation15.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation16.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation16.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation16.setText("0000");
+        patientObservation16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation16.setFocusable(false);
+        patientObservation16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation16.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation16.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation16.setOpaque(true);
+        patientObservation16.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation17.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation17.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation17.setText("0000");
+        patientObservation17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation17.setFocusable(false);
+        patientObservation17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation17.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation17.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation17.setOpaque(true);
+        patientObservation17.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation18.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation18.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation18.setText("0000");
+        patientObservation18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation18.setFocusable(false);
+        patientObservation18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation18.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation18.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation18.setOpaque(true);
+        patientObservation18.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation19.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation19.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation19.setText("0000");
+        patientObservation19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation19.setFocusable(false);
+        patientObservation19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation19.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation19.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation19.setOpaque(true);
+        patientObservation19.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientObservation20.setBackground(new java.awt.Color(250, 234, 221));
+        patientObservation20.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientObservation20.setText("0000");
+        patientObservation20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientObservation20.setFocusable(false);
+        patientObservation20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientObservation20.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientObservation20.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientObservation20.setOpaque(true);
+        patientObservation20.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        observationIntWall.setBackground(new java.awt.Color(202, 209, 219));
+        observationIntWall.setFont(new java.awt.Font("Linux Biolinum G", 0, 10)); // NOI18N
+        observationIntWall.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        observationIntWall.setText("O B S E R V A T I O N      R O O M");
+        observationIntWall.setFocusable(false);
+        observationIntWall.setMaximumSize(new java.awt.Dimension(474, 20));
+        observationIntWall.setMinimumSize(new java.awt.Dimension(474, 20));
+        observationIntWall.setOpaque(true);
+        observationIntWall.setPreferredSize(new java.awt.Dimension(474, 20));
+
+        observationExtWall.setBackground(new java.awt.Color(153, 153, 153));
+        observationExtWall.setFocusable(false);
+        observationExtWall.setMaximumSize(new java.awt.Dimension(474, 20));
+        observationExtWall.setMinimumSize(new java.awt.Dimension(474, 20));
+        observationExtWall.setOpaque(true);
+        observationExtWall.setPreferredSize(new java.awt.Dimension(474, 20));
+
+        patientImageObservation1.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation1.setFocusable(false);
+        patientImageObservation1.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation1.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation1.setOpaque(true);
+        patientImageObservation1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation2.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation2.setFocusable(false);
+        patientImageObservation2.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation2.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation2.setOpaque(true);
+        patientImageObservation2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation1.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation1.setFocusable(false);
+        healthcareImageObservation1.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation1.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation1.setOpaque(true);
+        healthcareImageObservation1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation2.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation2.setFocusable(false);
+        healthcareImageObservation2.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation2.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation2.setOpaque(true);
+        healthcareImageObservation2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation3.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation3.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation3.setFocusable(false);
+        healthcareImageObservation3.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation3.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation3.setOpaque(true);
+        healthcareImageObservation3.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation4.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation4.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation4.setFocusable(false);
+        healthcareImageObservation4.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation4.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation4.setOpaque(true);
+        healthcareImageObservation4.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation5.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation5.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation5.setFocusable(false);
+        healthcareImageObservation5.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation5.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation5.setOpaque(true);
+        healthcareImageObservation5.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation6.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation6.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation6.setFocusable(false);
+        healthcareImageObservation6.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation6.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation6.setOpaque(true);
+        healthcareImageObservation6.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation7.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation7.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation7.setFocusable(false);
+        healthcareImageObservation7.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation7.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation7.setOpaque(true);
+        healthcareImageObservation7.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation8.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation8.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation8.setFocusable(false);
+        healthcareImageObservation8.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation8.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation8.setOpaque(true);
+        healthcareImageObservation8.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation9.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation9.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation9.setFocusable(false);
+        healthcareImageObservation9.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation9.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation9.setOpaque(true);
+        healthcareImageObservation9.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation10.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation10.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation10.setFocusable(false);
+        healthcareImageObservation10.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation10.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation10.setOpaque(true);
+        healthcareImageObservation10.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation11.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation11.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation11.setFocusable(false);
+        healthcareImageObservation11.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation11.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation11.setOpaque(true);
+        healthcareImageObservation11.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation12.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation12.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation12.setFocusable(false);
+        healthcareImageObservation12.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation12.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation12.setOpaque(true);
+        healthcareImageObservation12.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation13.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation13.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation13.setFocusable(false);
+        healthcareImageObservation13.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation13.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation13.setOpaque(true);
+        healthcareImageObservation13.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation14.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation14.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation14.setFocusable(false);
+        healthcareImageObservation14.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation14.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation14.setOpaque(true);
+        healthcareImageObservation14.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation15.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation15.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation15.setFocusable(false);
+        healthcareImageObservation15.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation15.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation15.setOpaque(true);
+        healthcareImageObservation15.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation16.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation16.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation16.setFocusable(false);
+        healthcareImageObservation16.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation16.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation16.setOpaque(true);
+        healthcareImageObservation16.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation17.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation17.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation17.setFocusable(false);
+        healthcareImageObservation17.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation17.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation17.setOpaque(true);
+        healthcareImageObservation17.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation18.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation18.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation18.setFocusable(false);
+        healthcareImageObservation18.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation18.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation18.setOpaque(true);
+        healthcareImageObservation18.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation19.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation19.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation19.setFocusable(false);
+        healthcareImageObservation19.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation19.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation19.setOpaque(true);
+        healthcareImageObservation19.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageObservation20.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageObservation20.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageObservation20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageObservation20.setFocusable(false);
+        healthcareImageObservation20.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation20.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageObservation20.setOpaque(true);
+        healthcareImageObservation20.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation3.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation3.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation3.setFocusable(false);
+        patientImageObservation3.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation3.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation3.setOpaque(true);
+        patientImageObservation3.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation4.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation4.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation4.setFocusable(false);
+        patientImageObservation4.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation4.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation4.setOpaque(true);
+        patientImageObservation4.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation5.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation5.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation5.setFocusable(false);
+        patientImageObservation5.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation5.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation5.setOpaque(true);
+        patientImageObservation5.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation6.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation6.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation6.setFocusable(false);
+        patientImageObservation6.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation6.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation6.setOpaque(true);
+        patientImageObservation6.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation7.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation7.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation7.setFocusable(false);
+        patientImageObservation7.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation7.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation7.setOpaque(true);
+        patientImageObservation7.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation8.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation8.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation8.setFocusable(false);
+        patientImageObservation8.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation8.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation8.setOpaque(true);
+        patientImageObservation8.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation9.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation9.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation9.setFocusable(false);
+        patientImageObservation9.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation9.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation9.setOpaque(true);
+        patientImageObservation9.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation10.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation10.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation10.setFocusable(false);
+        patientImageObservation10.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation10.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation10.setOpaque(true);
+        patientImageObservation10.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation11.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation11.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation11.setFocusable(false);
+        patientImageObservation11.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation11.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation11.setOpaque(true);
+        patientImageObservation11.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation12.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation12.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation12.setFocusable(false);
+        patientImageObservation12.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation12.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation12.setOpaque(true);
+        patientImageObservation12.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation13.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation13.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation13.setFocusable(false);
+        patientImageObservation13.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation13.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation13.setOpaque(true);
+        patientImageObservation13.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation14.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation14.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation14.setFocusable(false);
+        patientImageObservation14.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation14.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation14.setOpaque(true);
+        patientImageObservation14.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation15.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation15.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation15.setFocusable(false);
+        patientImageObservation15.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation15.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation15.setOpaque(true);
+        patientImageObservation15.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation16.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation16.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation16.setFocusable(false);
+        patientImageObservation16.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation16.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation16.setOpaque(true);
+        patientImageObservation16.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation17.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation17.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation17.setFocusable(false);
+        patientImageObservation17.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation17.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation17.setOpaque(true);
+        patientImageObservation17.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation18.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation18.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation18.setFocusable(false);
+        patientImageObservation18.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation18.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation18.setOpaque(true);
+        patientImageObservation18.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation19.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation19.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation19.setFocusable(false);
+        patientImageObservation19.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation19.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation19.setOpaque(true);
+        patientImageObservation19.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageObservation20.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageObservation20.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageObservation20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageObservation20.setFocusable(false);
+        patientImageObservation20.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation20.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageObservation20.setOpaque(true);
+        patientImageObservation20.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        javax.swing.GroupLayout observationRoomLayout = new javax.swing.GroupLayout(observationRoom);
+        observationRoom.setLayout(observationRoomLayout);
+        observationRoomLayout.setHorizontalGroup(
+            observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(observationRoomLayout.createSequentialGroup()
+                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(observationIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(observationRoomLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(patientObservation19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientImageObservation19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(healthcareObservation19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(healthcareImageObservation19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(patientImageObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientImageObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareImageObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientImageObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(patientImageObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                                .addComponent(healthcareImageObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(patientImageObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                                .addComponent(healthcareObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(patientObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(6, 6, 6)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(healthcareImageObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientImageObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareImageObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, observationRoomLayout.createSequentialGroup()
+                                            .addComponent(healthcareObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(patientObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(healthcareObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(observationRoomLayout.createSequentialGroup()
+                                            .addComponent(healthcareImageObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(patientImageObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(healthcareImageObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(observationRoomLayout.createSequentialGroup()
+                                            .addComponent(healthcareImageObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(patientImageObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(healthcareImageObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(observationRoomLayout.createSequentialGroup()
+                                            .addComponent(healthcareObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(patientObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(healthcareObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(healthcareObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(patientObservation20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageObservation20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(healthcareObservation20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientObservation18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageObservation18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(healthcareObservation18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientObservation16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, observationRoomLayout.createSequentialGroup()
+                                        .addComponent(healthcareImageObservation18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientImageObservation16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(healthcareImageObservation16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareObservation16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(18, 18, 18)
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientImageObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareImageObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientImageObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientImageObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareImageObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientImageObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createSequentialGroup()
+                                        .addComponent(patientObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(healthcareObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(patientObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(healthcareImageObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addComponent(patientObservation14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareObservation14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(patientObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addComponent(patientImageObservation14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareImageObservation14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(patientImageObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareImageObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addComponent(patientImageObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareImageObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(patientImageObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareImageObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(observationRoomLayout.createSequentialGroup()
+                .addComponent(observationExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        observationRoomLayout.setVerticalGroup(
+            observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(observationRoomLayout.createSequentialGroup()
+                .addComponent(observationIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(observationRoomLayout.createSequentialGroup()
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(healthcareImageObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, 0)
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(patientObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(patientImageObservation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(observationRoomLayout.createSequentialGroup()
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(healthcareImageObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(observationRoomLayout.createSequentialGroup()
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(patientObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareObservation4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareObservation6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientObservation10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(patientObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareObservation2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(healthcareImageObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientImageObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientImageObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientImageObservation19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientImageObservation17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareImageObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(patientImageObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(healthcareImageObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(healthcareImageObservation19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, 0)
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(healthcareObservation19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(patientImageObservation16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageObservation14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageObservation14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(healthcareImageObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(patientImageObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, 0)
+                        .addGroup(observationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(patientObservation20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareObservation12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
+                        .addComponent(observationExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(observationRoomLayout.createSequentialGroup()
+                        .addComponent(patientImageObservation8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+
+        restRoom.setBackground(new java.awt.Color(224, 227, 231));
+        restRoom.setFocusable(false);
+        restRoom.setMaximumSize(new java.awt.Dimension(150, 372));
+        restRoom.setMinimumSize(new java.awt.Dimension(150, 372));
+        restRoom.setPreferredSize(new java.awt.Dimension(150, 372));
+
+        healthcareRest1.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest1.setText("00");
+        healthcareRest1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest1.setFocusable(false);
+        healthcareRest1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest1.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest1.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest1.setOpaque(true);
+        healthcareRest1.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest1.setRequestFocusEnabled(false);
+
+        healthcareRest2.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest2.setText("00");
+        healthcareRest2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest2.setFocusable(false);
+        healthcareRest2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest2.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest2.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest2.setOpaque(true);
+        healthcareRest2.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest2.setRequestFocusEnabled(false);
+
+        healthcareRest3.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest3.setText("00");
+        healthcareRest3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest3.setFocusable(false);
+        healthcareRest3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest3.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest3.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest3.setOpaque(true);
+        healthcareRest3.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest3.setRequestFocusEnabled(false);
+
+        healthcareRest4.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest4.setText("00");
+        healthcareRest4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest4.setFocusable(false);
+        healthcareRest4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest4.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest4.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest4.setOpaque(true);
+        healthcareRest4.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest4.setRequestFocusEnabled(false);
+
+        healthcareRest5.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest5.setText("00");
+        healthcareRest5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest5.setFocusable(false);
+        healthcareRest5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest5.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest5.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest5.setOpaque(true);
+        healthcareRest5.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest5.setRequestFocusEnabled(false);
+
+        healthcareRest6.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest6.setText("00");
+        healthcareRest6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest6.setFocusable(false);
+        healthcareRest6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest6.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest6.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest6.setOpaque(true);
+        healthcareRest6.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest6.setRequestFocusEnabled(false);
+
+        healthcareRest7.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest7.setText("00");
+        healthcareRest7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest7.setFocusable(false);
+        healthcareRest7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest7.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest7.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest7.setOpaque(true);
+        healthcareRest7.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest7.setRequestFocusEnabled(false);
+
+        healthcareRest8.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest8.setText("00");
+        healthcareRest8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest8.setFocusable(false);
+        healthcareRest8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest8.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest8.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest8.setOpaque(true);
+        healthcareRest8.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest8.setRequestFocusEnabled(false);
+
+        healthcareRest9.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest9.setText("00");
+        healthcareRest9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest9.setFocusable(false);
+        healthcareRest9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest9.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest9.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest9.setOpaque(true);
+        healthcareRest9.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest9.setRequestFocusEnabled(false);
+
+        healthcareRest10.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareRest10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareRest10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareRest10.setText("00");
+        healthcareRest10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareRest10.setFocusable(false);
+        healthcareRest10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareRest10.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareRest10.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareRest10.setOpaque(true);
+        healthcareRest10.setPreferredSize(new java.awt.Dimension(30, 20));
+        healthcareRest10.setRequestFocusEnabled(false);
+
+        restIntWall.setBackground(new java.awt.Color(202, 209, 219));
+        restIntWall.setFont(new java.awt.Font("Linux Biolinum G", 0, 10)); // NOI18N
+        restIntWall.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        restIntWall.setText("L O C K E R      R O O M");
+        restIntWall.setFocusable(false);
+        restIntWall.setMaximumSize(new java.awt.Dimension(150, 20));
+        restIntWall.setMinimumSize(new java.awt.Dimension(150, 20));
+        restIntWall.setOpaque(true);
+        restIntWall.setPreferredSize(new java.awt.Dimension(150, 20));
+
+        restExtWall.setBackground(new java.awt.Color(153, 153, 153));
+        restExtWall.setFocusable(false);
+        restExtWall.setMaximumSize(new java.awt.Dimension(150, 20));
+        restExtWall.setMinimumSize(new java.awt.Dimension(150, 20));
+        restExtWall.setOpaque(true);
+        restExtWall.setPreferredSize(new java.awt.Dimension(150, 20));
+
+        auxiliarRest1.setBackground(new java.awt.Color(208, 211, 222));
+        auxiliarRest1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        auxiliarRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliarRest1.setText("00");
+        auxiliarRest1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(68, 84, 106), 2, true));
+        auxiliarRest1.setFocusable(false);
+        auxiliarRest1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        auxiliarRest1.setMaximumSize(new java.awt.Dimension(30, 20));
+        auxiliarRest1.setMinimumSize(new java.awt.Dimension(30, 20));
+        auxiliarRest1.setOpaque(true);
+        auxiliarRest1.setPreferredSize(new java.awt.Dimension(30, 20));
+        auxiliarRest1.setRequestFocusEnabled(false);
+
+        auxiliarRest2.setBackground(new java.awt.Color(208, 211, 222));
+        auxiliarRest2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        auxiliarRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliarRest2.setText("00");
+        auxiliarRest2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(68, 84, 106), 2, true));
+        auxiliarRest2.setFocusable(false);
+        auxiliarRest2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        auxiliarRest2.setMaximumSize(new java.awt.Dimension(30, 20));
+        auxiliarRest2.setMinimumSize(new java.awt.Dimension(30, 20));
+        auxiliarRest2.setOpaque(true);
+        auxiliarRest2.setPreferredSize(new java.awt.Dimension(30, 20));
+        auxiliarRest2.setRequestFocusEnabled(false);
+
+        healthcareImageRest1.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest1.setFocusable(false);
+        healthcareImageRest1.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest1.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest1.setOpaque(true);
+        healthcareImageRest1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest2.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest2.setFocusable(false);
+        healthcareImageRest2.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest2.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest2.setOpaque(true);
+        healthcareImageRest2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest3.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest3.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest3.setFocusable(false);
+        healthcareImageRest3.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest3.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest3.setOpaque(true);
+        healthcareImageRest3.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest4.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest4.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest4.setFocusable(false);
+        healthcareImageRest4.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest4.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest4.setOpaque(true);
+        healthcareImageRest4.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest5.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest5.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest5.setFocusable(false);
+        healthcareImageRest5.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest5.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest5.setOpaque(true);
+        healthcareImageRest5.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest6.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest6.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest6.setFocusable(false);
+        healthcareImageRest6.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest6.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest6.setOpaque(true);
+        healthcareImageRest6.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest7.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest7.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest7.setFocusable(false);
+        healthcareImageRest7.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest7.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest7.setOpaque(true);
+        healthcareImageRest7.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest8.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest8.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest8.setFocusable(false);
+        healthcareImageRest8.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest8.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest8.setOpaque(true);
+        healthcareImageRest8.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest9.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest9.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest9.setFocusable(false);
+        healthcareImageRest9.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest9.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest9.setOpaque(true);
+        healthcareImageRest9.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageRest10.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageRest10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageRest10.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageRest10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageRest10.setFocusable(false);
+        healthcareImageRest10.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest10.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageRest10.setOpaque(true);
+        healthcareImageRest10.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        auxiliarImageRest1.setBackground(new java.awt.Color(208, 211, 222));
+        auxiliarImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliarImageRest1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\auxiliarworker.png",25, 25)
+        );
+        auxiliarImageRest1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(68, 84, 106), 2, true));
+        auxiliarImageRest1.setFocusable(false);
+        auxiliarImageRest1.setMaximumSize(new java.awt.Dimension(30, 30));
+        auxiliarImageRest1.setMinimumSize(new java.awt.Dimension(30, 30));
+        auxiliarImageRest1.setOpaque(true);
+        auxiliarImageRest1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        auxiliarImageRest2.setBackground(new java.awt.Color(208, 211, 222));
+        auxiliarImageRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliarImageRest2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\auxiliarworker.png",25, 25)
+        );
+        auxiliarImageRest2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(68, 84, 106), 2, true));
+        auxiliarImageRest2.setFocusable(false);
+        auxiliarImageRest2.setMaximumSize(new java.awt.Dimension(30, 30));
+        auxiliarImageRest2.setMinimumSize(new java.awt.Dimension(30, 30));
+        auxiliarImageRest2.setOpaque(true);
+        auxiliarImageRest2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        javax.swing.GroupLayout restRoomLayout = new javax.swing.GroupLayout(restRoom);
+        restRoom.setLayout(restRoomLayout);
+        restRoomLayout.setHorizontalGroup(
+            restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(restRoomLayout.createSequentialGroup()
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(restIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(restExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(restRoomLayout.createSequentialGroup()
+                                .addComponent(healthcareImageRest9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareImageRest10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(restRoomLayout.createSequentialGroup()
+                                .addComponent(healthcareRest10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(healthcareRest9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(restRoomLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(auxiliarRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(auxiliarImageRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareImageRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(healthcareImageRest3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareImageRest4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareImageRest5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(healthcareRest3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareRest4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareRest5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(healthcareImageRest6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareImageRest7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareImageRest8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(healthcareRest6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(healthcareRest7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(auxiliarImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareRest8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(auxiliarRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(24, 24, 24))
+        );
+        restRoomLayout.setVerticalGroup(
+            restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(restRoomLayout.createSequentialGroup()
+                .addComponent(restIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addGroup(BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(auxiliarImageRest1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(auxiliarRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(healthcareImageRest3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(healthcareRest3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareRest4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareRest5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(healthcareImageRest6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(healthcareRest6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareRest7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareRest8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(auxiliarImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(healthcareImageRest10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(restRoomLayout.createSequentialGroup()
+                        .addComponent(healthcareImageRest9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(healthcareRest10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(auxiliarRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareRest9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(30, 30, 30)
+                .addComponent(restExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        vaccinationRoom.setBackground(new java.awt.Color(224, 227, 231));
+        vaccinationRoom.setFocusable(false);
+        vaccinationRoom.setMaximumSize(new java.awt.Dimension(284, 372));
+        vaccinationRoom.setMinimumSize(new java.awt.Dimension(284, 372));
+        vaccinationRoom.setPreferredSize(new java.awt.Dimension(284, 372));
+
+        patientVaccination1.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination1.setText("0000");
+        patientVaccination1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination1.setFocusable(false);
+        patientVaccination1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination1.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination1.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination1.setOpaque(true);
+        patientVaccination1.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination2.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination2.setText("0000");
+        patientVaccination2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination2.setFocusable(false);
+        patientVaccination2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination2.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination2.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination2.setOpaque(true);
+        patientVaccination2.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination3.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination3.setText("0000");
+        patientVaccination3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination3.setFocusable(false);
+        patientVaccination3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination3.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination3.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination3.setOpaque(true);
+        patientVaccination3.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination4.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination4.setText("0000");
+        patientVaccination4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination4.setFocusable(false);
+        patientVaccination4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination4.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination4.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination4.setOpaque(true);
+        patientVaccination4.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination5.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination5.setText("0000");
+        patientVaccination5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination5.setFocusable(false);
+        patientVaccination5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination5.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination5.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination5.setOpaque(true);
+        patientVaccination5.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination6.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination6.setText("0000");
+        patientVaccination6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination6.setFocusable(false);
+        patientVaccination6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination6.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination6.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination6.setOpaque(true);
+        patientVaccination6.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination7.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination7.setText("0000");
+        patientVaccination7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination7.setFocusable(false);
+        patientVaccination7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination7.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination7.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination7.setOpaque(true);
+        patientVaccination7.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination8.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination8.setText("0000");
+        patientVaccination8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination8.setFocusable(false);
+        patientVaccination8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination8.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination8.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination8.setOpaque(true);
+        patientVaccination8.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination9.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination9.setText("0000");
+        patientVaccination9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination9.setFocusable(false);
+        patientVaccination9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination9.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination9.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination9.setOpaque(true);
+        patientVaccination9.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        patientVaccination10.setBackground(new java.awt.Color(250, 234, 221));
+        patientVaccination10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        patientVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientVaccination10.setText("0000");
+        patientVaccination10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientVaccination10.setFocusable(false);
+        patientVaccination10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        patientVaccination10.setMaximumSize(new java.awt.Dimension(30, 20));
+        patientVaccination10.setMinimumSize(new java.awt.Dimension(30, 20));
+        patientVaccination10.setOpaque(true);
+        patientVaccination10.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination1.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination1.setText("00");
+        healthcareVaccination1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination1.setFocusable(false);
+        healthcareVaccination1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination1.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination1.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination1.setOpaque(true);
+        healthcareVaccination1.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination2.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination2.setText("00");
+        healthcareVaccination2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination2.setFocusable(false);
+        healthcareVaccination2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination2.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination2.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination2.setOpaque(true);
+        healthcareVaccination2.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination3.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination3.setText("00");
+        healthcareVaccination3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination3.setFocusable(false);
+        healthcareVaccination3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination3.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination3.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination3.setOpaque(true);
+        healthcareVaccination3.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination4.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination4.setText("00");
+        healthcareVaccination4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination4.setFocusable(false);
+        healthcareVaccination4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination4.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination4.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination4.setOpaque(true);
+        healthcareVaccination4.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination5.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination5.setText("00");
+        healthcareVaccination5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination5.setFocusable(false);
+        healthcareVaccination5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination5.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination5.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination5.setOpaque(true);
+        healthcareVaccination5.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination6.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination6.setText("00");
+        healthcareVaccination6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination6.setFocusable(false);
+        healthcareVaccination6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination6.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination6.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination6.setOpaque(true);
+        healthcareVaccination6.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination7.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination7.setText("00");
+        healthcareVaccination7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination7.setFocusable(false);
+        healthcareVaccination7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination7.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination7.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination7.setOpaque(true);
+        healthcareVaccination7.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination8.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination8.setText("00");
+        healthcareVaccination8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination8.setFocusable(false);
+        healthcareVaccination8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination8.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination8.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination8.setOpaque(true);
+        healthcareVaccination8.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination9.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination9.setText("00");
+        healthcareVaccination9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination9.setFocusable(false);
+        healthcareVaccination9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination9.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination9.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination9.setOpaque(true);
+        healthcareVaccination9.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        healthcareVaccination10.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareVaccination10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        healthcareVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination10.setText("00");
+        healthcareVaccination10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareVaccination10.setFocusable(false);
+        healthcareVaccination10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        healthcareVaccination10.setMaximumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination10.setMinimumSize(new java.awt.Dimension(30, 20));
+        healthcareVaccination10.setOpaque(true);
+        healthcareVaccination10.setPreferredSize(new java.awt.Dimension(30, 20));
+
+        vaccinationIntWall.setBackground(new java.awt.Color(202, 209, 219));
+        vaccinationIntWall.setFont(new java.awt.Font("Linux Biolinum G", 0, 10)); // NOI18N
+        vaccinationIntWall.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        vaccinationIntWall.setText("V A C C I N A T I O N      R O O M");
+        vaccinationIntWall.setFocusable(false);
+        vaccinationIntWall.setMaximumSize(new java.awt.Dimension(284, 20));
+        vaccinationIntWall.setMinimumSize(new java.awt.Dimension(284, 20));
+        vaccinationIntWall.setOpaque(true);
+        vaccinationIntWall.setPreferredSize(new java.awt.Dimension(284, 20));
+
+        vaccinationExtWall.setBackground(new java.awt.Color(153, 153, 153));
+        vaccinationExtWall.setFocusable(false);
+        vaccinationExtWall.setMaximumSize(new java.awt.Dimension(284, 20));
+        vaccinationExtWall.setMinimumSize(new java.awt.Dimension(284, 20));
+        vaccinationExtWall.setOpaque(true);
+        vaccinationExtWall.setPreferredSize(new java.awt.Dimension(284, 20));
+
+        healthcareImageVaccination1.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination1.setFocusable(false);
+        healthcareImageVaccination1.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination1.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination1.setOpaque(true);
+        healthcareImageVaccination1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination2.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination2.setFocusable(false);
+        healthcareImageVaccination2.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination2.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination2.setOpaque(true);
+        healthcareImageVaccination2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination3.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination3.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination3.setFocusable(false);
+        healthcareImageVaccination3.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination3.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination3.setOpaque(true);
+        healthcareImageVaccination3.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination4.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination4.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination4.setFocusable(false);
+        healthcareImageVaccination4.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination4.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination4.setOpaque(true);
+        healthcareImageVaccination4.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination5.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination5.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination5.setFocusable(false);
+        healthcareImageVaccination5.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination5.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination5.setOpaque(true);
+        healthcareImageVaccination5.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination6.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination6.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination6.setFocusable(false);
+        healthcareImageVaccination6.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination6.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination6.setOpaque(true);
+        healthcareImageVaccination6.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination7.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination7.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination7.setFocusable(false);
+        healthcareImageVaccination7.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination7.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination7.setOpaque(true);
+        healthcareImageVaccination7.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination8.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination8.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination8.setFocusable(false);
+        healthcareImageVaccination8.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination8.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination8.setOpaque(true);
+        healthcareImageVaccination8.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination9.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination9.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination9.setFocusable(false);
+        healthcareImageVaccination9.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination9.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination9.setOpaque(true);
+        healthcareImageVaccination9.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        healthcareImageVaccination10.setBackground(new java.awt.Color(239, 214, 218));
+        healthcareImageVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        healthcareImageVaccination10.setIcon(generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png",25, 25)
+        );
+        healthcareImageVaccination10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(165, 63, 82), 2, true));
+        healthcareImageVaccination10.setFocusable(false);
+        healthcareImageVaccination10.setMaximumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination10.setMinimumSize(new java.awt.Dimension(30, 30));
+        healthcareImageVaccination10.setOpaque(true);
+        healthcareImageVaccination10.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination1.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination1.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination1.setFocusable(false);
+        patientImageVaccination1.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination1.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination1.setOpaque(true);
+        patientImageVaccination1.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination2.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination2.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination2.setFocusable(false);
+        patientImageVaccination2.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination2.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination2.setOpaque(true);
+        patientImageVaccination2.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination3.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination3.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination3.setFocusable(false);
+        patientImageVaccination3.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination3.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination3.setOpaque(true);
+        patientImageVaccination3.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination4.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination4.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination4.setFocusable(false);
+        patientImageVaccination4.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination4.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination4.setOpaque(true);
+        patientImageVaccination4.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination5.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination5.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination5.setFocusable(false);
+        patientImageVaccination5.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination5.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination5.setOpaque(true);
+        patientImageVaccination5.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination6.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination6.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination6.setFocusable(false);
+        patientImageVaccination6.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination6.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination6.setOpaque(true);
+        patientImageVaccination6.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination7.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination7.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination7.setFocusable(false);
+        patientImageVaccination7.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination7.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination7.setOpaque(true);
+        patientImageVaccination7.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination8.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination8.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination8.setFocusable(false);
+        patientImageVaccination8.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination8.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination8.setOpaque(true);
+        patientImageVaccination8.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination9.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination9.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination9.setFocusable(false);
+        patientImageVaccination9.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination9.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination9.setOpaque(true);
+        patientImageVaccination9.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        patientImageVaccination10.setBackground(new java.awt.Color(250, 234, 221));
+        patientImageVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientImageVaccination10.setIcon(generateImage(".\\src\\main\\java\\IconImages\\patient.png",25, 25)
+        );
+        patientImageVaccination10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(233, 151, 87), 2, true));
+        patientImageVaccination10.setFocusable(false);
+        patientImageVaccination10.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination10.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientImageVaccination10.setOpaque(true);
+        patientImageVaccination10.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        vaccinesContainer.setBackground(new java.awt.Color(153, 153, 255));
+        vaccinesContainer.setIcon(generateImage(".\\src\\main\\java\\IconImages\\vaccinecontainer3.png", 60, 50)
+        );
+        vaccinesContainer.setFocusable(false);
+        vaccinesContainer.setMaximumSize(new java.awt.Dimension(60, 50));
+        vaccinesContainer.setMinimumSize(new java.awt.Dimension(60, 50));
+        vaccinesContainer.setOpaque(true);
+        vaccinesContainer.setPreferredSize(new java.awt.Dimension(60, 50));
+        vaccinesContainer.setRequestFocusEnabled(false);
+
+        vaccinesContainer1.setBackground(new java.awt.Color(0, 0, 0));
+        vaccinesContainer1.setFont(new java.awt.Font("Consolas", 1, 10)); // NOI18N
+        vaccinesContainer1.setForeground(new java.awt.Color(255, 0, 51));
+        vaccinesContainer1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        vaccinesContainer1.setText("<html><center>VAX LEFT<br>100</center></html>");
+        vaccinesContainer1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 5, true));
+        vaccinesContainer1.setFocusable(false);
+        vaccinesContainer1.setMaximumSize(new java.awt.Dimension(60, 50));
+        vaccinesContainer1.setMinimumSize(new java.awt.Dimension(60, 50));
+        vaccinesContainer1.setOpaque(true);
+        vaccinesContainer1.setPreferredSize(new java.awt.Dimension(60, 50));
+        vaccinesContainer1.setRequestFocusEnabled(false);
+
+        vaccinationCounter.setBackground(new java.awt.Color(153, 153, 255));
+        vaccinationCounter.setIcon(generateImage(".\\src\\main\\java\\IconImages\\vaccinationboothopen.png", 60, 100)
+        );
+        vaccinationCounter.setFocusable(false);
+        vaccinationCounter.setMaximumSize(new java.awt.Dimension(60, 100));
+        vaccinationCounter.setMinimumSize(new java.awt.Dimension(60, 100));
+        vaccinationCounter.setOpaque(true);
+        vaccinationCounter.setPreferredSize(new java.awt.Dimension(60, 100));
+        vaccinationCounter.setRequestFocusEnabled(false);
+
+        javax.swing.GroupLayout vaccinationRoomLayout = new javax.swing.GroupLayout(vaccinationRoom);
+        vaccinationRoom.setLayout(vaccinationRoomLayout);
+        vaccinationRoomLayout.setHorizontalGroup(
+            vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(patientVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(patientVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(patientImageVaccination6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(patientImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, vaccinationRoomLayout.createSequentialGroup()
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(healthcareImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageVaccination3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(healthcareImageVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientVaccination1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageVaccination1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(vaccinesContainer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(patientImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(healthcareImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(healthcareVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(patientVaccination9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientImageVaccination9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                .addComponent(patientVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(healthcareVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(healthcareImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(healthcareVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(35, 35, 35)))
+                                .addComponent(vaccinesContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(patientVaccination4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageVaccination5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientVaccination5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientImageVaccination4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientVaccination3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(healthcareVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(healthcareImageVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(10, 10, 10))
+            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(vaccinationExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vaccinationIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(vaccinationCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        vaccinationRoomLayout.setVerticalGroup(
+            vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                .addComponent(vaccinationIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(patientImageVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(healthcareImageVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(healthcareImageVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(patientImageVaccination6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(patientImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareImageVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, 0)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(healthcareVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientVaccination7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(healthcareImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, 0)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(patientVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(healthcareVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(healthcareImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientImageVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, 0)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(healthcareVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientVaccination4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(patientImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                .addComponent(healthcareImageVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, 0)
+                                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(healthcareVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(patientVaccination5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, vaccinationRoomLayout.createSequentialGroup()
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(healthcareVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(patientVaccination8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                .addComponent(patientImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, 0)
+                                                .addComponent(patientVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                    .addGap(30, 30, 30)
+                                                    .addComponent(healthcareVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(healthcareImageVaccination9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                .addComponent(patientImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(20, 20, 20))
+                                            .addComponent(patientVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                                .addComponent(healthcareImageVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, 0)
+                                                .addComponent(healthcareVaccination10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(patientVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareVaccination1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(healthcareVaccination6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(healthcareImageVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageVaccination2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, 0)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(healthcareVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientVaccination2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(healthcareImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patientImageVaccination3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(20, 20, 20)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                        .addComponent(vaccinesContainer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(vaccinesContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(61, 61, 61)))
+                .addComponent(vaccinationExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(vaccinationRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(vaccinationRoomLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(vaccinationCounter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout backgroundPanelLayout = new javax.swing.GroupLayout(backgroundPanel);
+        backgroundPanel.setLayout(backgroundPanelLayout);
+        backgroundPanelLayout.setHorizontalGroup(
+            backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundPanelLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(backgroundPanelLayout.createSequentialGroup()
+                        .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(203, 203, 203)
+                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(backgroundPanelLayout.createSequentialGroup()
+                        .addComponent(restRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(observationRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(vaccinationRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(receptionRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(80, 80, 80))
+        );
+        backgroundPanelLayout.setVerticalGroup(
+            backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundPanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(535, 535, 535))
+                .addGap(20, 20, 20)
+                .addComponent(receptionRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(restRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(observationRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(vaccinationRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 30, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -123,14 +3487,12 @@ public class Hospital extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(BackgroundPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(backgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(BackgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(backgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         setSize(new java.awt.Dimension(1014, 667));
@@ -149,8 +3511,214 @@ public class Hospital extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel BackgroundPanel;
+    private javax.swing.JLabel auxiliarImageRest1;
+    private javax.swing.JLabel auxiliarImageRest2;
+    private javax.swing.JLabel auxiliarRest1;
+    private javax.swing.JLabel auxiliarRest2;
     private javax.swing.JButton backButton;
+    private javax.swing.JPanel backgroundPanel;
+    private javax.swing.JLabel healthcareImageObservation1;
+    private javax.swing.JLabel healthcareImageObservation10;
+    private javax.swing.JLabel healthcareImageObservation11;
+    private javax.swing.JLabel healthcareImageObservation12;
+    private javax.swing.JLabel healthcareImageObservation13;
+    private javax.swing.JLabel healthcareImageObservation14;
+    private javax.swing.JLabel healthcareImageObservation15;
+    private javax.swing.JLabel healthcareImageObservation16;
+    private javax.swing.JLabel healthcareImageObservation17;
+    private javax.swing.JLabel healthcareImageObservation18;
+    private javax.swing.JLabel healthcareImageObservation19;
+    private javax.swing.JLabel healthcareImageObservation2;
+    private javax.swing.JLabel healthcareImageObservation20;
+    private javax.swing.JLabel healthcareImageObservation3;
+    private javax.swing.JLabel healthcareImageObservation4;
+    private javax.swing.JLabel healthcareImageObservation5;
+    private javax.swing.JLabel healthcareImageObservation6;
+    private javax.swing.JLabel healthcareImageObservation7;
+    private javax.swing.JLabel healthcareImageObservation8;
+    private javax.swing.JLabel healthcareImageObservation9;
+    private javax.swing.JLabel healthcareImageRest1;
+    private javax.swing.JLabel healthcareImageRest10;
+    private javax.swing.JLabel healthcareImageRest2;
+    private javax.swing.JLabel healthcareImageRest3;
+    private javax.swing.JLabel healthcareImageRest4;
+    private javax.swing.JLabel healthcareImageRest5;
+    private javax.swing.JLabel healthcareImageRest6;
+    private javax.swing.JLabel healthcareImageRest7;
+    private javax.swing.JLabel healthcareImageRest8;
+    private javax.swing.JLabel healthcareImageRest9;
+    private javax.swing.JLabel healthcareImageVaccination1;
+    private javax.swing.JLabel healthcareImageVaccination10;
+    private javax.swing.JLabel healthcareImageVaccination2;
+    private javax.swing.JLabel healthcareImageVaccination3;
+    private javax.swing.JLabel healthcareImageVaccination4;
+    private javax.swing.JLabel healthcareImageVaccination5;
+    private javax.swing.JLabel healthcareImageVaccination6;
+    private javax.swing.JLabel healthcareImageVaccination7;
+    private javax.swing.JLabel healthcareImageVaccination8;
+    private javax.swing.JLabel healthcareImageVaccination9;
+    private javax.swing.JLabel healthcareObservation1;
+    private javax.swing.JLabel healthcareObservation10;
+    private javax.swing.JLabel healthcareObservation11;
+    private javax.swing.JLabel healthcareObservation12;
+    private javax.swing.JLabel healthcareObservation13;
+    private javax.swing.JLabel healthcareObservation14;
+    private javax.swing.JLabel healthcareObservation15;
+    private javax.swing.JLabel healthcareObservation16;
+    private javax.swing.JLabel healthcareObservation17;
+    private javax.swing.JLabel healthcareObservation18;
+    private javax.swing.JLabel healthcareObservation19;
+    private javax.swing.JLabel healthcareObservation2;
+    private javax.swing.JLabel healthcareObservation20;
+    private javax.swing.JLabel healthcareObservation3;
+    private javax.swing.JLabel healthcareObservation4;
+    private javax.swing.JLabel healthcareObservation5;
+    private javax.swing.JLabel healthcareObservation6;
+    private javax.swing.JLabel healthcareObservation7;
+    private javax.swing.JLabel healthcareObservation8;
+    private javax.swing.JLabel healthcareObservation9;
+    private javax.swing.JLabel healthcareRest1;
+    private javax.swing.JLabel healthcareRest10;
+    private javax.swing.JLabel healthcareRest2;
+    private javax.swing.JLabel healthcareRest3;
+    private javax.swing.JLabel healthcareRest4;
+    private javax.swing.JLabel healthcareRest5;
+    private javax.swing.JLabel healthcareRest6;
+    private javax.swing.JLabel healthcareRest7;
+    private javax.swing.JLabel healthcareRest8;
+    private javax.swing.JLabel healthcareRest9;
+    private javax.swing.JLabel healthcareVaccination1;
+    private javax.swing.JLabel healthcareVaccination10;
+    private javax.swing.JLabel healthcareVaccination2;
+    private javax.swing.JLabel healthcareVaccination3;
+    private javax.swing.JLabel healthcareVaccination4;
+    private javax.swing.JLabel healthcareVaccination5;
+    private javax.swing.JLabel healthcareVaccination6;
+    private javax.swing.JLabel healthcareVaccination7;
+    private javax.swing.JLabel healthcareVaccination8;
+    private javax.swing.JLabel healthcareVaccination9;
+    private javax.swing.JLabel observationExtWall;
+    private javax.swing.JLabel observationIntWall;
+    private javax.swing.JPanel observationRoom;
+    private javax.swing.JLabel patientChecked;
+    private javax.swing.JLabel patientImageObservation1;
+    private javax.swing.JLabel patientImageObservation10;
+    private javax.swing.JLabel patientImageObservation11;
+    private javax.swing.JLabel patientImageObservation12;
+    private javax.swing.JLabel patientImageObservation13;
+    private javax.swing.JLabel patientImageObservation14;
+    private javax.swing.JLabel patientImageObservation15;
+    private javax.swing.JLabel patientImageObservation16;
+    private javax.swing.JLabel patientImageObservation17;
+    private javax.swing.JLabel patientImageObservation18;
+    private javax.swing.JLabel patientImageObservation19;
+    private javax.swing.JLabel patientImageObservation2;
+    private javax.swing.JLabel patientImageObservation20;
+    private javax.swing.JLabel patientImageObservation3;
+    private javax.swing.JLabel patientImageObservation4;
+    private javax.swing.JLabel patientImageObservation5;
+    private javax.swing.JLabel patientImageObservation6;
+    private javax.swing.JLabel patientImageObservation7;
+    private javax.swing.JLabel patientImageObservation8;
+    private javax.swing.JLabel patientImageObservation9;
+    private javax.swing.JLabel patientImageReception1;
+    private javax.swing.JLabel patientImageReception10;
+    private javax.swing.JLabel patientImageReception11;
+    private javax.swing.JLabel patientImageReception12;
+    private javax.swing.JLabel patientImageReception13;
+    private javax.swing.JLabel patientImageReception14;
+    private javax.swing.JLabel patientImageReception15;
+    private javax.swing.JLabel patientImageReception16;
+    private javax.swing.JLabel patientImageReception17;
+    private javax.swing.JLabel patientImageReception18;
+    private javax.swing.JLabel patientImageReception19;
+    private javax.swing.JLabel patientImageReception2;
+    private javax.swing.JLabel patientImageReception20;
+    private javax.swing.JLabel patientImageReception21;
+    private javax.swing.JLabel patientImageReception22;
+    private javax.swing.JLabel patientImageReception3;
+    private javax.swing.JLabel patientImageReception35;
+    private javax.swing.JLabel patientImageReception4;
+    private javax.swing.JLabel patientImageReception5;
+    private javax.swing.JLabel patientImageReception6;
+    private javax.swing.JLabel patientImageReception7;
+    private javax.swing.JLabel patientImageReception8;
+    private javax.swing.JLabel patientImageReception9;
+    private javax.swing.JLabel patientImageVaccination1;
+    private javax.swing.JLabel patientImageVaccination10;
+    private javax.swing.JLabel patientImageVaccination2;
+    private javax.swing.JLabel patientImageVaccination3;
+    private javax.swing.JLabel patientImageVaccination4;
+    private javax.swing.JLabel patientImageVaccination5;
+    private javax.swing.JLabel patientImageVaccination6;
+    private javax.swing.JLabel patientImageVaccination7;
+    private javax.swing.JLabel patientImageVaccination8;
+    private javax.swing.JLabel patientImageVaccination9;
+    private javax.swing.JLabel patientObservation1;
+    private javax.swing.JLabel patientObservation10;
+    private javax.swing.JLabel patientObservation11;
+    private javax.swing.JLabel patientObservation12;
+    private javax.swing.JLabel patientObservation13;
+    private javax.swing.JLabel patientObservation14;
+    private javax.swing.JLabel patientObservation15;
+    private javax.swing.JLabel patientObservation16;
+    private javax.swing.JLabel patientObservation17;
+    private javax.swing.JLabel patientObservation18;
+    private javax.swing.JLabel patientObservation19;
+    private javax.swing.JLabel patientObservation2;
+    private javax.swing.JLabel patientObservation20;
+    private javax.swing.JLabel patientObservation3;
+    private javax.swing.JLabel patientObservation4;
+    private javax.swing.JLabel patientObservation5;
+    private javax.swing.JLabel patientObservation6;
+    private javax.swing.JLabel patientObservation7;
+    private javax.swing.JLabel patientObservation8;
+    private javax.swing.JLabel patientObservation9;
+    private javax.swing.JLabel patientReception1;
+    private javax.swing.JLabel patientReception10;
+    private javax.swing.JLabel patientReception11;
+    private javax.swing.JLabel patientReception12;
+    private javax.swing.JLabel patientReception13;
+    private javax.swing.JLabel patientReception14;
+    private javax.swing.JLabel patientReception15;
+    private javax.swing.JLabel patientReception16;
+    private javax.swing.JLabel patientReception17;
+    private javax.swing.JLabel patientReception18;
+    private javax.swing.JLabel patientReception19;
+    private javax.swing.JLabel patientReception2;
+    private javax.swing.JLabel patientReception20;
+    private javax.swing.JLabel patientReception21;
+    private javax.swing.JLabel patientReception22;
+    private javax.swing.JLabel patientReception3;
+    private javax.swing.JLabel patientReception4;
+    private javax.swing.JLabel patientReception5;
+    private javax.swing.JLabel patientReception6;
+    private javax.swing.JLabel patientReception7;
+    private javax.swing.JLabel patientReception8;
+    private javax.swing.JLabel patientReception9;
+    private javax.swing.JLabel patientVaccination1;
+    private javax.swing.JLabel patientVaccination10;
+    private javax.swing.JLabel patientVaccination2;
+    private javax.swing.JLabel patientVaccination3;
+    private javax.swing.JLabel patientVaccination4;
+    private javax.swing.JLabel patientVaccination5;
+    private javax.swing.JLabel patientVaccination6;
+    private javax.swing.JLabel patientVaccination7;
+    private javax.swing.JLabel patientVaccination8;
+    private javax.swing.JLabel patientVaccination9;
+    private javax.swing.JLabel receptionCounter;
+    private javax.swing.JLabel receptionExtWall;
+    private javax.swing.JLabel receptionIntWall;
+    private javax.swing.JPanel receptionRoom;
+    private javax.swing.JLabel restExtWall;
+    private javax.swing.JLabel restIntWall;
+    private javax.swing.JPanel restRoom;
     private javax.swing.JLabel title;
+    private javax.swing.JLabel vaccinationCounter;
+    private javax.swing.JLabel vaccinationExtWall;
+    private javax.swing.JLabel vaccinationIntWall;
+    private javax.swing.JPanel vaccinationRoom;
+    private javax.swing.JLabel vaccinesContainer;
+    private javax.swing.JLabel vaccinesContainer1;
     // End of variables declaration//GEN-END:variables
 }

@@ -49,7 +49,7 @@ public class LogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BackgroundPanel = new javax.swing.JPanel();
+        backgroundPanel = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
         startButton = new javax.swing.JButton();
         title = new javax.swing.JLabel();
@@ -59,7 +59,6 @@ public class LogIn extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1000, 630));
         setMinimumSize(new java.awt.Dimension(1000, 630));
-        setPreferredSize(new java.awt.Dimension(1000, 630));
         setResizable(false);
         setSize(new java.awt.Dimension(1000, 630));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -68,10 +67,10 @@ public class LogIn extends javax.swing.JFrame {
             }
         });
 
-        BackgroundPanel.setBackground(new java.awt.Color(255, 255, 255));
-        BackgroundPanel.setMaximumSize(new java.awt.Dimension(1000, 630));
-        BackgroundPanel.setMinimumSize(new java.awt.Dimension(1000, 630));
-        BackgroundPanel.setPreferredSize(new java.awt.Dimension(1000, 630));
+        backgroundPanel.setBackground(new java.awt.Color(255, 255, 255));
+        backgroundPanel.setMaximumSize(new java.awt.Dimension(1000, 630));
+        backgroundPanel.setMinimumSize(new java.awt.Dimension(1000, 630));
+        backgroundPanel.setPreferredSize(new java.awt.Dimension(1000, 630));
 
         logo.setBackground(new java.awt.Color(255, 255, 255));
         logo.setIcon(new javax.swing.ImageIcon(".\\src\\main\\java\\IconImages\\hospital.png")
@@ -114,26 +113,26 @@ public class LogIn extends javax.swing.JFrame {
         title.setMinimumSize(new java.awt.Dimension(434, 40));
         title.setPreferredSize(new java.awt.Dimension(434, 40));
 
-        javax.swing.GroupLayout BackgroundPanelLayout = new javax.swing.GroupLayout(BackgroundPanel);
-        BackgroundPanel.setLayout(BackgroundPanelLayout);
-        BackgroundPanelLayout.setHorizontalGroup(
-            BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BackgroundPanelLayout.createSequentialGroup()
-                .addGroup(BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BackgroundPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout backgroundPanelLayout = new javax.swing.GroupLayout(backgroundPanel);
+        backgroundPanel.setLayout(backgroundPanelLayout);
+        backgroundPanelLayout.setHorizontalGroup(
+            backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundPanelLayout.createSequentialGroup()
+                .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundPanelLayout.createSequentialGroup()
                         .addGap(244, 244, 244)
                         .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(BackgroundPanelLayout.createSequentialGroup()
+                    .addGroup(backgroundPanelLayout.createSequentialGroup()
                         .addGap(440, 440, 440)
                         .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(BackgroundPanelLayout.createSequentialGroup()
+                    .addGroup(backgroundPanelLayout.createSequentialGroup()
                         .addGap(283, 283, 283)
                         .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(244, 244, 244))
         );
-        BackgroundPanelLayout.setVerticalGroup(
-            BackgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BackgroundPanelLayout.createSequentialGroup()
+        backgroundPanelLayout.setVerticalGroup(
+            backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundPanelLayout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -148,13 +147,13 @@ public class LogIn extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(BackgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(backgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(BackgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(backgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -217,7 +216,7 @@ public class LogIn extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel BackgroundPanel;
+    private javax.swing.JPanel backgroundPanel;
     private javax.swing.JLabel logo;
     private javax.swing.JButton startButton;
     private javax.swing.JLabel title;
