@@ -5,7 +5,6 @@
  */
 package Utility;
 
-import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,18 +18,19 @@ public class Receptionist extends AuxiliaryWorker{
     private RestRoom rRoom;
     private int remainingToRest;
     private Thread me=Thread.currentThread();
+    private int status; //State=0 normal working, state=1 resting, state=2 waiting for available desk at vaccination room
     
-    
-    public Receptionist(int wID, CountDownLatch allPatientsAttended, Reception recep, RestRoom r){
-        super(wID, allPatientsAttended);
+    public Receptionist(int wID, Reception recep, RestRoom r){
+        super(wID);
         reception=recep;
         rRoom=r;
         remainingToRest=10;
+        status=0; 
     }
     
     @Override
     public void run(){
-        while (me.isInterrupted()==false){ //If no one interrupts us, we keep working
+        while (me.isInterrupted()==false && (status==0) || status==1){ //If no one interrupts us, we keep working
             if (remainingToRest==0){
                 goRest(3000,5000); //Sleep for 3 to 5 secs
                 
@@ -46,6 +46,19 @@ public class Receptionist extends AuxiliaryWorker{
         }
         
     }
+    /*
+    *It only interrupts it if the status is the one that the calling thread is interested in
+    */
+    public synchronized void conditionalInterrupt(int desiredStatus){
+        if (status==desiredStatus){
+            me.interrupt();
+            setStatus(0); //working status
+        }
+    }
+    
+    private void setStatus(int newValue){
+        status=0;
+    }
     
     private void checkIfListed(int minTime, int maxTime){
         try {
@@ -56,7 +69,7 @@ public class Receptionist extends AuxiliaryWorker{
     }
     
     private void goRest(int minTime, int maxTime){
-        
+        setStatus(1); //Rest status
         rRoom.goIn(this);
         
         try {

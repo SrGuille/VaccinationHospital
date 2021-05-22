@@ -17,32 +17,28 @@ import java.util.logging.Logger;
 public class VaccinationRoom {
     private Desk[] desks;
     public Semaphore mutex;
-    private Semaphore fullPatients;
-    private Semaphore fullWorkers;
+    private AtomicInteger numWorkers;
+    private AtomicInteger numPatients;
     private final ObservationRoom oRoom;
     private AtomicInteger numVaccines;
+    private Receptionist receptionist;
     
     public VaccinationRoom(ObservationRoom o){
         mutex = new Semaphore(1);
-        fullPatients= new Semaphore(10);
-        fullWorkers= new Semaphore(10);
         oRoom=o;
         numVaccines =new AtomicInteger(0);
+        numWorkers =new AtomicInteger(0);
+        numPatients=new AtomicInteger(0);
    
     }
-     
-    private int numPatients(){
-        return 10-fullPatients.availablePermits(); //Returns how many places are available checking semaphore
+    
+    public void setReceptionist(Receptionist r){
+        receptionist=r;
     }
-    
-    private int numWorkers(){
-        return 10-fullWorkers.availablePermits(); //Returns how many places are available checking semaphore
-    }
-    
-    
+
     public void goInside(HealthcareWorker h){
         try {
-            fullWorkers.acquire(); //Blocked if full
+            mutex.acquire();
         } catch (InterruptedException ex) {
             Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -50,11 +46,14 @@ public class VaccinationRoom {
             if (desks[i].isAvailableForWorker()){
                 try {
                     desks[i].goInside(h);
+                    numWorkers.getAndIncrement();
                 } catch (InterruptedException ex) {
                     Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
+            receptionist.conditionalInterrupt(2); //We tell the receptionist that now there is a spot in the room, as a worker has come
         }
+        mutex.release();
         
     }
     
@@ -66,8 +65,8 @@ public class VaccinationRoom {
     private boolean patientCanGoIn(){
         
         boolean isAuthorised=false;
-        int numPatientsAtVRoom = numPatients();
-        int numWorkersAtVRoom = numWorkers();
+        int numPatientsAtVRoom = numPatients.get();
+        int numWorkersAtVRoom = numWorkers.get();
         int numPatientsAtORoom = oRoom.numPatients();  
         
         if (numWorkersAtVRoom>numPatientsAtVRoom && (numPatientsAtVRoom+numPatientsAtORoom)<=20){ 
@@ -87,6 +86,7 @@ public class VaccinationRoom {
                 if (desks[i].isAvailableForPatient()){
                     try {
                         desks[i].goInside(p);
+                        p.setCurrentDesk(desks[i]);
                     } catch (InterruptedException ex) {
                         Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -107,44 +107,57 @@ public class VaccinationRoom {
         if (patientCanGoIn()){
             
             success=true;
+             
+            numPatients.getAndIncrement();
             
-            try {
-                fullPatients.acquire(); 
-            } catch (InterruptedException ex) {
-                Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            
-            findDesk(p);
+            findDesk(p); //Go in
         }
-        
-        return success; 
+        mutex.release();
+        return success;       
     }
     
    public void goOut(HealthcareWorker h) throws InterruptedException{
-        String workersCurrentDesk=h.getCurrentDesk();
-        for (int i=0;i<10;i++){
-            if (desks[i].getID().equals(workersCurrentDesk)){ //If this is the desk where it is working, then go out
-                desks[i].goOut(h);  
-                fullWorkers.release(); //Realease one place, as it has gone out
-            }
-        }
+        Desk workerCurrentDesk=h.getCurrentDesk();
+        workerCurrentDesk.goOut(h);  
+        numWorkers.getAndDecrement();
+        
     }
    
    public void goOut(Patient p) throws InterruptedException{
-        String patientsCurrentDesk=p.getCurrentDesk();
-        for (int i=0;i<10;i++){
-            if (desks[i].getID().equals(patientsCurrentDesk)){ //If this is the desk where it is being attended, then go out
-                desks[i].goOut(p);
-                fullPatients.release(); //Realease one place, as it has gone out
-            }
-        }
-    }
+        Desk patientCurrentDesk=p.getCurrentDesk();
+       
+        patientCurrentDesk.goOut(p); //Go out from vaccination room
+        numPatients.getAndDecrement();
+        oRoom.goInside(p); //Go into observation room
+
+        receptionist.conditionalInterrupt(2); //We tell the receptionist that now there is a spot in the room, as a patient has left
+
+   }
    
-   public void produceVaccine(){
+   public synchronized void produceVaccine(){
        numVaccines.incrementAndGet();
+       notify(); //Notify to a worker that was waiting for vaccine
+       
    }
    
-   public void getVaccine(){
-       numVaccines.decrementAndGet();
+   public synchronized boolean getVaccine(){
+       boolean vaccineFound=true;
+       
+       if (numVaccines.get()==0){
+           vaccineFound=false;
+       }
+       else{
+           numVaccines.decrementAndGet();
+       }
+      return vaccineFound;
    }
+   
+    public synchronized void waitForVaccineIsReady(HealthcareWorker h){
+        try {
+            wait(); //Wait in case it is necessary because of lack of vaccines
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
+        }
+   }
+    
 }

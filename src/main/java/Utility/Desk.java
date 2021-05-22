@@ -5,6 +5,11 @@
  */
 package Utility;
 
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author guial
@@ -14,6 +19,10 @@ public class Desk {
     private HealthcareWorker healthcareWorker;
     private Patient patient;
     private String type;
+    private Lock lock;
+    private Condition waitForPatient;
+    private Condition waitForBeingVaccinated;
+    
     
     public Desk(int dID, HealthcareWorker h){ //Constructor for vaccination room desk, by default with a healthcare worker
         type="VD";
@@ -47,36 +56,44 @@ public class Desk {
         return deskID;
     }
     
-    public synchronized void goInside(HealthcareWorker h) throws InterruptedException{
+    public Patient getPatient(){
         
-        while (healthcareWorker!=null){
-            wait();
-        }
-        h.setCurrentDesk(deskID); //Set the worker desk to this one
+        return patient;
+    }
+    /*
+    * It must be impossible for 2 workers to try to go into the same desk
+    */
+    public void goInside(HealthcareWorker h) throws InterruptedException{
+
+        h.setCurrentDesk(this); //Set the worker desk to this one
         healthcareWorker=h;
+        waitForPatient.await(); //We wait for patient
     }
     
-    public synchronized void goOut(HealthcareWorker h) throws InterruptedException{
+    /*
+    * Only 1 worker can execute this at the same time, as only 1 can be in
+    */
+    public void goOut(HealthcareWorker h) throws InterruptedException{
         healthcareWorker=null;
-        h.setCurrentDesk(""); //We free also the worker's desk
-        notifyAll();
+        h.setCurrentDesk(null); //We free also the worker's desk
     }
     
-    public synchronized void goInside(Patient p) throws InterruptedException{
-        while (patient!=null){
-            wait();
-        }
-        p.setCurrentDesk(deskID); //Set the patient's desk to this one
+    /*
+    * It must be impossible for 2 workers to try to go into the same desk
+    */
+    public void goInside(Patient p) throws InterruptedException{
+        waitForPatient.signal();//We notify to the doctor
+        p.setCurrentDesk(this); //Set the patient's desk to this one
         patient=p;
+        waitForBeingVaccinated.await();
     }
     
     public synchronized void goOut(Patient p) throws InterruptedException{
         patient=null;
-        p.setCurrentDesk(""); //We free also the patient's desk
-        notifyAll();
+        p.setCurrentDesk(null); //We free also the patient's desk
     }
     
-     public synchronized boolean isAvailableForWorker(){
+    public boolean isAvailableForWorker(){
         boolean isAvailable=false;
         if (healthcareWorker==null){
            isAvailable=true;
@@ -84,13 +101,13 @@ public class Desk {
         return isAvailable;
     }
      
-    public synchronized boolean isAvailableForPatient(){
+    public boolean isAvailableForPatient(){
         boolean isAvailable=false;
         if (patient==null && healthcareWorker!=null){ //Only can go in if it has no patient and it has a doctor
            isAvailable=true;
         }
         return isAvailable;
     }
-
-
+    
+   
 }

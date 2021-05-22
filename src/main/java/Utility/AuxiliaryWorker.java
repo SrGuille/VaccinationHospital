@@ -12,14 +12,12 @@ import java.util.concurrent.CountDownLatch;
  *
  * @author guial
  */
-public abstract class AuxiliaryWorker implements Runnable{
+public abstract class AuxiliaryWorker extends Thread{
     private final String auxWorkerID;
-    private CountDownLatch allPatientsAttended;
 
     
-    public AuxiliaryWorker(int wID, CountDownLatch allPatientsAttended){
-        auxWorkerID=assignID(wID);
-        this.allPatientsAttended=allPatientsAttended;       
+    public AuxiliaryWorker(int wID){
+        auxWorkerID=assignID(wID);      
     }
     
     private String assignID(int wID){

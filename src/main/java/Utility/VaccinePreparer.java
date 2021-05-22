@@ -18,10 +18,10 @@ public class VaccinePreparer extends AuxiliaryWorker{
     private VaccinationRoom vaccinationRoom;
     private RestRoom rRoom;
     private Thread me=Thread.currentThread();
-    private int remainingToRest; 
+    private int remainingToRest;
     
-    public VaccinePreparer(int wID, CountDownLatch allPatientsAttended, VaccinationRoom v, RestRoom r){
-        super(wID, allPatientsAttended);
+    public VaccinePreparer(int wID, VaccinationRoom v, RestRoom r){
+        super(wID);
         vaccinationRoom=v;
         rRoom=r;
         remainingToRest=20;
@@ -29,7 +29,7 @@ public class VaccinePreparer extends AuxiliaryWorker{
     
     @Override
     public void run(){
-        while (!me.isInterrupted()){
+        while (!me.isInterrupted()){ //If it recieves an interrupt, finish (only interrupt from main class is possible)
             if (remainingToRest==0){
                 goRest(1000,4000); //Sleep for 3 to 5 secs 
             }

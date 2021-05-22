@@ -85,7 +85,7 @@ public class Reception {
         else{ //No possibility of forwarding to the patient, stop service until interrupted
             try {
                 stopService.await();
-            } catch (InterruptedException ex) { //When interrupted, there is a place in the room
+            } catch (InterruptedException spotRelased) { //When interrupted, there is a place in the room (a patient has left or a doctor has come)
                 vRoom.tryGoInside(patientAtFrontDesk);
             }
         }

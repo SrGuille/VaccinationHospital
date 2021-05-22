@@ -15,33 +15,45 @@ public class main {
      */
     public static void main(String[] args) throws InterruptedException {
         
-        CountDownLatch allPatientsAttended = new CountDownLatch(2000);
+        //Create rooms
+        ObservationRoom oRoom = new ObservationRoom();
+        RestRoom rRoom = new RestRoom(oRoom);
+        VaccinationRoom vRoom = new VaccinationRoom(oRoom);
+        oRoom.setVaccinationRoom(vRoom);
+        Reception reception = new Reception(vRoom);
+
+        Object[] hospitalRooms ={reception, vRoom, oRoom, rRoom};
+       
+        //Create workers
+        Receptionist aux1 = new Receptionist(1, reception, rRoom);
+        VaccinePreparer aux2 = new VaccinePreparer(2, vRoom, rRoom);
+        
+        vRoom.setReceptionist(aux1);
+        
         HealthcareWorker[] workers = new HealthcareWorker[10];
         for (int i=0;i<10;i++){
-            workers[i]=new HealthcareWorker(i+1, allPatientsAttended);
+            workers[i]=new HealthcareWorker(i+1, hospitalRooms);
 
         }
         
-        RestRoom rRoom = new RestRoom();
-        ObservationRoom oRoom = new ObservationRoom();
-        VaccinationRoom vRoom = new VaccinationRoom(oRoom);
-        Reception reception = new Reception(vRoom);
-        
-        
-        Object[] hospitalRooms ={reception, vRoom, oRoom, rRoom};
-       
-        
-        AuxiliaryWorker aux1 = new Receptionist(1, allPatientsAttended, reception, rRoom);
-        AuxiliaryWorker aux2 = new VaccinePreparer(2, allPatientsAttended, vRoom, rRoom);
-        
+        //Create patients
         Patient patients[]= new Patient[2000];
         
         for (int j=0;j<2000;j++){
-            patients[j] = new Patient(j+1, allPatientsAttended, hospitalRooms);
+            patients[j] = new Patient(j+1, hospitalRooms);
         }
+        
+        //Wait for all to finish
         for (int k=0;k<2000;k++){
             patients[k].join();
         }
+        
+        //Close hospital (join finished)
+        for (int i=0;i<10;i++){
+            workers[i].interrupt();
+        }
+        aux1.interrupt();
+        aux2.interrupt();
     }
     
     

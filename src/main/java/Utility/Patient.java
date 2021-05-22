@@ -1,6 +1,9 @@
 package Utility;
 
+import java.util.Random;
 import java.util.concurrent.CountDownLatch;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,24 +18,27 @@ import java.util.concurrent.CountDownLatch;
 public class Patient extends Thread{
     
     private final String patientID;
-    private CountDownLatch allPatientsAttended;
-    private String currentDesk;
+    private Desk currentDesk;
     private boolean hasAnAppointment=true;
     private Reception reception;
     private VaccinationRoom vRoom;
     private ObservationRoom oRoom;
+    private RestRoom rRoom;
     
-    public Patient(int pID, CountDownLatch allPatientsAttended, Object[] hospitalRooms){
+    public Patient(int pID, Object[] hospitalRooms){
         patientID=assignID(pID);
-        this.allPatientsAttended=allPatientsAttended;
         this.reception=(Reception)hospitalRooms[0];
         this.vRoom=(VaccinationRoom)hospitalRooms[1];
         this.oRoom=(ObservationRoom)hospitalRooms[2];
+        this.rRoom=(RestRoom)hospitalRooms[3];
         start();
     }
     
     public void run(){
         reception.arriveToHospital(this);
+        if (hasAnAppointment){ //Everything happens automatically as the patient is always controlled by the workers, he is only in charge of checking if it has symptoms
+            waitForSymptoms(10000);
+        }
     }
     
     private String assignID(int pID){
@@ -60,11 +66,11 @@ public class Patient extends Thread{
         return patientID;
     }
     
-    public String getCurrentDesk(){
+    public Desk getCurrentDesk(){
         return currentDesk;
     }
     
-    public void setCurrentDesk(String desk){
+    public void setCurrentDesk(Desk desk){
         currentDesk=desk;
     }
     
@@ -72,9 +78,18 @@ public class Patient extends Thread{
         hasAnAppointment=false;
     }
     
-    public void arriveHospital(){
-        
-        
+    private void waitForSymptoms(int time){
+         try {
+                Thread.sleep(time);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
+            }
+         
+        Random r = new Random();
+        if (r.nextInt(100)<5){ //5% chance of having symptoms
+            rRoom.callForHelp(currentDesk);
+        }  
     }
+    
 }
 
