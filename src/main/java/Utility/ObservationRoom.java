@@ -58,6 +58,7 @@ public class ObservationRoom {
                     desks[i].goInside(p);
                     p.setCurrentDesk(desks[i]);
                     numPatients.getAndIncrement();
+                    break;
                 } catch (InterruptedException ex) {
                     Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
                 }

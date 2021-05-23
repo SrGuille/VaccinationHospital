@@ -10,8 +10,8 @@ public class VaccinationRoom {
 
     private Desk[] desks = new Desk[10];
     public Semaphore mutex;
-    private AtomicInteger numWorkers;
-    private AtomicInteger numPatients;
+    private int numWorkers;
+    private int numPatients;
     private final ObservationRoom oRoom;
     private AtomicInteger numVaccines;
     private Receptionist receptionist;
@@ -22,8 +22,8 @@ public class VaccinationRoom {
         oRoom = o;
         this.log = log;
         numVaccines = new AtomicInteger(0);
-        numWorkers = new AtomicInteger(0);
-        numPatients = new AtomicInteger(0);
+        numWorkers = 0;
+        numPatients = 0;
         for (int i = 0; i < 10; i++) {
             desks[i] = new Desk(i + 1, true, log);
         }
@@ -46,7 +46,7 @@ public class VaccinationRoom {
         for (int i = 0; i < 10; i++) {
             if (desks[i].isAvailableForWorker()) {
                 try {
-                    numWorkers.getAndIncrement();
+                    numWorkers++;
                     desks[i].goInside(h);
                     break;
                 } catch (InterruptedException ex) {
@@ -71,11 +71,10 @@ public class VaccinationRoom {
     private boolean patientCanGoIn() {
 
         boolean isAuthorised = false;
-        int numPatientsAtVRoom = numPatients.get();
-        int numWorkersAtVRoom = numWorkers.get();
+
         int numPatientsAtORoom = oRoom.numPatients();
 
-        if (numWorkersAtVRoom > numPatientsAtVRoom && (numPatientsAtVRoom + numPatientsAtORoom) <= 20) {
+        if (numWorkers > numPatients && (numPatients + numPatientsAtORoom) <= 20) {
             isAuthorised = true;
         }
 
@@ -121,9 +120,8 @@ public class VaccinationRoom {
 
             success = true;
 
-            numPatients.getAndIncrement();
-
             findDesk(p); //Go in
+            numPatients++;
         }
         mutex.release();
         return success;
@@ -134,28 +132,38 @@ public class VaccinationRoom {
      * @param h HealthcareWorker
      * @throws InterruptedException 
      */
-    public synchronized void goOut(HealthcareWorker h) throws InterruptedException {
-        
+    public void goOut(HealthcareWorker h) throws InterruptedException {
+        try {
+            mutex.acquire();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
+        }
         Desk workerCurrentDesk = h.getCurrentDesk();
         workerCurrentDesk.goOut(h);
-        numWorkers.getAndDecrement();
+        numWorkers--;
+        mutex.release();
 
     }
     
     /**
      * Patient goes out, necessary mutual exclusion as a patient can't abandon the room if another patient is trying to go in
-     * @param h HealthcareWorker
+     * 
      * @throws InterruptedException 
      */
-    public synchronized void goOut(Patient p) throws InterruptedException {
+    public void goOut(Patient p) throws InterruptedException {
+        try {
+            mutex.acquire();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
+        }
         Desk patientCurrentDesk = p.getCurrentDesk();
 
         patientCurrentDesk.goOut(p); //Go out from vaccination room
-        numPatients.getAndDecrement();
+        numPatients--;
         oRoom.goInside(p); //Go into observation room
 
         receptionist.conditionalInterrupt(2); //We tell the receptionist that now there is a spot in the room, as a patient has left
-
+        mutex.release();
     }
 
     public synchronized void produceVaccine() {

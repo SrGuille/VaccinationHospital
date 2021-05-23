@@ -8,7 +8,7 @@ public class Receptionist extends AuxiliaryWorker {
     private Reception reception;
     private RestRoom rRoom;
     private int remainingToRest;
-    private Thread me = Thread.currentThread();
+    private Thread me;
     private int status; //State=0 normal working, state=1 resting, state=2 waiting for available desk at vaccination room
 
     public Receptionist(int wID, Reception recep, RestRoom r) {
@@ -22,6 +22,7 @@ public class Receptionist extends AuxiliaryWorker {
 
     @Override
     public void run() {
+        me = Thread.currentThread();
         try {
             Thread.sleep(5000);
         } catch (InterruptedException ex) {
