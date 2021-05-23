@@ -53,6 +53,11 @@ public class Desk {
 
         return patient;
     }
+    
+    public HealthcareWorker getWorker() {
+
+        return healthcareWorker;
+    }
 
     /*
     * It must be impossible for 2 workers to try to go into the same desk
