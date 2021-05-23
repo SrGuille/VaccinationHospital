@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interface;
 
 import java.awt.Color;
@@ -12,10 +7,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/**
- *
- * @author antonia
- */
 public class Hospital extends javax.swing.JFrame {
 
     private JFrame goBack;
@@ -37,9 +28,9 @@ public class Hospital extends javax.swing.JFrame {
     private JLabel[] healthcaresImageObservation = new JLabel[20];
     private JLabel[] healthcaresRest = new JLabel[10];
     private JLabel[] healthcaresImageRest = new JLabel[10];
-    private JLabel[] auxiliarsRest = new JLabel[2];
-    private JLabel[] auxiliarsImageRest = new JLabel[2];
-    private JButton[] buttonDesks = new JButton[10];
+    private JLabel[] auxiliariesRest = new JLabel[2];
+    private JLabel[] auxiliariesImageRest = new JLabel[2];
+    public JButton[] buttonDesks = new JButton[10];
 
     /**
      *
@@ -48,7 +39,7 @@ public class Hospital extends javax.swing.JFrame {
      */
     private final ImageIcon patientImage = generateImage(".\\src\\main\\java\\IconImages\\patient.png", 25, 25);
     private final ImageIcon healthcareImage = generateImage(".\\src\\main\\java\\IconImages\\healthcareworker.png", 25, 25);
-    private final ImageIcon auxiliarImage = generateImage(".\\src\\main\\java\\IconImages\\auxiliarworker.png", 25, 25);
+    private final ImageIcon auxiliaryImage = generateImage(".\\src\\main\\java\\IconImages\\auxiliaryworker.png", 25, 25);
     private final ImageIcon receptionCounterOpenImage = generateImage(".\\src\\main\\java\\IconImages\\receptionboothopen.png", 40, 80);
     private final ImageIcon receptionCounterCloseImage = generateImage(".\\src\\main\\java\\IconImages\\receptionboothclose.png", 40, 80);
     private final ImageIcon vaccinationCounterOpenImage = generateImage(".\\src\\main\\java\\IconImages\\vaccinationboothopen.png", 60, 95);
@@ -71,8 +62,8 @@ public class Hospital extends javax.swing.JFrame {
     private final java.awt.Color patientBorderColor = new java.awt.Color(233, 151, 87);
     private final Color healthcareBackground = new Color(239, 214, 218);
     private final java.awt.Color healthcareBorderColor = new java.awt.Color(165, 63, 82);
-    private final Color auxiliarBackground = new Color(208, 211, 222);
-    private final java.awt.Color auxiliarBorderColor = new java.awt.Color(68, 84, 106);
+    private final Color auxiliaryBackground = new Color(208, 211, 222);
+    private final java.awt.Color auxiliaryBorderColor = new java.awt.Color(68, 84, 106);
 
     /**
      *
@@ -82,12 +73,13 @@ public class Hospital extends javax.swing.JFrame {
     private final javax.swing.border.LineBorder greyBorder = new javax.swing.border.LineBorder(greyBorderColor, 2, true);
     private final javax.swing.border.LineBorder patientBorder = new javax.swing.border.LineBorder(patientBorderColor, 2, true);
     private final javax.swing.border.LineBorder healthcareBorder = new javax.swing.border.LineBorder(healthcareBorderColor, 2, true);
-    private final javax.swing.border.LineBorder auxiliarBorder = new javax.swing.border.LineBorder(auxiliarBorderColor, 2, true);
+    private final javax.swing.border.LineBorder auxiliaryBorder = new javax.swing.border.LineBorder(auxiliaryBorderColor, 2, true);
 
     /**
      * Creates new form Hospital
      *
      * @param v: previous frame
+     *
      */
     public Hospital(JFrame v) {
         initComponents();
@@ -120,7 +112,7 @@ public class Hospital extends javax.swing.JFrame {
      * Add all labels to arrays
      *
      */
-    public final void initArrays() {
+    public void initArrays() {
         patientsReception[0] = patientReception1;
         patientsReception[1] = patientReception2;
         patientsReception[2] = patientReception3;
@@ -317,11 +309,11 @@ public class Hospital extends javax.swing.JFrame {
         healthcaresImageRest[8] = healthcareImageRest9;
         healthcaresImageRest[9] = healthcareImageRest10;
 
-        auxiliarsRest[0] = auxiliarRest1;
-        auxiliarsRest[1] = auxiliarRest2;
+        auxiliariesRest[0] = auxiliaryRest1;
+        auxiliariesRest[1] = auxiliaryRest2;
 
-        auxiliarsImageRest[0] = auxiliarImageRest1;
-        auxiliarsImageRest[1] = auxiliarImageRest2;
+        auxiliariesImageRest[0] = auxiliaryImageRest1;
+        auxiliariesImageRest[1] = auxiliaryImageRest2;
 
         buttonDesks[0] = buttonDesk1;
         buttonDesks[1] = buttonDesk2;
@@ -395,7 +387,7 @@ public class Hospital extends javax.swing.JFrame {
      *
      */
     public void displayReceptionRoom() {
-        for (int i = 0; i <= 22; i++) {
+        for (int i = 0; i < 22; i++) {
 
         }
     }
@@ -406,7 +398,7 @@ public class Hospital extends javax.swing.JFrame {
      *
      */
     public void displayVaccinationRoom() {
-        for (int i = 0; i <= 9; i++) {
+        for (int i = 0; i < 10; i++) {
             patientsReception[i].setText("");
             patientsImageReception[i].setIcon(patientImage);
         }
@@ -419,7 +411,7 @@ public class Hospital extends javax.swing.JFrame {
      *
      */
     public void displayObservationRoom() {
-        for (int i = 0; i <= 19; i++) {
+        for (int i = 0; i < 20; i++) {
 
         }
 
@@ -431,7 +423,7 @@ public class Hospital extends javax.swing.JFrame {
      *
      */
     public void displayRestRoom() {
-        for (int i = 0; i <= 9; i++) {
+        for (int i = 0; i < 10; i++) {
 
         }
 
@@ -595,8 +587,8 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest10 = new javax.swing.JLabel();
         restIntWall = new javax.swing.JLabel();
         restExtWall = new javax.swing.JLabel();
-        auxiliarRest1 = new javax.swing.JLabel();
-        auxiliarRest2 = new javax.swing.JLabel();
+        auxiliaryRest1 = new javax.swing.JLabel();
+        auxiliaryRest2 = new javax.swing.JLabel();
         healthcareImageRest1 = new javax.swing.JLabel();
         healthcareImageRest2 = new javax.swing.JLabel();
         healthcareImageRest3 = new javax.swing.JLabel();
@@ -607,8 +599,8 @@ public class Hospital extends javax.swing.JFrame {
         healthcareImageRest8 = new javax.swing.JLabel();
         healthcareImageRest9 = new javax.swing.JLabel();
         healthcareImageRest10 = new javax.swing.JLabel();
-        auxiliarImageRest1 = new javax.swing.JLabel();
-        auxiliarImageRest2 = new javax.swing.JLabel();
+        auxiliaryImageRest1 = new javax.swing.JLabel();
+        auxiliaryImageRest2 = new javax.swing.JLabel();
         vaccinationRoom = new javax.swing.JPanel();
         patientVaccination1 = new javax.swing.JLabel();
         patientVaccination2 = new javax.swing.JLabel();
@@ -670,7 +662,6 @@ public class Hospital extends javax.swing.JFrame {
         setTitle("Hospital");
         setBackground(new java.awt.Color(255, 255, 255));
         setFocusable(false);
-        setMaximumSize(new java.awt.Dimension(1000, 630));
         setMinimumSize(new java.awt.Dimension(1000, 630));
         setResizable(false);
         setSize(new java.awt.Dimension(1000, 630));
@@ -695,7 +686,7 @@ public class Hospital extends javax.swing.JFrame {
 
         backButton.setBackground(new java.awt.Color(25, 36, 51));
         backButton.setFont(new java.awt.Font("Ubuntu Condensed", 0, 24)); // NOI18N
-        backButton.setIcon(generateImage(".\\src\\main\\java\\IconImages\\goback.png", 30, 30)
+        backButton.setIcon(generateImage(".\\src\\main\\java\\IconImages\\goback.png", 35, 35)
         );
         backButton.setBorder(null);
         backButton.setBorderPainted(false);
@@ -2792,31 +2783,31 @@ public class Hospital extends javax.swing.JFrame {
         restExtWall.setOpaque(true);
         restExtWall.setPreferredSize(new java.awt.Dimension(150, 20));
 
-        auxiliarRest1.setBackground(auxiliarBackground);
-        auxiliarRest1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
-        auxiliarRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliarRest1.setText("00");
-        auxiliarRest1.setBorder(auxiliarBorder);
-        auxiliarRest1.setFocusable(false);
-        auxiliarRest1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        auxiliarRest1.setMaximumSize(new java.awt.Dimension(30, 20));
-        auxiliarRest1.setMinimumSize(new java.awt.Dimension(30, 20));
-        auxiliarRest1.setOpaque(true);
-        auxiliarRest1.setPreferredSize(new java.awt.Dimension(30, 20));
-        auxiliarRest1.setRequestFocusEnabled(false);
+        auxiliaryRest1.setBackground(auxiliaryBackground);
+        auxiliaryRest1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        auxiliaryRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliaryRest1.setText("00");
+        auxiliaryRest1.setBorder(auxiliaryBorder);
+        auxiliaryRest1.setFocusable(false);
+        auxiliaryRest1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        auxiliaryRest1.setMaximumSize(new java.awt.Dimension(30, 20));
+        auxiliaryRest1.setMinimumSize(new java.awt.Dimension(30, 20));
+        auxiliaryRest1.setOpaque(true);
+        auxiliaryRest1.setPreferredSize(new java.awt.Dimension(30, 20));
+        auxiliaryRest1.setRequestFocusEnabled(false);
 
-        auxiliarRest2.setBackground(auxiliarBackground);
-        auxiliarRest2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
-        auxiliarRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliarRest2.setText("00");
-        auxiliarRest2.setBorder(auxiliarBorder);
-        auxiliarRest2.setFocusable(false);
-        auxiliarRest2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        auxiliarRest2.setMaximumSize(new java.awt.Dimension(30, 20));
-        auxiliarRest2.setMinimumSize(new java.awt.Dimension(30, 20));
-        auxiliarRest2.setOpaque(true);
-        auxiliarRest2.setPreferredSize(new java.awt.Dimension(30, 20));
-        auxiliarRest2.setRequestFocusEnabled(false);
+        auxiliaryRest2.setBackground(auxiliaryBackground);
+        auxiliaryRest2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
+        auxiliaryRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliaryRest2.setText("00");
+        auxiliaryRest2.setBorder(auxiliaryBorder);
+        auxiliaryRest2.setFocusable(false);
+        auxiliaryRest2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        auxiliaryRest2.setMaximumSize(new java.awt.Dimension(30, 20));
+        auxiliaryRest2.setMinimumSize(new java.awt.Dimension(30, 20));
+        auxiliaryRest2.setOpaque(true);
+        auxiliaryRest2.setPreferredSize(new java.awt.Dimension(30, 20));
+        auxiliaryRest2.setRequestFocusEnabled(false);
 
         healthcareImageRest1.setBackground(healthcareBackground);
         healthcareImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -2918,25 +2909,25 @@ public class Hospital extends javax.swing.JFrame {
         healthcareImageRest10.setOpaque(true);
         healthcareImageRest10.setPreferredSize(new java.awt.Dimension(30, 30));
 
-        auxiliarImageRest1.setBackground(auxiliarBackground);
-        auxiliarImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliarImageRest1.setIcon(auxiliarImage);
-        auxiliarImageRest1.setBorder(auxiliarBorder);
-        auxiliarImageRest1.setFocusable(false);
-        auxiliarImageRest1.setMaximumSize(new java.awt.Dimension(30, 30));
-        auxiliarImageRest1.setMinimumSize(new java.awt.Dimension(30, 30));
-        auxiliarImageRest1.setOpaque(true);
-        auxiliarImageRest1.setPreferredSize(new java.awt.Dimension(30, 30));
+        auxiliaryImageRest1.setBackground(auxiliaryBackground);
+        auxiliaryImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliaryImageRest1.setIcon(auxiliaryImage);
+        auxiliaryImageRest1.setBorder(auxiliaryBorder);
+        auxiliaryImageRest1.setFocusable(false);
+        auxiliaryImageRest1.setMaximumSize(new java.awt.Dimension(30, 30));
+        auxiliaryImageRest1.setMinimumSize(new java.awt.Dimension(30, 30));
+        auxiliaryImageRest1.setOpaque(true);
+        auxiliaryImageRest1.setPreferredSize(new java.awt.Dimension(30, 30));
 
-        auxiliarImageRest2.setBackground(auxiliarBackground);
-        auxiliarImageRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliarImageRest2.setIcon(auxiliarImage);
-        auxiliarImageRest2.setBorder(auxiliarBorder);
-        auxiliarImageRest2.setFocusable(false);
-        auxiliarImageRest2.setMaximumSize(new java.awt.Dimension(30, 30));
-        auxiliarImageRest2.setMinimumSize(new java.awt.Dimension(30, 30));
-        auxiliarImageRest2.setOpaque(true);
-        auxiliarImageRest2.setPreferredSize(new java.awt.Dimension(30, 30));
+        auxiliaryImageRest2.setBackground(auxiliaryBackground);
+        auxiliaryImageRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        auxiliaryImageRest2.setIcon(auxiliaryImage);
+        auxiliaryImageRest2.setBorder(auxiliaryBorder);
+        auxiliaryImageRest2.setFocusable(false);
+        auxiliaryImageRest2.setMaximumSize(new java.awt.Dimension(30, 30));
+        auxiliaryImageRest2.setMinimumSize(new java.awt.Dimension(30, 30));
+        auxiliaryImageRest2.setOpaque(true);
+        auxiliaryImageRest2.setPreferredSize(new java.awt.Dimension(30, 30));
 
         javax.swing.GroupLayout restRoomLayout = new javax.swing.GroupLayout(restRoom);
         restRoom.setLayout(restRoomLayout);
@@ -2962,13 +2953,13 @@ public class Hospital extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(restRoomLayout.createSequentialGroup()
-                        .addComponent(auxiliarRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(auxiliaryRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(healthcareRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(healthcareRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(restRoomLayout.createSequentialGroup()
-                        .addComponent(auxiliarImageRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(auxiliaryImageRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(healthcareImageRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2997,9 +2988,9 @@ public class Hospital extends javax.swing.JFrame {
                         .addComponent(healthcareRest7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(auxiliarImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(auxiliaryImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(healthcareRest8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(auxiliarRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(auxiliaryRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(24, 24, 24))
         );
         restRoomLayout.setVerticalGroup(
@@ -3008,12 +2999,12 @@ public class Hospital extends javax.swing.JFrame {
                 .addComponent(restIntWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(auxiliarImageRest1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(auxiliaryImageRest1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(healthcareImageRest1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(healthcareImageRest2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
                 .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(auxiliarRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(auxiliaryRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(healthcareRest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(healthcareRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
@@ -3038,14 +3029,14 @@ public class Hospital extends javax.swing.JFrame {
                     .addComponent(healthcareRest8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(auxiliarImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(auxiliaryImageRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(healthcareImageRest10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(restRoomLayout.createSequentialGroup()
                         .addComponent(healthcareImageRest9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addGroup(restRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(healthcareRest10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(auxiliarRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(auxiliaryRest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(healthcareRest9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(30, 30, 30)
                 .addComponent(restExtWall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -4018,62 +4009,52 @@ public class Hospital extends javax.swing.JFrame {
         LogIn logIn = new LogIn(this);
     }//GEN-LAST:event_backButtonActionPerformed
 
-    private void buttonDesk1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk1ActionPerformed
-        buttonDesksActionPerfomed(0);
-
-    }//GEN-LAST:event_buttonDesk1ActionPerformed
-
-    private void buttonDesk2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk2ActionPerformed
-        buttonDesksActionPerfomed(1);
-
-    }//GEN-LAST:event_buttonDesk2ActionPerformed
-
-    private void buttonDesk3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk3ActionPerformed
-        buttonDesksActionPerfomed(2);
-
-    }//GEN-LAST:event_buttonDesk3ActionPerformed
-
-    private void buttonDesk4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk4ActionPerformed
-        buttonDesksActionPerfomed(3);
-
-    }//GEN-LAST:event_buttonDesk4ActionPerformed
-
-    private void buttonDesk5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk5ActionPerformed
-        buttonDesksActionPerfomed(4);
-
-    }//GEN-LAST:event_buttonDesk5ActionPerformed
-
-    private void buttonDesk6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk6ActionPerformed
-        buttonDesksActionPerfomed(5);
-
-    }//GEN-LAST:event_buttonDesk6ActionPerformed
-
-    private void buttonDesk7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk7ActionPerformed
-        buttonDesksActionPerfomed(6);
-
-    }//GEN-LAST:event_buttonDesk7ActionPerformed
-
-    private void buttonDesk8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk8ActionPerformed
-        buttonDesksActionPerfomed(7);
-
-    }//GEN-LAST:event_buttonDesk8ActionPerformed
+    private void buttonDesk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk9ActionPerformed
+        buttonDesksActionPerfomed(8);
+    }//GEN-LAST:event_buttonDesk9ActionPerformed
 
     private void buttonDesk10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk10ActionPerformed
         buttonDesksActionPerfomed(9);
-
     }//GEN-LAST:event_buttonDesk10ActionPerformed
 
-    private void buttonDesk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk9ActionPerformed
-        buttonDesksActionPerfomed(8);
+    private void buttonDesk8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk8ActionPerformed
+        buttonDesksActionPerfomed(7);
+    }//GEN-LAST:event_buttonDesk8ActionPerformed
 
-    }//GEN-LAST:event_buttonDesk9ActionPerformed
+    private void buttonDesk7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk7ActionPerformed
+        buttonDesksActionPerfomed(6);
+    }//GEN-LAST:event_buttonDesk7ActionPerformed
+
+    private void buttonDesk6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk6ActionPerformed
+        buttonDesksActionPerfomed(5);
+    }//GEN-LAST:event_buttonDesk6ActionPerformed
+
+    private void buttonDesk5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk5ActionPerformed
+        buttonDesksActionPerfomed(4);
+    }//GEN-LAST:event_buttonDesk5ActionPerformed
+
+    private void buttonDesk4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk4ActionPerformed
+        buttonDesksActionPerfomed(3);
+    }//GEN-LAST:event_buttonDesk4ActionPerformed
+
+    private void buttonDesk3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk3ActionPerformed
+        buttonDesksActionPerfomed(2);
+    }//GEN-LAST:event_buttonDesk3ActionPerformed
+
+    private void buttonDesk2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk2ActionPerformed
+        buttonDesksActionPerfomed(1);
+    }//GEN-LAST:event_buttonDesk2ActionPerformed
+
+    private void buttonDesk1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk1ActionPerformed
+        buttonDesksActionPerfomed(0);
+    }//GEN-LAST:event_buttonDesk1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel auxiliarImageRest1;
-    private javax.swing.JLabel auxiliarImageRest2;
-    private javax.swing.JLabel auxiliarRest1;
-    private javax.swing.JLabel auxiliarRest2;
+    private javax.swing.JLabel auxiliaryImageRest1;
+    private javax.swing.JLabel auxiliaryImageRest2;
+    private javax.swing.JLabel auxiliaryRest1;
+    private javax.swing.JLabel auxiliaryRest2;
     private javax.swing.JButton backButton;
     private javax.swing.JPanel backgroundPanel;
     private javax.swing.JButton buttonDesk1;

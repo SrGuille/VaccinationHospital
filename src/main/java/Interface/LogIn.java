@@ -6,11 +6,8 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.geom.RoundRectangle2D;
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.border.EmptyBorder;
 
 /**
  *
@@ -51,8 +48,9 @@ public class LogIn extends javax.swing.JFrame {
 
         backgroundPanel = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
-        startButton = new javax.swing.JButton();
+        startClientButton = new javax.swing.JButton();
         title = new javax.swing.JLabel();
+        startServerButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LogIn");
@@ -79,29 +77,29 @@ public class LogIn extends javax.swing.JFrame {
         logo.setMaximumSize(new java.awt.Dimension(512, 480));
         logo.setMinimumSize(new java.awt.Dimension(512, 480));
 
-        startButton.setBackground(new java.awt.Color(128, 29, 24));
-        startButton.setFont(new java.awt.Font("Ubuntu Condensed", 0, 24)); // NOI18N
-        startButton.setForeground(new java.awt.Color(255, 255, 255));
-        startButton.setText("S T A R T");
-        startButton.setBorder(null);
-        startButton.setBorderPainted(false);
-        startButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        startButton.setFocusPainted(false);
-        startButton.setMargin(new java.awt.Insets(2, 1, 2, 1));
-        startButton.setMaximumSize(new java.awt.Dimension(120, 35));
-        startButton.setMinimumSize(new java.awt.Dimension(120, 35));
-        startButton.setPreferredSize(new java.awt.Dimension(120, 35));
-        startButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        startClientButton.setBackground(new java.awt.Color(128, 29, 24));
+        startClientButton.setFont(new java.awt.Font("Ubuntu Condensed", 0, 24)); // NOI18N
+        startClientButton.setForeground(new java.awt.Color(255, 255, 255));
+        startClientButton.setText("C L I E N T");
+        startClientButton.setBorder(null);
+        startClientButton.setBorderPainted(false);
+        startClientButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        startClientButton.setFocusPainted(false);
+        startClientButton.setMargin(new java.awt.Insets(2, 1, 2, 1));
+        startClientButton.setMaximumSize(new java.awt.Dimension(120, 35));
+        startClientButton.setMinimumSize(new java.awt.Dimension(120, 35));
+        startClientButton.setPreferredSize(new java.awt.Dimension(120, 35));
+        startClientButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                startButtonMouseEntered(evt);
+                startClientButtonMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                startButtonMouseExited(evt);
+                startClientButtonMouseExited(evt);
             }
         });
-        startButton.addActionListener(new java.awt.event.ActionListener() {
+        startClientButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                startButtonActionPerformed(evt);
+                startClientButtonActionPerformed(evt);
             }
         });
 
@@ -113,6 +111,32 @@ public class LogIn extends javax.swing.JFrame {
         title.setMinimumSize(new java.awt.Dimension(434, 40));
         title.setPreferredSize(new java.awt.Dimension(434, 40));
 
+        startServerButton.setBackground(new java.awt.Color(128, 29, 24));
+        startServerButton.setFont(new java.awt.Font("Ubuntu Condensed", 0, 24)); // NOI18N
+        startServerButton.setForeground(new java.awt.Color(255, 255, 255));
+        startServerButton.setText("S E R V E R");
+        startServerButton.setBorder(null);
+        startServerButton.setBorderPainted(false);
+        startServerButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        startServerButton.setFocusPainted(false);
+        startServerButton.setMargin(new java.awt.Insets(2, 1, 2, 1));
+        startServerButton.setMaximumSize(new java.awt.Dimension(120, 35));
+        startServerButton.setMinimumSize(new java.awt.Dimension(120, 35));
+        startServerButton.setPreferredSize(new java.awt.Dimension(120, 35));
+        startServerButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                startServerButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                startServerButtonMouseExited(evt);
+            }
+        });
+        startServerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                startServerButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout backgroundPanelLayout = new javax.swing.GroupLayout(backgroundPanel);
         backgroundPanel.setLayout(backgroundPanelLayout);
         backgroundPanelLayout.setHorizontalGroup(
@@ -123,11 +147,14 @@ public class LogIn extends javax.swing.JFrame {
                         .addGap(244, 244, 244)
                         .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(backgroundPanelLayout.createSequentialGroup()
-                        .addGap(440, 440, 440)
-                        .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(backgroundPanelLayout.createSequentialGroup()
                         .addGap(283, 283, 283)
-                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundPanelLayout.createSequentialGroup()
+                                .addComponent(startClientButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(94, 94, 94)
+                                .addComponent(startServerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50))
+                            .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(244, 244, 244))
         );
         backgroundPanelLayout.setVerticalGroup(
@@ -136,10 +163,12 @@ public class LogIn extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55))
+                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(startClientButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(startServerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -166,19 +195,33 @@ public class LogIn extends javax.swing.JFrame {
         setIconImage(icon.getImage());
     }//GEN-LAST:event_formWindowActivated
 
-    private void startButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startButtonMouseEntered
-        startButton.setBackground(new Color(165, 63, 82));
-        startButton.setForeground(new Color(0, 0, 0));
-    }//GEN-LAST:event_startButtonMouseEntered
+    private void startClientButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startClientButtonMouseEntered
+        startClientButton.setBackground(new Color(165, 63, 82));
+        startClientButton.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_startClientButtonMouseEntered
 
-    private void startButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startButtonMouseExited
-        startButton.setBackground(new Color(128, 29, 24));
-        startButton.setForeground(new Color(255, 255, 255));
-    }//GEN-LAST:event_startButtonMouseExited
+    private void startClientButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startClientButtonMouseExited
+        startClientButton.setBackground(new Color(128, 29, 24));
+        startClientButton.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_startClientButtonMouseExited
 
-    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
-        Hospital hospital = new Hospital(this);
-    }//GEN-LAST:event_startButtonActionPerformed
+    private void startClientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startClientButtonActionPerformed
+        HospitalClient hospitalClient = new HospitalClient(this);
+    }//GEN-LAST:event_startClientButtonActionPerformed
+
+    private void startServerButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startServerButtonMouseEntered
+        startServerButton.setBackground(new Color(165, 63, 82));
+        startServerButton.setForeground(new Color(0, 0, 0));
+    }//GEN-LAST:event_startServerButtonMouseEntered
+
+    private void startServerButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startServerButtonMouseExited
+        startServerButton.setBackground(new Color(128, 29, 24));
+        startServerButton.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_startServerButtonMouseExited
+
+    private void startServerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startServerButtonActionPerformed
+        HospitalServer hospitalServer = new HospitalServer(this);
+    }//GEN-LAST:event_startServerButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,7 +261,8 @@ public class LogIn extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel backgroundPanel;
     private javax.swing.JLabel logo;
-    private javax.swing.JButton startButton;
+    private javax.swing.JButton startClientButton;
+    private javax.swing.JButton startServerButton;
     private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,9 +8,6 @@
       <Color blue="ff" green="ff" red="ff" type="rgb"/>
     </Property>
     <Property name="focusable" type="boolean" value="false"/>
-    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1000, 630]"/>
-    </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1000, 630]"/>
     </Property>
@@ -148,7 +145,7 @@
               <Font name="Ubuntu Condensed" size="24" style="0"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="generateImage(&quot;.\\src\\main\\java\\IconImages\\goback.png&quot;, 30, 30)&#xd;&#xa;" type="code"/>
+              <Connection code="generateImage(&quot;.\\src\\main\\java\\IconImages\\goback.png&quot;, 35, 35)&#xd;&#xa;" type="code"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -4239,14 +4236,14 @@
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="auxiliarRest1" min="-2" max="-2" attributes="0"/>
+                              <Component id="auxiliaryRest1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="healthcareRest1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="healthcareRest2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="auxiliarImageRest1" min="-2" max="-2" attributes="0"/>
+                              <Component id="auxiliaryImageRest1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="healthcareImageRest1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -4279,9 +4276,9 @@
                               <Component id="healthcareRest7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="auxiliarImageRest2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="auxiliaryImageRest2" min="-2" max="-2" attributes="0"/>
                                   <Component id="healthcareRest8" min="-2" max="-2" attributes="0"/>
-                                  <Component id="auxiliarRest2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="auxiliaryRest2" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -4295,13 +4292,13 @@
                       <Component id="restIntWall" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="auxiliarImageRest1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="auxiliaryImageRest1" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="healthcareImageRest1" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="healthcareImageRest2" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="auxiliarRest1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="auxiliaryRest1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="healthcareRest1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="healthcareRest2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -4331,14 +4328,14 @@
                       </Group>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="auxiliarImageRest2" min="-2" max="-2" attributes="0"/>
+                          <Component id="auxiliaryImageRest2" min="-2" max="-2" attributes="0"/>
                           <Component id="healthcareImageRest10" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="healthcareImageRest9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="healthcareRest10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="auxiliarRest2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="auxiliaryRest2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="healthcareRest9" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -4671,10 +4668,10 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="auxiliarRest1">
+            <Component class="javax.swing.JLabel" name="auxiliaryRest1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBackground" type="code"/>
+                  <Connection code="auxiliaryBackground" type="code"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="DejaVu Sans" size="8" style="0"/>
@@ -4682,7 +4679,7 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="00"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBorder" type="code"/>
+                  <Connection code="auxiliaryBorder" type="code"/>
                 </Property>
                 <Property name="focusable" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -4699,10 +4696,10 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="auxiliarRest2">
+            <Component class="javax.swing.JLabel" name="auxiliaryRest2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBackground" type="code"/>
+                  <Connection code="auxiliaryBackground" type="code"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="DejaVu Sans" size="8" style="0"/>
@@ -4710,7 +4707,7 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="00"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBorder" type="code"/>
+                  <Connection code="auxiliaryBorder" type="code"/>
                 </Property>
                 <Property name="focusable" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -4977,17 +4974,17 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="auxiliarImageRest1">
+            <Component class="javax.swing.JLabel" name="auxiliaryImageRest1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBackground" type="code"/>
+                  <Connection code="auxiliaryBackground" type="code"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarImage" type="code"/>
+                  <Connection code="auxiliaryImage" type="code"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBorder" type="code"/>
+                  <Connection code="auxiliaryBorder" type="code"/>
                 </Property>
                 <Property name="focusable" type="boolean" value="false"/>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5002,17 +4999,17 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="auxiliarImageRest2">
+            <Component class="javax.swing.JLabel" name="auxiliaryImageRest2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBackground" type="code"/>
+                  <Connection code="auxiliaryBackground" type="code"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarImage" type="code"/>
+                  <Connection code="auxiliaryImage" type="code"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="auxiliarBorder" type="code"/>
+                  <Connection code="auxiliaryBorder" type="code"/>
                 </Property>
                 <Property name="focusable" type="boolean" value="false"/>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
