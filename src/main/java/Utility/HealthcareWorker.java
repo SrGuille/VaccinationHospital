@@ -52,8 +52,8 @@ public class HealthcareWorker extends Thread{
     public void run(){
         arriveHospital();
         while(!me.isInterrupted()){
-            if (remainingToRest==0){
-                
+            if (remainingToRest<=0 && currentDesk.getPatient()==null){ 
+                //In an extreme case it could happen that a patient has come in after the last vaccination, in that case we vaccine him
                 goRest(5000,8000);
             }
             vRoom.goInside(this);
@@ -133,9 +133,11 @@ public class HealthcareWorker extends Thread{
                     
                     String message = " Healthcare Worker " + getID() + " vaccinated to patient " + vaccinatedPatient.getID()+ " at "+ currentDesk.getID();
                     log.write(message);
-                    
-                    currentDesk.goOut(vaccinatedPatient); //Take out to patient
+                    System.out.println("Before going out vax "+vaccinatedPatient.getID());
+                    vRoom.goOut(vaccinatedPatient); //Take out to patient
+                    System.out.println("After going out vax "+vaccinatedPatient.getID());
                     oRoom.goInside(vaccinatedPatient); //Move him to observation room
+                    System.out.println("After going into obs "+vaccinatedPatient.getID());
                 } catch (InterruptedException ex) {
                     Logger.getLogger(HealthcareWorker.class.getName()).log(Level.SEVERE, null, ex);
                 }

@@ -27,10 +27,7 @@ public abstract class AuxiliaryWorker extends Thread{
     public String getID(){
         return auxWorkerID;
     }
-    
 
-    @Override
-    public abstract void run();
             
     }
 

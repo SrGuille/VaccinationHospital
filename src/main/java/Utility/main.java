@@ -48,7 +48,7 @@ public class main {
         
         for (int j=0;j<50;j++){
             try {
-            Thread.sleep(1000+(int)(Math.random())*2000);
+                Thread.sleep(1000+(int)(Math.random())*2000);
         } catch (InterruptedException ex) {
             Logger.getLogger(Patient.class.getName()).log(Level.SEVERE, null, ex);
         }

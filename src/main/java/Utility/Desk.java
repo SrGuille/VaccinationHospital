@@ -77,12 +77,14 @@ public class Desk {
     }
 
     /*
-    * It must be impossible for 2 workers to try to go into the same desk
+    * It must be impossible for 2 patients to try to go into the same desk
      */
     public void goInside(Patient p) throws InterruptedException {
         lock.lock();
         try {
-            waitForPatient.signal();//We notify to the doctor
+            if (type.equals("VD")){ //If it is a vaccination desk, then
+                waitForPatient.signal();//We notify to the doctor
+            }
             System.out.println(this.deskID);
             p.setCurrentDesk(this); //Set the patient's desk to this one
             patient = p;
@@ -92,31 +94,29 @@ public class Desk {
             lock.unlock();
         }
     }
-    
+
     /*
     * Done just to stop to the patient at the desk
      */
-    public void waitForBeingVaccinated(){
+    public void waitForBeingVaccinated() {
         lock.lock();
         try {
-                waitForBeingVaccinated.await();
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        finally {
-                lock.unlock();
+            waitForBeingVaccinated.await();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            lock.unlock();
         }
     }
-    
-    public void waitForPatient(){
+
+    public void waitForPatient() {
         lock.lock();
         try {
-                waitForPatient.await();
+            waitForPatient.await();
         } catch (InterruptedException ex) {
-                Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        finally {
-                lock.unlock();
+            Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            lock.unlock();
         }
     }
 

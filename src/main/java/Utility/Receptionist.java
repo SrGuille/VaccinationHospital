@@ -1,9 +1,7 @@
-
 package Utility;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 
 public class Receptionist extends AuxiliaryWorker {
 
@@ -46,8 +44,13 @@ public class Receptionist extends AuxiliaryWorker {
 
     }
 
-    /*
-    *It only interrupts it if the status is the one that the calling thread is interested in
+    /**
+     *
+     * It only interrupts it if the status is the one that the calling thread is
+     * interested in
+     *
+     * @param desiredStatus is the status that must be found to interrupt him
+     *
      */
     public synchronized void conditionalInterrupt(int desiredStatus) {
         if (status == desiredStatus) {

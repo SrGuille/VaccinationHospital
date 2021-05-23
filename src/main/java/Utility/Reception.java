@@ -87,7 +87,6 @@ public class Reception {
         }
         
         else if (vRoom.tryGoInside(patientAtFrontDesk)){ //If it has managed to go in, let it go
-            //patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
             entranceLock.lock();
             try {
                 queue.signal(); //signal first patient thread 
