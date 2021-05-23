@@ -1,25 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Utility;
 
+import Log.WriteToLog;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author guial
- */
 public class ObservationRoom {
-    private Desk[] desks;
+    private Desk[] desks = new Desk[20];
     private AtomicInteger numPatients;
     private VaccinationRoom vRoom;
     
-    public ObservationRoom(){
+    public ObservationRoom(WriteToLog log){
         numPatients=new AtomicInteger(0);
+        for (int i=0; i<20; i++){
+            desks[i]= new Desk(i+1,false,log);
+        }
         
     }
     public int numPatients(){

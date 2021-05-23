@@ -25,11 +25,17 @@ public class Receptionist extends AuxiliaryWorker{
         reception=recep;
         rRoom=r;
         remainingToRest=10;
-        status=0; 
+        status=0;
+        start();
     }
     
     @Override
     public void run(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
+        }
         while (me.isInterrupted()==false && (status==0) || status==1){ //If no one interrupts us, we keep working
             if (remainingToRest==0){
                 goRest(3000,5000); //Sleep for 3 to 5 secs

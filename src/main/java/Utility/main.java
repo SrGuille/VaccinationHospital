@@ -1,8 +1,9 @@
 package Utility;
 
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.LinkedBlockingQueue;
+import Log.WriteToLog;
+
+import java.time.LocalDateTime;
+
 
 /**
  *
@@ -15,12 +16,16 @@ public class main {
      */
     public static void main(String[] args) throws InterruptedException {
         
+        WriteToLog log = new WriteToLog("evolutionHospital.txt");
+        log.write(" Main: Hospital opened");
+        
+        
         //Create rooms
-        ObservationRoom oRoom = new ObservationRoom();
+        ObservationRoom oRoom = new ObservationRoom(log);
         RestRoom rRoom = new RestRoom(oRoom);
-        VaccinationRoom vRoom = new VaccinationRoom(oRoom);
+        VaccinationRoom vRoom = new VaccinationRoom(oRoom, log);
         oRoom.setVaccinationRoom(vRoom);
-        Reception reception = new Reception(vRoom);
+        Reception reception = new Reception(vRoom, log);
 
         Object[] hospitalRooms ={reception, vRoom, oRoom, rRoom};
        
@@ -37,9 +42,9 @@ public class main {
         }
         
         //Create patients
-        Patient patients[]= new Patient[2000];
+        Patient patients[]= new Patient[50];
         
-        for (int j=0;j<2000;j++){
+        for (int j=0;j<50;j++){
             patients[j] = new Patient(j+1, hospitalRooms);
         }
         

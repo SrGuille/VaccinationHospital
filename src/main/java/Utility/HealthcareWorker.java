@@ -30,6 +30,7 @@ public class HealthcareWorker extends Thread{
         oRoom=(ObservationRoom)hospitalRooms[2];
         rRoom=(RestRoom)hospitalRooms[3];
         status=0;
+        start();
     }
   
     private String assignID(int wID){

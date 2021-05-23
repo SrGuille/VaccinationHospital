@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Utility;
 
+import Log.WriteToLog;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author guial
- */
+
 public class VaccinationRoom {
-    private Desk[] desks;
+    private Desk[] desks=new Desk[10];
     public Semaphore mutex;
     private AtomicInteger numWorkers;
     private AtomicInteger numPatients;
@@ -23,13 +16,15 @@ public class VaccinationRoom {
     private AtomicInteger numVaccines;
     private Receptionist receptionist;
     
-    public VaccinationRoom(ObservationRoom o){
+    public VaccinationRoom(ObservationRoom o, WriteToLog log){
         mutex = new Semaphore(1);
         oRoom=o;
         numVaccines =new AtomicInteger(0);
         numWorkers =new AtomicInteger(0);
         numPatients=new AtomicInteger(0);
-   
+        for (int i=0; i<10; i++){
+            desks[i]= new Desk(i+1,true,log);
+        }
     }
     
     public void setReceptionist(Receptionist r){
