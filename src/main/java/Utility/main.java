@@ -22,7 +22,7 @@ public class main {
         
         //Create rooms
         ObservationRoom oRoom = new ObservationRoom(log);
-        RestRoom rRoom = new RestRoom(oRoom);
+        RestRoom rRoom = new RestRoom(oRoom, log);
         VaccinationRoom vRoom = new VaccinationRoom(oRoom, log);
         oRoom.setVaccinationRoom(vRoom);
         Reception reception = new Reception(vRoom, log);
