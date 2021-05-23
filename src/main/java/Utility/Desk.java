@@ -60,14 +60,13 @@ public class Desk {
     public void goInside(HealthcareWorker h) throws InterruptedException {
         lock.lock();
         String message;
-        if (type.equals("VD")){
-            message = " Healthcare Worker " + h.getID() + " entered " + deskID +" and is waiting to vaccinate a patient";
-        }
-        else{
-            message = " Healthcare Worker " + h.getID() + " entered " + deskID +" to heal to patient " +patient.getID();
+        if (type.equals("VD")) {
+            message = " Healthcare Worker " + h.getID() + " entered " + deskID + " and is waiting to vaccinate a patient";
+        } else {
+            message = " Healthcare Worker " + h.getID() + " entered " + deskID + " to heal to patient " + patient.getID();
         }
         log.write(message);
-       
+
         try {
             h.setCurrentDesk(this); //Set the worker desk to this one
             healthcareWorker = h;
@@ -116,7 +115,7 @@ public class Desk {
             lock.unlock();
         }
     }
-    
+
     /**
      * Healthcare worker who calls awakes to the vaccinated patient
      */
@@ -142,7 +141,7 @@ public class Desk {
             lock.unlock();
         }
     }
-    
+
     /**
      * Patient who calls it has symptoms and waits to be healed
      */
@@ -156,9 +155,10 @@ public class Desk {
             lock.unlock();
         }
     }
-    
+
     /**
-     * Healthcare worker who calls it tells to his patient that his symptoms have stopped and it can leave the hospital
+     * Healthcare worker who calls it tells to his patient that his symptoms
+     * have stopped and it can leave the hospital
      */
     public void tellPatientToGoHome() {
         lock.lock();
@@ -169,7 +169,7 @@ public class Desk {
         }
     }
 
-    public synchronized void goOut(Patient p){
+    public synchronized void goOut(Patient p) {
         patient = null;
         p.setCurrentDesk(null); //We free also the patient's desk
         awakeVaccinatedPatient();
@@ -185,7 +185,9 @@ public class Desk {
 
     public boolean isAvailableForPatient() {
         boolean isAvailable = false;
-        if (patient == null && healthcareWorker != null) { //Only can go in if it has no patient and it has a doctor
+        if (type.equals("VD") && patient == null && healthcareWorker != null) { // In case of vaccination desk only can go in if it has no patient and it has a doctor
+            isAvailable = true;
+        } else if (type.equals("OD") && patient == null) { //In case of observation desk, then the only contition is that there must be no patient inside
             isAvailable = true;
         }
         return isAvailable;

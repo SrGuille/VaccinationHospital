@@ -98,6 +98,7 @@ public class Reception {
         else{ //No possibility of forwarding to the patient, stop service until interrupted
             entranceLock.lock();
             try {
+                System.out.println("STOP");
                 r.setStatus(2); //Waiting for free desk status
                 stopService.await();
             } catch (InterruptedException spotRelased) { //When interrupted, there is a place in the room (a patient has left or a doctor has come)
