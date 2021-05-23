@@ -3211,3 +3211,19 @@
 23-05-2021 21:21:40 Vaccine produced, there are 1437 ready
 23-05-2021 21:21:40 Vaccine produced, there are 1438 ready
 23-05-2021 21:21:41 Vaccine produced, there are 1439 ready
+23-05-2021 21:21:42 Vaccine produced, there are 1440 ready
+23-05-2021 21:21:42 Vaccine produced, there are 1441 ready
+23-05-2021 21:21:42 Vaccine Preparer A2 is resting
+23-05-2021 21:21:45 Vaccine Preparer A2 has returned to his spot
+23-05-2021 21:21:46 Vaccine produced, there are 1442 ready
+23-05-2021 21:21:47 Vaccine produced, there are 1443 ready
+23-05-2021 21:21:48 Vaccine produced, there are 1444 ready
+23-05-2021 21:21:48 Vaccine produced, there are 1445 ready
+23-05-2021 21:21:49 Vaccine produced, there are 1446 ready
+23-05-2021 21:21:50 Vaccine produced, there are 1447 ready
+23-05-2021 21:21:51 Vaccine produced, there are 1448 ready
+23-05-2021 21:21:52 Vaccine produced, there are 1449 ready
+23-05-2021 21:21:52 Vaccine produced, there are 1450 ready
+23-05-2021 21:21:53 Vaccine produced, there are 1451 ready
+23-05-2021 21:21:54 Vaccine produced, there are 1452 ready
+23-05-2021 21:21:55 Vaccine produced, there are 1453 ready

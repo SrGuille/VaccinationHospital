@@ -1,10 +1,8 @@
 package Utility;
 
 import Log.WriteToLog;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,10 +11,10 @@ public class RestRoom {
 
     private Semaphore mutex = new Semaphore(1);
 
-    private LinkedList workers = new LinkedList();
+    private Queue workers = new LinkedList();
     private Receptionist receptionist;
     private VaccinePreparer vaccinePreparer;
-    private LinkedList emergencyDesks = new LinkedList();
+    private Queue emergencyDesks = new LinkedList();
     private ObservationRoom oRoom;
     private WriteToLog log;
 

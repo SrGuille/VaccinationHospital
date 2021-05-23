@@ -2,6 +2,7 @@ package Utility;
 
 import Log.WriteToLog;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Random;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -16,7 +17,7 @@ public class Reception {
     private Condition queue;
     private Condition stopService;
     private Patient patientAtFrontDesk;
-    private LinkedList patients = new LinkedList();
+    private Queue patients = new LinkedList();
     private VaccinationRoom vRoom;
     private WriteToLog log;
     private Receptionist receptionist;
