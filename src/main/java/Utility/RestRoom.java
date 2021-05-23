@@ -77,11 +77,18 @@ public class RestRoom {
         log.write(message);
     }
 
+    /**
+     * The first healthcare worker in the queue will go to help the patient. 
+     * If there were no workers resting, then the emergency is noted in the list of emergencies 
+     * and it will be attended by the first worker to come to rest
+     * @param desk is the desk of the patient that needs help
+     */
     public void callForHelp(Desk desk) {
         try {
             mutex.acquire();
             if (!workers.isEmpty()) { //If there is someone, send him to help
                 HealthcareWorker calledWorker = (HealthcareWorker) workers.poll();
+                calledWorker.setEmergencyDesk(desk); //In this way it will know the desk he has to go to
                 calledWorker.interrupt();
             } else {//Else, note the emergency
                 emergencyDesks.add(desk);
