@@ -33,8 +33,11 @@ public class RestRoom {
         }
 
         if (!emergencyDesks.isEmpty()) { //If there is an emergency and the rest room was empty the worker directly goes to help
-            oRoom.goInside(h, (Desk) emergencyDesks.poll()); //Put the first one in the desk
+            
+            Desk emergencyDesk=(Desk) emergencyDesks.poll();//Get first desk where there is an emergency
+            h.setEmergencyDesk(emergencyDesk); //In this way it will know the desk he has to go to
             h.interrupt();
+            
         } else {
             workers.offer(h);
             String message = " Healthcare worker " + h.getID() + " is resting";

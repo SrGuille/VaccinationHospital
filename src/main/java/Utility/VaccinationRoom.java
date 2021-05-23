@@ -148,9 +148,10 @@ public class VaccinationRoom {
     /**
      * Patient goes out, necessary mutual exclusion as a patient can't abandon the room if another patient is trying to go in
      * 
+     * @param p patient to move
      * @throws InterruptedException 
      */
-    public void goOut(Patient p) throws InterruptedException {
+    public void goToObservation(Patient p) throws InterruptedException {
         try {
             mutex.acquire();
         } catch (InterruptedException ex) {

@@ -9,7 +9,7 @@ public class Receptionist extends AuxiliaryWorker {
     private RestRoom rRoom;
     private int remainingToRest;
     private Thread me;
-    private int status; //State=0 normal working, state=1 resting, state=2 waiting for available desk at vaccination room
+    private int status; //State=0 normal working, state=1 resting, state=2 waiting for available desk at vaccination room, State=3 nobody at queue
 
     public Receptionist(int wID, Reception recep, RestRoom r) {
         super(wID);
@@ -55,11 +55,16 @@ public class Receptionist extends AuxiliaryWorker {
      */
     public synchronized void conditionalInterrupt(int desiredStatus) {
         if (status == desiredStatus) {
-            me.interrupt();
             setStatus(0); //working status
+            me.interrupt();
+           
         }
     }
 
+    public int getStatus(){
+        return status;
+    }
+    
     public void setStatus(int newValue) {
         status = newValue;
     }

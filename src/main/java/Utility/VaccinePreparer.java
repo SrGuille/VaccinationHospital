@@ -15,6 +15,7 @@ public class VaccinePreparer extends AuxiliaryWorker {
     private Thread me = Thread.currentThread();
     private int remainingToRest;
     private int totalVaccinesPrepared;
+    private int status; //Status=0 WORKING and Status=1 RESTING
 
     public VaccinePreparer(int wID, VaccinationRoom v, RestRoom r) {
         super(wID);
@@ -22,6 +23,7 @@ public class VaccinePreparer extends AuxiliaryWorker {
         rRoom = r;
         remainingToRest = 20;
         totalVaccinesPrepared=0;
+        status=0;
         start();
     }
 
@@ -39,6 +41,10 @@ public class VaccinePreparer extends AuxiliaryWorker {
 
     }
 
+    public int getStatus(){
+        return status;
+    }
+    
     private void waitVaccineIsReady(int minTime, int maxTime) {
         try {
             Thread.sleep(minTime + (int) (Math.random() * (maxTime - minTime)));
@@ -48,7 +54,8 @@ public class VaccinePreparer extends AuxiliaryWorker {
     }
 
     private void goRest(int minTime, int maxTime) {
-
+        
+        status=1;
         rRoom.goIn(this);
 
         try {
@@ -58,6 +65,7 @@ public class VaccinePreparer extends AuxiliaryWorker {
         }
 
         rRoom.goOut(this);
+        status=0;
         remainingToRest = 20; //Restore the numPatients to attend before next rest
     }
 

@@ -1,5 +1,6 @@
 package Utility;
 
+import Log.WriteToLog;
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
@@ -24,6 +25,7 @@ public class Patient extends Thread{
     private VaccinationRoom vRoom;
     private ObservationRoom oRoom;
     private RestRoom rRoom;
+    private WriteToLog log;
     
     public Patient(int pID, Object[] hospitalRooms){
         patientID=assignID(pID);
@@ -36,7 +38,7 @@ public class Patient extends Thread{
     
     public void run(){
         reception.arriveToHospital(this);
-        if (hasAnAppointment){ //Everything happens automatically as the patient is always controlled by the workers, he is only in charge of checking if it has symptoms
+        if (hasAnAppointment){ 
             currentDesk.waitForBeingVaccinated();
             waitForSymptoms(10000);
         }
@@ -87,10 +89,13 @@ public class Patient extends Thread{
             }
          
         Random r = new Random();
-        if (r.nextInt(100)<5){ //5% chance of having symptoms  
+        if (r.nextInt(100)<5){ //5% chance of having symptoms
             rRoom.callForHelp(currentDesk);
             currentDesk.waitForBeenHealed(); //Wait for help
-        }  
+        }
+        else{
+            oRoom.goOut(this);
+        }
     }
     
 }

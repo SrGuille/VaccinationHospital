@@ -160,9 +160,10 @@ public class Desk {
      * Healthcare worker who calls it tells to his patient that his symptoms
      * have stopped and it can leave the hospital
      */
-    public void tellPatientToGoHome() {
+    public void tellPatientToGoHome(Patient p) {
         lock.lock();
         try {
+            goOut(p);
             waitForBeingHealed.signal();
         } finally {
             lock.unlock();
@@ -171,8 +172,13 @@ public class Desk {
 
     public synchronized void goOut(Patient p) {
         patient = null;
-        p.setCurrentDesk(null); //We free also the patient's desk
-        awakeVaccinatedPatient();
+        if (type.equals("VD")){ //In case of vaccination desk, we must awake the patient to go to observation
+            awakeVaccinatedPatient();
+        } 
+        else{//Leaving the hospital in case of observation desk
+             String message= " Patient " + p.getID() + " has left the hospital";
+             log.write(message);
+        }
     }
 
     public boolean isAvailableForWorker() {

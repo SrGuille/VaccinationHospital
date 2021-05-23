@@ -19,6 +19,7 @@ public class Reception {
     private LinkedList patients = new LinkedList();
     private VaccinationRoom vRoom;
     private WriteToLog log;
+    private Receptionist receptionist;
     
     public Reception(VaccinationRoom v, WriteToLog log){
         entranceLock=new ReentrantLock(true);
@@ -26,8 +27,12 @@ public class Reception {
         stopService=entranceLock.newCondition(); 
         vRoom=v;
         this.log=log;
+        
     }
    
+    public void setReceptionist(Receptionist r){
+        receptionist=r;
+    }
     
     /*
     *   Calling this, a patient waits in the queue.
@@ -41,6 +46,9 @@ public class Reception {
         try{
             
             patients.offer(p); //Patient information stored to later display
+            if (receptionist!=null){ //If the receptionist hasn't left and it is waiting for patients to arrive
+                receptionist.conditionalInterrupt(3);
+            }
             queue.await(); //Patient execution waiting at the queue
             
             
@@ -53,19 +61,33 @@ public class Reception {
     }
     
     /*
-    *   Calling this, a receptionist signals to the first in the queue.
+    *   Calling this, a receptionist signals to the first in the queue. IF no patients, we wait until one arrives
     */
     public void callFirstInQueue(){
         entranceLock.lock();
-        try {
-            patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
-            
-            String message = " Patient "+ patientAtFrontDesk.getID()+" is at front desk";
-            log.write(message);
-             
+        boolean isAttended=false;
+        while(!isAttended){
+
+            try {
+                patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
+                if (patientAtFrontDesk==null){
+                    try {
+                        receptionist.setStatus(3); //Status of waiting for patients to arrive
+                        stopService.await();
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(Reception.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                else{
+                    isAttended=true;
+                    String message = " Patient "+ patientAtFrontDesk.getID()+" is at front desk";
+                    log.write(message);
+                }
+
         } finally {
             entranceLock.unlock();
         }
+            }
     }
 
     /*

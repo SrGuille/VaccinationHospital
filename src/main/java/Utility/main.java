@@ -35,6 +35,7 @@ public class main {
         Receptionist aux1 = new Receptionist(1, reception, rRoom);
         VaccinePreparer aux2 = new VaccinePreparer(2, vRoom, rRoom);
         
+        reception.setReceptionist(aux1);
         vRoom.setReceptionist(aux1);
         
         HealthcareWorker[] workers = new HealthcareWorker[10];

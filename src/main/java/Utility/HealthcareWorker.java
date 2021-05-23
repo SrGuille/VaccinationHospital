@@ -19,7 +19,7 @@ public class HealthcareWorker extends Thread {
     private final String hcWorkerID;
     private Desk currentDesk;
     private Desk emergencyDesk;
-    private Thread me = Thread.currentThread();
+    private Thread me;
     private RestRoom rRoom;
     private VaccinationRoom vRoom;
     private ObservationRoom oRoom;
@@ -51,6 +51,7 @@ public class HealthcareWorker extends Thread {
     }
 
     public void run() {
+        me = Thread.currentThread();
         arriveHospital();
         while (!me.isInterrupted()) {
             if (remainingToRest <= 0 && currentDesk.getPatient() == null) {
@@ -131,17 +132,12 @@ public class HealthcareWorker extends Thread {
 
                 try {
                     Patient vaccinatedPatient = currentDesk.getPatient();
-
+                    
                     String message = " Healthcare Worker " + getID() + " vaccinated to patient " + vaccinatedPatient.getID() + " at " + currentDesk.getID();
                     log.write(message);
-                    //System.out.println("Before going out vax "+vaccinatedPatient.getID());
 
-                    vRoom.goOut(vaccinatedPatient); //Take out to patient
+                    vRoom.goToObservation(vaccinatedPatient); //Take out to patient and also move him to observation room
 
-                    //System.out.println("After going out vax "+vaccinatedPatient.getID());
-                    oRoom.goInside(vaccinatedPatient); //Move it to observation room
-
-                    //System.out.println("After going into obs "+vaccinatedPatient.getID());
                 } catch (InterruptedException ex) {
                     Logger.getLogger(HealthcareWorker.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -159,16 +155,19 @@ public class HealthcareWorker extends Thread {
     private void healPatient(int minTime, int maxTime) {
         rRoom.goOut(this);
         oRoom.goInside(this, emergencyDesk);
+        emergencyDesk=null;
         try {
             Thread.sleep(minTime + (int) (Math.random() * (maxTime - minTime)));
 
         } catch (InterruptedException ex) {
             Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
         }
-        emergencyDesk.tellPatientToGoHome();
+        
+        emergencyDesk.tellPatientToGoHome(currentDesk.getPatient());
+        
         oRoom.goOut(this);
         goRest(2500, 4000); //Go rest the half of the time
-        
+
     }
 
 }
