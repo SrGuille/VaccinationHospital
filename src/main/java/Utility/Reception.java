@@ -16,7 +16,7 @@ public class Reception {
     private Lock entranceLock;
     private Condition queue;
     private Condition stopService;
-    private Patient patientAtFrontDesk;
+    private Patient patientAtFrontDesk=null;
     private Queue patients = new LinkedList();
     private VaccinationRoom vRoom;
     private WriteToLog log;
@@ -35,9 +35,11 @@ public class Reception {
         receptionist=r;
     }
     
-    /*
-    *   Calling this, a patient waits in the queue.
-    */
+   
+    /**
+     * Calling this, a patient waits in the queue.
+     * @param p patient, to store it and stop it
+     */
     public void arriveToHospital(Patient p){
         entranceLock.lock();
         
@@ -61,9 +63,9 @@ public class Reception {
         }
     }
     
-    /*
-    *   Calling this, a receptionist signals to the first in the queue. IF no patients, we wait until one arrives
-    */
+    /**
+     * Calling this, a receptionist moves the first in the queue to the front desk. If no patients, we wait until one arrives.
+     */
     public void callFirstInQueue(){
         entranceLock.lock();
         boolean isAttended=false;
@@ -112,6 +114,7 @@ public class Reception {
         else if (vRoom.tryGoInside(patientAtFrontDesk)){ //If it has managed to go in, let it go
             entranceLock.lock();
             try {
+                patientAtFrontDesk=null;
                 queue.signal(); //signal first patient thread 
             } finally {
                 entranceLock.unlock();
