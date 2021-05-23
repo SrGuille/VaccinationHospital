@@ -22,15 +22,12 @@ public class Patient extends Thread{
     private Desk currentDesk;
     private boolean hasAnAppointment=true;
     private Reception reception;
-    private VaccinationRoom vRoom;
     private ObservationRoom oRoom;
     private RestRoom rRoom;
-    private WriteToLog log;
     
     public Patient(int pID, Object[] hospitalRooms){
         patientID=assignID(pID);
         this.reception=(Reception)hospitalRooms[0];
-        this.vRoom=(VaccinationRoom)hospitalRooms[1];
         this.oRoom=(ObservationRoom)hospitalRooms[2];
         this.rRoom=(RestRoom)hospitalRooms[3];
         start();

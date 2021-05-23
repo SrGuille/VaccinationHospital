@@ -24,7 +24,7 @@ public class HealthcareWorker extends Thread {
     private VaccinationRoom vRoom;
     private ObservationRoom oRoom;
     private int remainingToRest = 15;
-    private int status; //status=0 working, status=1 resting, status=2 vaccinating
+    private int status; //Status=0 resting or working (available for helping at observation), status=1 vaccinating
     private WriteToLog log;
 
     public HealthcareWorker(int wID, Object[] hospitalRooms, WriteToLog log) {
@@ -86,6 +86,22 @@ public class HealthcareWorker extends Thread {
         prepareForWork(1000, 3000);
         rRoom.goOut(this);
 
+    }
+    
+    public synchronized void conditionalInterrupt(int desiredStatus) {
+        if (status == desiredStatus) {
+            setStatus(0); //ready to help status
+            me.interrupt();
+           
+        }
+    }
+
+    public synchronized int getStatus(){
+        return status;
+    }
+    
+    public synchronized void setStatus(int newValue) {
+        status = newValue;
     }
 
     private void prepareForWork(int minTime, int maxTime) {

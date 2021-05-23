@@ -101,6 +101,7 @@ public class Reception {
         
         if (random.nextInt(100)==0){ //Give a 1% chance of not listed
             patientAtFrontDesk.notAppointment(); //Makes it to leave the hospital
+            System.out.println("Patient "+patientAtFrontDesk.getID()+" came without an appointment");
             entranceLock.lock();
             try {
                 queue.signal(); //signal first patient thread 
@@ -114,6 +115,8 @@ public class Reception {
         else if (vRoom.tryGoInside(patientAtFrontDesk)){ //If it has managed to go in, let it go
             entranceLock.lock();
             try {
+                System.out.println("Patient "+patientAtFrontDesk.getID()+" vaccinated in desk "+patientAtFrontDesk.getCurrentDesk().getID()+
+                        " by "+patientAtFrontDesk.getCurrentDesk().getWorker().getID());
                 patientAtFrontDesk=null;
                 queue.signal(); //signal first patient thread 
             } finally {

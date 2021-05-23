@@ -58,6 +58,7 @@ public class Desk {
 
         return healthcareWorker;
     }
+    
 
     /*
     * It must be impossible for 2 workers to try to go into the same desk

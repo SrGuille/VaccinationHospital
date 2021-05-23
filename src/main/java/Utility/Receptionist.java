@@ -28,7 +28,7 @@ public class Receptionist extends AuxiliaryWorker {
         } catch (InterruptedException ex) {
             Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
         }
-        while (me.isInterrupted() == false && (status == 0) || status == 1) { //If no one interrupts us, we keep working
+        while (me.isInterrupted() == false && (status == 0) || status == 1) { //If no one interrupts it, keep working
             if (remainingToRest == 0) {
                 goRest(3000, 5000); //Sleep for 3 to 5 secs
 
@@ -61,11 +61,11 @@ public class Receptionist extends AuxiliaryWorker {
         }
     }
 
-    public int getStatus(){
+    public synchronized int getStatus(){
         return status;
     }
     
-    public void setStatus(int newValue) {
+    public synchronized void setStatus(int newValue) {
         status = newValue;
     }
 
