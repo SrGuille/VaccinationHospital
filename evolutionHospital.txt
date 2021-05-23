@@ -1,263 +1,515 @@
-23-05-2021 11:41:25 Main: Hospital opened
-23-05-2021 11:41:25 Patient P0013 arrived at the hospital
-23-05-2021 11:41:25 Patient P0039 arrived at the hospital
-23-05-2021 11:41:25 Patient P0040 arrived at the hospital
-23-05-2021 11:41:25 Patient P0023 arrived at the hospital
-23-05-2021 11:41:25 Patient P0019 arrived at the hospital
-23-05-2021 11:41:25 Patient P0020 arrived at the hospital
-23-05-2021 11:41:25 Patient P0007 arrived at the hospital
-23-05-2021 11:41:25 Patient P0012 arrived at the hospital
-23-05-2021 11:41:25 Patient P0008 arrived at the hospital
-23-05-2021 11:41:25 Patient P0004 arrived at the hospital
-23-05-2021 11:41:25 Patient P0003 arrived at the hospital
-23-05-2021 11:41:25 Patient P0044 arrived at the hospital
-23-05-2021 11:41:25 Patient P0028 arrived at the hospital
-23-05-2021 11:41:25 Patient P0041 arrived at the hospital
-23-05-2021 11:41:25 Patient P0011 arrived at the hospital
-23-05-2021 11:41:25 Patient P0025 arrived at the hospital
-23-05-2021 11:41:25 Patient P0045 arrived at the hospital
-23-05-2021 11:41:25 Patient P0038 arrived at the hospital
-23-05-2021 11:41:25 Patient P0049 arrived at the hospital
-23-05-2021 11:41:25 Patient P0009 arrived at the hospital
-23-05-2021 11:41:25 Patient P0027 arrived at the hospital
-23-05-2021 11:41:25 Patient P0043 arrived at the hospital
-23-05-2021 11:41:25 Patient P0015 arrived at the hospital
-23-05-2021 11:41:25 Patient P0048 arrived at the hospital
-23-05-2021 11:41:25 Patient P0017 arrived at the hospital
-23-05-2021 11:41:25 Patient P0042 arrived at the hospital
-23-05-2021 11:41:25 Patient P0032 arrived at the hospital
-23-05-2021 11:41:25 Patient P0031 arrived at the hospital
-23-05-2021 11:41:25 Patient P0006 arrived at the hospital
-23-05-2021 11:41:25 Patient P0016 arrived at the hospital
-23-05-2021 11:41:25 Patient P0001 arrived at the hospital
-23-05-2021 11:41:25 Patient P0018 arrived at the hospital
-23-05-2021 11:41:25 Patient P0022 arrived at the hospital
-23-05-2021 11:41:25 Patient P0047 arrived at the hospital
-23-05-2021 11:41:25 Patient P0030 arrived at the hospital
-23-05-2021 11:41:25 Patient P0005 arrived at the hospital
-23-05-2021 11:41:25 Patient P0034 arrived at the hospital
-23-05-2021 11:41:25 Patient P0046 arrived at the hospital
-23-05-2021 11:41:25 Patient P0014 arrived at the hospital
-23-05-2021 11:41:25 Patient P0029 arrived at the hospital
-23-05-2021 11:41:25 Patient P0037 arrived at the hospital
-23-05-2021 11:41:25 Patient P0033 arrived at the hospital
-23-05-2021 11:41:25 Patient P0026 arrived at the hospital
-23-05-2021 11:41:25 Patient P0036 arrived at the hospital
-23-05-2021 11:41:25 Patient P0021 arrived at the hospital
-23-05-2021 11:41:25 Patient P0010 arrived at the hospital
-23-05-2021 11:41:25 Patient P0024 arrived at the hospital
-23-05-2021 11:41:25 Patient P0035 arrived at the hospital
-23-05-2021 11:41:25 Patient P0002 arrived at the hospital
-23-05-2021 11:41:25 Patient P0050 arrived at the hospital
-23-05-2021 11:41:28 Patient P0013 is at front desk
-23-05-2021 11:47:50 Main: Hospital opened
-23-05-2021 11:47:50 Patient P0025 arrived at the hospital
-23-05-2021 11:47:50 Patient P0021 arrived at the hospital
-23-05-2021 11:47:50 Patient P0041 arrived at the hospital
-23-05-2021 11:47:50 Patient P0008 arrived at the hospital
-23-05-2021 11:47:50 Patient P0012 arrived at the hospital
-23-05-2021 11:47:50 Patient P0005 arrived at the hospital
-23-05-2021 11:47:50 Patient P0048 arrived at the hospital
-23-05-2021 11:47:50 Patient P0017 arrived at the hospital
-23-05-2021 11:47:50 Patient P0018 arrived at the hospital
-23-05-2021 11:47:50 Patient P0028 arrived at the hospital
-23-05-2021 11:47:50 Patient P0026 arrived at the hospital
-23-05-2021 11:47:50 Patient P0013 arrived at the hospital
-23-05-2021 11:47:50 Patient P0002 arrived at the hospital
-23-05-2021 11:47:50 Patient P0033 arrived at the hospital
-23-05-2021 11:47:50 Patient P0023 arrived at the hospital
-23-05-2021 11:47:50 Patient P0031 arrived at the hospital
-23-05-2021 11:47:50 Patient P0037 arrived at the hospital
-23-05-2021 11:47:50 Patient P0011 arrived at the hospital
-23-05-2021 11:47:50 Patient P0045 arrived at the hospital
-23-05-2021 11:47:50 Patient P0001 arrived at the hospital
-23-05-2021 11:47:50 Patient P0006 arrived at the hospital
-23-05-2021 11:47:50 Patient P0022 arrived at the hospital
-23-05-2021 11:47:50 Patient P0010 arrived at the hospital
-23-05-2021 11:47:50 Patient P0014 arrived at the hospital
-23-05-2021 11:47:50 Patient P0044 arrived at the hospital
-23-05-2021 11:47:50 Patient P0050 arrived at the hospital
-23-05-2021 11:47:50 Patient P0040 arrived at the hospital
-23-05-2021 11:47:50 Patient P0027 arrived at the hospital
-23-05-2021 11:47:50 Patient P0043 arrived at the hospital
-23-05-2021 11:47:50 Patient P0049 arrived at the hospital
-23-05-2021 11:47:50 Patient P0016 arrived at the hospital
-23-05-2021 11:47:50 Patient P0007 arrived at the hospital
-23-05-2021 11:47:50 Patient P0036 arrived at the hospital
-23-05-2021 11:47:50 Patient P0030 arrived at the hospital
-23-05-2021 11:47:50 Patient P0029 arrived at the hospital
-23-05-2021 11:47:50 Patient P0038 arrived at the hospital
-23-05-2021 11:47:50 Patient P0015 arrived at the hospital
-23-05-2021 11:47:50 Patient P0042 arrived at the hospital
-23-05-2021 11:47:50 Patient P0034 arrived at the hospital
-23-05-2021 11:47:50 Patient P0046 arrived at the hospital
-23-05-2021 11:47:50 Patient P0009 arrived at the hospital
-23-05-2021 11:47:50 Patient P0003 arrived at the hospital
-23-05-2021 11:47:50 Patient P0024 arrived at the hospital
-23-05-2021 11:47:50 Patient P0039 arrived at the hospital
-23-05-2021 11:47:50 Patient P0020 arrived at the hospital
-23-05-2021 11:47:50 Patient P0004 arrived at the hospital
-23-05-2021 11:47:50 Patient P0035 arrived at the hospital
-23-05-2021 11:47:50 Patient P0032 arrived at the hospital
-23-05-2021 11:47:50 Patient P0019 arrived at the hospital
-23-05-2021 11:47:50 Patient P0047 arrived at the hospital
-23-05-2021 11:47:53 Patient P0041 is at front desk
-23-05-2021 12:02:06 Main: Hospital opened
-23-05-2021 12:02:06 Patient P0001 arrived at the hospital
-23-05-2021 12:02:06 Patient P0002 arrived at the hospital
-23-05-2021 12:02:06 Patient P0003 arrived at the hospital
-23-05-2021 12:02:06 Patient P0004 arrived at the hospital
-23-05-2021 12:02:06 Patient P0006 arrived at the hospital
-23-05-2021 12:02:06 Patient P0005 arrived at the hospital
-23-05-2021 12:02:06 Patient P0007 arrived at the hospital
-23-05-2021 12:02:06 Patient P0008 arrived at the hospital
-23-05-2021 12:02:06 Patient P0009 arrived at the hospital
-23-05-2021 12:02:06 Patient P0010 arrived at the hospital
-23-05-2021 12:02:06 Patient P0011 arrived at the hospital
-23-05-2021 12:02:06 Patient P0012 arrived at the hospital
-23-05-2021 12:02:06 Patient P0013 arrived at the hospital
-23-05-2021 12:02:06 Patient P0014 arrived at the hospital
-23-05-2021 12:02:06 Patient P0015 arrived at the hospital
-23-05-2021 12:02:06 Patient P0016 arrived at the hospital
-23-05-2021 12:02:06 Patient P0017 arrived at the hospital
-23-05-2021 12:02:06 Patient P0018 arrived at the hospital
-23-05-2021 12:02:06 Patient P0019 arrived at the hospital
-23-05-2021 12:02:06 Patient P0020 arrived at the hospital
-23-05-2021 12:02:06 Patient P0021 arrived at the hospital
-23-05-2021 12:02:06 Patient P0022 arrived at the hospital
-23-05-2021 12:02:06 Patient P0023 arrived at the hospital
-23-05-2021 12:02:06 Patient P0024 arrived at the hospital
-23-05-2021 12:02:06 Patient P0025 arrived at the hospital
-23-05-2021 12:02:06 Patient P0026 arrived at the hospital
-23-05-2021 12:02:06 Patient P0027 arrived at the hospital
-23-05-2021 12:02:06 Patient P0028 arrived at the hospital
-23-05-2021 12:02:06 Patient P0029 arrived at the hospital
-23-05-2021 12:02:06 Patient P0030 arrived at the hospital
-23-05-2021 12:02:06 Patient P0031 arrived at the hospital
-23-05-2021 12:02:06 Patient P0032 arrived at the hospital
-23-05-2021 12:02:06 Patient P0033 arrived at the hospital
-23-05-2021 12:02:06 Patient P0034 arrived at the hospital
-23-05-2021 12:02:06 Patient P0035 arrived at the hospital
-23-05-2021 12:02:06 Patient P0036 arrived at the hospital
-23-05-2021 12:02:06 Patient P0037 arrived at the hospital
-23-05-2021 12:02:06 Patient P0038 arrived at the hospital
-23-05-2021 12:02:06 Patient P0039 arrived at the hospital
-23-05-2021 12:02:06 Patient P0040 arrived at the hospital
-23-05-2021 12:02:06 Patient P0041 arrived at the hospital
-23-05-2021 12:02:06 Patient P0042 arrived at the hospital
-23-05-2021 12:02:06 Patient P0043 arrived at the hospital
-23-05-2021 12:02:06 Patient P0044 arrived at the hospital
-23-05-2021 12:02:06 Patient P0045 arrived at the hospital
-23-05-2021 12:02:06 Patient P0047 arrived at the hospital
-23-05-2021 12:02:06 Patient P0046 arrived at the hospital
-23-05-2021 12:02:06 Patient P0048 arrived at the hospital
-23-05-2021 12:02:06 Patient P0049 arrived at the hospital
-23-05-2021 12:02:06 Patient P0050 arrived at the hospital
-23-05-2021 12:02:07 Healthcare Worker H10 entered VD01
-23-05-2021 12:02:09 Patient P0001 is at front desk
-23-05-2021 12:05:06 Main: Hospital opened
-23-05-2021 12:05:06 Patient P0001 arrived at the hospital
-23-05-2021 12:05:06 Patient P0002 arrived at the hospital
-23-05-2021 12:05:06 Patient P0003 arrived at the hospital
-23-05-2021 12:05:06 Patient P0004 arrived at the hospital
-23-05-2021 12:05:06 Patient P0005 arrived at the hospital
-23-05-2021 12:05:06 Patient P0006 arrived at the hospital
-23-05-2021 12:05:06 Patient P0007 arrived at the hospital
-23-05-2021 12:05:06 Patient P0008 arrived at the hospital
-23-05-2021 12:05:06 Patient P0009 arrived at the hospital
-23-05-2021 12:05:06 Patient P0010 arrived at the hospital
-23-05-2021 12:05:06 Patient P0011 arrived at the hospital
-23-05-2021 12:05:06 Patient P0012 arrived at the hospital
-23-05-2021 12:05:06 Patient P0013 arrived at the hospital
-23-05-2021 12:05:06 Patient P0014 arrived at the hospital
-23-05-2021 12:05:06 Patient P0015 arrived at the hospital
-23-05-2021 12:05:06 Patient P0016 arrived at the hospital
-23-05-2021 12:05:06 Patient P0017 arrived at the hospital
-23-05-2021 12:05:06 Patient P0018 arrived at the hospital
-23-05-2021 12:05:06 Patient P0019 arrived at the hospital
-23-05-2021 12:05:06 Patient P0020 arrived at the hospital
-23-05-2021 12:05:06 Patient P0021 arrived at the hospital
-23-05-2021 12:05:06 Patient P0022 arrived at the hospital
-23-05-2021 12:05:06 Patient P0023 arrived at the hospital
-23-05-2021 12:05:06 Patient P0024 arrived at the hospital
-23-05-2021 12:05:06 Patient P0025 arrived at the hospital
-23-05-2021 12:05:06 Patient P0026 arrived at the hospital
-23-05-2021 12:05:06 Patient P0027 arrived at the hospital
-23-05-2021 12:05:06 Patient P0028 arrived at the hospital
-23-05-2021 12:05:06 Patient P0029 arrived at the hospital
-23-05-2021 12:05:06 Patient P0030 arrived at the hospital
-23-05-2021 12:05:06 Patient P0031 arrived at the hospital
-23-05-2021 12:05:06 Patient P0032 arrived at the hospital
-23-05-2021 12:05:06 Patient P0033 arrived at the hospital
-23-05-2021 12:05:06 Patient P0034 arrived at the hospital
-23-05-2021 12:05:06 Patient P0035 arrived at the hospital
-23-05-2021 12:05:06 Patient P0036 arrived at the hospital
-23-05-2021 12:05:06 Patient P0037 arrived at the hospital
-23-05-2021 12:05:06 Patient P0038 arrived at the hospital
-23-05-2021 12:05:06 Patient P0039 arrived at the hospital
-23-05-2021 12:05:06 Patient P0040 arrived at the hospital
-23-05-2021 12:05:06 Patient P0041 arrived at the hospital
-23-05-2021 12:05:06 Patient P0042 arrived at the hospital
-23-05-2021 12:05:06 Patient P0043 arrived at the hospital
-23-05-2021 12:05:06 Patient P0044 arrived at the hospital
-23-05-2021 12:05:06 Patient P0045 arrived at the hospital
-23-05-2021 12:05:06 Patient P0046 arrived at the hospital
-23-05-2021 12:05:06 Patient P0048 arrived at the hospital
-23-05-2021 12:05:06 Patient P0047 arrived at the hospital
-23-05-2021 12:05:06 Patient P0049 arrived at the hospital
-23-05-2021 12:05:06 Patient P0050 arrived at the hospital
-23-05-2021 12:05:07 Healthcare Worker H03 entered VD01
-23-05-2021 12:05:09 Patient P0001 is at front desk
-23-05-2021 12:11:13 Main: Hospital opened
-23-05-2021 12:11:13 Patient P0001 arrived at the hospital
-23-05-2021 12:11:13 Patient P0002 arrived at the hospital
-23-05-2021 12:11:13 Patient P0003 arrived at the hospital
-23-05-2021 12:11:13 Patient P0004 arrived at the hospital
-23-05-2021 12:11:13 Patient P0005 arrived at the hospital
-23-05-2021 12:11:13 Patient P0006 arrived at the hospital
-23-05-2021 12:11:13 Patient P0007 arrived at the hospital
-23-05-2021 12:11:13 Patient P0009 arrived at the hospital
-23-05-2021 12:11:13 Patient P0008 arrived at the hospital
-23-05-2021 12:11:13 Patient P0010 arrived at the hospital
-23-05-2021 12:11:13 Patient P0012 arrived at the hospital
-23-05-2021 12:11:13 Patient P0011 arrived at the hospital
-23-05-2021 12:11:13 Patient P0013 arrived at the hospital
-23-05-2021 12:11:13 Patient P0014 arrived at the hospital
-23-05-2021 12:11:13 Patient P0015 arrived at the hospital
-23-05-2021 12:11:13 Patient P0016 arrived at the hospital
-23-05-2021 12:11:13 Patient P0017 arrived at the hospital
-23-05-2021 12:11:13 Patient P0018 arrived at the hospital
-23-05-2021 12:11:13 Patient P0019 arrived at the hospital
-23-05-2021 12:11:13 Patient P0020 arrived at the hospital
-23-05-2021 12:11:13 Patient P0021 arrived at the hospital
-23-05-2021 12:11:13 Patient P0022 arrived at the hospital
-23-05-2021 12:11:13 Patient P0023 arrived at the hospital
-23-05-2021 12:11:13 Patient P0024 arrived at the hospital
-23-05-2021 12:11:13 Patient P0025 arrived at the hospital
-23-05-2021 12:11:13 Patient P0026 arrived at the hospital
-23-05-2021 12:11:13 Patient P0027 arrived at the hospital
-23-05-2021 12:11:13 Patient P0028 arrived at the hospital
-23-05-2021 12:11:13 Patient P0029 arrived at the hospital
-23-05-2021 12:11:13 Patient P0030 arrived at the hospital
-23-05-2021 12:11:13 Patient P0031 arrived at the hospital
-23-05-2021 12:11:13 Patient P0032 arrived at the hospital
-23-05-2021 12:11:13 Patient P0033 arrived at the hospital
-23-05-2021 12:11:13 Patient P0034 arrived at the hospital
-23-05-2021 12:11:13 Patient P0035 arrived at the hospital
-23-05-2021 12:11:13 Patient P0036 arrived at the hospital
-23-05-2021 12:11:13 Patient P0037 arrived at the hospital
-23-05-2021 12:11:13 Patient P0038 arrived at the hospital
-23-05-2021 12:11:13 Patient P0039 arrived at the hospital
-23-05-2021 12:11:13 Patient P0040 arrived at the hospital
-23-05-2021 12:11:13 Patient P0041 arrived at the hospital
-23-05-2021 12:11:13 Patient P0042 arrived at the hospital
-23-05-2021 12:11:13 Patient P0043 arrived at the hospital
-23-05-2021 12:11:13 Patient P0044 arrived at the hospital
-23-05-2021 12:11:13 Patient P0045 arrived at the hospital
-23-05-2021 12:11:13 Patient P0046 arrived at the hospital
-23-05-2021 12:11:13 Patient P0047 arrived at the hospital
-23-05-2021 12:11:13 Patient P0048 arrived at the hospital
-23-05-2021 12:11:13 Patient P0049 arrived at the hospital
-23-05-2021 12:11:13 Patient P0050 arrived at the hospital
-23-05-2021 12:11:14 Healthcare Worker H03 entered VD01
-23-05-2021 12:11:16 Patient P0001 is at front desk
+23-05-2021 15:38:50 Vaccine produced, there are 5089 ready
+23-05-2021 15:38:50 Vaccine produced, there are 4987 ready
+23-05-2021 15:38:50 Vaccine produced, there are 5143 ready
+23-05-2021 15:38:50 Vaccine produced, there are 4905 ready
+23-05-2021 15:38:51 Vaccine produced, there are 5090 ready
+23-05-2021 15:38:51 Vaccine produced, there are 4988 ready
+23-05-2021 15:38:51 Vaccine produced, there are 5144 ready
+23-05-2021 15:38:51 Vaccine produced, there are 4906 ready
+23-05-2021 15:38:51 Vaccine Preparer A2 has returned to his spot
+23-05-2021 15:38:52 Vaccine produced, there are 5091 ready
+23-05-2021 15:38:52 Vaccine produced, there are 4989 ready
+23-05-2021 15:38:52 Vaccine produced, there are 5145 ready
+23-05-2021 15:38:52 Vaccine produced, there are 4907 ready
+23-05-2021 15:38:52 Vaccine produced, there are 4939 ready
+23-05-2021 15:38:52 Vaccine produced, there are 5092 ready
+23-05-2021 15:38:53 Vaccine produced, there are 4990 ready
+23-05-2021 15:38:53 Vaccine produced, there are 5146 ready
+23-05-2021 15:38:53 Vaccine produced, there are 4908 ready
+23-05-2021 15:38:53 Vaccine produced, there are 4940 ready
+23-05-2021 15:38:53 Vaccine produced, there are 5093 ready
+23-05-2021 15:38:53 Vaccine produced, there are 4991 ready
+23-05-2021 15:38:53 Vaccine produced, there are 4909 ready
+23-05-2021 15:38:54 Vaccine produced, there are 5147 ready
+23-05-2021 15:38:54 Vaccine produced, there are 5094 ready
+23-05-2021 15:38:54 Vaccine produced, there are 4941 ready
+23-05-2021 15:38:54 Vaccine produced, there are 4992 ready
+23-05-2021 15:38:54 Vaccine produced, there are 4942 ready
+23-05-2021 15:38:54 Vaccine produced, there are 4910 ready
+23-05-2021 15:38:54 Vaccine produced, there are 5148 ready
+23-05-2021 15:38:54 Vaccine produced, there are 5095 ready
+23-05-2021 15:38:55 Vaccine produced, there are 4993 ready
+23-05-2021 15:38:55 Vaccine produced, there are 5149 ready
+23-05-2021 15:38:55 Vaccine produced, there are 4943 ready
+23-05-2021 15:38:55 Vaccine produced, there are 4911 ready
+23-05-2021 15:38:55 Vaccine produced, there are 5096 ready
+23-05-2021 15:38:55 Vaccine produced, there are 4994 ready
+23-05-2021 15:38:55 Vaccine produced, there are 5150 ready
+23-05-2021 15:38:56 Vaccine produced, there are 4944 ready
+23-05-2021 15:38:56 Vaccine produced, there are 5151 ready
+23-05-2021 15:38:56 Vaccine produced, there are 5097 ready
+23-05-2021 15:38:56 Vaccine produced, there are 4912 ready
+23-05-2021 15:38:56 Vaccine produced, there are 4995 ready
+23-05-2021 15:38:56 Vaccine produced, there are 4945 ready
+23-05-2021 15:38:57 Vaccine produced, there are 5098 ready
+23-05-2021 15:38:57 Vaccine Preparer A2 is resting
+23-05-2021 15:38:57 Vaccine produced, there are 5152 ready
+23-05-2021 15:38:57 Vaccine produced, there are 4996 ready
+23-05-2021 15:38:57 Vaccine produced, there are 4946 ready
+23-05-2021 15:38:57 Vaccine produced, there are 5153 ready
+23-05-2021 15:38:58 Vaccine produced, there are 4947 ready
+23-05-2021 15:38:58 Vaccine produced, there are 4997 ready
+23-05-2021 15:38:58 Vaccine produced, there are 5154 ready
+23-05-2021 15:38:58 Vaccine Preparer A2 has returned to his spot
+23-05-2021 15:38:58 Vaccine produced, there are 4948 ready
+23-05-2021 15:38:59 Vaccine produced, there are 4998 ready
+23-05-2021 15:38:59 Vaccine Preparer A2 is resting
+23-05-2021 15:38:59 Vaccine produced, there are 4949 ready
+23-05-2021 15:38:59 Vaccine produced, there are 5155 ready
+23-05-2021 15:38:59 Vaccine produced, there are 5099 ready
+23-05-2021 15:39:00 Vaccine produced, there are 5100 ready
+23-05-2021 15:39:00 Vaccine produced, there are 5156 ready
+23-05-2021 15:39:00 Vaccine produced, there are 4950 ready
+23-05-2021 15:39:00 Vaccine produced, there are 5101 ready
+23-05-2021 15:39:01 Vaccine produced, there are 5157 ready
+23-05-2021 15:39:01 Vaccine produced, there are 4951 ready
+23-05-2021 15:39:01 Vaccine produced, there are 5158 ready
+23-05-2021 15:39:01 Vaccine Preparer A2 is resting
+23-05-2021 15:39:01 Vaccine produced, there are 5102 ready
+23-05-2021 15:39:02 Vaccine Preparer A2 has returned to his spot
+23-05-2021 15:39:02 Vaccine produced, there are 5103 ready
+23-05-2021 15:39:02 Vaccine produced, there are 4952 ready
+23-05-2021 15:39:03 Vaccine produced, there are 5104 ready
+23-05-2021 15:39:03 Vaccine produced, there are 4953 ready
+23-05-2021 15:39:03 Vaccine produced, there are 4954 ready
+23-05-2021 15:39:03 Vaccine produced, there are 5105 ready
+23-05-2021 15:39:04 Vaccine produced, there are 4955 ready
+23-05-2021 15:39:04 Vaccine produced, there are 5106 ready
+23-05-2021 15:39:05 Vaccine Preparer A2 has returned to his spot
+23-05-2021 15:39:05 Vaccine produced, there are 4956 ready
+23-05-2021 15:39:05 Vaccine produced, there are 5107 ready
+23-05-2021 15:39:06 Vaccine produced, there are 4957 ready
+23-05-2021 15:39:06 Vaccine produced, there are 5159 ready
+23-05-2021 15:39:06 Vaccine produced, there are 5108 ready
+23-05-2021 15:39:06 Vaccine produced, there are 5160 ready
+23-05-2021 15:39:07 Vaccine produced, there are 5109 ready
+23-05-2021 15:39:07 Vaccine produced, there are 5161 ready
+23-05-2021 15:39:07 Vaccine produced, there are 5110 ready
+23-05-2021 15:39:08 Vaccine produced, there are 5162 ready
+23-05-2021 15:39:08 Vaccine produced, there are 5111 ready
+23-05-2021 15:39:08 Vaccine produced, there are 5163 ready
+23-05-2021 15:39:09 Vaccine produced, there are 5164 ready
+23-05-2021 15:39:10 Vaccine produced, there are 5165 ready
+23-05-2021 15:39:11 Vaccine produced, there are 5166 ready
+23-05-2021 15:39:12 Vaccine produced, there are 5167 ready
+23-05-2021 16:46:14 Main: Hospital opened
+23-05-2021 16:46:14 Healthcare worker H06 is resting
+23-05-2021 16:46:14 Healthcare worker H04 is resting
+23-05-2021 16:46:14 Healthcare worker H07 is resting
+23-05-2021 16:46:14 Healthcare worker H02 is resting
+23-05-2021 16:46:14 Healthcare worker H03 is resting
+23-05-2021 16:46:14 Healthcare worker H01 is resting
+23-05-2021 16:46:14 Healthcare worker H09 is resting
+23-05-2021 16:46:14 Healthcare worker H05 is resting
+23-05-2021 16:46:14 Healthcare worker H08 is resting
+23-05-2021 16:46:14 Healthcare worker H10 is resting
+23-05-2021 16:46:15 Vaccine produced, there are 1 ready
+23-05-2021 16:46:15 Patient P0001 arrived at the hospital
+23-05-2021 16:46:15 Healthcare worker H01 has returned to his spot
+23-05-2021 16:46:15 Healthcare worker H06 has returned to his spot
+23-05-2021 16:46:15 Healthcare worker H10 has returned to his spot
+23-05-2021 16:46:15 Healthcare Worker H01 entered VD01
+23-05-2021 16:46:15 Healthcare Worker H06 entered VD02
+23-05-2021 16:46:15 Healthcare Worker H10 entered VD03
+23-05-2021 16:46:15 Vaccine produced, there are 2 ready
+23-05-2021 16:46:15 Healthcare worker H04 has returned to his spot
+23-05-2021 16:46:15 Healthcare Worker H04 entered VD04
+23-05-2021 16:46:16 Healthcare worker H09 has returned to his spot
+23-05-2021 16:46:16 Healthcare Worker H09 entered VD05
+23-05-2021 16:46:16 Healthcare worker H02 has returned to his spot
+23-05-2021 16:46:16 Healthcare Worker H02 entered VD06
+23-05-2021 16:46:16 Healthcare worker H08 has returned to his spot
+23-05-2021 16:46:16 Healthcare Worker H08 entered VD07
+23-05-2021 16:46:16 Vaccine produced, there are 3 ready
+23-05-2021 16:46:16 Patient P0002 arrived at the hospital
+23-05-2021 16:46:16 Healthcare worker H05 has returned to his spot
+23-05-2021 16:46:16 Healthcare Worker H05 entered VD08
+23-05-2021 16:46:17 Healthcare worker H07 has returned to his spot
+23-05-2021 16:46:17 Healthcare Worker H07 entered VD09
+23-05-2021 16:46:17 Vaccine produced, there are 4 ready
+23-05-2021 16:46:17 Healthcare worker H03 has returned to his spot
+23-05-2021 16:46:17 Healthcare Worker H03 entered VD10
+23-05-2021 16:46:17 Patient P0003 arrived at the hospital
+23-05-2021 16:46:18 Vaccine produced, there are 5 ready
+23-05-2021 16:46:18 Patient P0004 arrived at the hospital
+23-05-2021 16:46:18 Vaccine produced, there are 6 ready
+23-05-2021 16:46:19 Vaccine produced, there are 7 ready
+23-05-2021 16:46:19 Patient P0001 is at front desk
+23-05-2021 16:46:19 Patient P0005 arrived at the hospital
+23-05-2021 16:46:20 Vaccine produced, there are 8 ready
+23-05-2021 16:46:20 Patient P0001 entered VD01
+23-05-2021 16:46:20 Patient P0002 is at front desk
+23-05-2021 16:46:20 Patient P0006 arrived at the hospital
+23-05-2021 16:46:20 Vaccine produced, there are 8 ready
+23-05-2021 16:46:21 Patient P0002 entered VD02
+23-05-2021 16:46:21 Patient P0003 is at front desk
+23-05-2021 16:46:21 Vaccine produced, there are 8 ready
+23-05-2021 16:46:21 Patient P0007 arrived at the hospital
+23-05-2021 16:46:21 Patient P0003 entered VD03
+23-05-2021 16:46:21 Patient P0004 is at front desk
+23-05-2021 16:46:22 Vaccine produced, there are 8 ready
+23-05-2021 16:46:22 Patient P0004 entered VD04
+23-05-2021 16:46:22 Patient P0005 is at front desk
+23-05-2021 16:46:22 Patient P0008 arrived at the hospital
+23-05-2021 16:46:23 Patient P0005 entered VD05
+23-05-2021 16:46:23 Patient P0006 is at front desk
+23-05-2021 16:46:23 Vaccine produced, there are 7 ready
+23-05-2021 16:46:23 Patient P0009 arrived at the hospital
+23-05-2021 16:46:24 Patient P0006 entered VD06
+23-05-2021 16:46:24 Patient P0007 is at front desk
+23-05-2021 16:46:24 Healthcare Worker H01 vaccinated to patient P0001 at Utility.Desk@30a6648b
+23-05-2021 16:46:24 Vaccine produced, there are 7 ready
+23-05-2021 16:46:24 Healthcare Worker H06 vaccinated to patient P0002 at Utility.Desk@183ed44a
+23-05-2021 16:46:24 Patient P0010 arrived at the hospital
+23-05-2021 16:46:24 Patient P0007 entered VD01
+23-05-2021 16:46:24 Patient P0008 is at front desk
+23-05-2021 16:46:25 Vaccine produced, there are 7 ready
+23-05-2021 16:46:25 Patient P0011 arrived at the hospital
+23-05-2021 16:46:25 Vaccine produced, there are 8 ready
+23-05-2021 16:46:25 Patient P0008 entered VD02
+23-05-2021 16:46:25 Patient P0009 is at front desk
+23-05-2021 16:46:26 Healthcare Worker H04 vaccinated to patient P0004 at Utility.Desk@1b239f29
+23-05-2021 16:46:26 Healthcare Worker H10 vaccinated to patient P0003 at Utility.Desk@45b51eb5
+23-05-2021 16:46:26 Vaccine produced, there are 8 ready
+23-05-2021 16:46:26 Patient P0012 arrived at the hospital
+23-05-2021 16:46:26 Patient P0009 entered VD03
+23-05-2021 16:46:26 Patient P0010 is at front desk
+23-05-2021 16:46:27 Vaccine produced, there are 8 ready
+23-05-2021 16:46:27 Patient P0013 arrived at the hospital
+23-05-2021 16:46:27 Patient P0010 entered VD04
+23-05-2021 16:46:27 Receptionist A1 is resting
+23-05-2021 16:46:27 Vaccine produced, there are 8 ready
+23-05-2021 16:46:28 Healthcare Worker H09 vaccinated to patient P0005 at Utility.Desk@496b2ca8
+23-05-2021 16:46:28 Healthcare Worker H02 vaccinated to patient P0006 at Utility.Desk@694d3010
+23-05-2021 16:46:28 Patient P0014 arrived at the hospital
+23-05-2021 16:46:28 Vaccine produced, there are 9 ready
+23-05-2021 16:46:29 Patient P0015 arrived at the hospital
+23-05-2021 16:46:29 Vaccine produced, there are 10 ready
+23-05-2021 16:46:29 Vaccine Preparer A2 is resting
+23-05-2021 16:46:29 Healthcare Worker H01 vaccinated to patient P0007 at Utility.Desk@30a6648b
+23-05-2021 16:46:29 Healthcare Worker H06 vaccinated to patient P0008 at Utility.Desk@183ed44a
+23-05-2021 16:46:30 Healthcare Worker H10 vaccinated to patient P0009 at Utility.Desk@45b51eb5
+23-05-2021 16:46:30 Patient P0016 arrived at the hospital
+23-05-2021 16:46:30 Healthcare Worker H04 vaccinated to patient P0010 at Utility.Desk@1b239f29
+23-05-2021 16:46:30 Receptionist A1 has returned to his spot
+23-05-2021 16:46:30 Patient P0011 is at front desk
+23-05-2021 16:46:31 Patient P0017 arrived at the hospital
+23-05-2021 16:46:32 Patient P0018 arrived at the hospital
+23-05-2021 16:46:33 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:46:33 Patient P0019 arrived at the hospital
+23-05-2021 16:46:34 Vaccine produced, there are 11 ready
+23-05-2021 16:46:34 Patient P0020 arrived at the hospital
+23-05-2021 16:46:34 Vaccine produced, there are 12 ready
+23-05-2021 16:46:35 Vaccine produced, there are 13 ready
+23-05-2021 16:46:35 Patient P0021 arrived at the hospital
+23-05-2021 16:46:36 Vaccine produced, there are 14 ready
+23-05-2021 16:46:36 Patient P0022 arrived at the hospital
+23-05-2021 16:46:37 Vaccine produced, there are 15 ready
+23-05-2021 16:46:37 Patient P0023 arrived at the hospital
+23-05-2021 16:46:38 Vaccine produced, there are 16 ready
+23-05-2021 16:46:38 Patient P0024 arrived at the hospital
+23-05-2021 16:46:38 Vaccine produced, there are 17 ready
+23-05-2021 16:46:39 Vaccine produced, there are 18 ready
+23-05-2021 16:46:39 Patient P0025 arrived at the hospital
+23-05-2021 16:46:40 Vaccine produced, there are 19 ready
+23-05-2021 16:46:40 Patient P0026 arrived at the hospital
+23-05-2021 16:46:40 Vaccine produced, there are 20 ready
+23-05-2021 16:46:41 Vaccine produced, there are 21 ready
+23-05-2021 16:46:41 Patient P0027 arrived at the hospital
+23-05-2021 16:46:42 Vaccine produced, there are 22 ready
+23-05-2021 16:46:42 Patient P0028 arrived at the hospital
+23-05-2021 16:46:43 Vaccine produced, there are 23 ready
+23-05-2021 16:46:43 Patient P0029 arrived at the hospital
+23-05-2021 16:46:44 Vaccine produced, there are 24 ready
+23-05-2021 16:46:44 Patient P0030 arrived at the hospital
+23-05-2021 16:46:44 Vaccine produced, there are 25 ready
+23-05-2021 16:46:45 Vaccine produced, there are 26 ready
+23-05-2021 16:46:45 Patient P0031 arrived at the hospital
+23-05-2021 16:46:46 Vaccine produced, there are 27 ready
+23-05-2021 16:46:46 Patient P0032 arrived at the hospital
+23-05-2021 16:46:47 Vaccine produced, there are 28 ready
+23-05-2021 16:46:47 Vaccine produced, there are 29 ready
+23-05-2021 16:46:47 Patient P0033 arrived at the hospital
+23-05-2021 16:46:48 Vaccine produced, there are 30 ready
+23-05-2021 16:46:48 Vaccine Preparer A2 is resting
+23-05-2021 16:46:48 Patient P0034 arrived at the hospital
+23-05-2021 16:46:49 Patient P0035 arrived at the hospital
+23-05-2021 16:46:49 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:46:50 Vaccine produced, there are 31 ready
+23-05-2021 16:46:50 Patient P0036 arrived at the hospital
+23-05-2021 16:46:51 Vaccine produced, there are 32 ready
+23-05-2021 16:46:51 Patient P0037 arrived at the hospital
+23-05-2021 16:46:51 Vaccine produced, there are 33 ready
+23-05-2021 16:46:52 Vaccine produced, there are 34 ready
+23-05-2021 16:46:52 Patient P0038 arrived at the hospital
+23-05-2021 16:46:53 Vaccine produced, there are 35 ready
+23-05-2021 16:46:53 Vaccine produced, there are 36 ready
+23-05-2021 16:46:53 Patient P0039 arrived at the hospital
+23-05-2021 16:46:54 Vaccine produced, there are 37 ready
+23-05-2021 16:46:54 Patient P0040 arrived at the hospital
+23-05-2021 16:46:54 Vaccine produced, there are 38 ready
+23-05-2021 16:46:55 Patient P0041 arrived at the hospital
+23-05-2021 16:46:55 Vaccine produced, there are 39 ready
+23-05-2021 16:46:56 Vaccine produced, there are 40 ready
+23-05-2021 16:46:56 Patient P0042 arrived at the hospital
+23-05-2021 16:46:57 Vaccine produced, there are 41 ready
+23-05-2021 16:46:57 Patient P0043 arrived at the hospital
+23-05-2021 16:46:57 Vaccine produced, there are 42 ready
+23-05-2021 16:46:58 Patient P0044 arrived at the hospital
+23-05-2021 16:46:58 Vaccine produced, there are 43 ready
+23-05-2021 16:46:59 Vaccine produced, there are 44 ready
+23-05-2021 16:46:59 Patient P0045 arrived at the hospital
+23-05-2021 16:47:00 Vaccine produced, there are 45 ready
+23-05-2021 16:47:00 Patient P0046 arrived at the hospital
+23-05-2021 16:47:00 Vaccine produced, there are 46 ready
+23-05-2021 16:47:01 Vaccine produced, there are 47 ready
+23-05-2021 16:47:01 Patient P0047 arrived at the hospital
+23-05-2021 16:47:02 Vaccine produced, there are 48 ready
+23-05-2021 16:47:02 Patient P0048 arrived at the hospital
+23-05-2021 16:47:03 Vaccine produced, there are 49 ready
+23-05-2021 16:47:03 Patient P0049 arrived at the hospital
+23-05-2021 16:47:03 Vaccine produced, there are 50 ready
+23-05-2021 16:47:03 Vaccine Preparer A2 is resting
+23-05-2021 16:47:04 Patient P0050 arrived at the hospital
+23-05-2021 16:47:06 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:47:07 Vaccine produced, there are 51 ready
+23-05-2021 16:47:08 Vaccine produced, there are 52 ready
+23-05-2021 16:47:08 Vaccine produced, there are 53 ready
+23-05-2021 16:47:09 Vaccine produced, there are 54 ready
+23-05-2021 16:47:10 Vaccine produced, there are 55 ready
+23-05-2021 16:47:11 Vaccine produced, there are 56 ready
+23-05-2021 16:47:11 Vaccine produced, there are 57 ready
+23-05-2021 16:47:12 Vaccine produced, there are 58 ready
+23-05-2021 16:47:13 Vaccine produced, there are 59 ready
+23-05-2021 16:47:14 Vaccine produced, there are 60 ready
+23-05-2021 16:47:15 Vaccine produced, there are 61 ready
+23-05-2021 16:47:15 Vaccine produced, there are 62 ready
+23-05-2021 16:47:16 Vaccine produced, there are 63 ready
+23-05-2021 16:47:17 Vaccine produced, there are 64 ready
+23-05-2021 16:47:18 Vaccine produced, there are 65 ready
+23-05-2021 16:47:18 Vaccine produced, there are 66 ready
+23-05-2021 16:47:19 Vaccine produced, there are 67 ready
+23-05-2021 16:47:20 Vaccine produced, there are 68 ready
+23-05-2021 16:47:21 Vaccine produced, there are 69 ready
+23-05-2021 16:47:22 Vaccine produced, there are 70 ready
+23-05-2021 16:47:22 Vaccine Preparer A2 is resting
+23-05-2021 16:47:24 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:47:24 Vaccine produced, there are 71 ready
+23-05-2021 16:47:25 Vaccine produced, there are 72 ready
+23-05-2021 16:47:26 Vaccine produced, there are 73 ready
+23-05-2021 16:47:27 Vaccine produced, there are 74 ready
+23-05-2021 16:47:27 Vaccine produced, there are 75 ready
+23-05-2021 16:47:28 Vaccine produced, there are 76 ready
+23-05-2021 16:47:29 Vaccine produced, there are 77 ready
+23-05-2021 16:47:30 Vaccine produced, there are 78 ready
+23-05-2021 16:47:31 Vaccine produced, there are 79 ready
+23-05-2021 16:47:31 Vaccine produced, there are 80 ready
+23-05-2021 16:47:32 Vaccine produced, there are 81 ready
+23-05-2021 16:47:33 Vaccine produced, there are 82 ready
+23-05-2021 16:47:33 Vaccine produced, there are 83 ready
+23-05-2021 16:47:34 Vaccine produced, there are 84 ready
+23-05-2021 16:47:35 Vaccine produced, there are 85 ready
+23-05-2021 16:47:36 Vaccine produced, there are 86 ready
+23-05-2021 16:47:36 Vaccine produced, there are 87 ready
+23-05-2021 16:47:37 Vaccine produced, there are 88 ready
+23-05-2021 16:47:38 Vaccine produced, there are 89 ready
+23-05-2021 16:47:38 Vaccine produced, there are 90 ready
+23-05-2021 16:47:38 Vaccine Preparer A2 is resting
+23-05-2021 16:47:41 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:47:42 Vaccine produced, there are 91 ready
+23-05-2021 16:47:43 Vaccine produced, there are 92 ready
+23-05-2021 16:47:43 Vaccine produced, there are 93 ready
+23-05-2021 16:47:44 Vaccine produced, there are 94 ready
+23-05-2021 16:47:45 Vaccine produced, there are 95 ready
+23-05-2021 16:47:46 Vaccine produced, there are 96 ready
+23-05-2021 16:47:46 Vaccine produced, there are 97 ready
+23-05-2021 16:47:47 Vaccine produced, there are 98 ready
+23-05-2021 16:47:48 Vaccine produced, there are 99 ready
+23-05-2021 16:47:48 Vaccine produced, there are 100 ready
+23-05-2021 16:47:49 Vaccine produced, there are 101 ready
+23-05-2021 16:47:50 Vaccine produced, there are 102 ready
+23-05-2021 16:47:51 Vaccine produced, there are 103 ready
+23-05-2021 16:47:52 Vaccine produced, there are 104 ready
+23-05-2021 16:47:52 Vaccine produced, there are 105 ready
+23-05-2021 16:47:53 Vaccine produced, there are 106 ready
+23-05-2021 16:47:54 Vaccine produced, there are 107 ready
+23-05-2021 16:47:55 Vaccine produced, there are 108 ready
+23-05-2021 16:47:55 Vaccine produced, there are 109 ready
+23-05-2021 16:47:56 Vaccine produced, there are 110 ready
+23-05-2021 16:47:56 Vaccine Preparer A2 is resting
+23-05-2021 16:47:57 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:47:58 Vaccine produced, there are 111 ready
+23-05-2021 16:47:59 Vaccine produced, there are 112 ready
+23-05-2021 16:48:00 Vaccine produced, there are 113 ready
+23-05-2021 16:48:00 Vaccine produced, there are 114 ready
+23-05-2021 16:48:01 Vaccine produced, there are 115 ready
+23-05-2021 16:48:02 Vaccine produced, there are 116 ready
+23-05-2021 16:48:03 Vaccine produced, there are 117 ready
+23-05-2021 16:48:04 Vaccine produced, there are 118 ready
+23-05-2021 16:48:04 Vaccine produced, there are 119 ready
+23-05-2021 16:48:05 Vaccine produced, there are 120 ready
+23-05-2021 16:48:06 Vaccine produced, there are 121 ready
+23-05-2021 16:48:06 Vaccine produced, there are 122 ready
+23-05-2021 16:48:07 Vaccine produced, there are 123 ready
+23-05-2021 16:48:08 Vaccine produced, there are 124 ready
+23-05-2021 16:48:09 Vaccine produced, there are 125 ready
+23-05-2021 16:48:10 Vaccine produced, there are 126 ready
+23-05-2021 16:48:10 Vaccine produced, there are 127 ready
+23-05-2021 16:48:11 Vaccine produced, there are 128 ready
+23-05-2021 16:48:12 Vaccine produced, there are 129 ready
+23-05-2021 16:48:12 Vaccine produced, there are 130 ready
+23-05-2021 16:48:12 Vaccine Preparer A2 is resting
+23-05-2021 16:48:14 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:48:15 Vaccine produced, there are 131 ready
+23-05-2021 16:48:15 Vaccine produced, there are 132 ready
+23-05-2021 16:48:16 Vaccine produced, there are 133 ready
+23-05-2021 16:48:17 Vaccine produced, there are 134 ready
+23-05-2021 16:48:18 Vaccine produced, there are 135 ready
+23-05-2021 16:48:18 Vaccine produced, there are 136 ready
+23-05-2021 16:48:19 Vaccine produced, there are 137 ready
+23-05-2021 16:48:20 Vaccine produced, there are 138 ready
+23-05-2021 16:48:21 Vaccine produced, there are 139 ready
+23-05-2021 16:48:22 Vaccine produced, there are 140 ready
+23-05-2021 16:48:22 Vaccine produced, there are 141 ready
+23-05-2021 16:48:23 Vaccine produced, there are 142 ready
+23-05-2021 16:48:24 Vaccine produced, there are 143 ready
+23-05-2021 16:48:25 Vaccine produced, there are 144 ready
+23-05-2021 16:48:25 Vaccine produced, there are 145 ready
+23-05-2021 16:48:26 Vaccine produced, there are 146 ready
+23-05-2021 16:48:27 Vaccine produced, there are 147 ready
+23-05-2021 16:48:28 Vaccine produced, there are 148 ready
+23-05-2021 16:48:28 Vaccine produced, there are 149 ready
+23-05-2021 16:48:29 Vaccine produced, there are 150 ready
+23-05-2021 16:48:29 Vaccine Preparer A2 is resting
+23-05-2021 16:48:32 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:48:33 Vaccine produced, there are 151 ready
+23-05-2021 16:48:34 Vaccine produced, there are 152 ready
+23-05-2021 16:48:34 Vaccine produced, there are 153 ready
+23-05-2021 16:48:35 Vaccine produced, there are 154 ready
+23-05-2021 16:48:36 Vaccine produced, there are 155 ready
+23-05-2021 16:48:37 Vaccine produced, there are 156 ready
+23-05-2021 16:48:38 Vaccine produced, there are 157 ready
+23-05-2021 16:48:39 Vaccine produced, there are 158 ready
+23-05-2021 16:48:40 Vaccine produced, there are 159 ready
+23-05-2021 16:48:40 Vaccine produced, there are 160 ready
+23-05-2021 16:48:41 Vaccine produced, there are 161 ready
+23-05-2021 16:48:42 Vaccine produced, there are 162 ready
+23-05-2021 16:48:42 Vaccine produced, there are 163 ready
+23-05-2021 16:48:43 Vaccine produced, there are 164 ready
+23-05-2021 16:48:44 Vaccine produced, there are 165 ready
+23-05-2021 16:48:44 Vaccine produced, there are 166 ready
+23-05-2021 16:48:45 Vaccine produced, there are 167 ready
+23-05-2021 16:48:46 Vaccine produced, there are 168 ready
+23-05-2021 16:48:47 Vaccine produced, there are 169 ready
+23-05-2021 16:48:47 Vaccine produced, there are 170 ready
+23-05-2021 16:48:47 Vaccine Preparer A2 is resting
+23-05-2021 16:48:50 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:48:51 Vaccine produced, there are 171 ready
+23-05-2021 16:48:52 Vaccine produced, there are 172 ready
+23-05-2021 16:48:53 Vaccine produced, there are 173 ready
+23-05-2021 16:48:54 Vaccine produced, there are 174 ready
+23-05-2021 16:48:55 Vaccine produced, there are 175 ready
+23-05-2021 16:48:55 Vaccine produced, there are 176 ready
+23-05-2021 16:48:56 Vaccine produced, there are 177 ready
+23-05-2021 16:48:57 Vaccine produced, there are 178 ready
+23-05-2021 16:48:57 Vaccine produced, there are 179 ready
+23-05-2021 16:48:58 Vaccine produced, there are 180 ready
+23-05-2021 16:48:59 Vaccine produced, there are 181 ready
+23-05-2021 16:49:00 Vaccine produced, there are 182 ready
+23-05-2021 16:49:01 Vaccine produced, there are 183 ready
+23-05-2021 16:49:02 Vaccine produced, there are 184 ready
+23-05-2021 16:49:02 Vaccine produced, there are 185 ready
+23-05-2021 16:49:03 Vaccine produced, there are 186 ready
+23-05-2021 16:49:04 Vaccine produced, there are 187 ready
+23-05-2021 16:49:04 Vaccine produced, there are 188 ready
+23-05-2021 16:49:05 Vaccine produced, there are 189 ready
+23-05-2021 16:49:06 Vaccine produced, there are 190 ready
+23-05-2021 16:49:06 Vaccine Preparer A2 is resting
+23-05-2021 16:49:08 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:49:08 Vaccine produced, there are 191 ready
+23-05-2021 16:49:09 Vaccine produced, there are 192 ready
+23-05-2021 16:49:10 Vaccine produced, there are 193 ready
+23-05-2021 16:49:10 Vaccine produced, there are 194 ready
+23-05-2021 16:49:11 Vaccine produced, there are 195 ready
+23-05-2021 16:49:12 Vaccine produced, there are 196 ready
+23-05-2021 16:49:13 Vaccine produced, there are 197 ready
+23-05-2021 16:49:13 Vaccine produced, there are 198 ready
+23-05-2021 16:49:14 Vaccine produced, there are 199 ready
+23-05-2021 16:49:15 Vaccine produced, there are 200 ready
+23-05-2021 16:49:15 Vaccine produced, there are 201 ready
+23-05-2021 16:49:16 Vaccine produced, there are 202 ready
+23-05-2021 16:49:17 Vaccine produced, there are 203 ready
+23-05-2021 16:49:17 Vaccine produced, there are 204 ready
+23-05-2021 16:49:18 Vaccine produced, there are 205 ready
+23-05-2021 16:49:19 Vaccine produced, there are 206 ready
+23-05-2021 16:49:19 Vaccine produced, there are 207 ready
+23-05-2021 16:49:20 Vaccine produced, there are 208 ready
+23-05-2021 16:49:21 Vaccine produced, there are 209 ready
+23-05-2021 16:49:22 Vaccine produced, there are 210 ready
+23-05-2021 16:49:22 Vaccine Preparer A2 is resting
+23-05-2021 16:49:23 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:49:24 Vaccine produced, there are 211 ready
+23-05-2021 16:49:24 Vaccine produced, there are 212 ready
+23-05-2021 16:49:25 Vaccine produced, there are 213 ready
+23-05-2021 16:49:26 Vaccine produced, there are 214 ready
+23-05-2021 16:49:26 Vaccine produced, there are 215 ready
+23-05-2021 16:49:27 Vaccine produced, there are 216 ready
+23-05-2021 16:49:27 Vaccine produced, there are 217 ready
+23-05-2021 16:49:28 Vaccine produced, there are 218 ready
+23-05-2021 16:49:29 Vaccine produced, there are 219 ready
+23-05-2021 16:49:30 Vaccine produced, there are 220 ready
+23-05-2021 16:49:31 Vaccine produced, there are 221 ready
+23-05-2021 16:49:31 Vaccine produced, there are 222 ready
+23-05-2021 16:49:32 Vaccine produced, there are 223 ready
+23-05-2021 16:49:33 Vaccine produced, there are 224 ready
+23-05-2021 16:49:34 Vaccine produced, there are 225 ready
+23-05-2021 16:49:34 Vaccine produced, there are 226 ready
+23-05-2021 16:49:35 Vaccine produced, there are 227 ready
+23-05-2021 16:49:36 Vaccine produced, there are 228 ready
+23-05-2021 16:49:37 Vaccine produced, there are 229 ready
+23-05-2021 16:49:37 Vaccine produced, there are 230 ready
+23-05-2021 16:49:37 Vaccine Preparer A2 is resting
+23-05-2021 16:49:40 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:49:41 Vaccine produced, there are 231 ready
+23-05-2021 16:49:42 Vaccine produced, there are 232 ready
+23-05-2021 16:49:42 Vaccine produced, there are 233 ready
+23-05-2021 16:49:43 Vaccine produced, there are 234 ready
+23-05-2021 16:49:44 Vaccine produced, there are 235 ready
+23-05-2021 16:49:44 Vaccine produced, there are 236 ready
+23-05-2021 16:49:45 Vaccine produced, there are 237 ready
+23-05-2021 16:49:46 Vaccine produced, there are 238 ready
+23-05-2021 16:49:46 Vaccine produced, there are 239 ready
+23-05-2021 16:49:47 Vaccine produced, there are 240 ready
+23-05-2021 16:49:48 Vaccine produced, there are 241 ready
+23-05-2021 16:49:49 Vaccine produced, there are 242 ready
+23-05-2021 16:49:50 Vaccine produced, there are 243 ready
+23-05-2021 16:49:50 Vaccine produced, there are 244 ready
+23-05-2021 16:49:51 Vaccine produced, there are 245 ready
+23-05-2021 16:49:52 Vaccine produced, there are 246 ready
+23-05-2021 16:49:52 Vaccine produced, there are 247 ready
+23-05-2021 16:49:53 Vaccine produced, there are 248 ready
+23-05-2021 16:49:54 Vaccine produced, there are 249 ready
+23-05-2021 16:49:55 Vaccine produced, there are 250 ready
+23-05-2021 16:49:55 Vaccine Preparer A2 is resting
+23-05-2021 16:49:58 Vaccine Preparer A2 has returned to his spot
+23-05-2021 16:49:59 Vaccine produced, there are 251 ready
+23-05-2021 16:50:00 Vaccine produced, there are 252 ready
+23-05-2021 16:50:00 Vaccine produced, there are 253 ready
+23-05-2021 16:50:01 Vaccine produced, there are 254 ready
+23-05-2021 16:50:02 Vaccine produced, there are 255 ready
+23-05-2021 16:50:03 Vaccine produced, there are 256 ready
+23-05-2021 16:50:03 Vaccine produced, there are 257 ready
+23-05-2021 16:50:04 Vaccine produced, there are 258 ready
+23-05-2021 16:50:04 Vaccine produced, there are 259 ready
+23-05-2021 16:50:05 Vaccine produced, there are 260 ready
+23-05-2021 16:50:06 Vaccine produced, there are 261 ready
+23-05-2021 16:50:07 Vaccine produced, there are 262 ready
+23-05-2021 16:50:07 Vaccine produced, there are 263 ready
+23-05-2021 16:50:08 Vaccine produced, there are 264 ready
+23-05-2021 16:50:09 Vaccine produced, there are 265 ready
+23-05-2021 16:50:10 Vaccine produced, there are 266 ready
+23-05-2021 16:50:10 Vaccine produced, there are 267 ready
+23-05-2021 16:50:11 Vaccine produced, there are 268 ready
+23-05-2021 16:50:12 Vaccine produced, there are 269 ready
+23-05-2021 16:50:13 Vaccine produced, there are 270 ready
+23-05-2021 16:50:13 Vaccine Preparer A2 is resting

@@ -14,23 +14,25 @@ public class VaccinePreparer extends AuxiliaryWorker {
     private RestRoom rRoom;
     private Thread me = Thread.currentThread();
     private int remainingToRest;
+    private int totalVaccinesPrepared;
 
     public VaccinePreparer(int wID, VaccinationRoom v, RestRoom r) {
         super(wID);
         vaccinationRoom = v;
         rRoom = r;
         remainingToRest = 20;
+        totalVaccinesPrepared=0;
         start();
     }
 
     @Override
     public void run() {
-        while (!me.isInterrupted()) { //If it recieves an interrupt, finish (only interrupt from main class is possible)
+        while (!me.isInterrupted() && totalVaccinesPrepared<2000) { //If it recieves an interrupt, finish (only interrupt from main class is possible)
             if (remainingToRest == 0) {
                 goRest(1000, 4000); //Sleep for 3 to 5 secs 
             }
-            vaccinationRoom.produceVaccine();
             waitVaccineIsReady(500, 1000);
+            vaccinationRoom.produceVaccine();
             remainingToRest--;
 
         }

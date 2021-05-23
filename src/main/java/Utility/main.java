@@ -3,6 +3,8 @@ package Utility;
 import Log.WriteToLog;
 
 import java.time.LocalDateTime;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -37,7 +39,7 @@ public class main {
         
         HealthcareWorker[] workers = new HealthcareWorker[10];
         for (int i=0;i<10;i++){
-            workers[i]=new HealthcareWorker(i+1, hospitalRooms);
+            workers[i]=new HealthcareWorker(i+1, hospitalRooms, log);
 
         }
         
@@ -45,11 +47,16 @@ public class main {
         Patient patients[]= new Patient[50];
         
         for (int j=0;j<50;j++){
+            try {
+            Thread.sleep(1000+(int)(Math.random())*2000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Patient.class.getName()).log(Level.SEVERE, null, ex);
+        }
             patients[j] = new Patient(j+1, hospitalRooms);
         }
         
         //Wait for all to finish
-        for (int k=0;k<2000;k++){
+        for (int k=0;k<50;k++){
             patients[k].join();
         }
         

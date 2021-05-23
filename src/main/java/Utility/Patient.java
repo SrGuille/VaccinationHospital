@@ -37,6 +37,7 @@ public class Patient extends Thread{
     public void run(){
         reception.arriveToHospital(this);
         if (hasAnAppointment){ //Everything happens automatically as the patient is always controlled by the workers, he is only in charge of checking if it has symptoms
+            currentDesk.waitForBeingVaccinated();
             waitForSymptoms(10000);
         }
     }

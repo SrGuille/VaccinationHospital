@@ -71,25 +71,35 @@ public class Reception {
     /*
     *   Calling this will get the first patient in the queue to be able to go on with his execution.
     */
-    public void forwardPatient(){
-        System.out.println("forward");
+    public void forwardPatient(Receptionist r){
         Random random = new Random();  
         
         if (random.nextInt(100)==0){ //Give a 1% chance of not listed
             patientAtFrontDesk.notAppointment(); //Makes it to leave the hospital
-            queue.signal();
+            entranceLock.lock();
+            try {
+                queue.signal(); //signal first patient thread 
+            } finally {
+                entranceLock.unlock();
+            }
             String message = " Patient "+ patientAtFrontDesk.getID()+" doesn't have an an appointment, he is leaving the hospital";
             log.write(message);
         }
         
         else if (vRoom.tryGoInside(patientAtFrontDesk)){ //If it has managed to go in, let it go
-            queue.signal(); //signal first patient thread
-            patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
+            //patientAtFrontDesk=(Patient)patients.poll(); //Patient information stored to later display
+            entranceLock.lock();
+            try {
+                queue.signal(); //signal first patient thread 
+            } finally {
+                entranceLock.unlock();
+            }
         }   
         
         else{ //No possibility of forwarding to the patient, stop service until interrupted
             entranceLock.lock();
             try {
+                r.setStatus(2); //Waiting for free desk status
                 stopService.await();
             } catch (InterruptedException spotRelased) { //When interrupted, there is a place in the room (a patient has left or a doctor has come)
                 vRoom.tryGoInside(patientAtFrontDesk);

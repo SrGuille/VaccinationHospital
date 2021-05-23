@@ -21,6 +21,7 @@ public class RestRoom {
 
     public RestRoom(ObservationRoom o, WriteToLog log) {
         oRoom = o;
+        this.log=log;
     }
 
     public void goIn(HealthcareWorker h) {
@@ -36,28 +37,40 @@ public class RestRoom {
             emergencyDesks.remove(0);
         } else {
             workers.add(h);
+            String message = " Healthcare worker " + h.getID() + " is resting";
+            log.write(message);
         }
         mutex.release();
     }
 
     public void goIn(Receptionist r) {
         receptionist = r;
+        String message = " Receptionist " + r.getID() + " is resting";
+        log.write(message);
     }
 
     public void goIn(VaccinePreparer vp) {
         vaccinePreparer = vp;
+        String message = " Vaccine Preparer " + vp.getID() + " is resting";
+        log.write(message);
     }
 
     public void goOut(HealthcareWorker h) {
         workers.remove(h);
+        String message = " Healthcare worker " + h.getID() + " has returned to his spot";
+        log.write(message);
     }
 
     public void goOut(Receptionist r) {
         receptionist = null;
+        String message = " Receptionist " + r.getID() + " has returned to his spot";
+        log.write(message);
     }
 
     public void goOut(VaccinePreparer vp) {
         vaccinePreparer = null;
+        String message = " Vaccine Preparer " + vp.getID() + " has returned to his spot";
+        log.write(message);
     }
 
     public void callForHelp(Desk desk) {

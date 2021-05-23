@@ -5,6 +5,7 @@
  */
 package Utility;
 
+import Log.WriteToLog;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,13 +24,15 @@ public class HealthcareWorker extends Thread{
     private ObservationRoom oRoom;
     private int remainingToRest=15;
     private int status; //status=0 working, status=1 resting, status=2 vaccinating
-    
-    public HealthcareWorker(int wID, Object[] hospitalRooms){
+    private WriteToLog log;
+            
+    public HealthcareWorker(int wID, Object[] hospitalRooms, WriteToLog log){
         hcWorkerID=assignID(wID);
         vRoom=(VaccinationRoom)hospitalRooms[1];
         oRoom=(ObservationRoom)hospitalRooms[2];
         rRoom=(RestRoom)hospitalRooms[3];
         status=0;
+        this.log=log;
         start();
     }
   
@@ -54,6 +57,7 @@ public class HealthcareWorker extends Thread{
                 goRest(5000,8000);
             }
             vRoom.goInside(this);
+            currentDesk.waitForPatient();
             vaccinate(3000,5000); 
             remainingToRest--;
         }
@@ -77,7 +81,7 @@ public class HealthcareWorker extends Thread{
     public void arriveHospital(){
         rRoom.goIn(this);
         prepareForWork(1000,3000);
-        rRoom.goIn(this);
+        rRoom.goOut(this);
         
     }
     
@@ -108,7 +112,7 @@ public class HealthcareWorker extends Thread{
                 oRoom.goInside(this, emergencyDesk);
 
             } 
-   
+        remainingToRest=15;
     }
     
     private void vaccinate(int minTime, int maxTime) {
@@ -126,6 +130,10 @@ public class HealthcareWorker extends Thread{
                 
                 try {
                     Patient vaccinatedPatient = currentDesk.getPatient();
+                    
+                    String message = " Healthcare Worker " + getID() + " vaccinated to patient " + vaccinatedPatient.getID()+ " at "+ currentDesk.getID();
+                    log.write(message);
+                    
                     currentDesk.goOut(vaccinatedPatient); //Take out to patient
                     oRoom.goInside(vaccinatedPatient); //Move him to observation room
                 } catch (InterruptedException ex) {
@@ -140,8 +148,5 @@ public class HealthcareWorker extends Thread{
         }
     
     }
-    
- 
-        
-    
+      
 }

@@ -15,10 +15,12 @@ public class VaccinationRoom {
     private final ObservationRoom oRoom;
     private AtomicInteger numVaccines;
     private Receptionist receptionist;
+    private WriteToLog log;
     
     public VaccinationRoom(ObservationRoom o, WriteToLog log){
         mutex = new Semaphore(1);
         oRoom=o;
+        this.log=log;
         numVaccines =new AtomicInteger(0);
         numWorkers =new AtomicInteger(0);
         numPatients=new AtomicInteger(0);
@@ -39,12 +41,15 @@ public class VaccinationRoom {
         }
         for (int i=0;i<10;i++){
             if (desks[i].isAvailableForWorker()){
+                System.out.println("Is available" + desks[i].getID()+" "+desks[i].isAvailableForWorker());
                 try {
-                    desks[i].goInside(h);
                     numWorkers.getAndIncrement();
+                    desks[i].goInside(h);
+                    break;
                 } catch (InterruptedException ex) {
                     Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                
             }
             receptionist.conditionalInterrupt(2); //We tell the receptionist that now there is a spot in the room, as a worker has come
         }
@@ -80,8 +85,9 @@ public class VaccinationRoom {
                 
                 if (desks[i].isAvailableForPatient()){
                     try {
-                        desks[i].goInside(p);
                         p.setCurrentDesk(desks[i]);
+                        desks[i].goInside(p);
+                        break;
                     } catch (InterruptedException ex) {
                         Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -130,7 +136,9 @@ public class VaccinationRoom {
    }
    
    public synchronized void produceVaccine(){
-       numVaccines.incrementAndGet();
+       int vaccinesReady =numVaccines.incrementAndGet();
+       String message = " Vaccine produced, there are " + vaccinesReady + " ready";
+       log.write(message);
        notify(); //Notify to a worker that was waiting for vaccine
        
    }

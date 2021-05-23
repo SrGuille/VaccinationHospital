@@ -4,6 +4,8 @@ import Log.WriteToLog;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Desk {
 
@@ -61,7 +63,6 @@ public class Desk {
         try {
             h.setCurrentDesk(this); //Set the worker desk to this one
             healthcareWorker = h;
-            waitForPatient.await(); //We wait for patient
         } finally {
             lock.unlock();
         }
@@ -79,12 +80,44 @@ public class Desk {
     * It must be impossible for 2 workers to try to go into the same desk
      */
     public void goInside(Patient p) throws InterruptedException {
-        waitForPatient.signal();//We notify to the doctor
-        p.setCurrentDesk(this); //Set the patient's desk to this one
-        patient = p;
-        String message = " Healthcare Worker " + p.getID() + " entered " + deskID;
-        log.write(message);
-        waitForBeingVaccinated.await();
+        lock.lock();
+        try {
+            waitForPatient.signal();//We notify to the doctor
+            System.out.println(this.deskID);
+            p.setCurrentDesk(this); //Set the patient's desk to this one
+            patient = p;
+            String message = " Patient " + p.getID() + " entered " + deskID;
+            log.write(message);
+        } finally {
+            lock.unlock();
+        }
+    }
+    
+    /*
+    * Done just to stop to the patient at the desk
+     */
+    public void waitForBeingVaccinated(){
+        lock.lock();
+        try {
+                waitForBeingVaccinated.await();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        finally {
+                lock.unlock();
+        }
+    }
+    
+    public void waitForPatient(){
+        lock.lock();
+        try {
+                waitForPatient.await();
+        } catch (InterruptedException ex) {
+                Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally {
+                lock.unlock();
+        }
     }
 
     public synchronized void goOut(Patient p) throws InterruptedException {
