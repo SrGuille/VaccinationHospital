@@ -19,8 +19,8 @@ public class LogIn extends javax.swing.JFrame {
     private Boolean firstServer = true;
     private Client client;
     private Server server;
-    private Hospital clientHospital;
-    private Hospital serverHospital;
+    private HospitalClient clientHospital;
+    private HospitalServer serverHospital;
 
     /**
      * Displays LogIn
@@ -232,7 +232,7 @@ public class LogIn extends javax.swing.JFrame {
 
         if (firstServer) {
             serverHospital = new HospitalServer(this);
-            Server server = new Server(serverHospital);
+            server = new Server(serverHospital);
             firstServer = false;
         } else {
             serverHospital.displayHospital(this);

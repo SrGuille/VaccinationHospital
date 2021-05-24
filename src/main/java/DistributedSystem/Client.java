@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 
 public class Client extends Thread {
 
-    private Hospital hospital;
+    private HospitalClient hospital;
     private RemoteMethodsInterface rmi;
     private Thread me;
     public Boolean[] buttonDesks = new Boolean[10];
@@ -31,7 +31,7 @@ public class Client extends Thread {
     private Receptionist aux1;
     private VaccinePreparer aux2;
 
-    public Client(Hospital hospital) {
+    public Client(HospitalClient hospital) {
         this.hospital = hospital;
         rmiSetup();
         start();

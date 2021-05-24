@@ -1,6 +1,6 @@
 package DistributedSystem;
 
-import Interface.Hospital;
+import Interface.*;
 import Log.WriteToLog;
 import Utility.*;
 import java.rmi.Naming;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class Server extends Thread {
 
-    private Hospital hospital;
+    private HospitalServer hospital;
     private WriteToLog log;
     private ObservationRoom oRoom;
     private RestRoom rRoom;
@@ -27,7 +27,7 @@ public class Server extends Thread {
      *
      * @param hospital
      */
-    public Server(Hospital hospital) {
+    public Server(HospitalServer hospital) {
 
         //Create interface
         this.hospital = hospital;

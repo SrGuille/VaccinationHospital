@@ -469,8 +469,9 @@ public class Hospital extends javax.swing.JFrame {
         String newHealthworkerText;
         ImageIcon newHealthworkerImage;
         if (healthcareWorker != null) {
-
-            buttonDesks[desk].setIcon(deskCloseImage);
+            if (this.getClass().getSimpleName().equals("HospitalClient")) {
+                buttonDesks[desk].setIcon(deskCloseImage);
+            }
             newHealthcareBackground = healthcareBackground;
             newHealthcareBorder = healthcareBorder;
             newPatientBackground = patientBackground;
@@ -479,8 +480,9 @@ public class Hospital extends javax.swing.JFrame {
             newHealthworkerImage = healthcareImage;
 
         } else {
-
-            buttonDesks[desk].setIcon(deskOpenImage);
+            if (this.getClass().getSimpleName().equals("HospitalClient")) {
+                buttonDesks[desk].setIcon(deskOpenImage);
+            }
             newHealthcareBackground = greyBackground;
             newHealthcareBorder = greyBorder;
             newPatientBackground = greyBackground;
