@@ -18,6 +18,7 @@ public class Desk {
     private Condition waitForBeingVaccinated = lock.newCondition();
     private Condition waitForBeingHealed = lock.newCondition();
     private WriteToLog log;
+    private boolean mustBeCleaned=false;
 
     public Desk(int dID, boolean vaccination, WriteToLog log) {
         healthcareWorker = null;
@@ -63,6 +64,16 @@ public class Desk {
         return healthcareWorker;
     }
     
+    public void closeToClean(){
+        lock.lock();
+  
+        if (patient==null && healthcareWorker!=null){
+            healthcareWorker.goRest(2000,5000);
+        }
+        else if(patient!=null){
+            mustBeCleaned=true;
+        }
+    }
     /**
      * A healthcare worker is only available to attend an emergency if it is alone at the desk
      * @return if the worker is alone

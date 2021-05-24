@@ -36,6 +36,15 @@ public class VaccinationRoom {
     public void setReceptionist(Receptionist r) {
         receptionist = r;
     }
+    
+    public void closeToClean(Desk desk){
+        try {
+            mutex.acquire();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+        mutex.release();
+    }
 
     /**
      * Healthcare worker goes in, in mutual exclusion, to be sure that more than

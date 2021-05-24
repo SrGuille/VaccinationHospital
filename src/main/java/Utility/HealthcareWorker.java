@@ -117,7 +117,7 @@ public class HealthcareWorker extends Thread {
         }
     }
 
-    private void goRest(int minTime, int maxTime) {
+    public void goRest(int minTime, int maxTime) {
 
         vRoom.goOut(this);
 
