@@ -35,7 +35,7 @@ public class Receptionist extends AuxiliaryWorker {
         } catch (InterruptedException ex) {
             Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
         }
-        while (getStatus() != 4) { //While main doesn't put status=4 (END)
+        while (getStatus() != 4) { //While main doesn't set status=4 (END)
             if (remainingToRest == 0) {
                 goRest(3000, 5000); //Sleep for 3 to 5 secs
 

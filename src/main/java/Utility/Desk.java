@@ -64,6 +64,14 @@ public class Desk {
         return healthcareWorker;
     }
     
+    public boolean mustBeCleaned(){
+        return mustBeCleaned;
+    }
+    
+    public void cleaned(){
+        mustBeCleaned=false;
+    }
+    
     public void closeToClean(){
         lock.lock();
   

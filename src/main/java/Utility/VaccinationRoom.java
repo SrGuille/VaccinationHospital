@@ -204,7 +204,11 @@ public class VaccinationRoom {
             Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
         }
         Desk patientCurrentDesk = p.getCurrentDesk();
-
+        
+        if (patientCurrentDesk.mustBeCleaned()){
+            patientCurrentDesk.getWorker().goRest(2000, 5000);
+        }
+        
         patientCurrentDesk.goOut(p); //Go out from vaccination room
         hospital.displayPatientVaccination(null, (ArrayUtils.indexOf(desks, patientCurrentDesk)));
         numPatients--;
