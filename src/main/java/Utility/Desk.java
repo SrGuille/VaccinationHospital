@@ -91,6 +91,7 @@ public class Desk {
         try {
             h.setCurrentDesk(this); //Set the worker desk to this one
             healthcareWorker = h;
+            
         } finally {
             lock.unlock();
         }

@@ -74,7 +74,6 @@ public class VaccinationRoom {
     public boolean findWorkerForEmergency(Desk emergencyDesk){
         try {
             mutex.acquire();
-            System.out.println("In");
         } catch (InterruptedException ex) {
             Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -82,7 +81,6 @@ public class VaccinationRoom {
         for (int i = 0; i < 10; i++) {           
             if (desks[i].isAvailableForEmergency()) {
                 anyWorkerFound=true;
-                System.out.println("Found");
                 desks[i].getWorker().setEmergencyDesk(emergencyDesk);
                 desks[i].attendEmergency();//resume execution
                 break;

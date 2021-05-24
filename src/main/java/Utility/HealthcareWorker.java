@@ -50,12 +50,15 @@ public class HealthcareWorker extends Thread {
                 goRest(5000, 8000);
             }
             vRoom.goInside(this);
+            
             currentDesk.waitForPatient();
-            if (currentDesk.getType().equals("VD")){//If it is in ia vaccination desk, then vaccinate
+            
+            
+            if (emergencyDesk==null){//If it there hasn't been any emergency then vaccinate to patient that signalled 
                 vaccinate(3000, 5000);
                 remainingToRest--;
             }
-            else{//In case of observation desk, then heal patient
+            else{//In case of emergency, then heal patient that has called us
                 healPatient(2000,5000,false); //The false stands for that the call is not perform while resting
             }
             
@@ -174,7 +177,7 @@ public class HealthcareWorker extends Thread {
             vRoom.goOut(this); //Take the worker out of vax room
         }
             oRoom.goInside(this,emergencyDesk); //move to the desk of the patient
-            emergencyDesk=null;
+            
         
             try {
                 Thread.sleep(minTime + (int) (Math.random() * (maxTime - minTime)));
@@ -184,7 +187,7 @@ public class HealthcareWorker extends Thread {
             }
 
             emergencyDesk.tellPatientToGoHome(currentDesk.getPatient());
-
+            emergencyDesk=null;
             oRoom.goOut(this);
             
            if (fromRestRoom){ //Return to rest room

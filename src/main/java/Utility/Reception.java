@@ -81,7 +81,7 @@ public class Reception {
                         receptionist.setStatus(3); //Status of waiting for patients to arrive
                         stopService.await();
                     } catch (InterruptedException ex) {
-                        Logger.getLogger(Reception.class.getName()).log(Level.SEVERE, null, ex);
+                        receptionist.setStatus(0);
                     }
                 } else {
                     isAttended = true;
