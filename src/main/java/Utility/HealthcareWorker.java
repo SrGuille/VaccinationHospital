@@ -13,7 +13,7 @@ public class HealthcareWorker extends Thread {
     private RestRoom rRoom;
     private VaccinationRoom vRoom;
     private ObservationRoom oRoom;
-    private int remainingToRest = 15;
+    private int remainingToRest = 3;
     private int status; //Status=0 resting or working (available for helping at observation), status=1 vaccinating
     private WriteToLog log;
 
@@ -49,10 +49,8 @@ public class HealthcareWorker extends Thread {
                 //In an extreme case it could happen that a patient has come in after the last vaccination, in that case we vaccine him
                 goRest(5000, 8000);
             }
-            vRoom.goInside(this);
             
-            currentDesk.waitForPatient();
-            
+            goInAndWait();
             
             if (emergencyDesk==null){//If it there hasn't been any emergency then vaccinate to patient that signalled 
                 vaccinate(3000, 5000);
@@ -66,6 +64,12 @@ public class HealthcareWorker extends Thread {
         }
     }
 
+    public synchronized void goInAndWait(){
+        vRoom.goInside(this);
+            
+        currentDesk.waitForPatient();
+        
+    }
     public String getID() {
         return hcWorkerID;
     }
@@ -127,7 +131,7 @@ public class HealthcareWorker extends Thread {
             healPatient(2000, 5000, true);
 
         }
-        remainingToRest = 15;
+        remainingToRest = 3;
     }
 
     private void vaccinate(int minTime, int maxTime) {

@@ -93,7 +93,9 @@ public class ObservationRoom {
         }
         Desk patientCurrentDesk = p.getCurrentDesk();
         patientCurrentDesk.goOut(p); //Go out from observation room
-        hospital.displayPatientVaccination(null, (ArrayUtils.indexOf(desks, patientCurrentDesk)));
+        int index=(ArrayUtils.indexOf(desks, patientCurrentDesk));
+        System.out.println("Index "+index);
+        hospital.displayPatientObservation(null, index);
         numPatients.getAndDecrement();
         mutex.release();
     }
