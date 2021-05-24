@@ -44,7 +44,7 @@ public class RestRoom {
 
         } else {
             workers.offer(h);
-            //hospital.displayHealthcareWorkersRest(workers);
+            hospital.displayHealthcareWorkersRest(workers);
 
             String message = " Healthcare worker " + h.getID() + " is resting";
             log.write(message);
@@ -70,7 +70,7 @@ public class RestRoom {
         try {
             mutex.acquire();
             workers.remove(h);
-            //hospital.displayHealthcareWorkersRest(workers);
+            hospital.displayHealthcareWorkersRest(workers);
         } catch (InterruptedException ex) {
             Logger.getLogger(RestRoom.class.getName()).log(Level.SEVERE, null, ex);
         }

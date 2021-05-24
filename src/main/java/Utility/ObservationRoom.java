@@ -43,7 +43,7 @@ public class ObservationRoom {
     public void goInside(HealthcareWorker h, Desk desk) {
         try {
             desk.goInside(h);
-            //hospital.displayHealthcareWorkerObservation(h, (ArrayUtils.indexOf(desks, desk)));
+            hospital.displayHealthcareWorkerObservation(h, (ArrayUtils.indexOf(desks, desk)));
         } catch (InterruptedException ex) {
             Logger.getLogger(ObservationRoom.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -61,7 +61,7 @@ public class ObservationRoom {
                 try {
                     desks[i].goInside(p);
                     p.setCurrentDesk(desks[i]);
-                    //hospital.displayPatientObservation(p, i);
+                    hospital.displayPatientObservation(p, i);
                     numPatients.getAndIncrement();
                     break;
                 } catch (InterruptedException ex) {
@@ -75,7 +75,7 @@ public class ObservationRoom {
     public void goOut(HealthcareWorker h) {
         Desk workerCurrentDesk = h.getCurrentDesk();
         workerCurrentDesk.goOut(h); //Go out from observation room
-        //hospital.displayHealthcareWorkerObservation(null, (ArrayUtils.indexOf(desks, workerCurrentDesk)));
+        hospital.displayHealthcareWorkerObservation(null, (ArrayUtils.indexOf(desks, workerCurrentDesk)));
         vRoom.goInside(h); //Go to vaccination room
 
     }
@@ -93,7 +93,7 @@ public class ObservationRoom {
         }
         Desk patientCurrentDesk = p.getCurrentDesk();
         patientCurrentDesk.goOut(p); //Go out from observation room
-        //hospital.displayPatientVaccination(null, (ArrayUtils.indexOf(desks, patientCurrentDesk)));
+        hospital.displayPatientVaccination(null, (ArrayUtils.indexOf(desks, patientCurrentDesk)));
         numPatients.getAndDecrement();
         mutex.release();
     }

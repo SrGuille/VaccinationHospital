@@ -5056,3 +5056,422 @@
 24-05-2021 09:36:20 Patient P0012 entered VD02
 24-05-2021 09:36:20 Patient P0013 is at front desk
 24-05-2021 09:36:20 Patient P0019 arrived at the hospital
+24-05-2021 09:37:19 Main: Hospital opened
+24-05-2021 09:37:19 Healthcare worker H01 is resting
+24-05-2021 09:37:19 Healthcare worker H02 is resting
+24-05-2021 09:37:19 Healthcare worker H03 is resting
+24-05-2021 09:37:19 Healthcare worker H04 is resting
+24-05-2021 09:37:19 Healthcare worker H05 is resting
+24-05-2021 09:37:19 Healthcare worker H06 is resting
+24-05-2021 09:37:19 Healthcare worker H07 is resting
+24-05-2021 09:37:19 Healthcare worker H08 is resting
+24-05-2021 09:37:19 Healthcare worker H09 is resting
+24-05-2021 09:37:19 Healthcare worker H10 is resting
+24-05-2021 09:37:20 Vaccine produced, there are 1 ready
+24-05-2021 09:37:20 Patient P0001 arrived at the hospital
+24-05-2021 09:37:20 Healthcare Worker H07 entered VD01 and is waiting to vaccinate a patient
+24-05-2021 09:37:20 Vaccine produced, there are 2 ready
+24-05-2021 09:37:21 Healthcare Worker H01 entered VD02 and is waiting to vaccinate a patient
+24-05-2021 09:37:21 Healthcare Worker H02 entered VD03 and is waiting to vaccinate a patient
+24-05-2021 09:37:21 Healthcare Worker H08 entered VD04 and is waiting to vaccinate a patient
+24-05-2021 09:37:21 Patient P0002 arrived at the hospital
+24-05-2021 09:37:21 Healthcare Worker H10 entered VD05 and is waiting to vaccinate a patient
+24-05-2021 09:37:21 Healthcare Worker H03 entered VD06 and is waiting to vaccinate a patient
+24-05-2021 09:37:21 Vaccine produced, there are 3 ready
+24-05-2021 09:37:21 Healthcare Worker H05 entered VD07 and is waiting to vaccinate a patient
+24-05-2021 09:37:22 Healthcare Worker H09 entered VD08 and is waiting to vaccinate a patient
+24-05-2021 09:37:22 Vaccine produced, there are 4 ready
+24-05-2021 09:37:22 Healthcare Worker H06 entered VD09 and is waiting to vaccinate a patient
+24-05-2021 09:37:22 Healthcare Worker H04 entered VD10 and is waiting to vaccinate a patient
+24-05-2021 09:37:22 Patient P0003 arrived at the hospital
+24-05-2021 09:37:22 Vaccine produced, there are 5 ready
+24-05-2021 09:37:23 Patient P0004 arrived at the hospital
+24-05-2021 09:37:23 Vaccine produced, there are 6 ready
+24-05-2021 09:37:24 Vaccine produced, there are 7 ready
+24-05-2021 09:37:24 Patient P0001 is at front desk
+24-05-2021 09:37:24 Patient P0005 arrived at the hospital
+24-05-2021 09:37:25 Vaccine produced, there are 8 ready
+24-05-2021 09:37:25 Patient P0001 entered VD01
+24-05-2021 09:37:25 Patient P0002 is at front desk
+24-05-2021 09:37:25 Patient P0006 arrived at the hospital
+24-05-2021 09:37:25 Vaccine produced, there are 8 ready
+24-05-2021 09:37:26 Patient P0002 entered VD02
+24-05-2021 09:37:26 Patient P0003 is at front desk
+24-05-2021 09:37:26 Vaccine produced, there are 8 ready
+24-05-2021 09:37:26 Patient P0007 arrived at the hospital
+24-05-2021 09:37:26 Patient P0003 entered VD03
+24-05-2021 09:37:26 Patient P0004 is at front desk
+24-05-2021 09:37:26 Vaccine produced, there are 8 ready
+24-05-2021 09:37:27 Vaccine produced, there are 9 ready
+24-05-2021 09:37:27 Patient P0004 entered VD04
+24-05-2021 09:37:27 Patient P0005 is at front desk
+24-05-2021 09:37:27 Patient P0008 arrived at the hospital
+24-05-2021 09:37:28 Patient P0005 entered VD05
+24-05-2021 09:37:28 Patient P0006 is at front desk
+24-05-2021 09:37:28 Vaccine produced, there are 8 ready
+24-05-2021 09:37:28 Patient P0009 arrived at the hospital
+24-05-2021 09:37:28 Healthcare Worker H07 vaccinated to patient P0001 at VD01
+24-05-2021 09:37:28 Patient P0001 entered OD01
+24-05-2021 09:37:28 Vaccine produced, there are 9 ready
+24-05-2021 09:37:29 Patient P0006 entered VD01
+24-05-2021 09:37:29 Patient P0007 is at front desk
+24-05-2021 09:37:29 Healthcare Worker H01 vaccinated to patient P0002 at VD02
+24-05-2021 09:37:29 Patient P0002 entered OD02
+24-05-2021 09:37:29 Vaccine produced, there are 9 ready
+24-05-2021 09:37:29 Patient P0010 arrived at the hospital
+24-05-2021 09:37:29 Patient P0007 entered VD02
+24-05-2021 09:37:29 Patient P0008 is at front desk
+24-05-2021 09:37:30 Vaccine produced, there are 9 ready
+24-05-2021 09:37:30 Patient P0011 arrived at the hospital
+24-05-2021 09:37:30 Healthcare Worker H08 vaccinated to patient P0004 at VD04
+24-05-2021 09:37:30 Patient P0004 entered OD03
+24-05-2021 09:37:30 Patient P0008 entered VD04
+24-05-2021 09:37:30 Patient P0009 is at front desk
+24-05-2021 09:37:30 Vaccine produced, there are 9 ready
+24-05-2021 09:37:31 Patient P0009 entered VD06
+24-05-2021 09:37:31 Patient P0010 is at front desk
+24-05-2021 09:37:31 Patient P0012 arrived at the hospital
+24-05-2021 09:37:31 Healthcare Worker H02 vaccinated to patient P0003 at VD03
+24-05-2021 09:37:31 Patient P0003 entered OD04
+24-05-2021 09:37:31 Vaccine produced, there are 9 ready
+24-05-2021 09:37:31 Healthcare Worker H10 vaccinated to patient P0005 at VD05
+24-05-2021 09:37:31 Patient P0005 entered OD05
+24-05-2021 09:37:32 Patient P0010 entered VD03
+24-05-2021 09:37:32 Receptionist A1 is resting
+24-05-2021 09:37:32 Vaccine produced, there are 9 ready
+24-05-2021 09:37:32 Patient P0013 arrived at the hospital
+24-05-2021 09:37:33 Vaccine produced, there are 10 ready
+24-05-2021 09:37:33 Vaccine Preparer A2 is resting
+24-05-2021 09:37:33 Patient P0014 arrived at the hospital
+24-05-2021 09:37:33 Healthcare Worker H07 vaccinated to patient P0006 at VD01
+24-05-2021 09:37:33 Patient P0006 entered OD06
+24-05-2021 09:37:34 Healthcare Worker H01 vaccinated to patient P0007 at VD02
+24-05-2021 09:37:34 Patient P0007 entered OD07
+24-05-2021 09:37:34 Patient P0015 arrived at the hospital
+24-05-2021 09:37:34 Healthcare Worker H08 vaccinated to patient P0008 at VD04
+24-05-2021 09:37:34 Patient P0008 entered OD08
+24-05-2021 09:37:35 Receptionist A1 has returned to his spot
+24-05-2021 09:37:35 Patient P0011 is at front desk
+24-05-2021 09:37:35 Patient P0016 arrived at the hospital
+24-05-2021 09:37:35 Healthcare Worker H03 vaccinated to patient P0009 at VD06
+24-05-2021 09:37:35 Patient P0009 entered OD09
+24-05-2021 09:37:35 Vaccine Preparer A2 has returned to his spot
+24-05-2021 09:37:36 Patient P0011 entered VD01
+24-05-2021 09:37:36 Patient P0012 is at front desk
+24-05-2021 09:37:36 Patient P0017 arrived at the hospital
+24-05-2021 09:37:36 Vaccine produced, there are 10 ready
+24-05-2021 09:37:36 Patient P0012 entered VD02
+24-05-2021 09:37:36 Patient P0013 is at front desk
+24-05-2021 09:37:36 Healthcare Worker H02 vaccinated to patient P0010 at VD03
+24-05-2021 09:37:36 Patient P0010 entered OD10
+24-05-2021 09:37:37 Patient P0018 arrived at the hospital
+24-05-2021 09:37:37 Vaccine produced, there are 10 ready
+24-05-2021 09:37:37 Patient P0013 entered VD03
+24-05-2021 09:37:37 Patient P0014 is at front desk
+24-05-2021 09:37:38 Patient P0014 entered VD04
+24-05-2021 09:37:38 Patient P0015 is at front desk
+24-05-2021 09:37:38 Vaccine produced, there are 9 ready
+24-05-2021 09:37:38 Patient P0019 arrived at the hospital
+24-05-2021 09:37:38 Patient P0001 has left the hospital
+24-05-2021 09:37:38 Patient P0015 entered VD05
+24-05-2021 09:37:38 Patient P0016 is at front desk
+24-05-2021 09:37:39 Vaccine produced, there are 9 ready
+24-05-2021 09:37:39 Patient P0002 has left the hospital
+24-05-2021 09:37:39 Patient P0020 arrived at the hospital
+24-05-2021 09:37:39 Healthcare Worker H07 vaccinated to patient P0011 at VD01
+24-05-2021 09:37:39 Patient P0011 entered OD01
+24-05-2021 09:37:39 Patient P0016 entered VD01
+24-05-2021 09:37:39 Patient P0017 is at front desk
+24-05-2021 09:37:40 Vaccine produced, there are 9 ready
+24-05-2021 09:37:40 Healthcare Worker H01 vaccinated to patient P0012 at VD02
+24-05-2021 09:37:40 Patient P0012 entered OD02
+24-05-2021 09:37:40 Patient P0017 entered VD02
+24-05-2021 09:37:40 Patient P0018 is at front desk
+24-05-2021 09:37:40 Patient P0021 arrived at the hospital
+24-05-2021 09:37:40 Patient P0004 has left the hospital
+24-05-2021 09:37:40 Vaccine produced, there are 9 ready
+24-05-2021 09:37:41 Patient P0018 entered VD06
+24-05-2021 09:37:41 Patient P0019 is at front desk
+24-05-2021 09:37:41 Patient P0022 arrived at the hospital
+24-05-2021 09:37:41 Vaccine produced, there are 8 ready
+24-05-2021 09:37:41 Healthcare Worker H02 vaccinated to patient P0013 at VD03
+24-05-2021 09:37:41 Patient P0013 entered OD03
+24-05-2021 09:37:41 Patient P0019 entered VD03
+24-05-2021 09:37:41 Patient P0020 is at front desk
+24-05-2021 09:37:42 Patient P0020 entered VD07
+24-05-2021 09:37:42 Receptionist A1 is resting
+24-05-2021 09:37:42 Vaccine produced, there are 8 ready
+24-05-2021 09:37:42 Patient P0023 arrived at the hospital
+24-05-2021 09:37:42 Healthcare Worker H10 vaccinated to patient P0015 at VD05
+24-05-2021 09:37:42 Patient P0015 entered OD11
+24-05-2021 09:37:42 Healthcare Worker H08 vaccinated to patient P0014 at VD04
+24-05-2021 09:37:42 Patient P0014 entered OD12
+24-05-2021 09:37:43 Vaccine produced, there are 9 ready
+24-05-2021 09:37:43 Patient P0024 arrived at the hospital
+24-05-2021 09:37:43 Healthcare Worker H07 vaccinated to patient P0016 at VD01
+24-05-2021 09:37:43 Patient P0016 entered OD13
+24-05-2021 09:37:43 Vaccine produced, there are 10 ready
+24-05-2021 09:37:43 Patient P0006 has left the hospital
+24-05-2021 09:37:44 Healthcare Worker H03 vaccinated to patient P0018 at VD06
+24-05-2021 09:37:44 Patient P0018 entered OD06
+24-05-2021 09:37:44 Healthcare Worker H01 vaccinated to patient P0017 at VD02
+24-05-2021 09:37:44 Patient P0017 entered OD14
+24-05-2021 09:37:44 Patient P0025 arrived at the hospital
+24-05-2021 09:37:44 Vaccine produced, there are 10 ready
+24-05-2021 09:37:44 Patient P0008 has left the hospital
+24-05-2021 09:37:45 Vaccine produced, there are 11 ready
+24-05-2021 09:37:45 Patient P0026 arrived at the hospital
+24-05-2021 09:37:45 Patient P0009 has left the hospital
+24-05-2021 09:37:45 Healthcare Worker H02 vaccinated to patient P0019 at VD03
+24-05-2021 09:37:45 Patient P0019 entered OD08
+24-05-2021 09:37:45 Healthcare Worker H05 vaccinated to patient P0020 at VD07
+24-05-2021 09:37:45 Patient P0020 entered OD09
+24-05-2021 09:37:46 Vaccine produced, there are 12 ready
+24-05-2021 09:37:46 Patient P0027 arrived at the hospital
+24-05-2021 09:37:46 Vaccine produced, there are 13 ready
+24-05-2021 09:37:46 Patient P0010 has left the hospital
+24-05-2021 09:37:47 Receptionist A1 has returned to his spot
+24-05-2021 09:37:47 Patient P0021 is at front desk
+24-05-2021 09:37:47 Vaccine produced, there are 14 ready
+24-05-2021 09:37:47 Patient P0028 arrived at the hospital
+24-05-2021 09:37:47 Patient P0021 entered VD01
+24-05-2021 09:37:47 Patient P0022 is at front desk
+24-05-2021 09:37:48 Healthcare Worker H07 vaccinated to patient P0021 at VD01
+24-05-2021 09:37:48 Patient P0021 entered OD10
+24-05-2021 09:37:48 Vaccine produced, there are 15 ready
+24-05-2021 09:37:48 Patient P0022 entered VD01
+24-05-2021 09:37:48 Patient P0029 arrived at the hospital
+24-05-2021 09:37:48 Patient P0023 is at front desk
+24-05-2021 09:37:49 Patient P0023 entered VD02
+24-05-2021 09:37:49 Patient P0024 is at front desk
+24-05-2021 09:37:49 Vaccine produced, there are 14 ready
+24-05-2021 09:37:49 Patient P0030 arrived at the hospital
+24-05-2021 09:37:49 Patient P0024 entered VD03
+24-05-2021 09:37:49 Patient P0025 is at front desk
+24-05-2021 09:37:49 Vaccine produced, there are 14 ready
+24-05-2021 09:37:50 Patient P0012 has left the hospital
+24-05-2021 09:37:50 Patient P0025 entered VD04
+24-05-2021 09:37:50 Patient P0026 is at front desk
+24-05-2021 09:37:50 Patient P0031 arrived at the hospital
+24-05-2021 09:37:50 Vaccine produced, there are 14 ready
+24-05-2021 09:37:51 Patient P0026 doesn't have an an appointment, he is leaving the hospital
+24-05-2021 09:37:51 Patient P0027 is at front desk
+24-05-2021 09:37:51 Vaccine produced, there are 15 ready
+24-05-2021 09:37:51 Vaccine Preparer A2 is resting
+24-05-2021 09:37:51 Patient P0032 arrived at the hospital
+24-05-2021 09:37:52 Patient P0027 entered VD05
+24-05-2021 09:37:52 Patient P0028 is at front desk
+24-05-2021 09:37:52 Patient P0033 arrived at the hospital
+24-05-2021 09:37:52 Patient P0028 entered VD06
+24-05-2021 09:37:52 Patient P0029 is at front desk
+24-05-2021 09:37:52 Vaccine Preparer A2 has returned to his spot
+24-05-2021 09:37:52 Patient P0015 has left the hospital
+24-05-2021 09:37:52 Patient P0014 has left the hospital
+24-05-2021 09:37:53 Patient P0029 entered VD07
+24-05-2021 09:37:53 Patient P0030 is at front desk
+24-05-2021 09:37:53 Healthcare Worker H01 vaccinated to patient P0023 at VD02
+24-05-2021 09:37:53 Patient P0023 entered OD02
+24-05-2021 09:37:53 Healthcare Worker H07 vaccinated to patient P0022 at VD01
+24-05-2021 09:37:53 Patient P0022 entered OD11
+24-05-2021 09:37:53 Vaccine produced, there are 13 ready
+24-05-2021 09:37:53 Patient P0034 arrived at the hospital
+24-05-2021 09:37:53 Patient P0016 has left the hospital
+24-05-2021 09:37:53 Patient P0030 entered VD01
+24-05-2021 09:37:53 Receptionist A1 is resting
+24-05-2021 09:37:54 Healthcare Worker H02 vaccinated to patient P0024 at VD03
+24-05-2021 09:37:54 Patient P0024 entered OD12
+24-05-2021 09:37:54 Vaccine produced, there are 12 ready
+24-05-2021 09:37:54 Patient P0017 has left the hospital
+24-05-2021 09:37:54 Patient P0035 arrived at the hospital
+24-05-2021 09:37:54 Healthcare Worker H08 vaccinated to patient P0025 at VD04
+24-05-2021 09:37:54 Patient P0025 entered OD13
+24-05-2021 09:37:55 Vaccine produced, there are 13 ready
+24-05-2021 09:37:55 Patient P0036 arrived at the hospital
+24-05-2021 09:37:55 Vaccine produced, there are 14 ready
+24-05-2021 09:37:55 Healthcare Worker H10 vaccinated to patient P0027 at VD05
+24-05-2021 09:37:55 Patient P0027 entered OD14
+24-05-2021 09:37:55 Patient P0019 has left the hospital
+24-05-2021 09:37:55 Patient P0020 has left the hospital
+24-05-2021 09:37:56 Vaccine produced, there are 15 ready
+24-05-2021 09:37:56 Healthcare Worker H05 vaccinated to patient P0029 at VD07
+24-05-2021 09:37:56 Patient P0029 entered OD08
+24-05-2021 09:37:56 Patient P0037 arrived at the hospital
+24-05-2021 09:37:56 Vaccine produced, there are 16 ready
+24-05-2021 09:37:57 Healthcare Worker H03 vaccinated to patient P0028 at VD06
+24-05-2021 09:37:57 Patient P0028 entered OD09
+24-05-2021 09:37:57 Vaccine produced, there are 17 ready
+24-05-2021 09:37:57 Patient P0038 arrived at the hospital
+24-05-2021 09:37:58 Vaccine produced, there are 18 ready
+24-05-2021 09:37:58 Patient P0021 has left the hospital
+24-05-2021 09:37:58 Patient P0039 arrived at the hospital
+24-05-2021 09:37:58 Receptionist A1 has returned to his spot
+24-05-2021 09:37:58 Patient P0031 is at front desk
+24-05-2021 09:37:58 Vaccine produced, there are 19 ready
+24-05-2021 09:37:58 Healthcare Worker H07 vaccinated to patient P0030 at VD01
+24-05-2021 09:37:58 Patient P0030 entered OD10
+24-05-2021 09:37:59 Patient P0031 entered VD01
+24-05-2021 09:37:59 Patient P0032 is at front desk
+24-05-2021 09:37:59 Patient P0040 arrived at the hospital
+24-05-2021 09:37:59 Vaccine produced, there are 19 ready
+24-05-2021 09:38:00 Patient P0032 entered VD02
+24-05-2021 09:38:00 Patient P0033 is at front desk
+24-05-2021 09:38:00 Patient P0041 arrived at the hospital
+24-05-2021 09:38:00 Patient P0033 entered VD03
+24-05-2021 09:38:00 Patient P0034 is at front desk
+24-05-2021 09:38:01 Patient P0042 arrived at the hospital
+24-05-2021 09:38:01 Patient P0034 entered VD04
+24-05-2021 09:38:01 Patient P0035 is at front desk
+24-05-2021 09:38:02 Patient P0035 entered VD05
+24-05-2021 09:38:02 Patient P0036 is at front desk
+24-05-2021 09:38:02 Patient P0043 arrived at the hospital
+24-05-2021 09:38:02 Healthcare Worker H07 vaccinated to patient P0031 at VD01
+24-05-2021 09:38:02 Patient P0031 entered OD15
+24-05-2021 09:38:03 Patient P0023 has left the hospital
+24-05-2021 09:38:03 Patient P0036 entered VD01
+24-05-2021 09:38:03 Patient P0037 is at front desk
+24-05-2021 09:38:03 Patient P0044 arrived at the hospital
+24-05-2021 09:38:03 Healthcare Worker H02 vaccinated to patient P0033 at VD03
+24-05-2021 09:38:03 Patient P0033 entered OD02
+24-05-2021 09:38:04 Patient P0037 entered VD03
+24-05-2021 09:38:04 Patient P0038 is at front desk
+24-05-2021 09:38:04 Patient P0024 has left the hospital
+24-05-2021 09:38:04 Patient P0045 arrived at the hospital
+24-05-2021 09:38:04 Healthcare Worker H08 vaccinated to patient P0034 at VD04
+24-05-2021 09:38:04 Patient P0034 entered OD12
+24-05-2021 09:38:04 Patient P0025 has left the hospital
+24-05-2021 09:38:05 Patient P0038 entered VD04
+24-05-2021 09:38:05 Patient P0039 is at front desk
+24-05-2021 09:38:05 Patient P0046 arrived at the hospital
+24-05-2021 09:38:05 Healthcare Worker H10 vaccinated to patient P0035 at VD05
+24-05-2021 09:38:05 Patient P0035 entered OD13
+24-05-2021 09:38:05 Patient P0027 has left the hospital
+24-05-2021 09:38:05 Patient P0039 entered VD05
+24-05-2021 09:38:05 Patient P0040 is at front desk
+24-05-2021 09:38:06 Patient P0029 has left the hospital
+24-05-2021 09:38:06 Patient P0047 arrived at the hospital
+24-05-2021 09:38:06 Healthcare Worker H07 vaccinated to patient P0036 at VD01
+24-05-2021 09:38:06 Patient P0036 entered OD08
+24-05-2021 09:38:06 Patient P0040 entered VD01
+24-05-2021 09:38:06 Receptionist A1 is resting
+24-05-2021 09:38:07 Patient P0048 arrived at the hospital
+24-05-2021 09:38:08 Healthcare Worker H08 vaccinated to patient P0038 at VD04
+24-05-2021 09:38:08 Patient P0038 entered OD14
+24-05-2021 09:38:08 Patient P0049 arrived at the hospital
+24-05-2021 09:38:08 Patient P0030 has left the hospital
+24-05-2021 09:38:08 Healthcare Worker H02 vaccinated to patient P0037 at VD03
+24-05-2021 09:38:08 Patient P0037 entered OD10
+24-05-2021 09:38:09 Patient P0050 arrived at the hospital
+24-05-2021 09:38:10 Healthcare Worker H10 vaccinated to patient P0039 at VD05
+24-05-2021 09:38:10 Patient P0039 entered OD16
+24-05-2021 09:38:10 Receptionist A1 has returned to his spot
+24-05-2021 09:38:10 Patient P0041 is at front desk
+24-05-2021 09:38:11 Healthcare Worker H07 vaccinated to patient P0040 at VD01
+24-05-2021 09:38:11 Patient P0040 entered OD17
+24-05-2021 09:38:11 Patient P0041 entered VD01
+24-05-2021 09:38:11 Patient P0042 is at front desk
+24-05-2021 09:38:12 Patient P0042 entered VD03
+24-05-2021 09:38:12 Patient P0043 is at front desk
+24-05-2021 09:38:12 Patient P0031 has left the hospital
+24-05-2021 09:38:13 Patient P0043 entered VD04
+24-05-2021 09:38:13 Patient P0044 is at front desk
+24-05-2021 09:38:13 Patient P0044 entered VD05
+24-05-2021 09:38:13 Patient P0045 is at front desk
+24-05-2021 09:38:15 Healthcare Worker H07 vaccinated to patient P0041 at VD01
+24-05-2021 09:38:15 Patient P0041 entered OD15
+24-05-2021 09:38:15 Patient P0035 has left the hospital
+24-05-2021 09:38:16 Healthcare Worker H02 vaccinated to patient P0042 at VD03
+24-05-2021 09:38:16 Patient P0042 entered OD13
+24-05-2021 09:38:16 Patient P0045 entered VD01
+24-05-2021 09:38:16 Patient P0046 is at front desk
+24-05-2021 09:38:16 Healthcare Worker H10 vaccinated to patient P0044 at VD05
+24-05-2021 09:38:16 Patient P0044 entered OD18
+24-05-2021 09:38:17 Healthcare Worker H08 vaccinated to patient P0043 at VD04
+24-05-2021 09:38:17 Patient P0043 entered OD19
+24-05-2021 09:38:18 Patient P0037 has left the hospital
+24-05-2021 09:38:20 Patient P0039 has left the hospital
+24-05-2021 09:38:20 Healthcare Worker H07 vaccinated to patient P0045 at VD01
+24-05-2021 09:38:20 Patient P0045 entered OD10
+24-05-2021 09:38:20 Patient P0046 entered VD01
+24-05-2021 09:38:20 Patient P0047 is at front desk
+24-05-2021 09:38:21 Patient P0047 entered VD03
+24-05-2021 09:38:21 Patient P0048 is at front desk
+24-05-2021 09:38:24 Healthcare Worker H07 vaccinated to patient P0046 at VD01
+24-05-2021 09:38:24 Patient P0046 entered OD16
+24-05-2021 09:38:26 Patient P0042 has left the hospital
+24-05-2021 09:38:26 Patient P0044 has left the hospital
+24-05-2021 09:38:34 Patient P0046 has left the hospital
+24-05-2021 09:52:26 Main: Hospital opened
+24-05-2021 09:52:27 Vaccine produced, there are 1 ready
+24-05-2021 09:52:27 Patient P0001 arrived at the hospital
+24-05-2021 09:52:28 Vaccine produced, there are 2 ready
+24-05-2021 09:52:28 Patient P0002 arrived at the hospital
+24-05-2021 09:52:28 Vaccine produced, there are 3 ready
+24-05-2021 09:52:29 Patient P0003 arrived at the hospital
+24-05-2021 09:52:29 Vaccine produced, there are 4 ready
+24-05-2021 09:52:30 Vaccine produced, there are 5 ready
+24-05-2021 09:52:30 Patient P0004 arrived at the hospital
+24-05-2021 09:52:31 Vaccine produced, there are 6 ready
+24-05-2021 09:52:31 Patient P0005 arrived at the hospital
+24-05-2021 09:52:31 Patient P0001 is at front desk
+24-05-2021 09:52:32 Vaccine produced, there are 7 ready
+24-05-2021 09:52:32 Patient P0006 arrived at the hospital
+24-05-2021 09:52:33 Vaccine produced, there are 8 ready
+24-05-2021 09:52:33 Vaccine produced, there are 9 ready
+24-05-2021 09:52:33 Patient P0007 arrived at the hospital
+24-05-2021 09:52:34 Vaccine produced, there are 10 ready
+24-05-2021 09:52:34 Patient P0008 arrived at the hospital
+24-05-2021 09:52:35 Vaccine produced, there are 11 ready
+24-05-2021 09:52:35 Patient P0009 arrived at the hospital
+24-05-2021 09:52:36 Vaccine produced, there are 12 ready
+24-05-2021 09:52:36 Vaccine produced, there are 13 ready
+24-05-2021 09:52:36 Patient P0010 arrived at the hospital
+24-05-2021 09:52:37 Vaccine produced, there are 14 ready
+24-05-2021 09:52:37 Vaccine produced, there are 15 ready
+24-05-2021 09:52:37 Patient P0011 arrived at the hospital
+24-05-2021 09:52:38 Vaccine produced, there are 16 ready
+24-05-2021 09:52:38 Patient P0012 arrived at the hospital
+24-05-2021 09:52:39 Vaccine produced, there are 17 ready
+24-05-2021 09:52:39 Patient P0013 arrived at the hospital
+24-05-2021 09:52:39 Vaccine produced, there are 18 ready
+24-05-2021 09:52:40 Patient P0014 arrived at the hospital
+24-05-2021 09:52:40 Vaccine produced, there are 19 ready
+24-05-2021 09:52:41 Vaccine produced, there are 20 ready
+24-05-2021 09:52:41 Vaccine Preparer A2 is resting
+24-05-2021 09:52:41 Patient P0015 arrived at the hospital
+24-05-2021 09:52:42 Patient P0016 arrived at the hospital
+24-05-2021 09:52:43 Patient P0017 arrived at the hospital
+24-05-2021 09:52:44 Vaccine Preparer A2 has returned to his spot
+24-05-2021 09:52:44 Patient P0018 arrived at the hospital
+24-05-2021 09:52:45 Vaccine produced, there are 21 ready
+24-05-2021 09:52:45 Patient P0019 arrived at the hospital
+24-05-2021 09:52:45 Vaccine produced, there are 22 ready
+24-05-2021 09:52:46 Vaccine produced, there are 23 ready
+24-05-2021 09:52:46 Patient P0020 arrived at the hospital
+24-05-2021 09:52:47 Vaccine produced, there are 24 ready
+24-05-2021 09:52:47 Patient P0021 arrived at the hospital
+24-05-2021 09:52:47 Vaccine produced, there are 25 ready
+24-05-2021 09:52:48 Vaccine produced, there are 26 ready
+24-05-2021 09:52:48 Patient P0022 arrived at the hospital
+24-05-2021 09:52:49 Vaccine produced, there are 27 ready
+24-05-2021 09:52:49 Patient P0023 arrived at the hospital
+24-05-2021 09:52:50 Vaccine produced, there are 28 ready
+24-05-2021 09:52:50 Patient P0024 arrived at the hospital
+24-05-2021 09:52:51 Vaccine produced, there are 29 ready
+24-05-2021 09:52:51 Vaccine produced, there are 30 ready
+24-05-2021 09:52:51 Patient P0025 arrived at the hospital
+24-05-2021 09:52:52 Vaccine produced, there are 31 ready
+24-05-2021 09:52:52 Patient P0026 arrived at the hospital
+24-05-2021 09:52:53 Vaccine produced, there are 32 ready
+24-05-2021 09:52:53 Patient P0027 arrived at the hospital
+24-05-2021 09:52:53 Vaccine produced, there are 33 ready
+24-05-2021 09:52:54 Vaccine produced, there are 34 ready
+24-05-2021 09:52:54 Patient P0028 arrived at the hospital
+24-05-2021 09:52:55 Vaccine produced, there are 35 ready
+24-05-2021 09:52:55 Patient P0029 arrived at the hospital
+24-05-2021 09:52:56 Vaccine produced, there are 36 ready
+24-05-2021 09:52:56 Vaccine produced, there are 37 ready
+24-05-2021 09:52:56 Patient P0030 arrived at the hospital
+24-05-2021 09:52:57 Vaccine produced, there are 38 ready
+24-05-2021 09:52:57 Patient P0031 arrived at the hospital
+24-05-2021 09:52:58 Vaccine produced, there are 39 ready
+24-05-2021 09:52:58 Patient P0032 arrived at the hospital
