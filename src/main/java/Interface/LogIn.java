@@ -15,14 +15,19 @@ public class LogIn extends javax.swing.JFrame {
     }
 
     private JFrame goBack;
+    private Boolean firstClient = true;
+    private Boolean firstServer = true;
+    private Client client;
+    private Server server;
+    private Hospital clientHospital;
+    private Hospital serverHospital;
 
     /**
-     * Creates new form LogIn
+     * Displays LogIn
      *
      * @param v: previous frame
      */
-    public LogIn(JFrame v) {
-        initComponents();
+    public void displayLogIn(JFrame v) {
         goBack = v;
         goBack.setVisible(false);
         this.setVisible(true);
@@ -198,7 +203,14 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startClientButtonMouseExited
 
     private void startClientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startClientButtonActionPerformed
-        
+
+        if (firstClient) {
+            clientHospital = new HospitalClient(this);
+            client = new Client();
+            firstClient = false;
+        } else {
+            clientHospital.displayHospital(this);
+        }
     }//GEN-LAST:event_startClientButtonActionPerformed
 
     private void startServerButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startServerButtonMouseEntered
@@ -212,8 +224,14 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startServerButtonMouseExited
 
     private void startServerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startServerButtonActionPerformed
-        HospitalServer hospitalServer = new HospitalServer(this);
-        Server server = new Server(hospitalServer);
+
+        if (firstServer) {
+            serverHospital = new HospitalServer(this);
+            Server server = new Server(serverHospital);
+            firstServer = false;
+        } else {
+            serverHospital.displayHospital(this);
+        }
 
     }//GEN-LAST:event_startServerButtonActionPerformed
 
@@ -234,13 +252,17 @@ public class LogIn extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LogIn.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LogIn.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LogIn.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LogIn.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
