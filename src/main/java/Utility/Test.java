@@ -8,40 +8,45 @@ import javax.swing.JFrame;
 
 public class Test {
 
-    private static JFrame goBack;
-    private static Hospital hospital;
+    private JFrame goBack;
+    private Hospital hospital;
+    private WriteToLog log;
+    private ObservationRoom oRoom;
+    private RestRoom rRoom;
+    private VaccinationRoom vRoom;
+    private Reception reception;
+    private Object[] hospitalRooms = new Object[4];
+    private Patient patients[];
+    private Receptionist aux1;
+    private VaccinePreparer aux2;
+    private HealthcareWorker[] workers;
 
     public Test(JFrame v) throws InterruptedException {
         goBack = v;
         //Create interface
         hospital = new Hospital(goBack);
-        WriteToLog log = new WriteToLog("evolutionHospital.txt");
+        log = new WriteToLog("evolutionHospital.txt");
         log.write(" Main: Hospital opened");
 
-        //Create rooms
-        ObservationRoom oRoom = new ObservationRoom(log, hospital);
-        RestRoom rRoom = new RestRoom(oRoom, log, hospital);
-        VaccinationRoom vRoom = new VaccinationRoom(oRoom, log, hospital);
-        oRoom.setVaccinationRoom(vRoom);
-        Reception reception = new Reception(vRoom, log, hospital);
+        createRooms();
+        createPatients();
+        //createWorkers();
 
-        Object[] hospitalRooms = {reception, vRoom, oRoom, rRoom};
-
-        //Create workers
-        Receptionist aux1 = new Receptionist(1, reception, rRoom, hospital);
-        VaccinePreparer aux2 = new VaccinePreparer(2, vRoom, rRoom, hospital);
-
-        reception.setReceptionist(aux1);
-        vRoom.setReceptionist(aux1);
-
-        HealthcareWorker[] workers = new HealthcareWorker[10];
-        for (int i = 0; i < 10; i++) {
-            workers[i] = new HealthcareWorker(i + 1, hospitalRooms, log);
-
+        //Wait for all to finish
+        for (int k = 0; k < 50; k++) {
+            patients[k].join();
         }
 
-        //Create patients
-        Patient patients[] = new Patient[50];
+        //Close hospital (join finished)
+       /* for (int i = 0; i < 10; i++) {
+            workers[i].interrupt();
+        }
+        aux1.interrupt();
+        aux2.interrupt();*/
+    }
+
+    public void createPatients() {
+        patients = new Patient[50];
 
         for (int j = 0; j < 50; j++) {
             try {
@@ -51,17 +56,31 @@ public class Test {
             }
             patients[j] = new Patient(j + 1, hospitalRooms);
         }
+    }
 
-        //Wait for all to finish
-        for (int k = 0; k < 50; k++) {
-            patients[k].join();
-        }
+    public void createWorkers() {
+        aux1 = new Receptionist(1, reception, rRoom, hospital);
+        aux2 = new VaccinePreparer(2, vRoom, rRoom, hospital);
 
-        //Close hospital (join finished)
+        reception.setReceptionist(aux1);
+        vRoom.setReceptionist(aux1);
+
+        workers = new HealthcareWorker[10];
         for (int i = 0; i < 10; i++) {
-            workers[i].interrupt();
+            workers[i] = new HealthcareWorker(i + 1, hospitalRooms, log);
+
         }
-        aux1.interrupt();
-        aux2.interrupt();
+    }
+
+    public void createRooms() {
+        oRoom = new ObservationRoom(log, hospital);
+        rRoom = new RestRoom(oRoom, log, hospital);
+        vRoom = new VaccinationRoom(oRoom, log, hospital);
+        oRoom.setVaccinationRoom(vRoom);
+        reception = new Reception(vRoom, log, hospital);
+        hospitalRooms[0] = reception;
+        hospitalRooms[1] = vRoom;
+        hospitalRooms[2] = oRoom;
+        hospitalRooms[3] = rRoom;
     }
 }

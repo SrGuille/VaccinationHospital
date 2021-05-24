@@ -11,7 +11,6 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicInteger;
 
-
 public class Hospital extends javax.swing.JFrame {
 
     private JFrame goBack;
@@ -332,7 +331,6 @@ public class Hospital extends javax.swing.JFrame {
         buttonDesks[9] = buttonDesk10;
     }
 
-   
     /**
      *
      * Changes labels display when desk is activated or deactivated
@@ -405,17 +403,19 @@ public class Hospital extends javax.swing.JFrame {
         int i = 0;
         Patient patient;
         Iterator<Patient> itr = patientsWaiting.iterator();
-        while (itr.hasNext() && i < 23) {
-            patient = (Patient) itr.next();
-            patientsReception[i].setText(patient.getID());
-            patientsImageReception[i].setIcon(patientImage);
-            if (i == 22) {
-                patientsReception[i-1].setText("...");
-                patientsImageReception[i-1].setIcon(null);
+        while (itr.hasNext() && i < 22) {
+            if (i != 22) {
+                patient = (Patient) itr.next();
+                patientsReception[i].setText(patient.getID());
+                patientsImageReception[i].setIcon(patientImage);
+            } else {
+                patientsReception[i - 1].setText("...");
+                patientsImageReception[i - 1].setIcon(patientImage);
             }
-          
+
             i++;
         }
+
         while (i < 22) {
             patientsReception[i].setText("");
             patientsImageReception[i].setIcon(null);
@@ -708,7 +708,7 @@ public class Hospital extends javax.swing.JFrame {
         //Display auxiliaries
         displayReceptionistRest(receptionist);
         displayVaccinePreparerRest(vaccinePreparer);
-       
+
     }
 
     /**
@@ -739,7 +739,6 @@ public class Hospital extends javax.swing.JFrame {
         displayObservationRoom(desksObservation);
         displayRestRoom(healthcareWorkers, receptionist, vaccinePreparer);
     }
-
 
     /**
      * This method is called from within the constructor to initialize the form.
