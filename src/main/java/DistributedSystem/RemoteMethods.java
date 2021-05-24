@@ -2,6 +2,7 @@ package DistributedSystem;
 
 import Interface.Hospital;
 import Utility.*;
+import com.google.gson.Gson;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
@@ -11,62 +12,88 @@ import java.rmi.server.UnicastRemoteObject;
  */
 public class RemoteMethods extends UnicastRemoteObject implements RemoteMethodsInterface {
 
-    private ObservationRoom oRoom;
-    private RestRoom rRoom;
-    private VaccinationRoom vRoom;
-    private Reception reception;
-    private Receptionist aux1;
-    private VaccinePreparer aux2;
+    private String oRoom;
+    private String rRoom;
+    private String vRoom;
+    private String reception;
+    private String aux1;
+    private String aux2;
+    Gson gson = new Gson();
 
     public RemoteMethods() throws RemoteException {
-      /*  this.reception = (Reception) hospitalRooms[0];
+
+    }
+
+    /* public RemoteMethods(Object[] hospitalRooms, Receptionist aux1, VaccinePreparer aux2) throws RemoteException {
+        this.reception = (Reception) hospitalRooms[0];
         this.vRoom = (VaccinationRoom) hospitalRooms[1];
         this.oRoom = (ObservationRoom) hospitalRooms[2];
         this.rRoom = (RestRoom) hospitalRooms[3];
 
         this.aux1 = aux1;
-        this.aux2 = aux2;*/
-    }
-
+        this.aux2 = aux2;
+    }*/
     @Override
-    public ObservationRoom getoRoom() {
+    public String getoRoom() {
+
         return oRoom;
     }
 
     @Override
-    public RestRoom getrRoom() {
+    public String getrRoom() {
         return rRoom;
     }
 
     @Override
-    public VaccinationRoom getvRoom() {
+    public String getvRoom() {
         return vRoom;
     }
 
     @Override
-    public Reception getReception() {
+    public String getReception() {
         return reception;
     }
 
     @Override
-    public Receptionist getAux1() {
-        int receptionistStatus = aux1.getStatus();
-        System.out.println(receptionistStatus);
+    public String getAux1() {
         return aux1;
     }
 
     @Override
-    public VaccinePreparer getAux2() {
+    public String getAux2() {
         return aux2;
     }
 
-    @Override
-    public void cleanVaccinationDesk(Desk desk) throws RemoteException {
-        vRoom.closeToClean(desk);
+    public void setAux1(String aux1) {
+        this.aux1 = aux1;
     }
 
-    @Override
-    public void setHospital(Hospital hospital) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setAux2(String aux2) {
+        this.aux2 = aux2;
     }
+
+    public void setoRoom(String oRoom) {
+        this.oRoom = oRoom;
+    }
+
+    public void setrRoom(String rRoom) {
+        this.rRoom = rRoom;
+    }
+
+    public void setvRoom(String vRoom) {
+        this.vRoom = vRoom;
+    }
+
+    public void setReception(String reception) {
+        this.reception = reception;
+    }
+    
+
+    @Override
+    public void cleanVaccinationDesk(String deskString) throws RemoteException {
+        Desk desk = gson.fromJson(deskString, Desk.class);
+        VaccinationRoom vRoomClass = gson.fromJson(vRoom, VaccinationRoom.class);
+        vRoomClass.closeToClean(desk);
+    }
+
 }
