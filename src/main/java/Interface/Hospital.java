@@ -650,11 +650,11 @@ public class Hospital extends javax.swing.JFrame {
      */
     public void displayVaccinePreparerRest(VaccinePreparer vaccinePreparer) {
         if (vaccinePreparer != null) {
-            auxiliariesRest[0].setText(vaccinePreparer.getID());
-            auxiliariesImageRest[0].setIcon(auxiliaryImage);
+            auxiliariesRest[1].setText(vaccinePreparer.getID());
+            auxiliariesImageRest[1].setIcon(auxiliaryImage);
         } else {
-            auxiliariesRest[0].setText("");
-            auxiliariesImageRest[0].setIcon(null);
+            auxiliariesRest[1].setText("");
+            auxiliariesImageRest[1].setIcon(null);
         }
 
     }
