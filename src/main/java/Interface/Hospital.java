@@ -1022,7 +1022,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception1.setBackground(patientBackground);
         patientReception1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception1.setText(null);
         patientReception1.setBorder(patientBorder);
         patientReception1.setFocusable(false);
         patientReception1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1034,7 +1033,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception2.setBackground(patientBackground);
         patientReception2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception2.setText(null);
         patientReception2.setBorder(patientBorder);
         patientReception2.setFocusable(false);
         patientReception2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1046,7 +1044,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception3.setBackground(patientBackground);
         patientReception3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception3.setText(null);
         patientReception3.setBorder(patientBorder);
         patientReception3.setFocusable(false);
         patientReception3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1058,7 +1055,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception4.setBackground(patientBackground);
         patientReception4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception4.setText(null);
         patientReception4.setBorder(patientBorder);
         patientReception4.setFocusable(false);
         patientReception4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1070,7 +1066,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception5.setBackground(patientBackground);
         patientReception5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception5.setText(null);
         patientReception5.setBorder(patientBorder);
         patientReception5.setFocusable(false);
         patientReception5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1082,7 +1077,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception6.setBackground(patientBackground);
         patientReception6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception6.setText(null);
         patientReception6.setBorder(patientBorder);
         patientReception6.setFocusable(false);
         patientReception6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1094,7 +1088,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception7.setBackground(patientBackground);
         patientReception7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception7.setText(null);
         patientReception7.setBorder(patientBorder);
         patientReception7.setFocusable(false);
         patientReception7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1106,7 +1099,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception8.setBackground(patientBackground);
         patientReception8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception8.setText(null);
         patientReception8.setBorder(patientBorder);
         patientReception8.setFocusable(false);
         patientReception8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1118,7 +1110,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception9.setBackground(patientBackground);
         patientReception9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception9.setText(null);
         patientReception9.setBorder(patientBorder);
         patientReception9.setFocusable(false);
         patientReception9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1130,7 +1121,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception10.setBackground(patientBackground);
         patientReception10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception10.setText(null);
         patientReception10.setBorder(patientBorder);
         patientReception10.setFocusable(false);
         patientReception10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1142,7 +1132,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception11.setBackground(patientBackground);
         patientReception11.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception11.setText(null);
         patientReception11.setBorder(patientBorder);
         patientReception11.setFocusable(false);
         patientReception11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1154,7 +1143,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception12.setBackground(patientBackground);
         patientReception12.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception12.setText(null);
         patientReception12.setBorder(patientBorder);
         patientReception12.setFocusable(false);
         patientReception12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1166,7 +1154,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception13.setBackground(patientBackground);
         patientReception13.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception13.setText(null);
         patientReception13.setBorder(patientBorder);
         patientReception13.setFocusable(false);
         patientReception13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1178,7 +1165,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception14.setBackground(patientBackground);
         patientReception14.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception14.setText(null);
         patientReception14.setBorder(patientBorder);
         patientReception14.setFocusable(false);
         patientReception14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1190,7 +1176,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception15.setBackground(patientBackground);
         patientReception15.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception15.setText(null);
         patientReception15.setBorder(patientBorder);
         patientReception15.setFocusable(false);
         patientReception15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1202,7 +1187,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception16.setBackground(patientBackground);
         patientReception16.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception16.setText(null);
         patientReception16.setBorder(patientBorder);
         patientReception16.setFocusable(false);
         patientReception16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1214,7 +1198,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception17.setBackground(patientBackground);
         patientReception17.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception17.setText(null);
         patientReception17.setBorder(patientBorder);
         patientReception17.setFocusable(false);
         patientReception17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1226,7 +1209,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception18.setBackground(patientBackground);
         patientReception18.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception18.setText(null);
         patientReception18.setBorder(patientBorder);
         patientReception18.setFocusable(false);
         patientReception18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1238,7 +1220,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception19.setBackground(patientBackground);
         patientReception19.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception19.setText(null);
         patientReception19.setBorder(patientBorder);
         patientReception19.setFocusable(false);
         patientReception19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1250,7 +1231,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception20.setBackground(patientBackground);
         patientReception20.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception20.setText(null);
         patientReception20.setBorder(patientBorder);
         patientReception20.setFocusable(false);
         patientReception20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1262,7 +1242,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception21.setBackground(patientBackground);
         patientReception21.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception21.setText(null);
         patientReception21.setBorder(patientBorder);
         patientReception21.setFocusable(false);
         patientReception21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1274,7 +1253,6 @@ public class Hospital extends javax.swing.JFrame {
         patientReception22.setBackground(patientBackground);
         patientReception22.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientReception22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientReception22.setText(null);
         patientReception22.setBorder(patientBorder);
         patientReception22.setFocusable(false);
         patientReception22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1302,7 +1280,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception1.setBackground(patientBackground);
         patientImageReception1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception1.setText(null);
         patientImageReception1.setBorder(patientBorder);
         patientImageReception1.setFocusable(false);
         patientImageReception1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1312,7 +1289,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception2.setBackground(patientBackground);
         patientImageReception2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception2.setText(null);
         patientImageReception2.setBorder(patientBorder);
         patientImageReception2.setFocusable(false);
         patientImageReception2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1322,7 +1298,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception3.setBackground(patientBackground);
         patientImageReception3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception3.setText(null);
         patientImageReception3.setBorder(patientBorder);
         patientImageReception3.setFocusable(false);
         patientImageReception3.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1332,7 +1307,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception4.setBackground(patientBackground);
         patientImageReception4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception4.setText(null);
         patientImageReception4.setBorder(patientBorder);
         patientImageReception4.setFocusable(false);
         patientImageReception4.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1342,7 +1316,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception5.setBackground(patientBackground);
         patientImageReception5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception5.setText(null);
         patientImageReception5.setBorder(patientBorder);
         patientImageReception5.setFocusable(false);
         patientImageReception5.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1352,7 +1325,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception6.setBackground(patientBackground);
         patientImageReception6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception6.setText(null);
         patientImageReception6.setBorder(patientBorder);
         patientImageReception6.setFocusable(false);
         patientImageReception6.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1362,7 +1334,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception7.setBackground(patientBackground);
         patientImageReception7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception7.setText(null);
         patientImageReception7.setBorder(patientBorder);
         patientImageReception7.setFocusable(false);
         patientImageReception7.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1372,7 +1343,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception8.setBackground(patientBackground);
         patientImageReception8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception8.setText(null);
         patientImageReception8.setBorder(patientBorder);
         patientImageReception8.setFocusable(false);
         patientImageReception8.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1382,7 +1352,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception9.setBackground(patientBackground);
         patientImageReception9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception9.setText(null);
         patientImageReception9.setBorder(patientBorder);
         patientImageReception9.setFocusable(false);
         patientImageReception9.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1392,7 +1361,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception10.setBackground(patientBackground);
         patientImageReception10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception10.setText(null);
         patientImageReception10.setBorder(patientBorder);
         patientImageReception10.setFocusable(false);
         patientImageReception10.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1402,7 +1370,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception11.setBackground(patientBackground);
         patientImageReception11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception11.setText(null);
         patientImageReception11.setBorder(patientBorder);
         patientImageReception11.setFocusable(false);
         patientImageReception11.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1412,7 +1379,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception12.setBackground(patientBackground);
         patientImageReception12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception12.setText(null);
         patientImageReception12.setBorder(patientBorder);
         patientImageReception12.setFocusable(false);
         patientImageReception12.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1422,7 +1388,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception13.setBackground(patientBackground);
         patientImageReception13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception13.setText(null);
         patientImageReception13.setBorder(patientBorder);
         patientImageReception13.setFocusable(false);
         patientImageReception13.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1432,7 +1397,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception14.setBackground(patientBackground);
         patientImageReception14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception14.setText(null);
         patientImageReception14.setBorder(patientBorder);
         patientImageReception14.setFocusable(false);
         patientImageReception14.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1442,7 +1406,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception15.setBackground(patientBackground);
         patientImageReception15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception15.setText(null);
         patientImageReception15.setBorder(patientBorder);
         patientImageReception15.setFocusable(false);
         patientImageReception15.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1462,7 +1425,6 @@ public class Hospital extends javax.swing.JFrame {
         patientChecked.setBackground(patientBackground);
         patientChecked.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientChecked.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientChecked.setText(null);
         patientChecked.setBorder(patientBorder);
         patientChecked.setFocusable(false);
         patientChecked.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1473,7 +1435,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception16.setBackground(patientBackground);
         patientImageReception16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception16.setText(null);
         patientImageReception16.setBorder(patientBorder);
         patientImageReception16.setFocusable(false);
         patientImageReception16.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1483,7 +1444,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception17.setBackground(patientBackground);
         patientImageReception17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception17.setText(null);
         patientImageReception17.setBorder(patientBorder);
         patientImageReception17.setFocusable(false);
         patientImageReception17.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1493,7 +1453,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception18.setBackground(patientBackground);
         patientImageReception18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception18.setText(null);
         patientImageReception18.setBorder(patientBorder);
         patientImageReception18.setFocusable(false);
         patientImageReception18.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1503,7 +1462,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception19.setBackground(patientBackground);
         patientImageReception19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception19.setText(null);
         patientImageReception19.setBorder(patientBorder);
         patientImageReception19.setFocusable(false);
         patientImageReception19.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1513,7 +1471,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception20.setBackground(patientBackground);
         patientImageReception20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception20.setText(null);
         patientImageReception20.setBorder(patientBorder);
         patientImageReception20.setFocusable(false);
         patientImageReception20.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1523,7 +1480,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception21.setBackground(patientBackground);
         patientImageReception21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception21.setText(null);
         patientImageReception21.setBorder(patientBorder);
         patientImageReception21.setFocusable(false);
         patientImageReception21.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1533,7 +1489,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception22.setBackground(patientBackground);
         patientImageReception22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception22.setText(null);
         patientImageReception22.setBorder(patientBorder);
         patientImageReception22.setFocusable(false);
         patientImageReception22.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1543,7 +1498,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageReception35.setBackground(patientBackground);
         patientImageReception35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception35.setText(null);
         patientImageReception35.setBorder(patientBorder);
         patientImageReception35.setFocusable(false);
         patientImageReception35.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -1745,7 +1699,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation1.setBackground(patientBackground);
         patientObservation1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation1.setText(null);
         patientObservation1.setBorder(patientBorder);
         patientObservation1.setFocusable(false);
         patientObservation1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1757,7 +1710,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation2.setBackground(patientBackground);
         patientObservation2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation2.setText(null);
         patientObservation2.setBorder(patientBorder);
         patientObservation2.setFocusable(false);
         patientObservation2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1769,7 +1721,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation3.setBackground(patientBackground);
         patientObservation3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation3.setText(null);
         patientObservation3.setBorder(patientBorder);
         patientObservation3.setFocusable(false);
         patientObservation3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1781,7 +1732,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation4.setBackground(patientBackground);
         patientObservation4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation4.setText(null);
         patientObservation4.setBorder(patientBorder);
         patientObservation4.setFocusable(false);
         patientObservation4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1793,7 +1743,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation5.setBackground(patientBackground);
         patientObservation5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation5.setText(null);
         patientObservation5.setBorder(patientBorder);
         patientObservation5.setFocusable(false);
         patientObservation5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1805,7 +1754,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation6.setBackground(patientBackground);
         patientObservation6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation6.setText(null);
         patientObservation6.setBorder(patientBorder);
         patientObservation6.setFocusable(false);
         patientObservation6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1817,7 +1765,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation7.setBackground(patientBackground);
         patientObservation7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation7.setText(null);
         patientObservation7.setBorder(patientBorder);
         patientObservation7.setFocusable(false);
         patientObservation7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1829,7 +1776,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation8.setBackground(patientBackground);
         patientObservation8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation8.setText(null);
         patientObservation8.setBorder(patientBorder);
         patientObservation8.setFocusable(false);
         patientObservation8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1841,7 +1787,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation9.setBackground(patientBackground);
         patientObservation9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation9.setText(null);
         patientObservation9.setBorder(patientBorder);
         patientObservation9.setFocusable(false);
         patientObservation9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1853,7 +1798,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation10.setBackground(patientBackground);
         patientObservation10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation10.setText(null);
         patientObservation10.setBorder(patientBorder);
         patientObservation10.setFocusable(false);
         patientObservation10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1865,7 +1809,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation1.setBackground(healthcareBackground);
         healthcareObservation1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation1.setText(null);
         healthcareObservation1.setBorder(healthcareBorder);
         healthcareObservation1.setFocusable(false);
         healthcareObservation1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1877,7 +1820,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation2.setBackground(healthcareBackground);
         healthcareObservation2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation2.setText(null);
         healthcareObservation2.setBorder(healthcareBorder);
         healthcareObservation2.setFocusable(false);
         healthcareObservation2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1889,7 +1831,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation3.setBackground(healthcareBackground);
         healthcareObservation3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation3.setText(null);
         healthcareObservation3.setBorder(healthcareBorder);
         healthcareObservation3.setFocusable(false);
         healthcareObservation3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1901,7 +1842,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation4.setBackground(healthcareBackground);
         healthcareObservation4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation4.setText(null);
         healthcareObservation4.setBorder(healthcareBorder);
         healthcareObservation4.setFocusable(false);
         healthcareObservation4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1913,7 +1853,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation5.setBackground(healthcareBackground);
         healthcareObservation5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation5.setText(null);
         healthcareObservation5.setBorder(healthcareBorder);
         healthcareObservation5.setFocusable(false);
         healthcareObservation5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1925,7 +1864,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation6.setBackground(healthcareBackground);
         healthcareObservation6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation6.setText(null);
         healthcareObservation6.setBorder(healthcareBorder);
         healthcareObservation6.setFocusable(false);
         healthcareObservation6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1937,7 +1875,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation7.setBackground(healthcareBackground);
         healthcareObservation7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation7.setText(null);
         healthcareObservation7.setBorder(healthcareBorder);
         healthcareObservation7.setFocusable(false);
         healthcareObservation7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1949,7 +1886,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation8.setBackground(healthcareBackground);
         healthcareObservation8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation8.setText(null);
         healthcareObservation8.setBorder(healthcareBorder);
         healthcareObservation8.setFocusable(false);
         healthcareObservation8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1961,7 +1897,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation9.setBackground(healthcareBackground);
         healthcareObservation9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation9.setText(null);
         healthcareObservation9.setBorder(healthcareBorder);
         healthcareObservation9.setFocusable(false);
         healthcareObservation9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1973,7 +1908,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation10.setBackground(healthcareBackground);
         healthcareObservation10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation10.setText(null);
         healthcareObservation10.setBorder(healthcareBorder);
         healthcareObservation10.setFocusable(false);
         healthcareObservation10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1985,7 +1919,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation11.setBackground(healthcareBackground);
         healthcareObservation11.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation11.setText(null);
         healthcareObservation11.setBorder(healthcareBorder);
         healthcareObservation11.setFocusable(false);
         healthcareObservation11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1997,7 +1930,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation12.setBackground(healthcareBackground);
         healthcareObservation12.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation12.setText(null);
         healthcareObservation12.setBorder(healthcareBorder);
         healthcareObservation12.setFocusable(false);
         healthcareObservation12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2009,7 +1941,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation13.setBackground(healthcareBackground);
         healthcareObservation13.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation13.setText(null);
         healthcareObservation13.setBorder(healthcareBorder);
         healthcareObservation13.setFocusable(false);
         healthcareObservation13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2021,7 +1952,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation14.setBackground(healthcareBackground);
         healthcareObservation14.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation14.setText(null);
         healthcareObservation14.setBorder(healthcareBorder);
         healthcareObservation14.setFocusable(false);
         healthcareObservation14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2033,7 +1963,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation15.setBackground(healthcareBackground);
         healthcareObservation15.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation15.setText(null);
         healthcareObservation15.setBorder(healthcareBorder);
         healthcareObservation15.setFocusable(false);
         healthcareObservation15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2045,7 +1974,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation16.setBackground(healthcareBackground);
         healthcareObservation16.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation16.setText(null);
         healthcareObservation16.setBorder(healthcareBorder);
         healthcareObservation16.setFocusable(false);
         healthcareObservation16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2057,7 +1985,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation17.setBackground(healthcareBackground);
         healthcareObservation17.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation17.setText(null);
         healthcareObservation17.setBorder(healthcareBorder);
         healthcareObservation17.setFocusable(false);
         healthcareObservation17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2069,7 +1996,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation18.setBackground(healthcareBackground);
         healthcareObservation18.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation18.setText(null);
         healthcareObservation18.setBorder(healthcareBorder);
         healthcareObservation18.setFocusable(false);
         healthcareObservation18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2081,7 +2007,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation19.setBackground(healthcareBackground);
         healthcareObservation19.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation19.setText(null);
         healthcareObservation19.setBorder(healthcareBorder);
         healthcareObservation19.setFocusable(false);
         healthcareObservation19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2093,7 +2018,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareObservation20.setBackground(healthcareBackground);
         healthcareObservation20.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareObservation20.setText(null);
         healthcareObservation20.setBorder(healthcareBorder);
         healthcareObservation20.setFocusable(false);
         healthcareObservation20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2105,7 +2029,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation11.setBackground(patientBackground);
         patientObservation11.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation11.setText(null);
         patientObservation11.setBorder(patientBorder);
         patientObservation11.setFocusable(false);
         patientObservation11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2117,7 +2040,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation12.setBackground(patientBackground);
         patientObservation12.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation12.setText(null);
         patientObservation12.setBorder(patientBorder);
         patientObservation12.setFocusable(false);
         patientObservation12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2129,7 +2051,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation13.setBackground(patientBackground);
         patientObservation13.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation13.setText(null);
         patientObservation13.setBorder(patientBorder);
         patientObservation13.setFocusable(false);
         patientObservation13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2141,7 +2062,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation14.setBackground(patientBackground);
         patientObservation14.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation14.setText(null);
         patientObservation14.setBorder(patientBorder);
         patientObservation14.setFocusable(false);
         patientObservation14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2153,7 +2073,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation15.setBackground(patientBackground);
         patientObservation15.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation15.setText(null);
         patientObservation15.setBorder(patientBorder);
         patientObservation15.setFocusable(false);
         patientObservation15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2165,7 +2084,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation16.setBackground(patientBackground);
         patientObservation16.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation16.setText(null);
         patientObservation16.setBorder(patientBorder);
         patientObservation16.setFocusable(false);
         patientObservation16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2177,7 +2095,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation17.setBackground(patientBackground);
         patientObservation17.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation17.setText(null);
         patientObservation17.setBorder(patientBorder);
         patientObservation17.setFocusable(false);
         patientObservation17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2189,7 +2106,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation18.setBackground(patientBackground);
         patientObservation18.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation18.setText(null);
         patientObservation18.setBorder(patientBorder);
         patientObservation18.setFocusable(false);
         patientObservation18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2201,7 +2117,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation19.setBackground(patientBackground);
         patientObservation19.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation19.setText(null);
         patientObservation19.setBorder(patientBorder);
         patientObservation19.setFocusable(false);
         patientObservation19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2213,7 +2128,6 @@ public class Hospital extends javax.swing.JFrame {
         patientObservation20.setBackground(patientBackground);
         patientObservation20.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientObservation20.setText(null);
         patientObservation20.setBorder(patientBorder);
         patientObservation20.setFocusable(false);
         patientObservation20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2241,7 +2155,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation1.setBackground(patientBackground);
         patientImageObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation1.setText(null);
         patientImageObservation1.setBorder(patientBorder);
         patientImageObservation1.setFocusable(false);
         patientImageObservation1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2251,7 +2164,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation2.setBackground(patientBackground);
         patientImageObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation2.setText(null);
         patientImageObservation2.setBorder(patientBorder);
         patientImageObservation2.setFocusable(false);
         patientImageObservation2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2261,7 +2173,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation1.setBackground(healthcareBackground);
         healthcareImageObservation1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation1.setText(null);
         healthcareImageObservation1.setBorder(healthcareBorder);
         healthcareImageObservation1.setFocusable(false);
         healthcareImageObservation1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2271,7 +2182,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation2.setBackground(healthcareBackground);
         healthcareImageObservation2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation2.setText(null);
         healthcareImageObservation2.setBorder(healthcareBorder);
         healthcareImageObservation2.setFocusable(false);
         healthcareImageObservation2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2281,7 +2191,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation3.setBackground(healthcareBackground);
         healthcareImageObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation3.setText(null);
         healthcareImageObservation3.setBorder(healthcareBorder);
         healthcareImageObservation3.setFocusable(false);
         healthcareImageObservation3.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2291,7 +2200,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation4.setBackground(healthcareBackground);
         healthcareImageObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation4.setText(null);
         healthcareImageObservation4.setBorder(healthcareBorder);
         healthcareImageObservation4.setFocusable(false);
         healthcareImageObservation4.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2301,7 +2209,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation5.setBackground(healthcareBackground);
         healthcareImageObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation5.setText(null);
         healthcareImageObservation5.setBorder(healthcareBorder);
         healthcareImageObservation5.setFocusable(false);
         healthcareImageObservation5.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2311,7 +2218,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation6.setBackground(healthcareBackground);
         healthcareImageObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation6.setText(null);
         healthcareImageObservation6.setBorder(healthcareBorder);
         healthcareImageObservation6.setFocusable(false);
         healthcareImageObservation6.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2321,7 +2227,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation7.setBackground(healthcareBackground);
         healthcareImageObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation7.setText(null);
         healthcareImageObservation7.setBorder(healthcareBorder);
         healthcareImageObservation7.setFocusable(false);
         healthcareImageObservation7.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2331,7 +2236,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation8.setBackground(healthcareBackground);
         healthcareImageObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation8.setText(null);
         healthcareImageObservation8.setBorder(healthcareBorder);
         healthcareImageObservation8.setFocusable(false);
         healthcareImageObservation8.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2341,7 +2245,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation9.setBackground(healthcareBackground);
         healthcareImageObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation9.setText(null);
         healthcareImageObservation9.setBorder(healthcareBorder);
         healthcareImageObservation9.setFocusable(false);
         healthcareImageObservation9.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2351,7 +2254,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation10.setBackground(healthcareBackground);
         healthcareImageObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation10.setText(null);
         healthcareImageObservation10.setBorder(healthcareBorder);
         healthcareImageObservation10.setFocusable(false);
         healthcareImageObservation10.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2361,7 +2263,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation11.setBackground(healthcareBackground);
         healthcareImageObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation11.setText(null);
         healthcareImageObservation11.setBorder(healthcareBorder);
         healthcareImageObservation11.setFocusable(false);
         healthcareImageObservation11.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2371,7 +2272,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation12.setBackground(healthcareBackground);
         healthcareImageObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation12.setText(null);
         healthcareImageObservation12.setBorder(healthcareBorder);
         healthcareImageObservation12.setFocusable(false);
         healthcareImageObservation12.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2381,7 +2281,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation13.setBackground(healthcareBackground);
         healthcareImageObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation13.setText(null);
         healthcareImageObservation13.setBorder(healthcareBorder);
         healthcareImageObservation13.setFocusable(false);
         healthcareImageObservation13.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2391,7 +2290,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation14.setBackground(healthcareBackground);
         healthcareImageObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation14.setText(null);
         healthcareImageObservation14.setBorder(healthcareBorder);
         healthcareImageObservation14.setFocusable(false);
         healthcareImageObservation14.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2401,7 +2299,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation15.setBackground(healthcareBackground);
         healthcareImageObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation15.setText(null);
         healthcareImageObservation15.setBorder(healthcareBorder);
         healthcareImageObservation15.setFocusable(false);
         healthcareImageObservation15.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2411,7 +2308,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation16.setBackground(healthcareBackground);
         healthcareImageObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation16.setText(null);
         healthcareImageObservation16.setBorder(healthcareBorder);
         healthcareImageObservation16.setFocusable(false);
         healthcareImageObservation16.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2421,7 +2317,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation17.setBackground(healthcareBackground);
         healthcareImageObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation17.setText(null);
         healthcareImageObservation17.setBorder(healthcareBorder);
         healthcareImageObservation17.setFocusable(false);
         healthcareImageObservation17.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2431,7 +2326,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation18.setBackground(healthcareBackground);
         healthcareImageObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation18.setText(null);
         healthcareImageObservation18.setBorder(healthcareBorder);
         healthcareImageObservation18.setFocusable(false);
         healthcareImageObservation18.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2441,7 +2335,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation19.setBackground(healthcareBackground);
         healthcareImageObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation19.setText(null);
         healthcareImageObservation19.setBorder(healthcareBorder);
         healthcareImageObservation19.setFocusable(false);
         healthcareImageObservation19.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2451,7 +2344,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageObservation20.setBackground(healthcareBackground);
         healthcareImageObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageObservation20.setText(null);
         healthcareImageObservation20.setBorder(healthcareBorder);
         healthcareImageObservation20.setFocusable(false);
         healthcareImageObservation20.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2461,7 +2353,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation3.setBackground(patientBackground);
         patientImageObservation3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation3.setText(null);
         patientImageObservation3.setBorder(patientBorder);
         patientImageObservation3.setFocusable(false);
         patientImageObservation3.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2471,7 +2362,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation4.setBackground(patientBackground);
         patientImageObservation4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation4.setText(null);
         patientImageObservation4.setBorder(patientBorder);
         patientImageObservation4.setFocusable(false);
         patientImageObservation4.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2481,7 +2371,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation5.setBackground(patientBackground);
         patientImageObservation5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation5.setText(null);
         patientImageObservation5.setBorder(patientBorder);
         patientImageObservation5.setFocusable(false);
         patientImageObservation5.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2491,7 +2380,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation6.setBackground(patientBackground);
         patientImageObservation6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation6.setText(null);
         patientImageObservation6.setBorder(patientBorder);
         patientImageObservation6.setFocusable(false);
         patientImageObservation6.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2501,7 +2389,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation7.setBackground(patientBackground);
         patientImageObservation7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation7.setText(null);
         patientImageObservation7.setBorder(patientBorder);
         patientImageObservation7.setFocusable(false);
         patientImageObservation7.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2511,7 +2398,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation8.setBackground(patientBackground);
         patientImageObservation8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation8.setText(null);
         patientImageObservation8.setBorder(patientBorder);
         patientImageObservation8.setFocusable(false);
         patientImageObservation8.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2521,7 +2407,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation9.setBackground(patientBackground);
         patientImageObservation9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation9.setText(null);
         patientImageObservation9.setBorder(patientBorder);
         patientImageObservation9.setFocusable(false);
         patientImageObservation9.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2531,7 +2416,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation10.setBackground(patientBackground);
         patientImageObservation10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation10.setText(null);
         patientImageObservation10.setBorder(patientBorder);
         patientImageObservation10.setFocusable(false);
         patientImageObservation10.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2541,7 +2425,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation11.setBackground(patientBackground);
         patientImageObservation11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation11.setText(null);
         patientImageObservation11.setBorder(patientBorder);
         patientImageObservation11.setFocusable(false);
         patientImageObservation11.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2551,7 +2434,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation12.setBackground(patientBackground);
         patientImageObservation12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation12.setText(null);
         patientImageObservation12.setBorder(patientBorder);
         patientImageObservation12.setFocusable(false);
         patientImageObservation12.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2561,7 +2443,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation13.setBackground(patientBackground);
         patientImageObservation13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation13.setText(null);
         patientImageObservation13.setBorder(patientBorder);
         patientImageObservation13.setFocusable(false);
         patientImageObservation13.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2571,7 +2452,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation14.setBackground(patientBackground);
         patientImageObservation14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation14.setText(null);
         patientImageObservation14.setBorder(patientBorder);
         patientImageObservation14.setFocusable(false);
         patientImageObservation14.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2581,7 +2461,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation15.setBackground(patientBackground);
         patientImageObservation15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation15.setText(null);
         patientImageObservation15.setBorder(patientBorder);
         patientImageObservation15.setFocusable(false);
         patientImageObservation15.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2591,7 +2470,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation16.setBackground(patientBackground);
         patientImageObservation16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation16.setText(null);
         patientImageObservation16.setBorder(patientBorder);
         patientImageObservation16.setFocusable(false);
         patientImageObservation16.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2601,7 +2479,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation17.setBackground(patientBackground);
         patientImageObservation17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation17.setText(null);
         patientImageObservation17.setBorder(patientBorder);
         patientImageObservation17.setFocusable(false);
         patientImageObservation17.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2611,7 +2488,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation18.setBackground(patientBackground);
         patientImageObservation18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation18.setText(null);
         patientImageObservation18.setBorder(patientBorder);
         patientImageObservation18.setFocusable(false);
         patientImageObservation18.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2621,7 +2497,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation19.setBackground(patientBackground);
         patientImageObservation19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation19.setText(null);
         patientImageObservation19.setBorder(patientBorder);
         patientImageObservation19.setFocusable(false);
         patientImageObservation19.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2631,7 +2506,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageObservation20.setBackground(patientBackground);
         patientImageObservation20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageObservation20.setText(null);
         patientImageObservation20.setBorder(patientBorder);
         patientImageObservation20.setFocusable(false);
         patientImageObservation20.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -2951,7 +2825,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest1.setBackground(healthcareBackground);
         healthcareRest1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest1.setText(null);
         healthcareRest1.setBorder(healthcareBorder);
         healthcareRest1.setFocusable(false);
         healthcareRest1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2964,7 +2837,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest2.setBackground(healthcareBackground);
         healthcareRest2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest2.setText(null);
         healthcareRest2.setBorder(healthcareBorder);
         healthcareRest2.setFocusable(false);
         healthcareRest2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2977,7 +2849,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest3.setBackground(healthcareBackground);
         healthcareRest3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest3.setText(null);
         healthcareRest3.setBorder(healthcareBorder);
         healthcareRest3.setFocusable(false);
         healthcareRest3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2990,7 +2861,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest4.setBackground(healthcareBackground);
         healthcareRest4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest4.setText(null);
         healthcareRest4.setBorder(healthcareBorder);
         healthcareRest4.setFocusable(false);
         healthcareRest4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3003,7 +2873,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest5.setBackground(healthcareBackground);
         healthcareRest5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest5.setText(null);
         healthcareRest5.setBorder(healthcareBorder);
         healthcareRest5.setFocusable(false);
         healthcareRest5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3016,7 +2885,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest6.setBackground(healthcareBackground);
         healthcareRest6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest6.setText(null);
         healthcareRest6.setBorder(healthcareBorder);
         healthcareRest6.setFocusable(false);
         healthcareRest6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3029,7 +2897,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest7.setBackground(healthcareBackground);
         healthcareRest7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest7.setText(null);
         healthcareRest7.setBorder(healthcareBorder);
         healthcareRest7.setFocusable(false);
         healthcareRest7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3042,7 +2909,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest8.setBackground(healthcareBackground);
         healthcareRest8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest8.setText(null);
         healthcareRest8.setBorder(healthcareBorder);
         healthcareRest8.setFocusable(false);
         healthcareRest8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3055,7 +2921,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest9.setBackground(healthcareBackground);
         healthcareRest9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest9.setText(null);
         healthcareRest9.setBorder(healthcareBorder);
         healthcareRest9.setFocusable(false);
         healthcareRest9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3068,7 +2933,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareRest10.setBackground(healthcareBackground);
         healthcareRest10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareRest10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareRest10.setText(null);
         healthcareRest10.setBorder(healthcareBorder);
         healthcareRest10.setFocusable(false);
         healthcareRest10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3098,7 +2962,6 @@ public class Hospital extends javax.swing.JFrame {
         auxiliaryRest1.setBackground(auxiliaryBackground);
         auxiliaryRest1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         auxiliaryRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliaryRest1.setText(null);
         auxiliaryRest1.setBorder(auxiliaryBorder);
         auxiliaryRest1.setFocusable(false);
         auxiliaryRest1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3111,7 +2974,6 @@ public class Hospital extends javax.swing.JFrame {
         auxiliaryRest2.setBackground(auxiliaryBackground);
         auxiliaryRest2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         auxiliaryRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliaryRest2.setText(null);
         auxiliaryRest2.setBorder(auxiliaryBorder);
         auxiliaryRest2.setFocusable(false);
         auxiliaryRest2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3123,7 +2985,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest1.setBackground(healthcareBackground);
         healthcareImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest1.setText(null);
         healthcareImageRest1.setBorder(healthcareBorder);
         healthcareImageRest1.setFocusable(false);
         healthcareImageRest1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3133,7 +2994,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest2.setBackground(healthcareBackground);
         healthcareImageRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest2.setText(null);
         healthcareImageRest2.setBorder(healthcareBorder);
         healthcareImageRest2.setFocusable(false);
         healthcareImageRest2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3143,7 +3003,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest3.setBackground(healthcareBackground);
         healthcareImageRest3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest3.setText(null);
         healthcareImageRest3.setBorder(healthcareBorder);
         healthcareImageRest3.setFocusable(false);
         healthcareImageRest3.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3153,7 +3012,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest4.setBackground(healthcareBackground);
         healthcareImageRest4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest4.setText(null);
         healthcareImageRest4.setBorder(healthcareBorder);
         healthcareImageRest4.setFocusable(false);
         healthcareImageRest4.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3163,7 +3021,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest5.setBackground(healthcareBackground);
         healthcareImageRest5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest5.setText(null);
         healthcareImageRest5.setBorder(healthcareBorder);
         healthcareImageRest5.setFocusable(false);
         healthcareImageRest5.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3173,7 +3030,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest6.setBackground(healthcareBackground);
         healthcareImageRest6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest6.setText(null);
         healthcareImageRest6.setBorder(healthcareBorder);
         healthcareImageRest6.setFocusable(false);
         healthcareImageRest6.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3183,7 +3039,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest7.setBackground(healthcareBackground);
         healthcareImageRest7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest7.setText(null);
         healthcareImageRest7.setBorder(healthcareBorder);
         healthcareImageRest7.setFocusable(false);
         healthcareImageRest7.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3193,7 +3048,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest8.setBackground(healthcareBackground);
         healthcareImageRest8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest8.setText(null);
         healthcareImageRest8.setBorder(healthcareBorder);
         healthcareImageRest8.setFocusable(false);
         healthcareImageRest8.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3203,7 +3057,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest9.setBackground(healthcareBackground);
         healthcareImageRest9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest9.setText(null);
         healthcareImageRest9.setBorder(healthcareBorder);
         healthcareImageRest9.setFocusable(false);
         healthcareImageRest9.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3213,7 +3066,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageRest10.setBackground(healthcareBackground);
         healthcareImageRest10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageRest10.setText(null);
         healthcareImageRest10.setBorder(healthcareBorder);
         healthcareImageRest10.setFocusable(false);
         healthcareImageRest10.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3223,7 +3075,6 @@ public class Hospital extends javax.swing.JFrame {
 
         auxiliaryImageRest1.setBackground(auxiliaryBackground);
         auxiliaryImageRest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliaryImageRest1.setText(null);
         auxiliaryImageRest1.setBorder(auxiliaryBorder);
         auxiliaryImageRest1.setFocusable(false);
         auxiliaryImageRest1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3233,7 +3084,6 @@ public class Hospital extends javax.swing.JFrame {
 
         auxiliaryImageRest2.setBackground(auxiliaryBackground);
         auxiliaryImageRest2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        auxiliaryImageRest2.setText(null);
         auxiliaryImageRest2.setBorder(auxiliaryBorder);
         auxiliaryImageRest2.setFocusable(false);
         auxiliaryImageRest2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3363,7 +3213,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination1.setBackground(patientBackground);
         patientVaccination1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination1.setText(null);
         patientVaccination1.setBorder(patientBorder);
         patientVaccination1.setFocusable(false);
         patientVaccination1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3375,7 +3224,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination2.setBackground(patientBackground);
         patientVaccination2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination2.setText(null);
         patientVaccination2.setBorder(patientBorder);
         patientVaccination2.setFocusable(false);
         patientVaccination2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3387,7 +3235,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination3.setBackground(patientBackground);
         patientVaccination3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination3.setText(null);
         patientVaccination3.setBorder(patientBorder);
         patientVaccination3.setFocusable(false);
         patientVaccination3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3399,7 +3246,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination4.setBackground(patientBackground);
         patientVaccination4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination4.setText(null);
         patientVaccination4.setBorder(patientBorder);
         patientVaccination4.setFocusable(false);
         patientVaccination4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3411,7 +3257,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination5.setBackground(patientBackground);
         patientVaccination5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination5.setText(null);
         patientVaccination5.setBorder(patientBorder);
         patientVaccination5.setFocusable(false);
         patientVaccination5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3423,7 +3268,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination6.setBackground(patientBackground);
         patientVaccination6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination6.setText(null);
         patientVaccination6.setBorder(patientBorder);
         patientVaccination6.setFocusable(false);
         patientVaccination6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3435,7 +3279,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination7.setBackground(patientBackground);
         patientVaccination7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination7.setText(null);
         patientVaccination7.setBorder(patientBorder);
         patientVaccination7.setFocusable(false);
         patientVaccination7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3447,7 +3290,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination8.setBackground(patientBackground);
         patientVaccination8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination8.setText(null);
         patientVaccination8.setBorder(patientBorder);
         patientVaccination8.setFocusable(false);
         patientVaccination8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3459,7 +3301,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination9.setBackground(patientBackground);
         patientVaccination9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination9.setText(null);
         patientVaccination9.setBorder(patientBorder);
         patientVaccination9.setFocusable(false);
         patientVaccination9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3471,7 +3312,6 @@ public class Hospital extends javax.swing.JFrame {
         patientVaccination10.setBackground(patientBackground);
         patientVaccination10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         patientVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientVaccination10.setText(null);
         patientVaccination10.setBorder(patientBorder);
         patientVaccination10.setFocusable(false);
         patientVaccination10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3483,7 +3323,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination1.setBackground(healthcareBackground);
         healthcareVaccination1.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination1.setText(null);
         healthcareVaccination1.setBorder(healthcareBorder);
         healthcareVaccination1.setFocusable(false);
         healthcareVaccination1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3495,7 +3334,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination2.setBackground(healthcareBackground);
         healthcareVaccination2.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination2.setText(null);
         healthcareVaccination2.setBorder(healthcareBorder);
         healthcareVaccination2.setFocusable(false);
         healthcareVaccination2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3507,7 +3345,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination3.setBackground(healthcareBackground);
         healthcareVaccination3.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination3.setText(null);
         healthcareVaccination3.setBorder(healthcareBorder);
         healthcareVaccination3.setFocusable(false);
         healthcareVaccination3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3519,7 +3356,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination4.setBackground(healthcareBackground);
         healthcareVaccination4.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination4.setText(null);
         healthcareVaccination4.setBorder(healthcareBorder);
         healthcareVaccination4.setFocusable(false);
         healthcareVaccination4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3531,7 +3367,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination5.setBackground(healthcareBackground);
         healthcareVaccination5.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination5.setText(null);
         healthcareVaccination5.setBorder(healthcareBorder);
         healthcareVaccination5.setFocusable(false);
         healthcareVaccination5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3543,7 +3378,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination6.setBackground(healthcareBackground);
         healthcareVaccination6.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination6.setText(null);
         healthcareVaccination6.setBorder(healthcareBorder);
         healthcareVaccination6.setFocusable(false);
         healthcareVaccination6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3555,7 +3389,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination7.setBackground(healthcareBackground);
         healthcareVaccination7.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination7.setText(null);
         healthcareVaccination7.setBorder(healthcareBorder);
         healthcareVaccination7.setFocusable(false);
         healthcareVaccination7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3567,7 +3400,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination8.setBackground(healthcareBackground);
         healthcareVaccination8.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination8.setText(null);
         healthcareVaccination8.setBorder(healthcareBorder);
         healthcareVaccination8.setFocusable(false);
         healthcareVaccination8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3579,7 +3411,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination9.setBackground(healthcareBackground);
         healthcareVaccination9.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination9.setText(null);
         healthcareVaccination9.setBorder(healthcareBorder);
         healthcareVaccination9.setFocusable(false);
         healthcareVaccination9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3591,7 +3422,6 @@ public class Hospital extends javax.swing.JFrame {
         healthcareVaccination10.setBackground(healthcareBackground);
         healthcareVaccination10.setFont(new java.awt.Font("DejaVu Sans", 0, 8)); // NOI18N
         healthcareVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareVaccination10.setText(null);
         healthcareVaccination10.setBorder(healthcareBorder);
         healthcareVaccination10.setFocusable(false);
         healthcareVaccination10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -3619,7 +3449,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination1.setBackground(healthcareBackground);
         healthcareImageVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination1.setText(null);
         healthcareImageVaccination1.setBorder(healthcareBorder);
         healthcareImageVaccination1.setFocusable(false);
         healthcareImageVaccination1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3629,7 +3458,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination2.setBackground(healthcareBackground);
         healthcareImageVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination2.setText(null);
         healthcareImageVaccination2.setBorder(healthcareBorder);
         healthcareImageVaccination2.setFocusable(false);
         healthcareImageVaccination2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3639,7 +3467,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination3.setBackground(healthcareBackground);
         healthcareImageVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination3.setText(null);
         healthcareImageVaccination3.setBorder(healthcareBorder);
         healthcareImageVaccination3.setFocusable(false);
         healthcareImageVaccination3.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3649,7 +3476,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination4.setBackground(healthcareBackground);
         healthcareImageVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination4.setText(null);
         healthcareImageVaccination4.setBorder(healthcareBorder);
         healthcareImageVaccination4.setFocusable(false);
         healthcareImageVaccination4.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3659,7 +3485,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination5.setBackground(healthcareBackground);
         healthcareImageVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination5.setText(null);
         healthcareImageVaccination5.setBorder(healthcareBorder);
         healthcareImageVaccination5.setFocusable(false);
         healthcareImageVaccination5.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3669,7 +3494,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination6.setBackground(healthcareBackground);
         healthcareImageVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination6.setText(null);
         healthcareImageVaccination6.setBorder(healthcareBorder);
         healthcareImageVaccination6.setFocusable(false);
         healthcareImageVaccination6.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3679,7 +3503,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination7.setBackground(healthcareBackground);
         healthcareImageVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination7.setText(null);
         healthcareImageVaccination7.setBorder(healthcareBorder);
         healthcareImageVaccination7.setFocusable(false);
         healthcareImageVaccination7.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3689,7 +3512,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination8.setBackground(healthcareBackground);
         healthcareImageVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination8.setText(null);
         healthcareImageVaccination8.setBorder(healthcareBorder);
         healthcareImageVaccination8.setFocusable(false);
         healthcareImageVaccination8.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3699,7 +3521,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination9.setBackground(healthcareBackground);
         healthcareImageVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination9.setText(null);
         healthcareImageVaccination9.setBorder(healthcareBorder);
         healthcareImageVaccination9.setFocusable(false);
         healthcareImageVaccination9.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3709,7 +3530,6 @@ public class Hospital extends javax.swing.JFrame {
 
         healthcareImageVaccination10.setBackground(healthcareBackground);
         healthcareImageVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        healthcareImageVaccination10.setText(null);
         healthcareImageVaccination10.setBorder(healthcareBorder);
         healthcareImageVaccination10.setFocusable(false);
         healthcareImageVaccination10.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3719,7 +3539,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination1.setBackground(patientBackground);
         patientImageVaccination1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination1.setText(null);
         patientImageVaccination1.setBorder(patientBorder);
         patientImageVaccination1.setFocusable(false);
         patientImageVaccination1.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3729,7 +3548,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination2.setBackground(patientBackground);
         patientImageVaccination2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination2.setText(null);
         patientImageVaccination2.setBorder(patientBorder);
         patientImageVaccination2.setFocusable(false);
         patientImageVaccination2.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3739,7 +3557,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination3.setBackground(patientBackground);
         patientImageVaccination3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination3.setText(null);
         patientImageVaccination3.setBorder(patientBorder);
         patientImageVaccination3.setFocusable(false);
         patientImageVaccination3.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3749,7 +3566,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination4.setBackground(patientBackground);
         patientImageVaccination4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination4.setText(null);
         patientImageVaccination4.setBorder(patientBorder);
         patientImageVaccination4.setFocusable(false);
         patientImageVaccination4.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3759,7 +3575,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination5.setBackground(patientBackground);
         patientImageVaccination5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination5.setText(null);
         patientImageVaccination5.setBorder(patientBorder);
         patientImageVaccination5.setFocusable(false);
         patientImageVaccination5.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3769,7 +3584,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination6.setBackground(patientBackground);
         patientImageVaccination6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination6.setText(null);
         patientImageVaccination6.setBorder(patientBorder);
         patientImageVaccination6.setFocusable(false);
         patientImageVaccination6.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3779,7 +3593,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination7.setBackground(patientBackground);
         patientImageVaccination7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination7.setText(null);
         patientImageVaccination7.setBorder(patientBorder);
         patientImageVaccination7.setFocusable(false);
         patientImageVaccination7.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3789,7 +3602,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination8.setBackground(patientBackground);
         patientImageVaccination8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination8.setText(null);
         patientImageVaccination8.setBorder(patientBorder);
         patientImageVaccination8.setFocusable(false);
         patientImageVaccination8.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3799,7 +3611,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination9.setBackground(patientBackground);
         patientImageVaccination9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination9.setText(null);
         patientImageVaccination9.setBorder(patientBorder);
         patientImageVaccination9.setFocusable(false);
         patientImageVaccination9.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -3809,7 +3620,6 @@ public class Hospital extends javax.swing.JFrame {
 
         patientImageVaccination10.setBackground(patientBackground);
         patientImageVaccination10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageVaccination10.setText(null);
         patientImageVaccination10.setBorder(patientBorder);
         patientImageVaccination10.setFocusable(false);
         patientImageVaccination10.setMaximumSize(new java.awt.Dimension(30, 30));
