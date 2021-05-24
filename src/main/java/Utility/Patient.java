@@ -1,21 +1,9 @@
 package Utility;
 
-import Log.WriteToLog;
 import java.util.Random;
-import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author guial
- */
 public class Patient extends Thread{
     
     private final String patientID;

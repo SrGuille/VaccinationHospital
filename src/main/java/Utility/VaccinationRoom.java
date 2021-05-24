@@ -1,10 +1,12 @@
 package Utility;
 
+import Interface.*;
 import Log.WriteToLog;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.commons.lang3.ArrayUtils;
 
 public class VaccinationRoom {
 
@@ -16,8 +18,9 @@ public class VaccinationRoom {
     private AtomicInteger numVaccines;
     private Receptionist receptionist;
     private WriteToLog log;
+    private Hospital hospital;
 
-    public VaccinationRoom(ObservationRoom o, WriteToLog log) {
+    public VaccinationRoom(ObservationRoom o, WriteToLog log, Hospital hospital) {
         mutex = new Semaphore(1);
         oRoom = o;
         this.log = log;
@@ -27,6 +30,7 @@ public class VaccinationRoom {
         for (int i = 0; i < 10; i++) {
             desks[i] = new Desk(i + 1, true, log);
         }
+        this.hospital = hospital;
     }
 
     public void setReceptionist(Receptionist r) {
@@ -34,7 +38,9 @@ public class VaccinationRoom {
     }
 
     /**
-     * Healthcare worker goes in, in mutual exclusion, to be sure that more than 1 tries to go to the same desk
+     * Healthcare worker goes in, in mutual exclusion, to be sure that more than
+     * 1 tries to go to the same desk
+     *
      * @param h Healthcare worker
      */
     public void goInside(HealthcareWorker h) {
@@ -48,6 +54,7 @@ public class VaccinationRoom {
                 try {
                     numWorkers++;
                     desks[i].goInside(h);
+                    hospital.displayHealthcareWorkerVaccination(h, i);
                     break;
                 } catch (InterruptedException ex) {
                     Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
@@ -83,7 +90,8 @@ public class VaccinationRoom {
 
     /**
      * Finds the correct desk and goes in
-     * @param Patient to move in 
+     *
+     * @param Patient to move in
      */
     private void findDesk(Patient p) {
 
@@ -93,6 +101,7 @@ public class VaccinationRoom {
                 try {
                     p.setCurrentDesk(desks[i]);
                     desks[i].goInside(p);
+                    hospital.displayPatientVaccination(p, i);
                     break;
                 } catch (InterruptedException ex) {
                     Logger.getLogger(VaccinationRoom.class.getName()).log(Level.SEVERE, null, ex);
@@ -103,6 +112,7 @@ public class VaccinationRoom {
 
     /**
      * Tries to introduce to patient to the room
+     *
      * @param p Patient to go in
      * @return if it managed to go in
      */
@@ -128,9 +138,11 @@ public class VaccinationRoom {
     }
 
     /**
-     * Healthcare worker goes out, necessary mutual exclusion as a worker can't abandon the room if a patient is trying to go in
+     * Healthcare worker goes out, necessary mutual exclusion as a worker can't
+     * abandon the room if a patient is trying to go in
+     *
      * @param h HealthcareWorker
-     * @throws InterruptedException 
+     * @throws InterruptedException
      */
     public void goOut(HealthcareWorker h) throws InterruptedException {
         try {
@@ -140,16 +152,18 @@ public class VaccinationRoom {
         }
         Desk workerCurrentDesk = h.getCurrentDesk();
         workerCurrentDesk.goOut(h);
+        hospital.displayHealthcareWorkerVaccination(null, (ArrayUtils.indexOf(desks, workerCurrentDesk)));
         numWorkers--;
         mutex.release();
 
     }
-    
+
     /**
-     * Patient goes out, necessary mutual exclusion as a patient can't abandon the room if another patient is trying to go in
-     * 
+     * Patient goes out, necessary mutual exclusion as a patient can't abandon
+     * the room if another patient is trying to go in
+     *
      * @param p patient to move
-     * @throws InterruptedException 
+     * @throws InterruptedException
      */
     public void goToObservation(Patient p) throws InterruptedException {
         try {
@@ -160,6 +174,7 @@ public class VaccinationRoom {
         Desk patientCurrentDesk = p.getCurrentDesk();
 
         patientCurrentDesk.goOut(p); //Go out from vaccination room
+        hospital.displayPatientVaccination(null, (ArrayUtils.indexOf(desks, patientCurrentDesk)));
         numPatients--;
         oRoom.goInside(p); //Go into observation room
 
@@ -169,6 +184,7 @@ public class VaccinationRoom {
 
     public synchronized void produceVaccine() {
         int vaccinesReady = numVaccines.incrementAndGet();
+        hospital.displayVaccinesAvailable(vaccinesReady);
         String message = " Vaccine produced, there are " + vaccinesReady + " ready";
         log.write(message);
         notify(); //Notify to a worker that was waiting for vaccine
@@ -182,6 +198,7 @@ public class VaccinationRoom {
             vaccineFound = false;
         } else {
             numVaccines.decrementAndGet();
+            hospital.displayVaccinesAvailable(numVaccines.get());
         }
         return vaccineFound;
     }

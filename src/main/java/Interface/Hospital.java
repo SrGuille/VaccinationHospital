@@ -6,6 +6,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import Utility.*;
+import java.util.Iterator;
+import java.util.Queue;
+import java.util.concurrent.atomic.AtomicInteger;
+
 
 public class Hospital extends javax.swing.JFrame {
 
@@ -327,6 +332,7 @@ public class Hospital extends javax.swing.JFrame {
         buttonDesks[9] = buttonDesk10;
     }
 
+   
     /**
      *
      * Changes labels display when desk is activated or deactivated
@@ -372,6 +378,13 @@ public class Hospital extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * Action performed by all desk buttons
+     *
+     * @param pos: position of the desk
+     *
+     */
     public void buttonDesksActionPerfomed(int pos) {
         if (buttonDesks[pos].getIcon() == deskCloseImage) {
             buttonDesksStyleChange(pos, false);
@@ -383,36 +396,298 @@ public class Hospital extends javax.swing.JFrame {
 
     /**
      *
-     * Displays information in reception room
+     * Display patients waiting in reception to be attended
+     *
+     * @param patientsWaiting
      *
      */
-    public void displayReceptionRoom() {
-        for (int i = 0; i < 22; i++) {
-
+    public void displayPatientsQueueReception(Queue patientsWaiting) {
+        int i = 0;
+        Patient patient;
+        Iterator<Integer> itr = patientsWaiting.iterator();
+        while (itr.hasNext() && i < 23) {
+            patient = (Patient) itr;
+            patientsReception[i].setText(patient.getID());
+            patientsImageReception[i].setIcon(patientImage);
+            if (i == 22) {
+                patientsReception[i].setText("...");
+                patientsImageReception[i].setIcon(null);
+            }
+            i++;
         }
+        while (i < 23) {
+            patientsReception[i].setText("");
+            patientsImageReception[i].setIcon(null);
+            i++;
+        }
+    }
+
+    /**
+     *
+     * Display the auxiliary working or not
+     *
+     * @param receptionistStatus: if 2 means they are resting
+     *
+     */
+    public void displayReceptionistBooth(int receptionistStatus) {
+        if (receptionistStatus == 2) {
+            receptionCounter.setIcon(receptionCounterCloseImage);
+        } else {
+            receptionCounter.setIcon(receptionCounterOpenImage);
+        }
+    }
+
+    /**
+     *
+     * Display patient being checked in the moment
+     *
+     * @param patientAtFrontDesk
+     *
+     */
+    public void displayPatientChecked(Patient patientAtFrontDesk) {
+        if (patientAtFrontDesk == null) {
+            patientChecked.setText("");
+            patientChecked.setIcon(null);
+        } else {
+            patientChecked.setText(patientAtFrontDesk.getID());
+            patientChecked.setIcon(patientImage);
+        }
+    }
+
+    /**
+     *
+     * Display a healthcare worker in the vaccination room
+     *
+     * @param healthcareWorker
+     * @param desk: where they are
+     *
+     */
+    public void displayHealthcareWorkerVaccination(HealthcareWorker healthcareWorker, int desk) {
+        if (healthcareWorker != null) {
+            healthcaresVaccination[desk].setText(healthcareWorker.getID());
+            healthcaresImageVaccination[desk].setIcon(healthcareImage);
+        } else {
+            healthcaresVaccination[desk].setText("");
+            healthcaresImageVaccination[desk].setIcon(null);
+        }
+    }
+
+    /**
+     *
+     * Display a patient in the vaccination room
+     *
+     * @param patient
+     * @param desk: where they are
+     *
+     */
+    public void displayPatientVaccination(Patient patient, int desk) {
+        if (patient != null) {
+            patientsVaccination[desk].setText(patient.getID());
+            patientsImageVaccination[desk].setIcon(patientImage);
+        } else {
+            patientsVaccination[desk].setText("");
+            patientsImageVaccination[desk].setIcon(null);
+        }
+    }
+
+    /**
+     *
+     * Display the vaccines prepared left
+     *
+     * @param vaccinesAvailable
+     */
+    public void displayVaccinesAvailable(int vaccinesAvailable) {
+        switch (vaccinesAvailable) {
+            case 0:
+                vaccinesContainer.setIcon(vaccinesContainer0Image);
+                break;
+            case 1:
+                vaccinesContainer.setIcon(vaccinesContainer1Image);
+                break;
+            case 2:
+                vaccinesContainer.setIcon(vaccinesContainer2Image);
+                break;
+            default:
+                vaccinesContainer.setIcon(vaccinesContainer3Image);
+                break;
+        }
+        vaccinesCounter.setText("<html><center>VAX LEFT<br>" + vaccinesAvailable + "</center></html>");
+
+    }
+
+    /**
+     *
+     * Display the auxiliary working or not
+     *
+     * @param vaccinePreparerStatus: if 1 means they are resting
+     *
+     */
+    public void displayVaccinePreparerBooth(int vaccinePreparerStatus) {
+        if (vaccinePreparerStatus == 1) {
+            receptionCounter.setIcon(vaccinationCounterCloseImage);
+        } else {
+            receptionCounter.setIcon(vaccinationCounterOpenImage);
+        }
+    }
+
+    /**
+     *
+     * Display a healthcare worker in the observation room
+     *
+     * @param healthcareWorker
+     * @param desk: where they are
+     *
+     */
+    public void displayHealthcareWorkerObservation(HealthcareWorker healthcareWorker, int desk) {
+        if (healthcareWorker != null) {
+            healthcaresObservation[desk].setText(healthcareWorker.getID());
+            healthcaresImageObservation[desk].setIcon(healthcareImage);
+        } else {
+            healthcaresObservation[desk].setText("");
+            healthcaresImageObservation[desk].setIcon(null);
+        }
+    }
+
+    /**
+     *
+     * Display a patient in the observation room
+     *
+     * @param patient
+     * @param desk: where they are
+     *
+     */
+    public void displayPatientObservation(Patient patient, int desk) {
+        if (patient != null) {
+            patientsObservation[desk].setText(patient.getID());
+            patientsImageObservation[desk].setIcon(patientImage);
+        } else {
+            patientsObservation[desk].setText("");
+            patientsImageObservation[desk].setIcon(null);
+        }
+    }
+
+    /**
+     *
+     * Display helathcare workers resting
+     *
+     * @param healthcareWorkers
+     *
+     */
+    public void displayHealthcareWorkersRest(Queue healthcareWorkers) {
+        HealthcareWorker healthcareWorker;
+        Iterator<Integer> itr = healthcareWorkers.iterator();
+        int i = 0;
+        while (itr.hasNext()) {
+            healthcareWorker = (HealthcareWorker) itr;
+            healthcaresRest[i].setText(healthcareWorker.getID());
+            healthcaresImageRest[i].setIcon(healthcareImage);
+            i++;
+        }
+        while (i < 10) {
+            healthcaresRest[i].setText("");
+            healthcaresImageRest[i].setIcon(null);
+        }
+    }
+
+    /**
+     *
+     * Display the receptionist resting
+     *
+     * @param receptionist
+     *
+     */
+    public void displayReceptionistRest(Receptionist receptionist) {
+        if (receptionist != null) {
+            auxiliariesRest[0].setText(receptionist.getID());
+            auxiliariesImageRest[0].setIcon(auxiliaryImage);
+        } else {
+            auxiliariesRest[0].setText("");
+            auxiliariesImageRest[0].setIcon(null);
+        }
+    }
+
+    /**
+     *
+     * Display the vaccine preparer resting
+     *
+     * @param vaccinePreparer
+     *
+     */
+    public void displayVaccinePreparerRest(VaccinePreparer vaccinePreparer) {
+        if (vaccinePreparer != null) {
+            auxiliariesRest[0].setText(vaccinePreparer.getID());
+            auxiliariesImageRest[0].setIcon(auxiliaryImage);
+        } else {
+            auxiliariesRest[0].setText("");
+            auxiliariesImageRest[0].setIcon(null);
+        }
+
+    }
+
+    /**
+     *
+     * Displays information in reception room
+     *
+     * @param patientsWaiting: at the receprtion queue
+     * @param patientAtFrontDesk: being checked by the receptionist
+     * @param receptionistStatus: if 2 means they are resting
+     *
+     */
+    public void displayReceptionRoom(Queue patientsWaiting, Patient patientAtFrontDesk, int receptionistStatus) {
+        //Display queue of patients
+        displayPatientsQueueReception(patientsWaiting);
+        // Display the reception booth
+        displayReceptionistBooth(receptionistStatus);
+        //Display the patient being checked
+        displayPatientChecked(patientAtFrontDesk);
     }
 
     /**
      *
      * Displays information in vaccination room
      *
+     * @param desksVaccination: desks in the room
+     * @param vaccinePreparerStatus: if 1 means they are resting
+     * @param numVaccines: prepared
+     *
      */
-    public void displayVaccinationRoom() {
+    public void displayVaccinationRoom(Desk[] desksVaccination, int vaccinePreparerStatus, AtomicInteger numVaccines) {
+
+        //Display people at desks
+        Patient patient;
+        HealthcareWorker healthcareWorker;
         for (int i = 0; i < 10; i++) {
-            patientsReception[i].setText("");
-            patientsImageReception[i].setIcon(patientImage);
+            patient = desksVaccination[i].getPatient();
+            displayPatientVaccination(patient, i);
+            healthcareWorker = desksVaccination[i].getWorker();
+            displayHealthcareWorkerVaccination(healthcareWorker, i);
         }
 
+        //Display vaccines
+        int vaccinesAvailable = numVaccines.get();
+        displayVaccinesAvailable(vaccinesAvailable);
+
+        //Display vaccine preparer booth
+        displayVaccinePreparerBooth(vaccinePreparerStatus);
     }
 
     /**
      *
      * Displays information in observation room
      *
+     * @param desksObservation: desks in the room
+     *
      */
-    public void displayObservationRoom() {
-        for (int i = 0; i < 20; i++) {
+    public void displayObservationRoom(Desk[] desksObservation) {
 
+        //Display people at desks
+        Patient patient;
+        HealthcareWorker healthcareWorker;
+        for (int i = 0; i < 20; i++) {
+            patient = desksObservation[i].getPatient();
+            displayPatientObservation(patient, i);
+            healthcareWorker = desksObservation[i].getWorker();
+            displayHealthcareWorkerObservation(healthcareWorker, i);
         }
 
     }
@@ -421,13 +696,49 @@ public class Hospital extends javax.swing.JFrame {
      *
      * Displays information in rest room
      *
+     * @param healthcareWorkers: resting
+     * @param receptionist: resting
+     * @param vaccinePreparer: resting
+     *
      */
-    public void displayRestRoom() {
-        for (int i = 0; i < 10; i++) {
-
-        }
-
+    public void displayRestRoom(Queue healthcareWorkers, Receptionist receptionist, VaccinePreparer vaccinePreparer) {
+        //Display healthcare workers
+        displayHealthcareWorkersRest(healthcareWorkers);
+        //Display auxiliaries
+        displayReceptionistRest(receptionist);
+        displayVaccinePreparerRest(vaccinePreparer);
+       
     }
+
+    /**
+     *
+     * Update display of the hospital
+     *
+     * All parameters needed to call all functions
+     *
+     * @param patientsWaiting
+     * @param patientAtFrontDesk
+     * @param receptionistStatus
+     * @param desksVaccination
+     * @param vaccinePreparerStatus
+     * @param numVaccines
+     * @param desksObservation
+     * @param healthcareWorkers
+     * @param receptionist
+     * @param vaccinePreparer
+     *
+     */
+    public void displayUpdate(Queue patientsWaiting, Patient patientAtFrontDesk,
+            int receptionistStatus, Desk[] desksVaccination, int vaccinePreparerStatus,
+            AtomicInteger numVaccines, Desk[] desksObservation, Queue healthcareWorkers,
+            Receptionist receptionist, VaccinePreparer vaccinePreparer) {
+
+        displayReceptionRoom(patientsWaiting, patientAtFrontDesk, receptionistStatus);
+        displayVaccinationRoom(desksVaccination, vaccinePreparerStatus, numVaccines);
+        displayObservationRoom(desksObservation);
+        displayRestRoom(healthcareWorkers, receptionist, vaccinePreparer);
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

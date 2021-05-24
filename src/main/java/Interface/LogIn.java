@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Interface;
 
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-/**
- *
- * @author antonia
- */
 public class LogIn extends javax.swing.JFrame {
 
     /**

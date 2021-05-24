@@ -1,10 +1,12 @@
 package Utility;
 
+import Interface.*;
 import Log.WriteToLog;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.commons.lang3.ArrayUtils;
 
 public class ObservationRoom {
 
@@ -12,14 +14,15 @@ public class ObservationRoom {
     private AtomicInteger numPatients;
     private VaccinationRoom vRoom;
     public Semaphore mutex;
+    private Hospital hospital;
 
-    public ObservationRoom(WriteToLog log) {
+    public ObservationRoom(WriteToLog log, Hospital hospital) {
         numPatients = new AtomicInteger(0);
         mutex = new Semaphore(1);
         for (int i = 0; i < 20; i++) {
             desks[i] = new Desk(i + 1, false, log);
         }
-
+        this.hospital = hospital;
     }
 
     public int numPatients() {
@@ -40,6 +43,7 @@ public class ObservationRoom {
     public void goInside(HealthcareWorker h, Desk desk) {
         try {
             desk.goInside(h);
+            hospital.displayHealthcareWorkerObservation(h, (ArrayUtils.indexOf(desks, desk)));
         } catch (InterruptedException ex) {
             Logger.getLogger(ObservationRoom.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -57,6 +61,7 @@ public class ObservationRoom {
                 try {
                     desks[i].goInside(p);
                     p.setCurrentDesk(desks[i]);
+                    hospital.displayPatientObservation(p, i);
                     numPatients.getAndIncrement();
                     break;
                 } catch (InterruptedException ex) {
@@ -68,8 +73,9 @@ public class ObservationRoom {
     }
 
     public void goOut(HealthcareWorker h) {
-        Desk workersCurrentDesk = h.getCurrentDesk();
-        workersCurrentDesk.goOut(h); //Go out from observation room
+        Desk workerCurrentDesk = h.getCurrentDesk();
+        workerCurrentDesk.goOut(h); //Go out from observation room
+        hospital.displayHealthcareWorkerObservation(null, (ArrayUtils.indexOf(desks, workerCurrentDesk)));
         vRoom.goInside(h); //Go to vaccination room
 
     }
@@ -87,6 +93,7 @@ public class ObservationRoom {
         }
         Desk patientCurrentDesk = p.getCurrentDesk();
         patientCurrentDesk.goOut(p); //Go out from observation room
+        hospital.displayPatientVaccination(null, (ArrayUtils.indexOf(desks, patientCurrentDesk)));
         numPatients.getAndDecrement();
         mutex.release();
     }
