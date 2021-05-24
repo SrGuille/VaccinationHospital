@@ -1,4 +1,3 @@
-
 package Interface;
 
 import Utility.Test;
@@ -201,7 +200,7 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startClientButtonMouseExited
 
     private void startClientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startClientButtonActionPerformed
-        HospitalClient hospitalClient = new HospitalClient(this);
+        
     }//GEN-LAST:event_startClientButtonActionPerformed
 
     private void startServerButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startServerButtonMouseEntered
@@ -215,11 +214,8 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startServerButtonMouseExited
 
     private void startServerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startServerButtonActionPerformed
-        try {
-            Test test = new Test(this);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Hospital hospital = new Hospital(this);
+
     }//GEN-LAST:event_startServerButtonActionPerformed
 
     /**

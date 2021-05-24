@@ -10,6 +10,8 @@ import Utility.*;
 import java.util.Iterator;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Hospital extends javax.swing.JFrame {
 
@@ -91,6 +93,7 @@ public class Hospital extends javax.swing.JFrame {
         goBack.setVisible(false);
         this.setVisible(true);
         initArrays();
+        
     }
 
     /**
@@ -4127,7 +4130,11 @@ public class Hospital extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowActivated
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        LogIn logIn = new LogIn(this);
+        try {
+            Test test = new Test(this);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Hospital.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void buttonDesk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk9ActionPerformed

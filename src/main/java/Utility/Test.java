@@ -8,7 +8,6 @@ import javax.swing.JFrame;
 
 public class Test {
 
-    private JFrame goBack;
     private Hospital hospital;
     private WriteToLog log;
     private ObservationRoom oRoom;
@@ -21,28 +20,27 @@ public class Test {
     private VaccinePreparer aux2;
     private HealthcareWorker[] workers;
 
-    public Test(JFrame v) throws InterruptedException {
-        goBack = v;
+    public Test(Hospital hospital) throws InterruptedException {
+
         //Create interface
-        hospital = new Hospital(goBack);
+        this.hospital = hospital;
         log = new WriteToLog("evolutionHospital.txt");
         log.write(" Main: Hospital opened");
 
         createRooms();
         createPatients();
-        //createWorkers();
+        createWorkers();
 
         //Wait for all to finish
         for (int k = 0; k < 50; k++) {
             patients[k].join();
         }
-
         //Close hospital (join finished)
-       /* for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             workers[i].interrupt();
         }
         aux1.interrupt();
-        aux2.interrupt();*/
+        aux2.interrupt();
     }
 
     public void createPatients() {
