@@ -430,11 +430,11 @@ public class Hospital extends javax.swing.JFrame {
      *
      * Display the auxiliary working or not
      *
-     * @param receptionistStatus: if 2 means they are resting
+     * @param receptionistStatus: if 1 means they are resting
      *
      */
     public void displayReceptionistBooth(int receptionistStatus) {
-        if (receptionistStatus == 2) {
+        if (receptionistStatus == 1) {
             receptionCounter.setIcon(receptionCounterCloseImage);
         } else {
             receptionCounter.setIcon(receptionCounterOpenImage);

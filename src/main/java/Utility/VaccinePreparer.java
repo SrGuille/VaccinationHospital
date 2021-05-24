@@ -30,7 +30,6 @@ public class VaccinePreparer extends AuxiliaryWorker {
             if (remainingToRest == 0) {
                 goRest(1000, 4000); //Sleep for 3 to 5 secs 
             }
-            hospital.displayVaccinePreparerBooth(status);
             waitVaccineIsReady(500, 1000);
             vaccinationRoom.produceVaccine();
             remainingToRest--;
@@ -66,6 +65,7 @@ public class VaccinePreparer extends AuxiliaryWorker {
 
         rRoom.goOut(this);
         status=0;
+        hospital.displayVaccinePreparerBooth(status);
         remainingToRest = 20; //Restore the numPatients to attend before next rest
     }
 

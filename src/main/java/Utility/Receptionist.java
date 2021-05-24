@@ -11,15 +11,12 @@ public class Receptionist extends AuxiliaryWorker {
     private int remainingToRest;
     private Thread me;
     /**
-     * Status=0 NORMAL WORKING
-     * Status=1 RESTING
-     * Status=2 WAITING FOR AVAILABLE DESK AT VACCINATION ROOM
-     * Status=3 NO PATIENT TO FORWARD
-     * Status=4 END
+     * Status=0 NORMAL WORKING Status=1 RESTING Status=2 WAITING FOR AVAILABLE
+     * DESK AT VACCINATION ROOM Status=3 NO PATIENT TO FORWARD Status=4 END
      */
-    private int status; 
- private Hospital hospital;
-    
+    private int status;
+    private Hospital hospital;
+
     public Receptionist(int wID, Reception recep, RestRoom r, Hospital hospital) {
         super(wID);
         reception = recep;
@@ -38,19 +35,18 @@ public class Receptionist extends AuxiliaryWorker {
         } catch (InterruptedException ex) {
             Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
         }
-        while (getStatus()!=4) { //While main doesn't put status=4 (END)
+        while (getStatus() != 4) { //While main doesn't put status=4 (END)
             if (remainingToRest == 0) {
                 goRest(3000, 5000); //Sleep for 3 to 5 secs
 
             }
-            hospital.displayReceptionistBooth(status);
             reception.callFirstInQueue();
-            if (getStatus()!=4){
+            if (getStatus() != 4) {
                 checkIfListed(500, 1000); //Sleep for 0,5 to 1 sec
                 reception.forwardPatient(this);
                 remainingToRest--; //One less to rest
             }
-            
+
         }
 
     }
@@ -67,14 +63,14 @@ public class Receptionist extends AuxiliaryWorker {
         if (status == desiredStatus) {
             setStatus(0); //working status
             me.interrupt();
-           
+
         }
     }
 
-    public synchronized int getStatus(){
+    public synchronized int getStatus() {
         return status;
     }
-    
+
     public synchronized void setStatus(int newValue) {
         status = newValue;
     }
@@ -100,6 +96,7 @@ public class Receptionist extends AuxiliaryWorker {
 
         rRoom.goOut(this);
         setStatus(0); //working status
+        hospital.displayReceptionistBooth(status);
         remainingToRest = 10; //Restore the numPatients to attend before next rest
     }
 
