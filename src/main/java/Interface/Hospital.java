@@ -604,8 +604,10 @@ public class Hospital extends javax.swing.JFrame {
         while (i < 10) {
             healthcaresRest[i].setText("");
             healthcaresImageRest[i].setIcon(null);
+            i++;
         }
     }
+    
 
     /**
      *
