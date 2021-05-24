@@ -1,9 +1,7 @@
 package Interface;
 
-import Utility.Test;
+import DistributedSystem.*;
 import java.awt.Color;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -214,8 +212,8 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startServerButtonMouseExited
 
     private void startServerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startServerButtonActionPerformed
-        Hospital hospital = new Hospital(this);
-        Test test = new Test(hospital);
+        HospitalServer hospitalServer = new HospitalServer(this);
+        Server server = new Server(hospitalServer);
 
     }//GEN-LAST:event_startServerButtonActionPerformed
 

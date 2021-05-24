@@ -5,6 +5,7 @@
  */
 package DistributedSystem;
 
+import Interface.*;
 import java.io.IOException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -15,22 +16,22 @@ import java.rmi.NotBoundException;
  */
 public class Client {
 
+    private Hospital hospital;
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        try
-        {
-            
-            RemoteMethodsInterface rmi =(RemoteMethodsInterface) Naming.lookup("//localhost/Prime");//Locate object 
+
+        try {
+
+            RemoteMethodsInterface rmi = (RemoteMethodsInterface) Naming.lookup("//localhost/Prime");//Locate object 
             rmi.updateDisplay();
             rmi.cleanVaccinationDesk();
 
-        }catch(IOException | NotBoundException ex) 
-          {
-              System.out.println("Error: "+ ex.getMessage());
-          }
+        } catch (IOException | NotBoundException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
     }
-    
+
 }
