@@ -69,7 +69,7 @@ public class Desk {
     }
     
     public void cleaned(){
-        mustBeCleaned=false;
+        mustBeCleaned=false; 
     }
     
     public void closeToClean(){
@@ -175,7 +175,10 @@ public class Desk {
     public void waitForPatient() {
         lock.lock();
         try {
-            waitForPatient.await();
+            while(patient==null){
+                waitForPatient.await();
+            }
+            
         } catch (InterruptedException ex) {
             Logger.getLogger(Desk.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
