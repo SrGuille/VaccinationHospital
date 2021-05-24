@@ -85,11 +85,10 @@ public class Client extends Thread {
         AtomicInteger numVaccines = vRoom.getNumVaccines();
         Desk[] desksObservation = oRoom.getDesks();
         Queue healthcareWorkers = rRoom.getWorkers();
-        /* hospital.displayUpdate(patientsWaiting, patientAtFrontDesk,
+        hospital.displayUpdate(patientsWaiting, patientAtFrontDesk,
                 receptionistStatus, desksVaccination, vaccinePreparerStatus,
                 numVaccines, desksObservation, healthcareWorkers,
-                aux1, aux2);*/
-        System.out.println(receptionistStatus);
+                aux1, aux2);
     }
 
     public void closeDesk(int desk) {

@@ -19,17 +19,7 @@ public interface RemoteMethodsInterface extends Remote {
 
     public String getAux2() throws RemoteException;
 
-    public void setAux1(String aux1) throws RemoteException;
-
-    public void setAux2(String aux2) throws RemoteException;
-
-    public void setoRoom(String oRoom) throws RemoteException;
-
-    public void setrRoom(String rRoom) throws RemoteException;
-
-    public void setvRoom(String vRoom) throws RemoteException;
-
-    public void setReception(String reception) throws RemoteException;
+ 
 
     void cleanVaccinationDesk(String desk) throws RemoteException;
 }

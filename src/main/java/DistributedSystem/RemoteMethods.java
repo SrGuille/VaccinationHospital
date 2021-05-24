@@ -20,19 +20,22 @@ public class RemoteMethods extends UnicastRemoteObject implements RemoteMethodsI
     private String aux2;
     Gson gson = new Gson();
 
-    public RemoteMethods() throws RemoteException {
+    public RemoteMethods(String oRoom,
+            String rRoom,
+            String vRoom,
+            String reception,
+            String aux1,
+            String aux2) throws RemoteException {
 
-    }
-
-    /* public RemoteMethods(Object[] hospitalRooms, Receptionist aux1, VaccinePreparer aux2) throws RemoteException {
-        this.reception = (Reception) hospitalRooms[0];
-        this.vRoom = (VaccinationRoom) hospitalRooms[1];
-        this.oRoom = (ObservationRoom) hospitalRooms[2];
-        this.rRoom = (RestRoom) hospitalRooms[3];
+        this.reception = reception;
+        this.vRoom = vRoom;
+        this.oRoom = oRoom;
+        this.rRoom = rRoom;
 
         this.aux1 = aux1;
         this.aux2 = aux2;
-    }*/
+    }
+
     @Override
     public String getoRoom() {
 
@@ -63,31 +66,6 @@ public class RemoteMethods extends UnicastRemoteObject implements RemoteMethodsI
     public String getAux2() {
         return aux2;
     }
-
-    public void setAux1(String aux1) {
-        this.aux1 = aux1;
-    }
-
-    public void setAux2(String aux2) {
-        this.aux2 = aux2;
-    }
-
-    public void setoRoom(String oRoom) {
-        this.oRoom = oRoom;
-    }
-
-    public void setrRoom(String rRoom) {
-        this.rRoom = rRoom;
-    }
-
-    public void setvRoom(String vRoom) {
-        this.vRoom = vRoom;
-    }
-
-    public void setReception(String reception) {
-        this.reception = reception;
-    }
-    
 
     @Override
     public void cleanVaccinationDesk(String deskString) throws RemoteException {

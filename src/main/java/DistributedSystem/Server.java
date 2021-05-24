@@ -3,6 +3,7 @@ package DistributedSystem;
 import Interface.*;
 import Log.WriteToLog;
 import Utility.*;
+import com.google.gson.Gson;
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -22,6 +23,7 @@ public class Server extends Thread {
     private Receptionist aux1;
     private VaccinePreparer aux2;
     private HealthcareWorker[] workers;
+    Gson gson = new Gson();
 
     /**
      *
@@ -62,9 +64,16 @@ public class Server extends Thread {
 
     public void rmiSetup() {
         try {
-            RemoteMethods methods = new RemoteMethods();
+            String oRoomStr = new Gson().toJson(oRoom);
+            String rRoomStr = new Gson().toJson(rRoom);
+            String vRoomStr = new Gson().toJson(vRoom);
+            String receptionStr = new Gson().toJson(reception);
+            String aux1Str = new Gson().toJson(aux1);
+            String aux2Str = new Gson().toJson(aux2);
+            RemoteMethods methods = new RemoteMethods(oRoomStr, rRoomStr, vRoomStr, receptionStr, aux1Str, aux2Str);
             Registry registry = LocateRegistry.createRegistry(1099);//Starts local rmiregistry. Port 1099
             Naming.rebind("//localhost/Prime", methods);
+
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
