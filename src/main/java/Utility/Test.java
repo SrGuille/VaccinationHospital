@@ -20,10 +20,10 @@ public class Test {
     private VaccinePreparer aux2;
     private HealthcareWorker[] workers;
 
-    public Test(Hospital hospital) throws InterruptedException {
+    public Test(JFrame v) throws InterruptedException {
 
         //Create interface
-        this.hospital = hospital;
+        this.hospital = new Hospital(v);
         log = new WriteToLog("evolutionHospital.txt");
         log.write(" Main: Hospital opened");
 

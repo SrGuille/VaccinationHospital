@@ -4110,3 +4110,16 @@
 24-05-2021 04:24:45 Vaccine produced, there are 20 ready
 24-05-2021 04:24:45 Vaccine Preparer A2 is resting
 24-05-2021 04:24:48 Vaccine Preparer A2 has returned to his spot
+24-05-2021 04:45:14 Main: Hospital opened
+24-05-2021 04:45:15 Patient P0001 arrived at the hospital
+24-05-2021 04:45:16 Patient P0002 arrived at the hospital
+24-05-2021 04:45:17 Patient P0003 arrived at the hospital
+24-05-2021 04:45:18 Patient P0004 arrived at the hospital
+24-05-2021 04:45:19 Patient P0005 arrived at the hospital
+24-05-2021 04:45:20 Patient P0006 arrived at the hospital
+24-05-2021 04:45:21 Patient P0007 arrived at the hospital
+24-05-2021 04:45:22 Patient P0008 arrived at the hospital
+24-05-2021 04:45:23 Patient P0009 arrived at the hospital
+24-05-2021 04:45:24 Patient P0010 arrived at the hospital
+24-05-2021 04:45:25 Patient P0011 arrived at the hospital
+24-05-2021 04:45:26 Patient P0012 arrived at the hospital

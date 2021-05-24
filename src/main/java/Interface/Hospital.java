@@ -4130,11 +4130,7 @@ public class Hospital extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowActivated
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        try {
-            Test test = new Test(this);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Hospital.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        LogIn logIn = new LogIn(this);
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void buttonDesk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk9ActionPerformed
