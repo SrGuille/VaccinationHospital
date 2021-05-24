@@ -1,7 +1,10 @@
 
 package Interface;
 
+import Utility.Test;
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -212,7 +215,11 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startServerButtonMouseExited
 
     private void startServerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startServerButtonActionPerformed
-        HospitalServer hospitalServer = new HospitalServer(this);
+        try {
+            Test test = new Test(this);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_startServerButtonActionPerformed
 
     /**
