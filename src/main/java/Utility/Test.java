@@ -4,9 +4,8 @@ import Log.WriteToLog;
 import Interface.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFrame;
 
-public class Test {
+public class Test extends Thread {
 
     private Hospital hospital;
     private WriteToLog log;
@@ -20,27 +19,38 @@ public class Test {
     private VaccinePreparer aux2;
     private HealthcareWorker[] workers;
 
-    public Test(JFrame v) throws InterruptedException {
+    /**
+     *
+     * @param hospital
+     */
+    public Test(Hospital hospital) {
 
         //Create interface
-        this.hospital = new Hospital(v);
+        this.hospital = hospital;
+        start();
+    }
+
+    public void run() {
         log = new WriteToLog("evolutionHospital.txt");
         log.write(" Main: Hospital opened");
 
         createRooms();
         createWorkers();
         createPatients();
-        
 
         //Wait for all to finish
         for (int k = 0; k < 50; k++) {
-            patients[k].join();
+            try {
+                patients[k].join();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         //Close hospital (join finished)
         for (int i = 0; i < 10; i++) {
             workers[i].interrupt();
         }
-        
+
         aux1.setStatus(4);//finish
         aux1.interrupt();
     }

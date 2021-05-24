@@ -214,11 +214,8 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_startServerButtonMouseExited
 
     private void startServerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startServerButtonActionPerformed
-        try {
-            Test test = new Test(this);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Hospital hospital = new Hospital(this);
+        Test test = new Test(hospital);
 
     }//GEN-LAST:event_startServerButtonActionPerformed
 

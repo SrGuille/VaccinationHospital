@@ -451,10 +451,10 @@ public class Hospital extends javax.swing.JFrame {
     public void displayPatientChecked(Patient patientAtFrontDesk) {
         if (patientAtFrontDesk == null) {
             patientChecked.setText("");
-            patientChecked.setIcon(null);
+            patientCheckedImage.setIcon(null);
         } else {
             patientChecked.setText(patientAtFrontDesk.getID());
-            patientChecked.setIcon(patientImage);
+            patientCheckedImage.setIcon(patientImage);
         }
     }
 
@@ -528,9 +528,9 @@ public class Hospital extends javax.swing.JFrame {
      */
     public void displayVaccinePreparerBooth(int vaccinePreparerStatus) {
         if (vaccinePreparerStatus == 1) {
-            receptionCounter.setIcon(vaccinationCounterCloseImage);
+            vaccinationCounter.setIcon(vaccinationCounterCloseImage);
         } else {
-            receptionCounter.setIcon(vaccinationCounterOpenImage);
+            vaccinationCounter.setIcon(vaccinationCounterOpenImage);
         }
     }
 
@@ -804,7 +804,7 @@ public class Hospital extends javax.swing.JFrame {
         patientImageReception20 = new javax.swing.JLabel();
         patientImageReception21 = new javax.swing.JLabel();
         patientImageReception22 = new javax.swing.JLabel();
-        patientImageReception35 = new javax.swing.JLabel();
+        patientCheckedImage = new javax.swing.JLabel();
         observationRoom = new javax.swing.JPanel();
         patientObservation1 = new javax.swing.JLabel();
         patientObservation2 = new javax.swing.JLabel();
@@ -1498,14 +1498,14 @@ public class Hospital extends javax.swing.JFrame {
         patientImageReception22.setOpaque(true);
         patientImageReception22.setPreferredSize(new java.awt.Dimension(30, 30));
 
-        patientImageReception35.setBackground(patientBackground);
-        patientImageReception35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        patientImageReception35.setBorder(patientBorder);
-        patientImageReception35.setFocusable(false);
-        patientImageReception35.setMaximumSize(new java.awt.Dimension(30, 30));
-        patientImageReception35.setMinimumSize(new java.awt.Dimension(30, 30));
-        patientImageReception35.setOpaque(true);
-        patientImageReception35.setPreferredSize(new java.awt.Dimension(30, 30));
+        patientCheckedImage.setBackground(patientBackground);
+        patientCheckedImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        patientCheckedImage.setBorder(patientBorder);
+        patientCheckedImage.setFocusable(false);
+        patientCheckedImage.setMaximumSize(new java.awt.Dimension(30, 30));
+        patientCheckedImage.setMinimumSize(new java.awt.Dimension(30, 30));
+        patientCheckedImage.setOpaque(true);
+        patientCheckedImage.setPreferredSize(new java.awt.Dimension(30, 30));
 
         javax.swing.GroupLayout receptionRoomLayout = new javax.swing.GroupLayout(receptionRoom);
         receptionRoom.setLayout(receptionRoomLayout);
@@ -1602,7 +1602,7 @@ public class Hospital extends javax.swing.JFrame {
                     .addComponent(patientImageReception1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(receptionRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(patientImageReception35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientCheckedImage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(patientChecked, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(receptionCounter, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1648,7 +1648,7 @@ public class Hospital extends javax.swing.JFrame {
                                     .addComponent(patientReception9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(patientReception10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(receptionRoomLayout.createSequentialGroup()
-                                .addComponent(patientImageReception35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(patientCheckedImage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(patientChecked, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(receptionRoomLayout.createSequentialGroup()
@@ -4275,6 +4275,7 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JLabel observationIntWall;
     private javax.swing.JPanel observationRoom;
     private javax.swing.JLabel patientChecked;
+    private javax.swing.JLabel patientCheckedImage;
     private javax.swing.JLabel patientImageObservation1;
     private javax.swing.JLabel patientImageObservation10;
     private javax.swing.JLabel patientImageObservation11;
@@ -4311,7 +4312,6 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JLabel patientImageReception21;
     private javax.swing.JLabel patientImageReception22;
     private javax.swing.JLabel patientImageReception3;
-    private javax.swing.JLabel patientImageReception35;
     private javax.swing.JLabel patientImageReception4;
     private javax.swing.JLabel patientImageReception5;
     private javax.swing.JLabel patientImageReception6;

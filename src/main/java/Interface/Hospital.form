@@ -302,7 +302,7 @@
                       </Group>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="patientImageReception35" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="patientCheckedImage" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="patientChecked" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -357,7 +357,7 @@
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="patientImageReception35" min="-2" max="-2" attributes="0"/>
+                                      <Component id="patientCheckedImage" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                       <Component id="patientChecked" min="-2" max="-2" attributes="0"/>
                                   </Group>
@@ -1560,7 +1560,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="patientImageReception35">
+            <Component class="javax.swing.JLabel" name="patientCheckedImage">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="patientBackground" type="code"/>
