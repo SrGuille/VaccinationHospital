@@ -74,7 +74,8 @@ public class Patient extends Thread{
             }
          
         Random r = new Random();
-        if (r.nextInt(100)<5){ //5% chance of having symptoms
+        if (r.nextInt(100)<30){ //5% chance of having symptoms
+            System.out.println("My desk: "+currentDesk.getID());
             rRoom.callForHelp(currentDesk);
             currentDesk.waitForBeenHealed(); //Wait for help
         }

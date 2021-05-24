@@ -100,20 +100,26 @@ public class Reception {
      */
     public void forwardPatient(Receptionist r) {
         Random random = new Random();
-
-        if (random.nextInt(100) == 0) { //Give a 1% chance of not listed
-            patientAtFrontDesk.notAppointment(); //Makes it to leave the hospital
-            System.out.println("Patient " + patientAtFrontDesk.getID() + " came without an appointment");
-            entranceLock.lock();
-            try {
-                queue.signal(); //signal first patient thread 
-            } finally {
-                entranceLock.unlock();
-            }
-            String message = " Patient " + patientAtFrontDesk.getID() + " doesn't have an an appointment, he is leaving the hospital";
-            log.write(message);
+        
+        boolean forwarded=false;
+        while(!forwarded){
+            
+            if (random.nextInt(100) == 0) { //Give a 1% chance of not listed
+                forwarded=true;
+                patientAtFrontDesk.notAppointment(); //Makes it to leave the hospital
+                System.out.println("Patient " + patientAtFrontDesk.getID() + " came without an appointment");
+                entranceLock.lock();
+                try {
+                    queue.signal(); //signal first patient thread 
+                } finally {
+                    entranceLock.unlock();
+                }
+                String message = " Patient " + patientAtFrontDesk.getID() + " doesn't have an an appointment, he is leaving the hospital";
+                log.write(message);
+                
         } else if (vRoom.tryGoInside(patientAtFrontDesk)) { //If it has managed to go in, let it go
             entranceLock.lock();
+            forwarded=true;
             try {
                 System.out.println("Patient " + patientAtFrontDesk.getID() + " vaccinated in desk " + patientAtFrontDesk.getCurrentDesk().getID()
                         + " by " + patientAtFrontDesk.getCurrentDesk().getWorker().getID());
@@ -123,6 +129,7 @@ public class Reception {
             } finally {
                 entranceLock.unlock();
             }
+            
         } else { //No possibility of forwarding to the patient, stop service until interrupted
             entranceLock.lock();
             try {
@@ -130,11 +137,14 @@ public class Reception {
                 r.setStatus(2); //Waiting for free desk status
                 stopService.await();
             } catch (InterruptedException spotRelased) { //When interrupted, there is a place in the room (a patient has left or a doctor has come)
-                vRoom.tryGoInside(patientAtFrontDesk);
+                //vRoom.tryGoInside(patientAtFrontDesk);
             } finally {
                 entranceLock.unlock();
             }
         }
+            
+        }
+        
 
     }
 

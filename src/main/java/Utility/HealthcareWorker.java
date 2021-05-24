@@ -18,6 +18,7 @@ public class HealthcareWorker extends Thread {
     private WriteToLog log;
 
     public HealthcareWorker(int wID, Object[] hospitalRooms, WriteToLog log) {
+        
         hcWorkerID = assignID(wID);
         vRoom = (VaccinationRoom) hospitalRooms[1];
         oRoom = (ObservationRoom) hospitalRooms[2];
@@ -50,8 +51,15 @@ public class HealthcareWorker extends Thread {
             }
             vRoom.goInside(this);
             currentDesk.waitForPatient();
-            vaccinate(3000, 5000);
-            remainingToRest--;
+            if (currentDesk.getType().equals("VD")){//If it is in ia vaccination desk, then vaccinate
+                vaccinate(3000, 5000);
+                remainingToRest--;
+            }
+            else{//In case of observation desk, then heal patient
+                healPatient(2000,5000,false); //The false stands for that the call is not perform while resting
+            }
+            
+            
         }
     }
 
@@ -104,11 +112,7 @@ public class HealthcareWorker extends Thread {
 
     private void goRest(int minTime, int maxTime) {
 
-        try {
-            vRoom.goOut(this);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(HealthcareWorker.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        vRoom.goOut(this);
 
         rRoom.goIn(this);
 
@@ -117,7 +121,7 @@ public class HealthcareWorker extends Thread {
             rRoom.goOut(this);
 
         } catch (InterruptedException ex) { //If there is an emergency, go to attend it
-            healPatient(2000, 5000);
+            healPatient(2000, 5000, true);
 
         }
         remainingToRest = 15;
@@ -156,23 +160,44 @@ public class HealthcareWorker extends Thread {
     }
 
     /**
-     * Go to attend patient
+     * Attend patient who needs help at observation room
+     * @param minTime
+     * @param maxTime
+     * @param fromRestRoom indicates the source of the worker, that can be either the rest room or the vaccination room.
+     * 
      */
-    private void healPatient(int minTime, int maxTime) {
-        rRoom.goOut(this);
-        oRoom.goInside(this, emergencyDesk);
-        emergencyDesk=null;
-        try {
-            Thread.sleep(minTime + (int) (Math.random() * (maxTime - minTime)));
-
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
+    private void healPatient(int minTime, int maxTime, boolean fromRestRoom) {
+        if (fromRestRoom){
+            rRoom.goOut(this);
         }
+        else{
+            vRoom.goOut(this); //Take the worker out of vax room
+        }
+            oRoom.goInside(this,emergencyDesk); //move to the desk of the patient
+            emergencyDesk=null;
         
-        emergencyDesk.tellPatientToGoHome(currentDesk.getPatient());
+            try {
+                Thread.sleep(minTime + (int) (Math.random() * (maxTime - minTime)));
+
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Receptionist.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            emergencyDesk.tellPatientToGoHome(currentDesk.getPatient());
+
+            oRoom.goOut(this);
+            
+           if (fromRestRoom){ //Return to rest room
+               goRest(2500, 4000); //Go rest the half of the time
+           }
+           
+           else{//In case of been called in the middle of the work, then return to the spot
+               vRoom.goInside(this);
+           }
+            
         
-        oRoom.goOut(this);
-        goRest(2500, 4000); //Go rest the half of the time
+        
+        
 
     }
 

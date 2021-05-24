@@ -28,8 +28,9 @@ public class Test {
         log.write(" Main: Hospital opened");
 
         createRooms();
-        createPatients();
         createWorkers();
+        createPatients();
+        
 
         //Wait for all to finish
         for (int k = 0; k < 50; k++) {
@@ -39,8 +40,9 @@ public class Test {
         for (int i = 0; i < 10; i++) {
             workers[i].interrupt();
         }
+        
+        aux1.setStatus(4);//finish
         aux1.interrupt();
-        aux2.interrupt();
     }
 
     public void createPatients() {
@@ -72,8 +74,8 @@ public class Test {
 
     public void createRooms() {
         oRoom = new ObservationRoom(log, hospital);
-        rRoom = new RestRoom(oRoom, log, hospital);
         vRoom = new VaccinationRoom(oRoom, log, hospital);
+        rRoom = new RestRoom(vRoom, oRoom, log, hospital);
         oRoom.setVaccinationRoom(vRoom);
         reception = new Reception(vRoom, log, hospital);
         hospitalRooms[0] = reception;

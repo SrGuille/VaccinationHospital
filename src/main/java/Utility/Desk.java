@@ -48,6 +48,10 @@ public class Desk {
     public String getID() {
         return deskID;
     }
+    
+    public String getType(){
+        return type;
+    }
 
     public Patient getPatient() {
 
@@ -59,7 +63,18 @@ public class Desk {
         return healthcareWorker;
     }
     
-
+    /**
+     * A healthcare worker is only available to attend an emergency if it is alone at the desk
+     * @return if the worker is alone
+     */
+    public boolean isAvailableForEmergency(){
+        boolean isAvailable=false;
+        if (patient==null && healthcareWorker!=null){
+            isAvailable=true;
+        }
+        return isAvailable;
+    }
+    
     /*
     * It must be impossible for 2 workers to try to go into the same desk
      */
@@ -147,7 +162,18 @@ public class Desk {
             lock.unlock();
         }
     }
-
+    
+    /**
+     * Patient who calls this makes the healthcare worker to stop waiting for another patient and go assist him
+     */
+    public void attendEmergency() {
+        lock.lock();
+        try {
+            waitForPatient.signal();
+        } finally {
+            lock.unlock();
+        }
+    }
     /**
      * Patient who calls it has symptoms and waits to be healed
      */
