@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DistributedSystem;
 
 import Interface.Hospital;
@@ -14,10 +9,6 @@ import java.rmi.registry.Registry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author guial
- */
 public class Server extends Thread {
 
     private Hospital hospital;
@@ -50,6 +41,7 @@ public class Server extends Thread {
         createRooms();
         createWorkers();
         createPatients();
+        rmiSetup();
 
         //Wait for all to finish
         for (int k = 0; k < 50; k++) {
@@ -115,6 +107,18 @@ public class Server extends Thread {
         hospitalRooms[1] = vRoom;
         hospitalRooms[2] = oRoom;
         hospitalRooms[3] = rRoom;
+    }
+
+    public Object[] getHospitalRooms() {
+        return hospitalRooms;
+    }
+
+    public Receptionist getAux1() {
+        return aux1;
+    }
+
+    public VaccinePreparer getAux2() {
+        return aux2;
     }
 
 }

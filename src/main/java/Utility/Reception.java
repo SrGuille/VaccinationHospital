@@ -23,6 +23,14 @@ public class Reception {
     private Receptionist receptionist;
     private Hospital hospital;
 
+    public Queue getPatients() {
+        return patients;
+    }
+
+    public Patient getPatientAtFrontDesk() {
+        return patientAtFrontDesk;
+    }
+
     public Reception(VaccinationRoom v, WriteToLog log, Hospital hospital) {
         entranceLock = new ReentrantLock(true);
         queue = entranceLock.newCondition();

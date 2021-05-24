@@ -28,6 +28,10 @@ public class RestRoom {
         this.hospital = hospital;
     }
 
+    public Queue getWorkers() {
+        return workers;
+    }
+
     public void goIn(HealthcareWorker h) {
         
         try {

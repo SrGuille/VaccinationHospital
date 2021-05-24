@@ -25,6 +25,10 @@ public class ObservationRoom {
         this.hospital = hospital;
     }
 
+    public Desk[] getDesks() {
+        return desks;
+    }
+
     public int numPatients() {
         return numPatients.get(); //Returns how many places are available checking semaphore
     }

@@ -33,6 +33,14 @@ public class VaccinationRoom {
         this.hospital = hospital;
     }
 
+    public Desk[] getDesks() {
+        return desks;
+    }
+
+    public AtomicInteger getNumVaccines() {
+        return numVaccines;
+    }
+
     public void setReceptionist(Receptionist r) {
         receptionist = r;
     }

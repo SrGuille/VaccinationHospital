@@ -34,6 +34,11 @@ public class LogIn extends javax.swing.JFrame {
 
     }
 
+    public Client getClient() {
+        return client;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -206,7 +211,7 @@ public class LogIn extends javax.swing.JFrame {
 
         if (firstClient) {
             clientHospital = new HospitalClient(this);
-            client = new Client();
+            client = new Client(clientHospital);
             firstClient = false;
         } else {
             clientHospital.displayHospital(this);

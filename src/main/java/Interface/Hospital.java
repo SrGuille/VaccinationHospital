@@ -93,8 +93,9 @@ public class Hospital extends javax.swing.JFrame {
         goBack.setVisible(false);
         this.setVisible(true);
         initArrays();
-        
+
     }
+
     /**
      * Displays Hospital
      *
@@ -107,7 +108,7 @@ public class Hospital extends javax.swing.JFrame {
         goBack.setVisible(false);
         this.setVisible(true);
         initArrays();
-        
+
     }
 
     /**
@@ -356,40 +357,22 @@ public class Hospital extends javax.swing.JFrame {
      * @param open: icon displayed at the moment
      *
      */
-    public void buttonDesksStyleChange(int pos, boolean open) {
-        Color newHealthcareBackground;
-        javax.swing.border.LineBorder newHealthcareBorder;
-        Color newPatientBackground;
-        javax.swing.border.LineBorder newPatientBorder;
-        if (open) {
+    public void buttonDesksStyleChange(int pos) {
 
-            buttonDesks[pos].setIcon(deskCloseImage);
-            newHealthcareBackground = healthcareBackground;
-            newHealthcareBorder = healthcareBorder;
-            newPatientBackground = patientBackground;
-            newPatientBorder = patientBorder;
+        buttonDesks[pos].setIcon(deskOpenImage);
 
-        } else {
-
-            buttonDesks[pos].setIcon(deskOpenImage);
-            newHealthcareBackground = greyBackground;
-            newHealthcareBorder = greyBorder;
-            newPatientBackground = greyBackground;
-            newPatientBorder = greyBorder;
-
-        }
         healthcaresImageVaccination[pos].setIcon(null);
-        healthcaresImageVaccination[pos].setBackground(newHealthcareBackground);
-        healthcaresImageVaccination[pos].setBorder(newHealthcareBorder);
+        healthcaresImageVaccination[pos].setBackground(greyBackground);
+        healthcaresImageVaccination[pos].setBorder(greyBorder);
         healthcaresVaccination[pos].setText("");
-        healthcaresVaccination[pos].setBackground(newHealthcareBackground);
-        healthcaresVaccination[pos].setBorder(newHealthcareBorder);
+        healthcaresVaccination[pos].setBackground(greyBackground);
+        healthcaresVaccination[pos].setBorder(greyBorder);
         patientsImageVaccination[pos].setIcon(null);
-        patientsImageVaccination[pos].setBackground(newPatientBackground);
-        patientsImageVaccination[pos].setBorder(newPatientBorder);
+        patientsImageVaccination[pos].setBackground(greyBackground);
+        patientsImageVaccination[pos].setBorder(greyBorder);
         patientsVaccination[pos].setText("");
-        patientsVaccination[pos].setBackground(newPatientBackground);
-        patientsVaccination[pos].setBorder(newPatientBorder);
+        patientsVaccination[pos].setBackground(greyBackground);
+        patientsVaccination[pos].setBorder(greyBorder);
 
     }
 
@@ -401,12 +384,9 @@ public class Hospital extends javax.swing.JFrame {
      *
      */
     public void buttonDesksActionPerfomed(int pos) {
-        if (buttonDesks[pos].getIcon() == deskCloseImage) {
-            buttonDesksStyleChange(pos, false);
+        buttonDesksStyleChange(pos);
+        logIn.getClient().closeDesk(pos);
 
-        } else {
-            buttonDesksStyleChange(pos, true);
-        }
     }
 
     /**
@@ -481,13 +461,47 @@ public class Hospital extends javax.swing.JFrame {
      *
      */
     public void displayHealthcareWorkerVaccination(HealthcareWorker healthcareWorker, int desk) {
+
+        Color newHealthcareBackground;
+        javax.swing.border.LineBorder newHealthcareBorder;
+        Color newPatientBackground;
+        javax.swing.border.LineBorder newPatientBorder;
+        String newHealthworkerText;
+        ImageIcon newHealthworkerImage;
         if (healthcareWorker != null) {
-            healthcaresVaccination[desk].setText(healthcareWorker.getID());
-            healthcaresImageVaccination[desk].setIcon(healthcareImage);
+
+            buttonDesks[desk].setIcon(deskCloseImage);
+            newHealthcareBackground = healthcareBackground;
+            newHealthcareBorder = healthcareBorder;
+            newPatientBackground = patientBackground;
+            newPatientBorder = patientBorder;
+            newHealthworkerText = healthcareWorker.getID();
+            newHealthworkerImage = healthcareImage;
+
         } else {
-            healthcaresVaccination[desk].setText("");
-            healthcaresImageVaccination[desk].setIcon(null);
+
+            buttonDesks[desk].setIcon(deskOpenImage);
+            newHealthcareBackground = greyBackground;
+            newHealthcareBorder = greyBorder;
+            newPatientBackground = greyBackground;
+            newPatientBorder = greyBorder;
+
+            newHealthworkerText = "";
+            newHealthworkerImage = null;
         }
+
+        healthcaresImageVaccination[desk].setIcon(newHealthworkerImage);
+        healthcaresImageVaccination[desk].setBackground(newHealthcareBackground);
+        healthcaresImageVaccination[desk].setBorder(newHealthcareBorder);
+        healthcaresVaccination[desk].setText(newHealthworkerText);
+        healthcaresVaccination[desk].setBackground(newHealthcareBackground);
+        healthcaresVaccination[desk].setBorder(newHealthcareBorder);
+        patientsImageVaccination[desk].setIcon(null);
+        patientsImageVaccination[desk].setBackground(newPatientBackground);
+        patientsImageVaccination[desk].setBorder(newPatientBorder);
+        patientsVaccination[desk].setText("");
+        patientsVaccination[desk].setBackground(newPatientBackground);
+        patientsVaccination[desk].setBorder(newPatientBorder);
     }
 
     /**
@@ -607,7 +621,6 @@ public class Hospital extends javax.swing.JFrame {
             i++;
         }
     }
-    
 
     /**
      *
@@ -4146,7 +4159,7 @@ public class Hospital extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowActivated
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-       logIn.displayLogIn(this);
+        logIn.displayLogIn(this);
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void buttonDesk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDesk9ActionPerformed
